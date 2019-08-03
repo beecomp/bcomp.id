@@ -1,0 +1,25 @@
+:root {
+    --red: red;
+    --green: green;
+}
+
+body {
+    background-color: yellow;
+
+}
+
+.green {
+    color: green;
+}
+
+.superLarge {
+    font-size: 90px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold{
+    font-style: bold;
+}
