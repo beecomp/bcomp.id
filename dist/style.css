@@ -20,6 +20,26 @@ p {
     color: green;
 }
 
+.cyan {
+    color: cyan;
+}
+
+.pink {
+    color: pink;
+}
+
+.red {
+    color: red;
+}
+
+.medium {
+    font-size: 60px;
+}
+
+.small {
+    font-size: 30px;
+}
+
 .superLarge {
     font-size: 90px;
 }
