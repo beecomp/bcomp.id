@@ -65,6 +65,16 @@ body{
     font-weight: 100;
 }
 
+a {
+    font-family: 'Pacifico';
+    font-size: 30px;
+    color: pink;
+    background: red;
+    margin-right: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
 h1{
     font-weight: 100;
     font-size: 40px;
@@ -98,6 +108,10 @@ h1{
 	font-weight: 100;
 	text-align: center;
 	font-size: 30px;
+}
+
+.hyperlink-background {
+    display: block;
 }
 
 #clockdiv > div{
