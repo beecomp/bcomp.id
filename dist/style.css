@@ -1,5 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
+/* :root {
     --red: red;
     --green: green;
 }
@@ -33,6 +35,7 @@ p {
 }
 
 .medium {
+    font-family: 'Source Sans Pro';
     font-size: 60px;
 }
 
@@ -115,6 +118,11 @@ h1{
     background-image: url('background.png');
     background-size: cover;
     height: 1600px;
+}
+
+.large-text {
+    font-family: 'Pacifico';
+    font-size: 70px;
 }
 
 .smalltext {
