@@ -169,14 +169,40 @@ h1{
     padding-top: 33px;
 }
 
+.full-screen {
+    height: 100%;
+    width: 100%;
+}
+
+#bg {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.background-img {
+    background: url('dark-bg.jpg');
+}
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
 .backgroudWeb {
-    background-image: url('dark-bg.jpg');
+    background: url('dark-bg.jpg');
     background-color: darkgrey;
     background-size: cover;
     margin: 0px;
     padding: 0px;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .large-text {
