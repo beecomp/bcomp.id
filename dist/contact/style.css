@@ -70,6 +70,14 @@ p {
     font-style: italic;
 }
 
+p {
+    font-size: 50px;
+    margin: 5px;
+    padding-left: 70px;
+    color: orange;
+    font-style: bold;
+}
+
 .bold {
     font-style: bold;
 }
@@ -78,8 +86,12 @@ p {
     text-align: center;
 }
 
+.paddingUp {
+    padding: 50px;
+}
+
 body{
-    background: #00ECB9;
+    background: url('dark-bg.jpg');
     font-family: 'Montserrat';
     font-weight: 100;
 }
@@ -152,14 +164,14 @@ h1{
 }
 
 #clockdiv > div{
-	padding: 20px;
-	border-radius: 3px;
+	padding: 40px;
+	border-radius: 5px;
 	background: darkgrey;
 	display: inline-block;
 }
 
 #clockdiv div > span{
-	padding: 15px;
+	padding: 20px;
 	border-radius: 3px;
 	background: black;
 	display: inline-block;
@@ -169,12 +181,36 @@ h1{
     padding-top: 33px;
 }
 
+.full-screen {
+    height: 100%;
+    width: 100%;
+}
+
+#bg {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+}
+
+
+#bg img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  min-width: 50%;
+  min-height: 50%;
+}
+
 .backgroudWeb {
-    background-image: url('dark-bg.jpg');
+    background: url('dark-bg.jpg');
     background-color: darkgrey;
     background-size: cover;
-    padding-bottom: 0px;
-    height: 1300px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .large-text {

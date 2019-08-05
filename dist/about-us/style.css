@@ -62,23 +62,20 @@ p {
     font-size: 30px;
 }
 
-.img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-
 .superLarge {
-    font-size: 120px;
+    font-size: 90px;
 }
 
 .italic {
     font-style: italic;
+}
+
+p {
+    font-size: 50px;
+    margin: 5px;
+    padding-left: 70px;
+    color: orange;
+    font-style: bold;
 }
 
 .bold {
@@ -89,8 +86,12 @@ p {
     text-align: center;
 }
 
+.paddingUp {
+    padding: 50px;
+}
+
 body{
-    background: #00ECB9;
+    background: url('dark-bg.jpg');
     font-family: 'Montserrat';
     font-weight: 100;
 }
@@ -148,8 +149,8 @@ h1{
 	font-size: 100px;
 }
 
-.paddingAdd {
-    padding-top: 300px;
+.padding150px {
+    padding-top: 150px;
 }
 
 .makeMid2 {
@@ -163,14 +164,14 @@ h1{
 }
 
 #clockdiv > div{
-	padding: 20px;
-	border-radius: 3px;
+	padding: 40px;
+	border-radius: 5px;
 	background: darkgrey;
 	display: inline-block;
 }
 
 #clockdiv div > span{
-	padding: 15px;
+	padding: 20px;
 	border-radius: 3px;
 	background: black;
 	display: inline-block;
@@ -180,18 +181,36 @@ h1{
     padding-top: 33px;
 }
 
-.backgroudWeb {
-    background-image: url('dark-bg.jpg');
-    background-color: darkgrey;
-    background-size: cover;
-    padding-bottom: 0px;
-    height: 3000px;
+.full-screen {
+    height: 100%;
+    width: 100%;
 }
 
-p {
-    margin-left: 90px;
-    font-size: 50px;
-    color: orange;
+#bg {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+}
+
+
+#bg img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.backgroudWeb {
+    background: url('dark-bg.jpg');
+    background-color: darkgrey;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
 
 .large-text {
