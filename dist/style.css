@@ -135,6 +135,14 @@ h1{
 	font-size: 30px;
 }
 
+.padding150px {
+    padding-top: 150px;
+}
+
+.makeMid2 {
+    margin-bottom: 100px;
+}
+
 .hyperlink-background {
     display: inline-flex;
     background-color: red;
