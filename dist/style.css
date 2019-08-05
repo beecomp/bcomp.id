@@ -26,8 +26,8 @@ p {
     background-image: url('bee.png');
     width: 100px;
     height: 100px;
-    padding: 0px;
-    margin: 0px;
+    padding-right: 0px;
+    margin-right: 50px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -42,6 +42,14 @@ p {
 
 .red {
     color: red;
+}
+
+.white {
+    color: white;
+}
+
+.display-in-line {
+    display: inline-block;
 }
 
 .medium {
@@ -77,10 +85,10 @@ body{
 
 a {
     font-family: 'Pacifico';
-    font-size: 30px;
-    color: pink;
+    font-size: 38.55px;
+    color: yellow;
     background: red;
-    margin-right: 5px;
+    margin-right: 20px;
     padding: 5px;
     text-decoration: none;
 }
@@ -121,7 +129,9 @@ h1{
 }
 
 .hyperlink-background {
-    display: block;
+    display: inline-flex;
+    background-color: red;
+    margin-top: 0px;
 }
 
 #clockdiv > div{
@@ -136,6 +146,10 @@ h1{
 	border-radius: 3px;
 	background: #00816A;
 	display: inline-block;
+}
+
+.makeMid {
+    padding-top: 22px;
 }
 
 .backgroudWeb {
