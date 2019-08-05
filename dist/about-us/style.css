@@ -115,7 +115,8 @@ a {
 h1{
     font-weight: 100;
     font-size: 40px;
-    margin: 40px 0px 20px;
+    margin: auto;
+    padding-left: 100px;
 }
 
 .clear-top {
@@ -150,6 +151,10 @@ h1{
 
 .padding150px {
     padding-top: 150px;
+}
+
+.pad-l {
+    padding-left: 100px;
 }
 
 .makeMid2 {
