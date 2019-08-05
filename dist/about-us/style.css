@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* :root {
     --red: red;
     --green: green;
@@ -53,7 +54,7 @@ p {
 }
 
 .medium {
-    font-family: 'Source Sans Pro';
+    font-family: 'Montserrat';
     font-size: 60px;
 }
 
@@ -79,7 +80,7 @@ p {
 
 body{
     background: #00ECB9;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-weight: 100;
 }
 
@@ -89,12 +90,12 @@ body{
     width:100%;
 }
 
+
 a {
-    font-family: 'Pacifico';
-    font-size: 38px;
+    font-family: 'Montserrat';
+    font-size: 30px;
     display: block;
-    color: yellow;
-    background: red;
+    color: black;
     margin-right: 20px;
     padding: 5px;
     text-decoration: none;
@@ -128,11 +129,12 @@ h1{
 
 #clockdiv{
 	font-family: sans-serif;
-	color: yellow;
+	color: white;
 	display: inline-block;
+    padding: 100px;
 	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	font-size: 100px;
 }
 
 .padding150px {
@@ -145,40 +147,42 @@ h1{
 
 .hyperlink-background {
     display: inline-flex;
-    background-color: red;
+    background-color: white;
     margin-top: 0px;
 }
 
 #clockdiv > div{
 	padding: 20px;
 	border-radius: 3px;
-	background: #00BF96;
+	background: darkgrey;
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #00816A;
+	background: black;
 	display: inline-block;
 }
 
 .makeMid {
-    padding-top: 22px;
+    padding-top: 33px;
 }
 
 .backgroudWeb {
-    background-image: url('background.png');
+    background-image: url('dark-bg.jpg');
+    background-color: darkgrey;
     background-size: cover;
+    padding-bottom: 0px;
     height: 1300px;
 }
 
 .large-text {
-    font-family: 'Pacifico';
+    font-family: 'Montserrat';
     font-size: 70px;
 }
 
 .smalltext {
-	padding-top: 5px;
-	font-size: 16px;
+	padding: 10px;
+	font-size: 40px;
 }
