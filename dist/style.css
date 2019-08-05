@@ -79,7 +79,7 @@ p {
 }
 
 body{
-    background: #00ECB9;
+    background: url('dark-bg.jpg');
     font-family: 'Montserrat';
     font-weight: 100;
 }
@@ -175,7 +175,6 @@ h1{
 }
 
 #bg {
-  position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -187,7 +186,6 @@ h1{
 }
 
 #bg img {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
