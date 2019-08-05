@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
+/* :root {
+    --red: red;
+    --green: green;
+}
+
+body {
+    background-color: yellow;
+}
+
+h1 {
+    font-family: 'Source Sans Pro';
+}
+
+p {
+
+} */
+
+.green {
+    color: green;
+}
+
+.logo {
+    background-image: url('bee.png');
+    width: 100px;
+    height: 100px;
+    padding-right: 0px;
+    margin-right: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.pink {
+    color: pink;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+}
+
+.display-in-line {
+    display: inline-block;
+}
+
+.medium {
+    font-family: 'Source Sans Pro';
+    font-size: 60px;
+}
+
+.small {
+    font-size: 30px;
+}
+
+.superLarge {
+    font-size: 90px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-style: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+body{
+    background: #00ECB9;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.entire-line {
+    position:absolute;
+    left:0;
+    width:100%;
+}
+
+a {
+    font-family: 'Pacifico';
+    font-size: 38px;
+    display: block;
+    color: yellow;
+    background: red;
+    margin-right: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+.clear-top {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.clear-left {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.clear-right {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.clear-bot {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: yellow;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+.padding150px {
+    padding-top: 150px;
+}
+
+.makeMid2 {
+    margin-bottom: 100px;
+}
+
+.hyperlink-background {
+    display: inline-flex;
+    background-color: red;
+    margin-top: 0px;
+}
+
+#clockdiv > div{
+	padding: 20px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.makeMid {
+    padding-top: 22px;
+}
+
+.backgroudWeb {
+    background-image: url('background.png');
+    background-size: cover;
+    height: 1300px;
+}
+
+.large-text {
+    font-family: 'Pacifico';
+    font-size: 70px;
+}
+
+.smalltext {
+	padding-top: 5px;
+	font-size: 16px;
+}
