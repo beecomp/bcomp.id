@@ -62,6 +62,10 @@ p {
     font-size: 30px;
 }
 
+#div1 {
+    width: 100%;
+}
+
 .superLarge {
     font-size: 90px;
 }
@@ -86,10 +90,6 @@ p {
     text-align: center;
 }
 
-.paddingUp {
-    padding: 50px;
-}
-
 body{
     background: url('dark-bg.jpg');
     font-family: 'Montserrat';
@@ -101,7 +101,6 @@ body{
     left:0;
     width:100%;
 }
-
 
 a {
     font-family: 'Montserrat';
@@ -195,14 +194,13 @@ h1{
 
 
 #bg img {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-
-  min-width: 50%;
-  min-height: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 .backgroudWeb {
