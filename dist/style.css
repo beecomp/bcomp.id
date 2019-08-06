@@ -20,6 +20,7 @@ p {
 
 } */
 
+
 .green {
     color: green;
 }
@@ -106,7 +107,7 @@ h1{
 }
 
 .makeBorder {
-    border: 5px solid #171716;
+    border: 5px solid #131313;
 }
 
 .clear-top {
@@ -160,10 +161,6 @@ h1{
     color: black;
 }
 
-.padding150px {
-    padding-top: 150px;
-}
-
 .makeMid2 {
     margin-bottom: 100px;
 }
@@ -188,6 +185,12 @@ h1{
     width: 50%;
     right: 0;
     position: absolute;
+}
+
+.poster {
+    width: 100%;
+    height: 1839px;
+    background: url('3.png');
 }
 
 #image1 {
