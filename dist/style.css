@@ -24,13 +24,17 @@ p {
 }
 
 .logo {
-    background-image: url('bee.png');
+    background-image: url('logo.png');
     width: 100px;
     height: 100px;
     padding-right: 0px;
     margin-right: 50px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .cyan {
@@ -149,6 +153,37 @@ h1{
     display: inline-flex;
     background-color: white;
     margin-top: 0px;
+}
+
+.half-width-left {
+    width: 50%;
+    left: 0;
+    position: absolute;
+}
+
+.spacing {
+    padding-bottom: 667px;
+}
+
+.half-width-right {
+    width: 50%;
+    right: 0;
+    position: absolute;
+}
+
+#image1 {
+    background: url('IMG_0031.png');
+    height: 667px;
+}
+
+#image2 {
+    background: url('IMG_2604.JPG');
+    height: 667px;
+}
+
+#image3 {
+    background: url('IMG_9160.JPG');
+    height: 667px;
 }
 
 #clockdiv > div{
