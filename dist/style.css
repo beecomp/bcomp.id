@@ -130,6 +130,10 @@ h1{
     margin-bottom: 0;
 }
 
+.margin-l {
+    margin-left: 55px;
+}
+
 #clockdiv > div{
     padding: 30px;
     border-radius: 10000px;
@@ -157,6 +161,22 @@ h1{
     font-weight: bold;
 }
 
+#ig-logo {
+    width: 50px;
+    height: 50px;
+    background: url('instagram.jpeg');
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#gmail-logo {
+    width: 50px;
+    height: 50px;
+    background: url('gmail-logo.png');
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .black {
     color: black;
 }
@@ -169,6 +189,10 @@ h1{
     display: inline-flex;
     background-color: white;
     margin-top: 0px;
+}
+
+.media-bg {
+    background-color: white;
 }
 
 .half-width-left {
@@ -185,6 +209,21 @@ h1{
     width: 50%;
     right: 0;
     position: absolute;
+}
+
+.no-l-margin {
+    margin-left: 0;
+}
+.no-r-margin {
+    margin-right: 0;
+}
+
+.no-b-margin {
+    margin-bottom: 0;
+}
+
+.no-t-margin {
+    margin-top: 0;
 }
 
 .poster {
@@ -241,15 +280,23 @@ h1{
     width: 100%;
 }
 
+.block-disp {
+    display: block;
+}
+
+.background-img {
+    background: url('dark-bg.jpg');
+}
+
+.inline-flex-dist {
+    display: inline-flex;
+}
+
 #bg {
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-}
-
-.background-img {
-    background: url('dark-bg.jpg');
 }
 
 #bg img {
@@ -268,6 +315,10 @@ h1{
     background-size: cover;
     margin: 0px;
     padding: 0px;
+}
+
+.white-bg {
+    background: white;
 }
 
 .large-text {
