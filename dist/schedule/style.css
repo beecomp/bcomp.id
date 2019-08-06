@@ -71,7 +71,7 @@ p {
 }
 
 .pad-l {
-    padding-left: 100px;
+    padding-left: 200px;
 }
 
 table {
@@ -86,11 +86,13 @@ table {
 }
 
 td {
+    font-style: 'Montserrat';
     color: white;
     text-align: center;
 }
 
 th {
+    font-style: 'Montserrat';
     color: white;
     text-align: left;
 }

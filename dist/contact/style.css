@@ -205,12 +205,25 @@ h1{
   min-height: 50%;
 }
 
+table {
+    font-size: 50px;
+    color: white;
+}
+
+tr {
+    text-align: center;
+}
+
 .backgroudWeb {
     background: url('dark-bg.jpg');
     background-color: darkgrey;
     background-size: cover;
     margin: 0px;
     padding: 0px;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .large-text {
