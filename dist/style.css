@@ -69,7 +69,7 @@ p {
 }
 
 .bold {
-    font-style: bold;
+    font-weight: bold;
 }
 
 .center {
@@ -103,6 +103,10 @@ h1{
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
+}
+
+.makeBorder {
+    border: 5px solid white;
 }
 
 .clear-top {
@@ -148,6 +152,8 @@ h1{
 	font-weight: 100;
 	text-align: center;
 	font-size: 75px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 .black {
