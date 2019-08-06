@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 /* :root {
     --red: red;
     --green: green;
@@ -27,10 +28,7 @@ p {
     background-image: url('logo.png');
     width: 100px;
     height: 100px;
-    padding-right: 0px;
     margin-right: 50px;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .full-width {
@@ -51,10 +49,6 @@ p {
 
 .white {
     color: white;
-}
-
-.display-in-line {
-    display: inline-block;
 }
 
 .medium {
@@ -131,14 +125,33 @@ h1{
     margin-bottom: 0;
 }
 
+#clockdiv > div{
+    padding: 30px;
+    border-radius: 10000px;
+    background: white;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 50px;
+    border-radius: 100px;
+    background: black;
+    display: inline-block;
+}
+
 #clockdiv{
 	font-family: sans-serif;
 	color: white;
 	display: inline-block;
-    padding: 100px;
+    padding-bottom: 100px;
+    padding-top: 40px;
 	font-weight: 100;
 	text-align: center;
-	font-size: 100px;
+	font-size: 75px;
+}
+
+.black {
+    color: black;
 }
 
 .padding150px {
@@ -201,19 +214,14 @@ h1{
     height: 434px;
 }
 
-#clockdiv > div{
-	padding: 40px;
-	border-radius: 5px;
-	background: darkgrey;
-	display: inline-block;
+.font-pacifico {
+    font-family: 'Pacifico';
 }
 
-#clockdiv div > span{
-	padding: 20px;
-	border-radius: 3px;
-	background: black;
-	display: inline-block;
+.font-courgette {
+    font-family: 'Courgette';
 }
+
 
 .makeMid {
     padding-top: 33px;
