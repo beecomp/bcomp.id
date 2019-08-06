@@ -162,7 +162,7 @@ h1{
 }
 
 .spacing {
-    padding-bottom: 667px;
+    padding-bottom: 434px;
 }
 
 .half-width-right {
@@ -173,17 +173,32 @@ h1{
 
 #image1 {
     background: url('IMG_0031.png');
-    height: 667px;
+    height: 434px;
 }
 
 #image2 {
-    background: url('IMG_2604.JPG');
-    height: 667px;
+    background: url('IMG_2605.JPG');
+    height: 434px;
 }
 
 #image3 {
     background: url('IMG_9160.JPG');
-    height: 667px;
+    height: 434px;
+}
+
+#image4 {
+    background: url('IMG_9185.JPG');
+    height: 434px;
+}
+
+#image5 {
+    background: url('DSC_0897.JPG');
+    height: 434px;
+}
+
+#image6 {
+    background: url('DSC_0906.JPG');
+    height: 434px;
 }
 
 #clockdiv > div{
