@@ -24,7 +24,7 @@ p {
 }
 
 .logo {
-    background-image: url('bee.png');
+    background-image: url('logo.png');
     width: 100px;
     height: 100px;
     padding-right: 0px;
@@ -75,7 +75,7 @@ p {
 }
 
 p {
-    font-size: 50px;
+    font-size: 35px;
     margin: 5px;
     padding-left: 70px;
     color: white;
