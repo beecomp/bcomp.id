@@ -23,6 +23,10 @@ p {
     color: green;
 }
 
+.make-middle {
+    margin-top: 30%;
+}
+
 .logo {
     background-image: url('logo.png');
     width: 100px;
@@ -151,8 +155,13 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+}
+
+.click-button-font {
+    margin-right: 20px;
+    font-size: 45px;
 }
 
 .padding150px {
