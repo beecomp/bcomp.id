@@ -143,6 +143,18 @@ h1{
 	font-size: 100px;
 }
 
+#click-button {
+    background: url('click-button.png');
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+}
+
 .padding150px {
     padding-top: 150px;
 }
