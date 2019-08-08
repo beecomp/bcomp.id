@@ -270,6 +270,26 @@ h1{
     height: 434px;
 }
 
+#image7 {
+    background: url('IMG_3540.JPG');
+    height: 434px;
+}
+
+#image8 {
+    background: url('IMG_3651.JPG');
+    height: 434px;
+}
+
+#image9 {
+    background: url('IMG_3900.JPG');
+    height: 434px;
+}
+
+#image10 {
+    background: url('IMG_4212.JPG');
+    height: 434px;
+}
+
 .font-pacifico {
     font-family: 'Pacifico';
 }
