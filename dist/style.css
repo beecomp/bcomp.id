@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 /* :root {
     --red: red;
     --green: green;
@@ -20,6 +20,17 @@ p {
 
 } */
 
+#prize-header {
+    background-image: url('prize-header.png');
+    width: 300px;
+    height: 171px;
+}
+
+#prize {
+    background-image: url('Prize.png');
+    width: 1000px;
+    height: 1000px;
+}
 
 #bcomp {
     background-image: url('Title.png');
@@ -117,7 +128,7 @@ a {
 h1{
     font-weight: 100;
     font-size: 40px;
-    margin: 40px 0px 20px;
+    font-family: 'Montserrat';
 }
 
 .makeBorder {
@@ -164,6 +175,10 @@ h1{
     margin-left: 55px;
 }
 
+.padding-inc-t2 {
+    padding-top: 20px;
+}
+
 .padding-inc-t {
     padding-top: 0.1px;
 }
@@ -202,7 +217,7 @@ h1{
     padding-top: 20px;
 	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
     font-family: 'Montserrat';
     font-weight: bold;
     border-radius: 10000px;
