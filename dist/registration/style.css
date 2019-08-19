@@ -28,7 +28,7 @@ p {
 }
 
 .logo {
-    background-image: url('logo.png');
+    background-image: url('logofix.png');
     width: 100px;
     height: 100px;
     margin-right: 50px;
@@ -148,7 +148,9 @@ h1{
 }
 
 #click-button {
-    background: url('click-button.png');
+    background: url('regis.png');
+    width: 800px;
+    height: 550px;
 }
 
 .img-center {
