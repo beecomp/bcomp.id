@@ -24,7 +24,7 @@ p {
 }
 
 .logo {
-    background-image: url('logo.png');
+    background-image: url('logofix.png');
     width: 100px;
     height: 100px;
     margin-right: 50px;
@@ -215,4 +215,8 @@ h1{
 .smalltext {
 	padding: 10px;
 	font-size: 40px;
+}
+
+.margin-add-b {
+    margin-bottom: 70px;
 }
