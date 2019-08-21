@@ -20,6 +20,11 @@ p {
 
 } */
 
+#navbar {
+    background-color: white;
+    width: 100%;
+}
+
 #prize-header {
     background-image: url('prize-header.png');
     width: 300px;
@@ -270,6 +275,9 @@ span {
     display: inline-flex;
     background-color: white;
     margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .media-bg {
