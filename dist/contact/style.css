@@ -11,13 +11,102 @@ body {
     background-color: yellow;
 }
 
-h1 {
-    font-family: 'Source Sans Pro';
-}
 
 p {
 
 } */
+
+h1 {
+    font-family: 'Montserrat';
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.no-l-margin {
+    margin-left: 0;
+}
+.no-r-margin {
+    margin-right: 0;
+}
+
+.no-b-margin {
+    margin-bottom: 0;
+}
+
+.no-t-margin {
+    margin-top: 0;
+}
+
+.margin-l {
+    margin-left: 55px;
+}
+
+.inline-flex-dist {
+    display: inline-flex;
+}
+
+#ig-logo {
+    width: 50px;
+    height: 50px;
+    background: url('instagram.jpeg');
+    margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#phone-icon {
+    width: 50px;
+    height: 50px;
+    background: url('phone-outline.png');
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+#gmail-logo {
+    width: 50px;
+    height: 50px;
+    background: url('gmail-logo.png');
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+#whatsapp-logo {
+    width: 50px;
+    height: 50px;
+    background: url('whatsapp-icon.jpg');
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.padding-inc-t2 {
+    padding-top: 20px;
+}
+
+.padding-inc-t {
+    padding-top: 40px;
+}
+
+.padding-inc-b {
+    padding-bottom: 30px;
+}
+
+.padding-inc-l {
+    padding-left: 50px;
+}
+
+.padding-inc-r {
+    padding-right: 50px;
+}
+
+.media-bg {
+    background-color: white;
+}
 
 #header {
     background-image: url('Contact.png');
