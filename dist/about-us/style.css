@@ -19,6 +19,12 @@ p {
 
 } */
 
+#infopsb {
+    background-image: url('infopsb.png');
+    width: 1000px;
+    height: 717px;
+}
+
 #header {
     background-image: url('about-us-header.png');
     width: 300px;
@@ -232,5 +238,5 @@ h1{
 }
 
 .margin-add-b {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }

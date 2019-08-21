@@ -20,6 +20,18 @@ p {
 
 } */
 
+#buttonGuidebook {
+    background-image: url('Guidebookbutton.png');
+    width: 717px;
+    height: 241px;
+}
+
+#buttonP1 {
+    background-image: url('P1button.png');
+    width: 716px;
+    height: 237px;
+}
+
 #prize-header {
     background-image: url('prize-header.png');
     width: 300px;
@@ -431,4 +443,8 @@ span {
 
 .margin-inc-t {
     margin-top: 70px;
+}
+
+.margin-inc-l {
+    margin-left: 100px;
 }
