@@ -32,6 +32,12 @@ p {
     height: 237px;
 }
 
+#submissionAS {
+    background-image: url('submitbutton.png');
+    width: 716px;
+    height: 237px;
+}
+
 #prize-header {
     background-image: url('prize-header.png');
     width: 300px;
