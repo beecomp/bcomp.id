@@ -246,6 +246,16 @@ span {
     margin-bottom: 0;
 }
 
+
+#phone-icon {
+    width: 50px;
+    height: 50px;
+    background: url('phone-outline.png');
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
 #gmail-logo {
     width: 50px;
     height: 50px;
@@ -260,7 +270,7 @@ span {
     height: 50px;
     background: url('icon-telpon.jpg');
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 .black {
