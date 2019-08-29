@@ -33,9 +33,9 @@ p {
 }
 
 #submissionAS {
-    background-image: url('submitbutton.png');
-    width: 716px;
-    height: 237px;
+    background-image: url('Submit_button.png');
+    width: 800px;
+    height: 550px;
 }
 
 #prize-header {
