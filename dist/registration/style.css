@@ -56,6 +56,12 @@ p {
     height: 467px;
 }
 
+#lj-button {
+    background-image: url('lj_button.png');
+    width: 716px;
+    height: 237px;
+}
+
 #header {
     background-image: url('Registration.png');
     width: 300px;
