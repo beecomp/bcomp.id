@@ -28,6 +28,12 @@ p {
     margin-right: 0;
 }
 
+div.sticky {
+  position: sticky;
+  width: 100%;
+  bottom: 0px;
+}
+
 .no-b-margin {
     margin-bottom: 0;
 }
