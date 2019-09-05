@@ -94,6 +94,7 @@ table, th, td {
     border: 5px solid white;
     padding: 20px;
     border-spacing: 5px;
+    width: 100px;
     height: 100%;
     font-style: 'Montserrat';
 }
