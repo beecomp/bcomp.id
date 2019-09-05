@@ -16,9 +16,16 @@ p {
 
 } */
 
+
 #bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+.full-height {
+    height: 100%;
 }
 
 .no-l-margin {
@@ -31,7 +38,7 @@ p {
 div.sticky {
   position: sticky;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .no-b-margin {
@@ -198,14 +205,14 @@ p {
     padding: 50px;
 }
 
-body{
+body {
     background: url('dark-bg.jpg');
     font-family: 'Montserrat';
     font-weight: 100;
-    margin: 0;
+    height: 100%;
 }
 
-.full-width {
+.th {
     width:100%;
 }
 
