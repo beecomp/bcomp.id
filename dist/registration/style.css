@@ -19,6 +19,15 @@ p {
 
 } */
 
+.img-right {
+    float: right;
+}
+
+#how-to-register {
+    background-image: url('how_to_register.png');
+    width: 400px;
+    height: 132px;
+}
 
 #buttonGuidebook {
     background-image: url('Guidebookbutton.png');
