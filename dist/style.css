@@ -20,6 +20,12 @@ p {
 
 } */
 
+#reminder {
+    background-image: url('important_announcement.gif');
+    height: 600px;
+    width: 1000px;
+}
+
 #navbar {
     background-color: white;
     width: 100%;
