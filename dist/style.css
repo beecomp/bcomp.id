@@ -28,8 +28,8 @@ p {
 
 #reminder {
     background-image: url('important_announcement.gif');
-    height: 600px;
-    width: 1000px;
+    height: 540px;
+    width: 900px;
 }
 
 #navbar {
@@ -45,14 +45,14 @@ p {
 
 #prize {
     background-image: url('Prize.png');
-    width: 1000px;
-    height: 1000px;
+    width: 900px;
+    height: 900px;
 }
 
 #bcomp {
     background-image: url('Title.png');
-    width: 1000px;
-    height: 467px;
+    width: 900px;
+    height: 420px;
 }
 
 .green {
