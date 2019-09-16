@@ -20,6 +20,12 @@ p {
 
 } */
 
+#timeline {
+    background-image: url('timeline.png');
+    height: 600px;
+    width: 1200px;
+}
+
 #reminder {
     background-image: url('important_announcement.gif');
     height: 600px;
