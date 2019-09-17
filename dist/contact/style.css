@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Lacquer|Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* :root {
-    --red: red;
-    --green: green;
+--red: red;
+--green: green;
 }
 
 body {
-    background-color: yellow;
+background-color: yellow;
 }
 
 
@@ -16,13 +16,6 @@ p {
 
 } */
 
-
-#bottom {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-}
 
 .full-height {
     height: 100%;
@@ -36,9 +29,9 @@ p {
 }
 
 div.sticky {
-  position: sticky;
-  width: 100%;
-  bottom: 0;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
 }
 
 .no-b-margin {
@@ -254,13 +247,13 @@ h1{
 }
 
 #clockdiv{
-	font-family: sans-serif;
-	color: white;
-	display: inline-block;
+    font-family: sans-serif;
+    color: white;
+    display: inline-block;
     padding: 100px;
-	font-weight: 100;
-	text-align: center;
-	font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 100px;
 }
 
 .padding150px {
@@ -278,17 +271,17 @@ h1{
 }
 
 #clockdiv > div{
-	padding: 40px;
-	border-radius: 5px;
-	background: darkgrey;
-	display: inline-block;
+    padding: 40px;
+    border-radius: 5px;
+    background: darkgrey;
+    display: inline-block;
 }
 
 #clockdiv div > span{
-	padding: 20px;
-	border-radius: 3px;
-	background: black;
-	display: inline-block;
+    padding: 20px;
+    border-radius: 3px;
+    background: black;
+    display: inline-block;
 }
 
 .makeMid {
@@ -296,7 +289,7 @@ h1{
 }
 
 .full-screen {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -309,14 +302,14 @@ h1{
 
 
 #bg img {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 
-  min-width: 50%;
-  min-height: 50%;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 table {
@@ -346,6 +339,10 @@ tr {
 }
 
 .smalltext {
-	padding: 10px;
-	font-size: 40px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.container {
+    min-height: 100vh;
 }
