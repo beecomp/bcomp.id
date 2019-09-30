@@ -24,6 +24,12 @@ p {
     text-align: center;
 }
 
+#dokumentasi {
+    background-image: url('dokum.png');
+    height : 237px;
+    width: 716px;
+}
+
 #timeline {
     background-image: url('timeline.png');
     height: 450px;
