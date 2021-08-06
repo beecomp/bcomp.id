@@ -8,6 +8,7 @@
 		faPencilAlt,
 	} from "@fortawesome/free-solid-svg-icons";
 	import { faWhatsapp, faLine, faInstagram } from "@fortawesome/free-brands-svg-icons";
+	import bca from "./bca.svg";
 	import Carousel from "svelte-carousel";
 </script>
 
@@ -40,8 +41,8 @@
 					<div class="simple-card py-4 ib-gradient mt-8">
 						<div class="flex flex-col items-center">
 							<Icon icon={faTrophy} class="text-9xl mt-4 text-white" />
-							<div class="text-white font-bold text-2xl mt-3">Champion</div>
-							<div class="text-white font-bold text-5xl sm:text-2xl pt-8 lg:text-3xl">
+							<div class="text-white font-bold text-4xl sm:text-2xl mt-3">Champion</div>
+							<div class="text-white font-bold text-5xl sm:text-2xl pt-2 sm:pt-8 lg:text-3xl">
 								Rp 3.000.000
 							</div>
 						</div>
@@ -130,37 +131,74 @@
 				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
 					<div class="flex flex-col items-center justify-between">
 						<Icon icon={faPencilAlt} class="text-6xl m-4 text-white" />
+						<div class="text-white font-bold mt-1 text-center ">Penyisihan 2</div>
+						<div class="text-white font-bold text-xl">6 Sept 2021</div>
+					</div>
+				</div>
+				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
+					<div class="flex flex-col items-center justify-between">
+						<Icon icon={faPencilAlt} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1 text-center ">Semifinal</div>
-						<div class="text-white font-bold text-xl">11 Sept 2021</div>
+						<div class="text-white font-bold text-xl">7 Sept 2021</div>
 					</div>
 				</div>
 				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
 					<div class="flex flex-col items-center">
 						<Icon icon={faPencilAlt} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1">Final</div>
-						<div class="text-white font-bold text-xl">12 Sept 2021</div>
+						<div class="text-white font-bold text-xl">10 Sept 2021</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div>
-			<h1 class="text-center text-5xl font-black my-6">Penyisihan</h1>
-			Penyisihan dilakukan secara online Bacon ipsum dolor amet duis tempor ribeye, chicken pork belly
-			buffalo reprehenderit sausage ham id chuck nostrud shankle occaecat ullamco. Doner irure aliquip
-			fatback ullamco pig et cillum pork chop spare ribs. Enim pork chop adipisicing pig nostrud labore
-			ad frankfurter esse t-bone prosciutto. Ball tip ad beef adipisicing, shankle jowl exercitation
-			aute tenderloin flank ea sausage shoulder. Corned beef irure nulla spare ribs tenderloin turducken
-			in meatloaf exercitation chuck.
+			<h1 class="text-center text-5xl font-black my-6">Cara Berpartisipasi</h1>
+
+			<h2 class="text-center text-3xl font-black mt-6 mb-2">Baca Guidebook</h2>
+			<div class="flex flex-row justify-center space-x-4">
+				<button
+					type="button"
+					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+				>
+					Matematika
+				</button>
+				<button
+					type="button"
+					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+				>
+					IPA
+				</button>
+			</div>
+
+			<h2 class="text-center text-3xl font-black mt-6">Bayar Rp 100.000,- per tim</h2>
+			<div class="flex flex-row justify-center mt-2">
+				<div class="w-72 shadow-lg rounded-2xl bg-white dark:bg-gray-800 p-4">
+					<div class="flex-row gap-4 flex justify-center items-center">
+						<div class="flex-shrink-0">
+							<a href="#" class="block relative">
+								<img alt="profil" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
+							</a>
+						</div>
+						<div class=" flex flex-col">
+							<span class="text-gray-800 dark:text-white text-lg font-bold">6050 5757 97</span>
+							<span class="text-gray-600 text-xs"> Lucia Helda Sofyananigrum </span>
+							<span class="text-gray-600 text-xs"> Dimas Ambrosius Kridhananda </span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-center text-3xl font-black mt-6">Isi form pendaftaran</h2>
 			<div class="flex flex-row justify-center mt-2">
 				<button
 					type="button"
 					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
 				>
-					<span class="text-2xl">Daftar Sekarang!</span>
+					<span class="text-2xl">Isi Form</span>
 				</button>
 			</div>
 
-			<h2 class="text-center text-3xl font-black my-4">Download Guidebook</h2>
+			<h2 class="text-center text-3xl font-black mt-6 mb-2">Kerjakan Soal</h2>
 			<div class="flex flex-row justify-center space-x-4">
 				<button
 					type="button"
@@ -175,21 +213,19 @@
 					IPA
 				</button>
 			</div>
-
-			<h2 class="text-center text-3xl font-black my-4">Download Soal & Lembar Jawab</h2>
-			<div class="flex flex-row justify-center space-x-4">
+			<h2 class="text-center text-3xl font-black mt-6">Kumpulkan Jawaban Sebelum 1 September</h2>
+			<div class="flex flex-row justify-center mt-2">
 				<button
 					type="button"
 					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
 				>
-					Matematika
+					<span class="text-2xl">Kumpulkan</span>
 				</button>
-				<button
-					type="button"
-					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
-				>
-					IPA
-				</button>
+			</div>
+			<h2 class="text-center text-3xl font-black mt-6">Tunggu Pengumuman</h2>
+			<div class="max-w-3xl mx-auto mt-2">
+				80% dari peserta dan sebanyak-banyak nya 50 orang dari setiap bidang akan diloloskan ke maju
+				ke tahap selanjutnya
 			</div>
 		</div>
 		<div>
