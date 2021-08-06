@@ -2,9 +2,9 @@
 	import logo from "./wide-logo-small.png";
 	export let path;
 	import { scrollTo } from "svelte-scrolling";
-	import { setGlobalOptions } from "svelte-scrolling";
+	import ss from "svelte-scrolling";
 
-	setGlobalOptions({
+	ss.setGlobalOptions({
 		offset: -80,
 	});
 </script>
