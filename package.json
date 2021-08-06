@@ -31,6 +31,7 @@
     "dependencies": {
         "@auth0/auth0-spa-js": "^1.16.1",
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
-        "svelte-carousel": "^1.0.10"
+        "svelte-carousel": "^1.0.10",
+        "svelte-scrolling": "^1.0.7"
     }
 }

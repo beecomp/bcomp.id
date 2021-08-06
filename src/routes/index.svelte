@@ -10,7 +10,8 @@
 	import { faWhatsapp, faLine, faInstagram } from "@fortawesome/free-brands-svg-icons";
 	import bca from "./bca.svg";
 	import bigboi from "./bigboi.png";
-	import Carousel from "svelte-carousel";
+
+	import { scrollRef } from "svelte-scrolling";
 
 	function href(url) {
 		return () => {
@@ -19,7 +20,7 @@
 	}
 </script>
 
-<div class="container mx-auto">
+<div use:scrollRef={"top-index"} class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 		<div class="flex flex-col items-center">
 			<img src={bigboi} alt="" />
@@ -27,7 +28,7 @@
 
 		<div class="text-6xl text-center font-black -mt-12">Brilliant Competition XIII</div>
 		<div class="text-3xl text-center font-black">Unlocking your brilliance</div>
-		<div>
+		<div use:scrollRef={"prizes"}>
 			<h1 class="text-center text-5xl font-black my-6">Prizes</h1>
 			<div class="flex flex-col sm:flex-row justify-center sm:space-x-3">
 				<div class="hidden md:block flex-grow">
@@ -120,7 +121,7 @@
 			</div>
 		</div>
 
-		<div>
+		<div use:scrollRef={"schedule"}>
 			<h1 class="text-center text-5xl font-black my-6">Schedule</h1>
 			<div
 				class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-4 md:space-y-0"
@@ -162,7 +163,7 @@
 				</div>
 			</div>
 		</div>
-		<div>
+		<div use:scrollRef={"howto"}>
 			<h1 class="text-center text-5xl font-black my-6">Cara Berpartisipasi</h1>
 
 			<h2 class="text-center text-3xl font-black mt-6 mb-2">Baca Guidebook</h2>
@@ -240,7 +241,7 @@
 				ke tahap selanjutnya
 			</div>
 		</div>
-		<div>
+		<div use:scrollRef={"about-us"}>
 			<h1 class="text-center text-5xl font-black my-6">About Us</h1>
 			<div class="shadow-lg rounded-xl bg-white p-8 pt-4">
 				<p class="text-justify">
