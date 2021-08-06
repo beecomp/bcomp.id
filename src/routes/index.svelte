@@ -259,34 +259,34 @@
 >
 	<div>
 		<span class="text-2xl font-bold">Contact</span>
-		<ul class="mt-1">
+		<ul class="mt-1 space-y-2">
 			<li>
 				<a
-					href="https://api.whatsapp.com/send?phone=6281333047708&text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
-					class="font-bold"
+					href="https://wa.me/628133304778?text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
+					class="font-bold text-lg sm:text-base"
 				>
-					<Icon icon={faWhatsapp} class="text-2xl" />
-					+62 813 3304 7708 (Elva)
+					<Icon icon={faWhatsapp} class="text-3xl" />
+					+62 813 3304 778 (Elva)
 				</a>
 			</li>
 			<li>
 				<a
-					href="https://api.whatsapp.com/send?phone=6287786717147&text=Hi Rachel! Saya ingin bertanya tentang Brilliant Competition XIII"
-					class="font-bold"
+					href="https://wa.me/6287786717147?text=Hi Rachel! Saya ingin bertanya tentang Brilliant Competition XIII"
+					class="font-bold text-lg sm:text-base"
 				>
-					<Icon icon={faWhatsapp} class="text-2xl" />
+					<Icon icon={faWhatsapp} class="text-3xl" />
 					+62 877 8671 7147 (Rachel)
 				</a>
 			</li>
 			<li>
-				<a href="https://line.me/ti/p/Ix3uRlZSbB" class="font-bold">
-					<Icon icon={faLine} class="text-2xl" />
+				<a href="https://line.me/ti/p/Ix3uRlZSbB" class="font-bold text-lg sm:text-base">
+					<Icon icon={faLine} class="text-3xl" />
 					jas_mint5 CHANGE ASAP!</a
 				>
 			</li>
 			<li>
-				<a href="https://instagram.com/brilliantcompetition" class="font-bold">
-					<Icon icon={faInstagram} class="text-2xl" />
+				<a href="https://instagram.com/brilliantcompetition" class="font-bold text-lg sm:text-base">
+					<Icon icon={faInstagram} class="text-3xl" />
 					@brilliantcompetition
 				</a>
 			</li>
