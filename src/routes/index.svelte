@@ -41,7 +41,9 @@
 						<div class="flex flex-col items-center">
 							<Icon icon={faTrophy} class="text-9xl mt-4 text-white" />
 							<div class="text-white font-bold text-2xl mt-3">Champion</div>
-							<div class="text-white font-bold text-2xl pt-8 lg:text-3xl">Rp 3.000.000</div>
+							<div class="text-white font-bold text-5xl sm:text-2xl pt-8 lg:text-3xl">
+								Rp 3.000.000
+							</div>
 						</div>
 					</div>
 				</div>
