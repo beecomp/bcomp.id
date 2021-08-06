@@ -11,6 +11,12 @@
 	import bca from "./bca.svg";
 	import bigboi from "./bigboi.png";
 	import Carousel from "svelte-carousel";
+
+	function href(url) {
+		return () => {
+			window.location.href = url;
+		};
+	}
 </script>
 
 <div class="container mx-auto">
@@ -164,6 +170,7 @@
 				<button
 					type="button"
 					class="max-w-xs py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+					on:click={href("https://www.google.com")}
 				>
 					Matematika
 				</button>
