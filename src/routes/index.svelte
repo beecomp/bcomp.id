@@ -262,11 +262,11 @@
 		<ul class="mt-1 space-y-2">
 			<li>
 				<a
-					href="https://wa.me/628133304778?text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
+					href="https://wa.me/6281333047778?text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
 					class="font-bold text-lg sm:text-base"
 				>
 					<Icon icon={faWhatsapp} class="text-3xl" />
-					+62 813 3304 778 (Elva)
+					+62 813 3304 7778 (Elva)
 				</a>
 			</li>
 			<li>
