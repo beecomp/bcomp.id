@@ -9,12 +9,17 @@
 	} from "@fortawesome/free-solid-svg-icons";
 	import { faWhatsapp, faLine, faInstagram } from "@fortawesome/free-brands-svg-icons";
 	import bca from "./bca.svg";
+	import bigboi from "./bigboi.png";
 	import Carousel from "svelte-carousel";
 </script>
 
 <div class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-		<div class="text-6xl text-center font-black pt-20">Brilliant Competition XIII</div>
+		<div class="flex flex-col items-center">
+			<img src={bigboi} alt="" />
+		</div>
+
+		<div class="text-6xl text-center font-black -mt-12">Brilliant Competition XIII</div>
 		<div class="text-3xl text-center font-black">Unlocking your brilliance</div>
 		<div>
 			<h1 class="text-center text-5xl font-black my-6">Prizes</h1>
