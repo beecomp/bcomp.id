@@ -7,8 +7,9 @@
 	let expanded = false;
 </script>
 
-<nav class="bg-gray-800">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav>
+	<div class="fixed bg-gray-800 w-full z-40 filter drop-shadow-xl">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex items-center justify-between h-16">
 			<Navbar path={$page.path} />
 			<MobileNavbar bind:value={expanded} />
@@ -20,4 +21,6 @@
 			<MobileMenu path={$page.path} />
 		</div>
 	{/if}
+
+	</div>
 </nav>

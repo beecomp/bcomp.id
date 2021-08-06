@@ -7,12 +7,13 @@
 		faBullhorn,
 		faPencilAlt,
 	} from "@fortawesome/free-solid-svg-icons";
+	import { faWhatsapp, faLine, faInstagram } from "@fortawesome/free-brands-svg-icons";
 	import Carousel from "svelte-carousel";
 </script>
 
 <div class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-		<div class="text-6xl text-center font-black">Brilliant Competition XIII</div>
+		<div class="text-6xl text-center font-black pt-20">Brilliant Competition XIII</div>
 		<div class="text-3xl text-center font-black">Unlocking your brilliance</div>
 		<div>
 			<h1 class="text-center text-5xl font-black my-6">Prizes</h1>
@@ -170,6 +171,52 @@
 				</p>
 			</div>
 		</div>
+	</div>
+</div>
+<div
+	class="filter drop-shadow-xl flex flex-col justify-around sm:flex-row bg-gray-50 rounded-t-3xl  p-4 mt-8"
+>
+	<div>
+		<span class="text-2xl font-bold">Contact</span>
+		<ul class="mt-1">
+			<li>
+				<a
+					href="https://api.whatsapp.com/send?phone=6281333047708&text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
+					class="font-bold"
+				>
+					<Icon icon={faWhatsapp} class="text-2xl" />
+					+62 813 3304 7708 (Elva)
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://api.whatsapp.com/send?phone=6287786717147&text=Hi Rachel! Saya ingin bertanya tentang Brilliant Competition XIII"
+					class="font-bold"
+				>
+					<Icon icon={faWhatsapp} class="text-2xl" />
+					+62 877 8671 7147 (Rachel)
+				</a>
+			</li>
+			<li>
+				<a href="https://line.me/ti/p/Ix3uRlZSbB" class="font-bold">
+					<Icon icon={faLine} class="text-2xl" />
+					jas_mint5 CHANGE ASAP!</a
+				>
+			</li>
+			<li>
+				<a href="https://instagram.com/brilliantcompetition" class="font-bold">
+					<Icon icon={faInstagram} class="text-2xl" />
+					@brilliantcompetition
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="max-w-xs">
+		<h3 class="text-2xl font-bold">Address</h3>
+		<p class="mt-2">
+			Jl. Kelapa Gading Barat, Pakulonan Barat, Kecamatan Kelapa Dua, Tangerang, Banten 15113,
+			Indonesia
+		</p>
 	</div>
 </div>
 
