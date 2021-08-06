@@ -17,9 +17,9 @@
 		<div class="text-3xl text-center font-black">Unlocking your brilliance</div>
 		<div>
 			<h1 class="text-center text-5xl font-black my-6">Prizes</h1>
-			<div class="flex justify-center space-x-3">
-				<div class="flex-grow">
-					<div class="simple-card ib-gradient max-w-36 opacity-80">
+			<div class="flex flex-col sm:flex-row justify-center sm:space-x-3">
+				<div class="hidden md:block flex-grow">
+					<div class="simple-card py-4 ib-gradient opacity-80">
 						<div class="flex flex-col items-center">
 							<Icon icon={faAward} class="text-6xl mt-1 text-white" />
 							<div class="text-white font-bold mt-1">Juara 4</div>
@@ -27,8 +27,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-grow">
-					<div class="simple-card ib-gradient max-w-48 mt-6 opacity-90">
+				<div class="hidden sm:block flex-grow">
+					<div class="simple-card py-4 ib-gradient mt-6 opacity-90">
 						<div class="flex flex-col items-center">
 							<Icon icon={faAward} class="text-7xl mt-3 text-white" />
 							<div class="text-white font-bold text-xl mt-2">Juara 2</div>
@@ -37,7 +37,7 @@
 					</div>
 				</div>
 				<div class="flex-grow">
-					<div class="simple-card ib-gradient max-w-64 mt-8">
+					<div class="simple-card py-4 ib-gradient mt-8">
 						<div class="flex flex-col items-center">
 							<Icon icon={faTrophy} class="text-9xl mt-4 text-white" />
 							<div class="text-white font-bold text-2xl mt-3">Champion</div>
@@ -46,8 +46,8 @@
 					</div>
 				</div>
 
-				<div class="flex-grow">
-					<div class="simple-card ib-gradient max-w-48 mt-6 opacity-90">
+				<div class="hidden sm:block flex-grow">
+					<div class="simple-card py-4 ib-gradient mt-6 opacity-90">
 						<div class="flex flex-col items-center">
 							<Icon icon={faAward} class="text-7xl mt-3 text-white" />
 							<div class="text-white font-bold text-xl mt-2">Juara 3</div>
@@ -56,12 +56,50 @@
 					</div>
 				</div>
 
-				<div class="flex-grow">
-					<div class="simple-card ib-gradient max-w-36 opacity-80">
+				<div class="hidden md:block flex-grow">
+					<div class="simple-card py-4 ib-gradient opacity-80">
 						<div class="flex flex-col items-center">
 							<Icon icon={faAward} class="text-6xl mt-1 text-white" />
 							<div class="text-white font-bold mt-1">Juara 5</div>
 							<div class="text-white font-bold text-lg">Rp 500.000</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col items-center mt-2 space-y-2">
+				<div class="sm:hidden simple-card py-2 ib-gradient max-w-xs w-full opacity-80">
+					<div class="flex flex-row items-center justify-between px-4">
+						<Icon icon={faAward} class="text-6xl mt-1 text-white" />
+						<div class="flex flex-col items-center">
+							<div class="text-white font-bold">Juara 2</div>
+							<div class="text-white font-bold text-2xl">Rp 2.000.000</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm:hidden simple-card py-2 ib-gradient max-w-xs w-full opacity-80">
+					<div class="flex flex-row items-center justify-between px-4">
+						<Icon icon={faAward} class="text-6xl mt-1 text-white" />
+						<div class="flex flex-col items-center">
+							<div class="text-white font-bold">Juara 3</div>
+							<div class="text-white font-bold text-2xl">Rp 1.000.000</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:hidden simple-card py-2 ib-gradient max-w-xs w-full opacity-80">
+					<div class="flex flex-row items-center justify-between px-4">
+						<Icon icon={faAward} class="text-6xl mt-1 text-white" />
+						<div class="flex flex-col items-center">
+							<div class="text-white font-bold">Juara 4</div>
+							<div class="text-white font-bold text-2xl">Rp 750.000</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:hidden simple-card py-2 ib-gradient max-w-xs w-full opacity-80">
+					<div class="flex flex-row items-center justify-between px-4">
+						<Icon icon={faAward} class="text-6xl mt-1 text-white" />
+						<div class="flex flex-col items-center">
+							<div class="text-white font-bold">Juara 5</div>
+							<div class="text-white font-bold text-2xl">Rp 500.000</div>
 						</div>
 					</div>
 				</div>
@@ -73,28 +111,28 @@
 			<div
 				class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-4 md:space-y-0"
 			>
-				<div class="ib-gradient simple-card max-w-sm w-full opacity-40">
+				<div class="ib-gradient simple-card py-4 max-w-sm w-full opacity-40">
 					<div class="flex flex-col items-center">
 						<Icon icon={faInbox} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1 text-center">Deadline Penyisihan</div>
 						<div class="text-white font-bold text-xl">1 Sept 2021</div>
 					</div>
 				</div>
-				<div class="ib-gradient simple-card max-w-sm w-full">
+				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
 					<div class="flex flex-col items-center">
 						<Icon icon={faBullhorn} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1 text-center">Hasil Penyisihan</div>
 						<div class="text-white font-bold text-xl">3 Sept 2021</div>
 					</div>
 				</div>
-				<div class="ib-gradient simple-card max-w-sm w-full">
+				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
 					<div class="flex flex-col items-center justify-between">
 						<Icon icon={faPencilAlt} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1 text-center ">Semifinal</div>
 						<div class="text-white font-bold text-xl">11 Sept 2021</div>
 					</div>
 				</div>
-				<div class="ib-gradient simple-card max-w-sm w-full">
+				<div class="ib-gradient simple-card py-4 max-w-sm w-full">
 					<div class="flex flex-col items-center">
 						<Icon icon={faPencilAlt} class="text-6xl m-4 text-white" />
 						<div class="text-white font-bold mt-1">Final</div>
@@ -174,7 +212,7 @@
 	</div>
 </div>
 <div
-	class="filter drop-shadow-xl flex flex-col justify-around sm:flex-row bg-gray-50 rounded-t-3xl  p-4 mt-8"
+	class="filter drop-shadow-xl flex flex-col justify-around sm:flex-row bg-gray-50 rounded-t-3xl p-4 mt-8 space-y-4 sm:space-y-0"
 >
 	<div>
 		<span class="text-2xl font-bold">Contact</span>
@@ -225,6 +263,6 @@
 		@apply bg-gradient-to-br from-yellow-600 to-yellow-500;
 	}
 	.simple-card {
-		@apply filter drop-shadow-lg  py-4 rounded-xl;
+		@apply filter drop-shadow-lg  rounded-xl;
 	}
 </style>

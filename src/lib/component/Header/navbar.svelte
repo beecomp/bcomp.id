@@ -1,5 +1,5 @@
 <script>
-	import logo from './wide-logo.png';
+	import logo from './wide-logo-small.png';
 	export let path;
 </script>
 
