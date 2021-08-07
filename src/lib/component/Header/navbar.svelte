@@ -1,6 +1,5 @@
 <script>
 	import logo from "./wide-logo-small.png";
-	export let path;
 	import { scrollTo } from "svelte-scrolling";
 </script>
 

@@ -4,12 +4,14 @@
 	import Navbar from "./navbar.svelte";
 	import MobileNavbar from "./mobile-navbar.svelte";
 	import MobileMenu from "./mobile-menu.svelte";
-	import { setGlobalOptions } from "svelte-scrolling";
+	import ss from "svelte-scrolling";
 
 	let expanded = false;
 
-	setGlobalOptions({
-		offset: -80,
+	onMount(async () => {
+		ss.setGlobalOptions({
+			offset: -80,
+		});
 	});
 </script>
 
