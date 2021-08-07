@@ -4,23 +4,28 @@
 	import Navbar from "./navbar.svelte";
 	import MobileNavbar from "./mobile-navbar.svelte";
 	import MobileMenu from "./mobile-menu.svelte";
+	import { setGlobalOptions } from "svelte-scrolling";
+
 	let expanded = false;
+
+	setGlobalOptions({
+		offset: -80,
+	});
 </script>
 
 <nav>
 	<div class="fixed bg-gray-800 w-full z-40 filter drop-shadow-xl">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex items-center justify-between h-16">
-			<Navbar path={$page.path} />
-			<MobileNavbar bind:value={expanded} />
+			<div class="flex items-center justify-between h-16">
+				<Navbar path={$page.path} />
+				<MobileNavbar bind:value={expanded} />
+			</div>
 		</div>
-	</div>
 
-	{#if expanded}
-		<div transition:slide={{ duration: 200 }}>
-			<MobileMenu path={$page.path} />
-		</div>
-	{/if}
-
+		{#if expanded}
+			<div transition:slide={{ duration: 200 }}>
+				<MobileMenu />
+			</div>
+		{/if}
 	</div>
 </nav>
