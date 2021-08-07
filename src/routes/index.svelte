@@ -139,16 +139,14 @@
 	];
 </script>
 
+
+<video autoplay width="100%" loop>
+    <source src="media/hero-vid.mp4" type="video/mp4">
+</video>
+
 <div use:scrollRef={"top-index"} class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-		<div class="flex flex-col items-center pt-8">
-			<img src={bigboi} class="h-96" alt="" />
-		</div>
-
-		<div class="text-4xl text-center font-black -mt-12">Brilliant Competition XIII</div>
-		<div class="text-3xl text-center font-black">Unlocking your brilliance</div>
-
-		<div class="max-w-4xl shadow-md rounded-xl bg-white p-4 m-4 mx-auto">
+		<div class=" max-w-4xl shadow-md rounded-xl bg-white p-4 m-4 mx-auto">
 			<p class="text-justify">
 				Brilliant Competition adalah lomba matematika dan sains level SMP. Bacon ipsum dolor amet
 				duis tempor ribeye, chicken pork belly buffalo reprehenderit sausage ham id chuck nostrud
