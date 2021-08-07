@@ -312,15 +312,9 @@
 				<button
 					type="button"
 					class="w-48 py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
-					on:click={href("https://www.google.com")}
+					on:click={href("https://drive.google.com/drive/folders/1PVTifCESSpERpZNFK2bNBvOKU71sOdoS")}
 				>
-					Matematika
-				</button>
-				<button
-					type="button"
-					class="w-48 py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
-				>
-					IPA
+					Download
 				</button>
 			</div>
 
