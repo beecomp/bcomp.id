@@ -13,7 +13,7 @@
 		<div class=" flex flex-col flex-grow">
 			<span class="text-gray-800 dark:text-white text-sm font-bold">{q}</span>
 			{#if show}
-				<div transition:slide={{ duration: 500 }}>
+				<div transition:slide={{ duration: 200 }}>
 					<p class="mt-1 text-sm">{a}</p>
 				</div>
 			{/if}
