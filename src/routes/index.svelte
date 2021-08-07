@@ -12,7 +12,6 @@
 	} from "@fortawesome/free-solid-svg-icons";
 	import { faWhatsapp, faLine, faInstagram } from "@fortawesome/free-brands-svg-icons";
 	import bca from "./bca.svg";
-	import bigboi from "./bigboi.png";
 
 	import { scrollRef } from "svelte-scrolling";
 
@@ -140,11 +139,35 @@
 </script>
 
 
-<video autoplay width="100%" loop>
-    <source src="media/hero-vid.mp4" type="video/mp4">
-</video>
+<div use:scrollRef={"top-index"}>
+	<div class="absolute pt-12">
+		<img src="/media/pattern-top.svg" alt="" />
+	</div>
+	<div class="flex flex-col items-center pt-32 pb-12">
+		<div class="relative font-alfa text-8xl text-lavender italic tracking-wide">
+			BRILLIANT
+			<div class="absolute top-0.5 left-1 opacity-30">
+				<span>BRILLIANT</span>
+			</div>
+			<div class="absolute top-2 left-4">
+				<span class="stroke-brilliant text-transparent">BRILLIANT</span>
+			</div>
+		</div>
+		<div>
+		<div class="relative font-barlow text-8xl text-coral italic">
+			COMPETITION
+			<div class="absolute top-3 left-2">
+				<span class="stroke-competition text-transparent">COMPETITION</span>
+			</div>
+		</div>
+		</div>
+		<span class="mt-8 font-montserrat font-bold text-4xl text-gray-700 tracking-widest">
+			UNLOCK YOUR BRILLIANCE
+		</span>
+		</div>
+</div>
 
-<div use:scrollRef={"top-index"} class="container mx-auto">
+<div  class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 		<div class=" max-w-4xl shadow-md rounded-xl bg-white p-4 m-4 mx-auto">
 			<p class="text-justify">
@@ -185,11 +208,11 @@
 					</div>
 				</div>
 				<div class="flex-grow mx-1 max-w-xs">
-					<div class="rounded-xl shadow-2xl py-4 ib-gradient md:mt-8 px-6 ">
+					<div class="rounded shadow-2xl py-4 ib-gradient md:mt-8 px-6 ">
 						<div class="flex flex-col items-center">
 							<Icon icon={faTrophy} class="text-9xl mt-4 text-white" />
 							<div class="text-white font-bold text-2xl mt-3">Champion</div>
-							<div class="text-white font-bold text-4xl sm:text-2xl sm:pt-8 lg:text-3xl">
+							<div class="text-white font-bold text-4xl sm:text-2xl sm:pt-12 lg:text-3xl">
 								Rp 3.000.000
 							</div>
 						</div>
@@ -415,7 +438,7 @@
 	</div>
 </div>
 <div
-	class="shadow-xl flex flex-col justify-around sm:flex-row bg-gray-50 rounded-t-3xl p-4 mt-8 space-y-4 sm:space-y-0"
+	class="filter drop-shadow-2xl flex flex-col justify-around sm:flex-row bg-white rounded-t-3xl p-4 mt-8 space-y-4 sm:space-y-0"
 >
 	<div>
 		<span class="text-2xl font-bold">Contact</span>
@@ -463,6 +486,12 @@
 
 <style lang="postcss">
 	.ib-gradient {
-		@apply bg-gradient-to-br from-yellow-600 to-yellow-500;
+		@apply bg-gradient-to-br from-coral  to-coral;
 	}
+ .stroke-brilliant {
+	 -webkit-text-stroke: 3px #b6c4e1;
+ }
+ .stroke-competition {
+	 -webkit-text-stroke: 2px #ff9e5e;
+ }
 </style>
