@@ -235,7 +235,7 @@
 							<Icon {icon} class="text-5xl mx-8 md:mt-2 text-white" />
 							<div class="flex flex-col md:items-center md:mt-2">
 								<div class="text-white font-bold mt-1 text-center">{event}</div>
-								<div class="text-white font-bold text-xl">{date}</div>
+								<div class="text-white font-bold text-xl text-center">{date}</div>
 							</div>
 						</div>
 					</div>
