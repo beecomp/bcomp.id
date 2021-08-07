@@ -16,6 +16,8 @@
 
 	import { scrollRef } from "svelte-scrolling";
 
+	import FaqBox from "$lib/component/FaqBox.svelte";
+
 	function href(url) {
 		return () => {
 			window.location.href = url;
@@ -101,6 +103,38 @@
 			icon: faPencilAlt,
 			date: "10 Sept 2021",
 			event: "Final",
+		},
+	];
+
+	const faq = [
+		{
+			q: "Kapan tanggal terakhir pendaftaran?",
+			a: "3 Sept 2021 pukul 17:00",
+		},
+		{
+			q: "Bolehkan satu tim untuk seorang saja?",
+			a: "Boleh",
+		},
+		{
+			q: "Berapa biaya pendaftaran?",
+			a: "Rp 100.000,- per tim",
+		},
+		{
+			q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
+			a: "16 tim",
+		},
+		{
+			q: "Berapa banyak tim yang akan lolos dari semifinal ke final?",
+			a: "5 tim",
+		},
+		{
+			q: "Apa format Brilliant Competition tahun ini?",
+			a:
+				"Brilliant Competition mengadakan 2 perlombaan tim, yaitu lomba matematika dan lomba IPA, dengan 1 tim terdiri akan sebanyak-banyaknya 2 orang",
+		},
+		{
+			q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
+			a: "Tidak ada, materi Brilliant Competition tahun ini berkisar materi OSN SMP",
 		},
 	];
 </script>
@@ -348,9 +382,22 @@
 				tahap selanjutnya
 			</div>
 		</div>
+		<div>
+			<h1 class="text-center text-4xl font-black my-6">FAQ</h1>
+			<div class="flex flex-col space-y-2 max-w-4xl mx-auto">
+				{#each faq as { q, a }}
+					<FaqBox {q} {a} />
+				{/each}
+				<span class="font-bold text-center">
+					Tak bisa menemukan pertanyaanmu?
+					<br />
+					Tanya langsung lewat widget di kanan bawah layar atau kontak yang tersedia.
+				</span>
+			</div>
+		</div>
 		<div use:scrollRef={"about-us"}>
 			<h1 class="text-center text-4xl font-black my-6">About Us</h1>
-			<div class="shadow-lg rounded-xl bg-white p-8 pt-4">
+			<div class="max-w-4xl mx-auto shadow-lg rounded-xl bg-white p-8 pt-4">
 				<p class="text-justify">
 					Pls tulis ulang yang sebelomnya nulis bikinnya kyk orang stroke. mkz. Bacon ipsum dolor
 					amet duis tempor ribeye, chicken pork belly buffalo reprehenderit sausage ham id chuck
