@@ -28,7 +28,14 @@
 				use:scrollTo={"howto"}
 				class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
 			>
-				Howto
+				Participate
+			</a>
+			<a
+				sveltekit:prefetch
+				use:scrollTo={"faq"}
+				class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
+			>
+				FAQ
 			</a>
 			<a
 				sveltekit:prefetch

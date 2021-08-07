@@ -1,19 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
 	import { slide } from "svelte/transition";
 	import { page } from "$app/stores";
 	import Navbar from "./navbar.svelte";
 	import MobileNavbar from "./mobile-navbar.svelte";
 	import MobileMenu from "./mobile-menu.svelte";
-	import ss from "svelte-scrolling";
-
 	let expanded = false;
-
-	onMount(async () => {
-		ss.setGlobalOptions({
-			offset: -80,
-		});
-	});
 </script>
 
 <nav>
