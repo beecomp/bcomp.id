@@ -25,13 +25,13 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0",
 		"svelte-preprocess": "^4.7.4",
-		"tailwindcss": "^2.2.4"
+		"tailwindcss": "^2.2.4",
+		"svelte-scrolling": "^1.0.7"
 	},
 	"type": "module",
 	"dependencies": {
 		"@auth0/auth0-spa-js": "^1.16.1",
 		"@fortawesome/free-solid-svg-icons": "^5.15.4",
-		"svelte-carousel": "^1.0.10",
-		"svelte-scrolling": "^1.0.7"
+		"svelte-carousel": "^1.0.10"
 	}
 }
