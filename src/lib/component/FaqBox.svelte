@@ -9,7 +9,7 @@
 </script>
 
 <div class="shadow-sm rounded-md bg-white dark:bg-gray-800 p-3">
-	<div class="flex-row gap-4 flex justify-center items-start">
+	<div on:click={() => (show = !show)} class="flex-row gap-4 flex justify-center items-start">
 		<div class=" flex flex-col flex-grow">
 			<span class="text-gray-800 dark:text-white text-sm font-bold">{q}</span>
 			{#if show}
@@ -18,7 +18,7 @@
 				</div>
 			{/if}
 		</div>
-		<div on:click={() => (show = !show)} class="flex-shrink-0">
+		<div class="flex-shrink-0">
 			<Icon icon={show ? faChevronUp : faChevronDown} class="mx-4 text-sm text-black" />
 		</div>
 	</div>
