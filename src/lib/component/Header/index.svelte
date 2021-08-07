@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import { slide } from "svelte/transition";
 	import { page } from "$app/stores";
 	import Navbar from "./navbar.svelte";
