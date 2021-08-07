@@ -165,7 +165,7 @@
 			</p>
 		</div>
 
-		<div use:scrollRef={"prizes"}>
+		<div class="-mt-12 pt-12" use:scrollRef={"prizes"}>
 			<h1 class="text-center text-4xl font-black mt-6 mb-3">Prizes</h1>
 			<div class="flex flex-col items-center sm:items-start sm:flex-row justify-center">
 				<div class="hidden md:block flex-grow mx-1">
@@ -258,7 +258,7 @@
 			</div>
 		</div>
 
-		<div use:scrollRef={"schedule"}>
+		<div class="-mt-12 pt-12" use:scrollRef={"schedule"}>
 			<h1 class="text-center text-4xl font-black my-6">Schedule</h1>
 			<div
 				class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0"
@@ -304,7 +304,7 @@
 				</button>
 			</div>
 		</div>
-		<div use:scrollRef={"howto"}>
+		<div class="-mt-12 pt-12" use:scrollRef={"howto"}>
 			<h1 class="text-center text-4xl font-black my-6">How to participate</h1>
 
 			<h2 class="text-center text-2xl font-black mt-6 mb-2">Baca Guidebook</h2>
@@ -382,7 +382,7 @@
 				tahap selanjutnya
 			</div>
 		</div>
-		<div>
+		<div class="-mt-12 pt-12" use:scrollRef={"faq"}>
 			<h1 class="text-center text-4xl font-black my-6">FAQ</h1>
 			<div class="flex flex-col space-y-2 max-w-4xl mx-auto">
 				{#each faq as { q, a }}
@@ -395,7 +395,7 @@
 				</span>
 			</div>
 		</div>
-		<div use:scrollRef={"about-us"}>
+		<div class="-mt-12 pt-12" use:scrollRef={"about-us"}>
 			<h1 class="text-center text-4xl font-black my-6">About Us</h1>
 			<div class="max-w-4xl mx-auto shadow-lg rounded-xl bg-white p-8 pt-4">
 				<p class="text-justify">
