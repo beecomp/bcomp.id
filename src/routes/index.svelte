@@ -595,9 +595,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://line.me/ti/p/Ix3uRlZSbB" class="text-lg sm:text-base">
+				<a href="https://line.me/ti/p/07hb3R21yq" class="text-lg sm:text-base">
 					<Icon icon={faLine} class="text-2xl" />
-					jas_mint5 CHANGE ASAP!</a
+					jas_mint5</a
 				>
 			</li>
 			<li>
