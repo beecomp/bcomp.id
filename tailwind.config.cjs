@@ -5,12 +5,14 @@ const config = {
 		extend: {
 			fontFamily: {
 				alfa: ["Alfa Slab One", "cursive"],
-				barlow: ["Barlow Semi Condensed", "sans-serif"],
+				"barlow-semi": ["Barlow Semi Condensed", "sans-serif"],
+				barlow: ["Barlow", "sans-serif"],
 				montserrat: ["Montserrat", "sans-serif"],
 			},
 			colors: {
 				lavender: "#b6c4e1",
 				coral: "#ff9e5e",
+				"coral-light": "#fdb98d",
 			},
 		},
 	},
