@@ -417,8 +417,9 @@
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"howto"}>
+
 			<h1 class="font-montserrat italic text-center text-5xl mt-6 text-gray-700">
-				HOW TO PARTICIPATE
+				HOW TO JOIN
 			</h1>
 			<h2 class="font-montserrat text-center text-2xl font-black mt-3 mb-2">Baca Guidebook</h2>
 			<div class="flex flex-row justify-center space-x-4">
@@ -436,11 +437,12 @@
 				Bayar Rp 100.000,- per tim
 			</h2>
 			<div class="flex flex-row justify-center mt-2">
-				<div class="w-72 shadow-lg rounded-2xl bg-white dark:bg-gray-800 p-4">
+
+				<div class="w-72 shadow-lg rounded bg-white dark:bg-gray-800 p-4">
 					<div class="flex-row gap-4 flex justify-center items-center">
 						<div class="flex-shrink-0">
 							<a href="#" class="block relative">
-								<img alt="profil" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
+								<img alt="BCA" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
 							</a>
 						</div>
 						<div class=" flex flex-col">
@@ -474,7 +476,7 @@
 					href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
 					class="btn w-40"
 				>
-					Soal Matematika
+					Soal MAT
 				</a>
 				<a
 					target="_blank"
@@ -492,7 +494,7 @@
 					href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
 					class="btn w-40"
 				>
-					LJ Matematika
+					LJ MAT
 				</a>
 				<a
 					target="_blank"
