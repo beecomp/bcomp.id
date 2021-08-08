@@ -24,11 +24,6 @@
 
 	import FaqBox from "$lib/component/FaqBox.svelte";
 
-	function href(url) {
-		return () => {
-			window.location.href = url;
-		};
-	}
 	let showDetailedSchedule = false;
 	const detailedSchedule = [
 		{
