@@ -141,6 +141,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>BCOMP XIII</title>
+</svelte:head>
+
 <div use:scrollRef={"top-index"}>
 	<div class="pt-16">
 		<div class="relative hidden lg:block">
