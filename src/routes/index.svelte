@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import { slide } from "svelte/transition";
 	import Icon from "fa-svelte";
