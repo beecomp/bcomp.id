@@ -3,10 +3,8 @@
 	import { faTrophy, faAward } from "@fortawesome/free-solid-svg-icons";
 </script>
 
-<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black mt-6 mb-3 md:mb-0">
-	PRIZES
-</h1>
-<div class="flex flex-col items-center sm:items-start sm:flex-row justify-center">
+<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black md:mb-0">PRIZES</h1>
+<div class="flex flex-col items-center sm:items-start sm:flex-row justify-center mt-3">
 	<div class="hidden md:block flex-grow mx-1">
 		<div class="rounded shadow-lg py-4 bg-coral">
 			<div class="flex flex-col items-center">

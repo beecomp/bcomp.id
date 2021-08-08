@@ -8,7 +8,7 @@
 	export let detailed;
 </script>
 
-<h1 class="font-montserrat font-black text-gray-700 italic text-center text-5xl mt-6">SCHEDULE</h1>
+<h1 class="font-montserrat font-black text-gray-700 italic text-center text-5xl">SCHEDULE</h1>
 <div
 	class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0 mt-3"
 >
