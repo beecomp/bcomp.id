@@ -93,7 +93,7 @@
 		{
 			icon: faBullhorn,
 			event: "Hasil Penyisihan\u00A01",
-			date: "3 Sept 2021",
+			date: "4 Sept 2021",
 		},
 		{
 			icon: faPencilAlt,
@@ -114,8 +114,8 @@
 
 	const faq = [
 		{
-			q: "Kapan tanggal terakhir pendaftaran?",
-			a: "3 Sept 2021 pukul 17:00",
+			q: "Kapan hari terakhir pendaftaran?",
+			a: "Rabu, 1 September 2021",
 		},
 		{
 			q: "Bolehkan satu tim untuk seorang saja?",
@@ -123,7 +123,7 @@
 		},
 		{
 			q: "Berapa biaya pendaftaran?",
-			a: "Rp 100.000,- per tim",
+			a: "Rp 100.000,- per tim s.d. 19 Agustus 2019 dan Rp 150.000,- setelahnya",
 		},
 		{
 			q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
@@ -417,10 +417,7 @@
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"howto"}>
-
-			<h1 class="font-montserrat italic text-center text-5xl mt-6 text-gray-700">
-				HOW TO JOIN
-			</h1>
+			<h1 class="font-montserrat italic text-center text-5xl mt-6 text-gray-700">HOW TO JOIN</h1>
 			<h2 class="font-montserrat text-center text-2xl font-black mt-3 mb-2">Baca Guidebook</h2>
 			<div class="flex flex-row justify-center space-x-4">
 				<a
@@ -434,16 +431,16 @@
 			</div>
 
 			<h2 class="font-montserrat text-center text-2xl font-black mt-6">
-				Bayar Rp 100.000,- per tim
-			</h2>
-			<div class="flex flex-row justify-center mt-2">
+				Bayar <span class="line-through text-gray-400"> Rp 150.000 </span>
 
+				Rp 100.000,- per tim
+			</h2>
+			<div class="font-montserrat text-center text-lg">(Harga spesial s.d. 19 Agustus 2019)</div>
+			<div class="flex flex-row justify-center mt-2">
 				<div class="w-72 shadow-lg rounded bg-white dark:bg-gray-800 p-4">
 					<div class="flex-row gap-4 flex justify-center items-center">
 						<div class="flex-shrink-0">
-							<a href="#" class="block relative">
-								<img alt="BCA" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
-							</a>
+							<img alt="BCA" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
 						</div>
 						<div class=" flex flex-col">
 							<span class="font-barlow font-semibold text-gray-800 dark:text-white text-lg"
@@ -522,8 +519,8 @@
 				Tunggu Pengumuman Tanggal 3 September
 			</h2>
 			<div class="max-w-3xl mx-auto mt-2">
-				80% dari peserta dan sebanyak-banyak nya 50 orang dari setiap bidang akan lolos maju ke
-				tahap selanjutnya
+				80% dari peserta dan sebanyak-banyak nya 50 tim dari setiap bidang akan lolos maju ke tahap
+				selanjutnya
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"faq"}>
@@ -594,6 +591,15 @@
 				>
 					<Icon icon={faWhatsapp} class="text-2xl" />
 					+62 877 8671 7147 (Rachel)
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://wa.me/6288809999128?text=Hi Juan! Saya ingin bertanya tentang Brilliant Competition XIII"
+					class="text-lg sm:text-base"
+				>
+					<Icon icon={faWhatsapp} class="text-2xl" />
+					+62 888 0999 9128 (Juan)
 				</a>
 			</li>
 			<li>
