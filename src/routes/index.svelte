@@ -469,14 +469,14 @@
 				<a
 					target="_blank"
 					rel="noreferrer" href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
-					class="btn w-48"
+					class="btn w-40"
 				>
 					Soal Matematika
 				</a>
 				<a
 					target="_blank"
 					rel="noreferrer" href="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
-					class="btn w-48"
+					class="btn w-40"
 				>
 					Soal IPA
 				</a>
@@ -485,14 +485,14 @@
 				<a
 					target="_blank"
 					rel="noreferrer" href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
-					class="btn w-48"
+					class="btn w-40"
 				>
 					LJ Matematika
 				</a>
 				<a
 					target="_blank"
 					rel="noreferrer" href="https://drive.google.com/file/d/1BlLUZS4869F_KjgzGHHUODjyXuLQJKi3/view"
-					class="btn w-48"
+					class="btn w-40"
 				>
 					LJ IPA
 				</a>
