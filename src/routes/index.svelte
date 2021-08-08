@@ -420,7 +420,7 @@
 			<div class="flex flex-row justify-center space-x-4">
 				<a
 					target="_blank"
-					href="https://drive.google.com/file/d/1BRPtUOy5uS9X6slBcaC4uEsZLp_3NaZX/view"
+					rel="noreferrer" href="https://drive.google.com/file/d/1BRPtUOy5uS9X6slBcaC4uEsZLp_3NaZX/view"
 					class="btn w-48"
 				>
 					Guidebook
@@ -453,7 +453,7 @@
 			<div class="flex flex-row justify-center mt-2">
 				<a
 					target="_blank"
-					href="https://docs.google.com/forms/d/e/1FAIpQLSfcbC-AjV7EHEh3PuyCWZPm_9ZOLvhLQlMi_4ocHeUky9wqpw/viewform"
+					rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbC-AjV7EHEh3PuyCWZPm_9ZOLvhLQlMi_4ocHeUky9wqpw/viewform"
 					class="btn w-64"
 				>
 					Kerjakan Form
@@ -464,14 +464,14 @@
 			<div class="flex flex-row justify-center space-x-4">
 				<a
 					target="_blank"
-					href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
+					rel="noreferrer" href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
 					class="btn w-48"
 				>
 					Soal Matematika
 				</a>
 				<a
 					target="_blank"
-					href="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
+					rel="noreferrer" href="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
 					class="btn w-48"
 				>
 					Soal IPA
@@ -480,14 +480,14 @@
 			<div class="flex flex-row justify-center space-x-4 mt-2">
 				<a
 					target="_blank"
-					href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
+					rel="noreferrer" href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
 					class="btn w-48"
 				>
 					LJ Matematika
 				</a>
 				<a
 					target="_blank"
-					href="https://drive.google.com/file/d/1BlLUZS4869F_KjgzGHHUODjyXuLQJKi3/view"
+					rel="noreferrer" href="https://drive.google.com/file/d/1BlLUZS4869F_KjgzGHHUODjyXuLQJKi3/view"
 					class="btn w-48"
 				>
 					LJ IPA
@@ -499,7 +499,7 @@
 			<div class="flex flex-row justify-center mt-2">
 				<a
 					target="_blank"
-					href="https://docs.google.com/forms/d/e/1FAIpQLScs8F5TeQdbZImYiSKeU18wKVVTmxkW8lJ2pHPqw-_IYU85vw/viewform"
+					rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScs8F5TeQdbZImYiSKeU18wKVVTmxkW8lJ2pHPqw-_IYU85vw/viewform"
 					class="btn w-64"
 				>
 					Kumpulkan
