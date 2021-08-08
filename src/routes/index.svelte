@@ -246,19 +246,11 @@
 <div class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
 		<div class=" max-w-4xl shadow-md rounded-xl bg-white p-4 m-4 mx-auto">
-			<p class="text-justify">
-				Brilliant Competition adalah lomba matematika dan sains level SMP. Bacon ipsum dolor amet
-				duis tempor ribeye, chicken pork belly buffalo reprehenderit sausage ham id chuck nostrud
-				shankle occaecat ullamco. Doner irure aliquip fatback ullamco pig et cillum pork chop spare
-				ribs. Enim pork chop adipisicing pig nostrud labore ad frankfurter esse t-bone prosciutto.
-				Ball tip ad beef adipisicing, shankle jowl exercitation aute tenderloin flank ea sausage
-				shoulder. Corned beef irure nulla spare ribs tenderloin turducken in meatloaf exercitation
-				chuck. Bacon ipsum dolor amet duis tempor ribeye, chicken pork belly buffalo reprehenderit
-				sausage ham id chuck nostrud shankle occaecat ullamco. Doner irure aliquip fatback ullamco
-				pig et cillum pork chop spare ribs. Enim pork chop adipisicing pig nostrud labore ad
-				frankfurter esse t-bone prosciutto. Ball tip ad beef adipisicing, shankle jowl exercitation
-				aute tenderloin flank ea sausage shoulder. Corned beef irure nulla spare ribs tenderloin
-				turducken in meatloaf exercitation chuck.
+			<p class="font-barlow text-lg text-justify">
+				Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade untuk bidang Matematika
+				dan IPA tingkat SMP berskala nasional yang akan diselenggarakan untuk ketiga belas kalinya
+				di SMAK PENABUR Gading Serpong. Brilliant Competition XII sebelumnya diikuti oleh ratusan
+				peserta dari sembilan provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia.
 			</p>
 		</div>
 
@@ -417,10 +409,18 @@
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"howto"}>
-			<h1 class="font-montserrat italic text-center text-4xl mt-6">HOW TO PARTICIPATE</h1>
+			<h1 class="font-montserrat italic text-center text-5xl mt-6 text-gray-700">
+				HOW TO PARTICIPATE
+			</h1>
 			<h2 class="font-montserrat text-center text-2xl font-black mt-3 mb-2">Baca Guidebook</h2>
 			<div class="flex flex-row justify-center space-x-4">
-				<button type="button" class="btn w-48"> Guidebook </button>
+				<a
+					target="_blank"
+					href="https://drive.google.com/file/d/1BRPtUOy5uS9X6slBcaC4uEsZLp_3NaZX/view"
+					class="btn w-48"
+				>
+					Guidebook
+				</a>
 			</div>
 
 			<h2 class="font-montserrat text-center text-2xl font-black mt-6">
@@ -447,19 +447,59 @@
 
 			<h2 class="font-montserrat text-center text-2xl mt-6">Isi form pendaftaran</h2>
 			<div class="flex flex-row justify-center mt-2">
-				<button type="button" class="btn w-64"> Kerjakan Form </button>
+				<a
+					target="_blank"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfcbC-AjV7EHEh3PuyCWZPm_9ZOLvhLQlMi_4ocHeUky9wqpw/viewform"
+					class="btn w-64"
+				>
+					Kerjakan Form
+				</a>
 			</div>
 
 			<h2 class="font-montserrat text-center text-2xl mt-6 mb-2">Kerjakan Soal</h2>
 			<div class="flex flex-row justify-center space-x-4">
-				<button type="button" class="btn w-48"> Matematika </button>
-				<button type="button" class="btn w-48"> IPA </button>
+				<a
+					target="_blank"
+					href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
+					class="btn w-48"
+				>
+					Soal Matematika
+				</a>
+				<a
+					target="_blank"
+					href="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
+					class="btn w-48"
+				>
+					Soal IPA
+				</a>
+			</div>
+			<div class="flex flex-row justify-center space-x-4 mt-2">
+				<a
+					target="_blank"
+					href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
+					class="btn w-48"
+				>
+					LJ Matematika
+				</a>
+				<a
+					target="_blank"
+					href="https://drive.google.com/file/d/1BlLUZS4869F_KjgzGHHUODjyXuLQJKi3/view"
+					class="btn w-48"
+				>
+					LJ IPA
+				</a>
 			</div>
 			<h2 class="font-montserrat text-center text-2xl mt-6">
 				Kumpulkan Jawaban Sebelum 1 September
 			</h2>
 			<div class="flex flex-row justify-center mt-2">
-				<button type="button" class="btn w-64"> Kumpulkan </button>
+				<a
+					target="_blank"
+					href="https://docs.google.com/forms/d/e/1FAIpQLScs8F5TeQdbZImYiSKeU18wKVVTmxkW8lJ2pHPqw-_IYU85vw/viewform"
+					class="btn w-64"
+				>
+					Kumpulkan
+				</a>
 			</div>
 			<h2 class="font-montserrat text-center text-2xl mt-6">
 				Tunggu Pengumuman Tanggal 3 September
@@ -470,34 +510,41 @@
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"faq"}>
-			<h1 class="font-montserrat italic text-center text-4xl mt-6">FAQ</h1>
+			<h1 class="font-montserrat italic text-center text-5xl mt-6 mb-3 text-gray-700">FAQ</h1>
 			<div class="flex flex-col space-y-2 max-w-4xl mx-auto">
 				{#each faq as { q, a }}
 					<FaqBox {q} {a} />
 				{/each}
 				<span class="font-bold text-center">
-					Tak bisa menemukan pertanyaanmu?
+					Tidak bisa menemukan pertanyaanmu?
 					<br />
 					Tanya langsung lewat widget di kanan bawah layar atau kontak yang tersedia.
 				</span>
 			</div>
 		</div>
 		<div class="-mt-12 pt-12" use:scrollRef={"about-us"}>
-			<h1 class="font-montserrat italic text-center text-4xl mt-6">ABOUT US</h1>
-			<div class="max-w-4xl mx-auto shadow-lg rounded-xl bg-white p-8 pt-4">
-				<p class="text-justify">
-					Pls tulis ulang yang sebelomnya nulis bikinnya kyk orang stroke. mkz. Bacon ipsum dolor
-					amet duis tempor ribeye, chicken pork belly buffalo reprehenderit sausage ham id chuck
-					nostrud shankle occaecat ullamco. Doner irure aliquip fatback ullamco pig et cillum pork
-					chop spare ribs. Enim pork chop adipisicing pig nostrud labore ad frankfurter esse t-bone
-					prosciutto. Ball tip ad beef adipisicing, shankle jowl exercitation aute tenderloin flank
-					ea sausage shoulder. Corned beef irure nulla spare ribs tenderloin turducken in meatloaf
-					exercitation chuck. Bacon ipsum dolor amet duis tempor ribeye, chicken pork belly buffalo
-					reprehenderit sausage ham id chuck nostrud shankle occaecat ullamco. Doner irure aliquip
-					fatback ullamco pig et cillum pork chop spare ribs. Enim pork chop adipisicing pig nostrud
-					labore ad frankfurter esse t-bone prosciutto. Ball tip ad beef adipisicing, shankle jowl
-					exercitation aute tenderloin flank ea sausage shoulder. Corned beef irure nulla spare ribs
-					tenderloin turducken in meatloaf exercitation chuck.
+			<h1 class="font-montserrat italic text-center text-5xl mt-6 mb-3 text-gray-700">ABOUT US</h1>
+			<div class="max-w-4xl mx-auto shadow-lg rounded-xl bg-white px-8 py-4">
+				<span class="font-barlow font-bold text-2xl">Brilliant Competition</span>
+				<p class="text-justify mt-1">
+					Brilliant Competition XIII adalah kegiatan kompetisi olimpiade untuk bidang matematika dan
+					sains tingkat SMP berskala nasional yang akan diselenggarakan untuk ketiga belas kalinya
+					secara online di SMAK PENABUR Gading Serpong. Brilliant Competition XII sebelumnya diikuti
+					oleh ratusan peserta dari sembilan provinsi dan lebih dari 60 sekolah yang tersebar di
+					Indonesia. Brilliant Competition dirancang dan dilaksanakan oleh seluruh siswa Brilliant
+					Class di SMAK Penabur Gading Serpong beserta dengan guru-guru terpilih dari Brilliant
+					Class. Tema Brilliant Competition XIII tahun ini adalah “Unlocking Your Brilliance”. Pada
+					Brilliant Competition XIII, kami mengajak siswa-siswi yang berpotensi dan unggul untuk
+					membuka pikiran mereka dan menunjukkan potensi kecerdasan mereka masing-masing. Melalui
+					kompetisi ini, kami berharap agar siswa dapat mengembangkan kecerdasan dalam berpikir dan
+					menemukan potensi yang tersembunyi dalam diri mereka, khususnya dalam bidang matematika
+					dan sains. Brilliant Class adalah sebuah program pendidikan khusus di SMAK Penabur Gading
+					Serpong untuk siswa “berbakat intelektual tinggi”. Tujuannya adalah mengembangkan potensi
+					siswa secara optimal sehingga siswa memiliki kesempatan untuk mendapat pendidikan lanjutan
+					di perguruan tinggi terbaik di dunia. Dan agar kelak mereka mampu mengabdikan diri dalam
+					membangun bangsa dan negara melalui ilmu pengetahuan yang mereka miliki. Jadi, tunggu apa
+					lagi? Segera daftarkan dirimu dalam Brilliant Competition XIII dan teruslah berjuang untuk
+					meraih prestasi yang terbaik!
 				</p>
 			</div>
 		</div>
