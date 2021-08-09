@@ -9,7 +9,7 @@ const s = [
 	},
 	{
 		q: "Berapa biaya pendaftaran?",
-		a: "Rp 100.000,- per tim s.d. 19 Agustus 2021 dan Rp 150.000,- setelahnya",
+		a: "Rp 100.000,- per tim s.d. 19 Agustus 2021 dan Rp 125.000,- setelahnya",
 	},
 	{
 		q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
