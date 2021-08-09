@@ -3,8 +3,6 @@
 </script>
 
 <script>
-	import { faInbox, faBullhorn, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
-
 	import { scrollRef } from "svelte-scrolling";
 
 	import IndexHero from "$lib/component/IndexHero/index.svelte";
@@ -13,120 +11,19 @@
 	import Faq from "$lib/component/Faq/index.svelte";
 	import Footer from "$lib/component/Footer.svelte";
 	import AboutUs from "$lib/component/AboutUs.svelte";
-
 	import HowToJoin from "$lib/component/HowToJoin/index.svelte";
+	import simpleSchedule from "$lib/data/simple-schedule";
+	import detailedSchedule from "$lib/data/detailed-schedule";
+	import qnas from "$lib/data/qnas";
 
-	const detailedSchedule = [
+	const elimParticipants = [
 		{
-			date: "Senin, 6 Sept 2021",
-			events: [
-				{
-					time: "08:00–09:00",
-					event: "Pembukaan",
-				},
-				{
-					time: "09:30–10:30",
-					event: "Penyisihan\u00a02",
-				},
-				{
-					time: "17:00",
-					event: "Pengumuman Penyisihan\u00a02",
-				},
-			],
+			members: ["Otto Alexander Sutianto", "Bukan Otto Alexande"],
+			school: "Suatu Sekolah Di Solo",
 		},
 		{
-			date: "Selasa, 7 Sept 2021",
-			events: [
-				{
-					time: "09:00–12:00",
-					event: "Semifinal Matematika",
-				},
-				{
-					time: "13:00–15:00",
-					event: "Semifinal IPA",
-				},
-			],
-		},
-		{
-			date: "Kamis, 9 Sept 2021",
-			events: [
-				{
-					time: "17:00",
-					event: "Pengumuman Semifinal",
-				},
-			],
-		},
-		{
-			date: "Jumat, 10 Sept 2021",
-			events: [
-				{
-					time: "08:30–12:00",
-					event: "Final",
-				},
-				{
-					time: "13:30–14:00",
-					event: "Pengumuman Pemenang",
-				},
-			],
-		},
-	];
-	const simpleSchedule = [
-		{
-			icon: faInbox,
-			event: "Deadline Penyisihan\u00a01",
-			date: "1 Sept 2021",
-		},
-		{
-			icon: faBullhorn,
-			event: "Hasil Penyisihan\u00A01",
-			date: "4 Sept 2021",
-		},
-		{
-			icon: faPencilAlt,
-			date: "6 Sept 2021",
-			event: "Penyisihan 2",
-		},
-		{
-			icon: faPencilAlt,
-			date: "7 Sept 2021",
-			event: "Semifinal",
-		},
-		{
-			icon: faPencilAlt,
-			date: "10 Sept 2021",
-			event: "Final",
-		},
-	];
-
-	const qnas = [
-		{
-			q: "Kapan hari terakhir pendaftaran?",
-			a: "Rabu, 1 September 2021",
-		},
-		{
-			q: "Bolehkan satu tim untuk seorang saja?",
-			a: "Boleh",
-		},
-		{
-			q: "Berapa biaya pendaftaran?",
-			a: "Rp 100.000,- per tim s.d. 19 Agustus 2019 dan Rp 150.000,- setelahnya",
-		},
-		{
-			q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
-			a: "16 tim",
-		},
-		{
-			q: "Berapa banyak tim yang akan lolos dari semifinal ke final?",
-			a: "5 tim",
-		},
-		{
-			q: "Apa format Brilliant Competition tahun ini?",
-			a:
-				"Brilliant Competition mengadakan 2 perlombaan tim, yaitu lomba matematika dan lomba IPA, dengan 1 tim terdiri akan sebanyak-banyaknya 2 orang",
-		},
-		{
-			q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
-			a: "Tidak ada, materi Brilliant Competition tahun ini berkisar materi OSN SMP",
+			members: ["Jerrell Ezralemuel", "Bukan Temannya Otto Lagi"],
+			school: "Disanalah kira kira ",
 		},
 	];
 </script>
@@ -148,6 +45,46 @@
 				peserta dari sembilan provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia.
 			</p>
 		</div>
+
+		{#if false}
+			<div class="-mt-16 pt-16" use:scrollRef={"announcement"}>
+				<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black md:mb-0">
+					ANNOUNCEMENT
+				</h1>
+				<div class=" max-w-4xl shadow rounded bg-white px-4 pb-4 m-4 mx-auto">
+					<div class="flex flex-row mb-3">
+						<div class=" w-24 bg-lavender text-center rounded-b py-2">
+							<span class="font-barlow-semi text-gray-700 text-2xl"> 16 Oct </span>
+						</div>
+						<div class="font-barlow-semi mx-auto text-2xl pt-2">Deadline Pengumpulan Diundur</div>
+					</div>
+					<p class="font-barlow text-lg">Deadline pengumpulan diundur hingga 4 September 2021</p>
+				</div>
+				<div class=" max-w-4xl shadow rounded bg-white px-4 pb-4 m-4 mx-auto">
+					<div class="flex flex-row mb-3">
+						<div class=" w-24 bg-lavender text-center rounded-b py-2">
+							<span class="font-barlow-semi text-gray-700 text-2xl"> 16 Oct </span>
+						</div>
+						<div class="font-barlow-semi mx-auto text-2xl pt-2">Pengumuman Penyisihan 1</div>
+					</div>
+					<p class="font-barlow font-bold text-lg">Daftar peserta yang lolos penyisihan 1</p>
+					<table class="table-auto w-full">
+						<tr class="border-b-2 border-gray-600">
+							<th>Rank</th>
+							<th>Peserta</th>
+							<th>Sekolah</th>
+						</tr>
+						{#each elimParticipants as { members, school }, i}
+							<tr class="border-b-2 border-gray-400">
+								<td class="px-2 text-center font-bold">{i + 1} </td>
+								<td class="px-2">{members.join(", ")}</td>
+								<td class="px-2">{school}</td>
+							</tr>
+						{/each}
+					</table>
+				</div>
+			</div>
+		{/if}
 
 		<div class="-mt-16 pt-16" use:scrollRef={"prizes"}>
 			<Prizes />
