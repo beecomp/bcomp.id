@@ -1,4 +1,4 @@
-const qnas = [
+const s = [
 	{
 		q: "Kapan hari terakhir pendaftaran?",
 		a: "Rabu, 1 September 2021",
@@ -9,7 +9,7 @@ const qnas = [
 	},
 	{
 		q: "Berapa biaya pendaftaran?",
-		a: "Rp 100.000,- per tim s.d. 19 Agustus 2019 dan Rp 150.000,- setelahnya",
+		a: "Rp 100.000,- per tim s.d. 19 Agustus 2021 dan Rp 150.000,- setelahnya",
 	},
 	{
 		q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
@@ -30,4 +30,4 @@ const qnas = [
 	},
 ];
 
-export default qnas;
+export default s;
