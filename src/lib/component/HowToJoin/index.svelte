@@ -9,7 +9,7 @@
 		target="_blank"
 		rel="noreferrer"
 		href="https://drive.google.com/file/d/10GRm2eks2lfOsvNUaNJfqkhg_0nZxn8b/view"
-		class="btn w-48"
+		class="btn w-64"
 	>
 		Guidebook
 	</a>

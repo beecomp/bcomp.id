@@ -3,9 +3,15 @@
 	import Icon from "fa-svelte";
 	import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-	let showDetailed = false;
+	const formatter = new Intl.DateTimeFormat("en-GB", {
+		year: "numeric",
+		month: "short",
+		day: "numeric",
+	});
+
 	export let simple;
 	export let detailed;
+	let showDetailed = false;
 </script>
 
 <h1 class="font-montserrat font-black text-gray-700 italic text-center text-5xl">SCHEDULE</h1>
@@ -13,7 +19,10 @@
 	class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0 mt-3"
 >
 	{#each simple as { icon, event, date }}
-		<div class="bg-coral rounded p-2 max-w-sm w-full filter shadow-lg">
+		<div
+			class="bg-coral rounded p-2 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2"
+			class:opacity-50={date - Date.now() < 0}
+		>
 			<div class="flex flex-row md:flex-col items-center">
 				<Icon {icon} class="text-5xl mx-8 md:mt-2 text-white" />
 				<div class="flex flex-col md:items-center md:mt-2">
@@ -21,7 +30,7 @@
 						{event.toUpperCase()}
 					</div>
 					<div class="font-barlow-semi text-white font-bold text-xl md:text-center">
-						{date}
+						{formatter.format(date)}
 					</div>
 				</div>
 			</div>
