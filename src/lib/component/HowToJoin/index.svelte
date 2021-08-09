@@ -16,7 +16,7 @@
 </div>
 
 <h2 class="font-montserrat text-center text-2xl font-black mt-6">
-	Bayar <span class="thiccboi line-through text-gray-500">Rp&nbsp;150.000</span> Rp&nbsp;100.000,- per
+	Bayar <span class="thiccboi line-through text-gray-500">Rp&nbsp;125.000</span> Rp&nbsp;100.000,- per
 	tim
 </h2>
 <div class="font-montserrat text-center  text-gray-900">Harga spesial s.d. 19 Agustus 2019</div>
