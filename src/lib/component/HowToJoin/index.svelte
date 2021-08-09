@@ -19,7 +19,7 @@
 	Bayar <span class="thiccboi line-through text-gray-500">Rp&nbsp;125.000</span> Rp&nbsp;100.000,- per
 	tim
 </h2>
-<div class="font-montserrat text-center  text-gray-900">Harga spesial s.d. 19 Agustus 2019</div>
+<div class="font-montserrat text-center  text-gray-900">Harga spesial s.d. 19 Agustus 2021</div>
 <div class="flex flex-row justify-center mt-2">
 	<div class="w-72 shadow-lg rounded bg-white dark:bg-gray-800 p-4">
 		<div class="flex-row gap-4 flex justify-center items-center">
