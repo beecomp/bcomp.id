@@ -75,7 +75,7 @@
 			text-anchor="middle"
 			font-size="0.625rem"
 		>
-			UNLOCK YOUR BRILLIANCE
+			UNLOCKING YOUR BRILLIANCE
 		</text>
 	</svg>
 </div>
