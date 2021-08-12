@@ -4,7 +4,7 @@
 
 <div class="pt-16 w-full">
 	<iframe
-		src="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
+		src="https://buzzbuzz.sgp1.cdn.digitaloceanspaces.com/docs/elim-ipa.pdf"
 		class="w-full tallboi"
 		frameborder="0"
 	/>

@@ -4,7 +4,7 @@
 
 <div class="pt-16 w-full">
 	<iframe
-		src="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
+		src="https://buzzbuzz.sgp1.cdn.digitaloceanspaces.com/docs/elim-mat.pdf"
 		class="w-full tallboi"
 		frameborder="0"
 	/>
