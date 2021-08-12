@@ -8,7 +8,7 @@
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://drive.google.com/file/d/10GRm2eks2lfOsvNUaNJfqkhg_0nZxn8b/view"
+		href="https://drive.google.com/file/d/1MgHI-7kz8hdmGo9FOsbfLUaeE1vja5Vv/view?usp=sharing"
 		class="btn w-64"
 	>
 		Guidebook
