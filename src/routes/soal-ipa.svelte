@@ -2,12 +2,21 @@
 	export const prerender = true;
 </script>
 
-<div class="pt-16 w-full">
+<div class="relative pt-16 w-full">
 	<iframe
 		src="https://buzzbuzz.sgp1.cdn.digitaloceanspaces.com/docs/elim-ipa.pdf"
-		class="w-full tallboi"
+		class="absolute w-full tallboi"
 		frameborder="0"
 	/>
+	<div class="flex flex-row items-center w-full tallboi text-xl text-center p-4">
+		<div
+			class="font-barlow-semi max-w-4xl shadow-md rounded bg-lavender text-gray-500 p-4 m-4 mx-auto"
+		>
+			If you're seeing this please wait for the file to be loaded or downloaded.<br />
+			Open this if the file fails to load automatically.<br />
+			https://buzzbuzz.sgp1.cdn.digitaloceanspaces.com/docs/elim-ipa.pdf
+		</div>
+	</div>
 </div>
 
 <style type="postcss">
