@@ -2,6 +2,10 @@
 	export const prerender = true;
 </script>
 
+<svelte:head>
+	<title>Soal IPA - Brilliant Competition XIII</title>
+</svelte:head>
+
 <div class="relative pt-16 w-full">
 	<iframe
 		src="https://buzzbuzz.sgp1.cdn.digitaloceanspaces.com/docs/elim-ipa.pdf"
