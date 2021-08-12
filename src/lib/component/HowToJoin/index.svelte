@@ -39,34 +39,13 @@
 
 <h2 class="font-montserrat text-center text-2xl mt-6">Isi form pendaftaran</h2>
 <div class="flex flex-row justify-center mt-2">
-	<a
-		target="_blank"
-		rel="noreferrer"
-		href="https://docs.google.com/forms/d/e/1FAIpQLSfcbC-AjV7EHEh3PuyCWZPm_9ZOLvhLQlMi_4ocHeUky9wqpw/viewform"
-		class="btn w-64"
-	>
-		Kerjakan Form
-	</a>
+	<a target="_blank" href="/register" class="btn w-64"> Kerjakan Form </a>
 </div>
 
 <h2 class="font-montserrat text-center text-2xl mt-6 mb-2">Kerjakan Soal</h2>
 <div class="flex flex-row justify-center space-x-4">
-	<a
-		target="_blank"
-		rel="noreferrer"
-		href="https://drive.google.com/file/d/1PuC-VFzFnyR0gHyKNrXs3fNSSWTAuVZa/view"
-		class="btn w-40"
-	>
-		Soal MAT
-	</a>
-	<a
-		target="_blank"
-		rel="noreferrer"
-		href="https://drive.google.com/file/d/1Bh883igKqC0qVdCssnT69AdgNMlvyYKm/view"
-		class="btn w-40"
-	>
-		Soal IPA
-	</a>
+	<a target="_blank" href="/soal-mat" class="btn w-40"> Soal MAT </a>
+	<a target="_blank" href="/soal-ipa" class="btn w-40"> Soal IPA </a>
 </div>
 <div class="flex flex-row justify-center space-x-4 mt-2">
 	<a
