@@ -76,7 +76,7 @@
 		Kumpulkan
 	</a>
 </div>
-<h2 class="font-montserrat text-center text-2xl mt-6">Tunggu Pengumuman Tanggal 4 September</h2>
+<h2 class="font-montserrat text-center text-2xl mt-6">Tunggu Pengumuman Tanggal 3 September</h2>
 <div class="max-w-3xl mx-auto mt-2">
 	80% dari peserta dan sebanyak-banyak nya 50 tim dari setiap bidang akan lolos maju ke tahap
 	selanjutnya
