@@ -8,7 +8,7 @@ const schedule = [
   },
   {
     event: "Hasil Penyisihan\u00A01",
-    date: new Date("2021-09-04T23:59+07:00"),
+    date: new Date("2021-09-03T23:59+07:00"),
     icon: faBullhorn,
   },
   {
