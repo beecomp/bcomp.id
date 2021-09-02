@@ -243,7 +243,7 @@
 			</p>
 		</div>
 
-		{#if false}
+		{#if true}
 			<div class="-mt-16 pt-16" use:scrollRef={"announcement"}>
 				<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black md:mb-0">
 					ANNOUNCEMENT
@@ -273,7 +273,7 @@
 						</div> -->
 						<!-- <div class="font-barlow-semi mx-auto text-2xl pt-2">Pengumuman Penyisihan 1</div> -->
 					</div>
-					<p class="font-barlow font-bold text-lg">Matematika</p>
+					<p class="font-barlow font-bold text-lg text-4xl">Matematika</p>
 					<table class="table-auto w-full">
 						<tr class="border-b-2 border-gray-600">
               <th>Kode Tim</th>
@@ -296,7 +296,7 @@
 						</div> -->
 						<!-- <div class="font-barlow-semi mx-auto text-2xl pt-2">Pengumuman Penyisihan 1</div> -->
 					</div>
-					<p class="font-barlow font-bold text-lg">IPA</p>
+					<p class="font-barlow font-bold text-lg text-4xl">IPA</p>
 					<table class="table-auto w-full">
 						<tr class="border-b-2 border-gray-600">
               <th>Kode Tim</th>
