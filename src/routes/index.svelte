@@ -243,7 +243,7 @@
 			</p>
 		</div>
 
-		{#if true}
+		{#if false}
 			<div class="-mt-16 pt-16" use:scrollRef={"announcement"}>
 				<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black md:mb-0">
 					ANNOUNCEMENT
