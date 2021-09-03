@@ -225,6 +225,156 @@
 			members: ["Baruna Adi Sanjaya", "Narendra Aditya Tanoto"],
 			school: "SMP Cahaya Rancamaya",
 		},
+    {
+      team_code: "S001",
+      members: ["Baruna Adi Sanjaya, Narendra Aditya Tanoto"],
+      school: "SMP Cahaya Rancamaya",
+    },
+    {
+      team_code: "S003",
+      members: ["Satya Virya Atmadja"],
+      school: "SMPK Penabur Serang",
+    },
+    {
+      team_code: "S004",
+      members: ["Felicia Putri Gondokusumo, Herbert Karsten Juwono"],
+      school: "SMP Kristen Petra 3 Surabaya",
+    },
+    {
+      team_code: "S005",
+      members: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
+      school: "SMP Kharisma Bangsa",
+    },
+    {
+      team_code: "S006",
+      members: ["Abdullah Karim, Pradipto Pandu Maheswara"],
+      school: "SMP Kharisma Bangsa",
+    },
+    {
+      team_code: "S009",
+      members: ["Richard Huang"],
+      school: "SMPK Penabur Gading Serpong",
+    },
+    {
+      team_code: "S010",
+      members: ["Justin, Edward Eugene Surya"],
+      school: "SMPK 2 Penabur",
+    },
+    {
+      team_code: "S011",
+      members: ["Stevenson Christopher Hudiono, Cheerish Natalia Rifel"],
+      school: "SMPK 2 Penabur",
+    },
+    {
+      team_code: "S012",
+      members: ["Adriel Nathanael Winfryd, Krislyn W Riyadi"],
+      school: "SMPK 7 Penabur",
+    },
+    {
+      team_code: "S013",
+      members: ["Cynthia Nikita Wibowo, Jeremee Rafael Wynn"],
+      school: "SMPK Penabur Kota Modern",
+    },
+    {
+      team_code: "S014",
+      members: ["Welfrydus Winnersdy Rante, Tiara Siddhi Fonso"],
+      school: "SMP Katolik Rajawali Makassar",
+    },
+    {
+      team_code: "S015",
+      members: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
+      school: "SMP Marsudirini Bogor",
+    },
+    {
+      team_code: "S016",
+      members: ["Kenneth Nicander Wijaya, Stefani Angela"],
+      school: "SMPK 6 Penabur",
+    },
+    {
+      team_code: "S017",
+      members: ["Vanessa Natalie Karlina, Katharine Lauren Tie"],
+      school: "SMP Santo Aloysius 2",
+    },
+    {
+      team_code: "S018",
+      members: ["Abigail Venus Rashando, Calysta Bernice Prasasti"],
+      school: "SMP Santo Aloysius 2",
+    },
+    {
+      team_code: "S019",
+      members: ["Joshua Emmanuel Wahyu, Vania Feby Wijaya"],
+      school: "SMPK 2 PENABUR",
+    },
+    {
+      team_code: "S020",
+      members: ["Felix Halley Thamin, Gratia Plena Kusdevina"],
+      school: "SMPK 4 Penabur",
+    },
+    {
+      team_code: "S022",
+      members: ["Abraham Brandon Purnama"],
+      school: "SMP Kristen Ketapang 1 Jakarta",
+    },
+    {
+      team_code: "S023",
+      members: ["Ethan Samuel Benaya Khu"],
+      school: "SMPK Penabur Kota Modern",
+    },
+    {
+      team_code: "S025",
+      members: ["Sammuel Lim, Anthony Christian"],
+      school: "SMP Kristen IPEKA Puri",
+    },
+    {
+      team_code: "S027",
+      members: ["Jack Howard Wijaya, Juan Howard Wijaya"],
+      school: "SMP Darma Yudha Pekanbaru",
+    },
+    {
+      team_code: "S028",
+      members: ["Bagasmora Andreo Sibarani, Mikhael Faith Benaiah L. Saragih"],
+      school: "SMP Darma Yudha Pekanbaru",
+    },
+    {
+      team_code: "S029",
+      members: ["Khansky Khonery, Melvin Raphael Gandaatmaja"],
+      school: "Santa Laurensia Junior High School",
+    },
+    {
+      team_code: "S030",
+      members: ["Nathan Raphael Martua N., William Tengganu"],
+      school: "SMP Global Prestasi",
+    },
+    {
+      team_code: "S031",
+      members: ["Tsabitah Abiyyu, Joanna Stevia C."],
+      school: "SMP Global Prestasi",
+    },
+    {
+      team_code: "S032",
+      members: ["Clara Christovia Sahetapy, Sevonarola Haryo Lumenta"],
+      school: "SMP Athalia",
+    },
+    {
+      team_code: "S033",
+      members: ["Feliska Adenia Lubitha, Cornelius Jabez Lim"],
+      school: "SMP Athalia",
+    },
+    {
+      team_code: "S034",
+      members: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
+      school: "SMPK Penabur Gading Serpong",
+    },
+    {
+      team_code: "S035",
+      members: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
+      school: "SMPK Kelapa Gading",
+    },
+    {
+      team_code: "S036",
+      members: ["Fiorine Audiera Han"],
+      school: "SMPK PENABUR Kota Modern",
+    },
 	];
 </script>
 
