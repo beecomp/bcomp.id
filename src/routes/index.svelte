@@ -220,11 +220,6 @@
 
 	let showDetailedSci = false;
 	const elimParticipantsSci = [
-		{
-			team_code: "S001",
-			members: ["Baruna Adi Sanjaya", "Narendra Aditya Tanoto"],
-			school: "SMP Cahaya Rancamaya",
-		},
     {
       team_code: "S001",
       members: ["Baruna Adi Sanjaya, Narendra Aditya Tanoto"],
