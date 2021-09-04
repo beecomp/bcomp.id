@@ -2,8 +2,8 @@
 	import bca from "./bca.svg";
 </script>
 
-<h1 class="font-montserrat italic text-center text-5xl text-gray-700">HOW TO JOIN</h1>
-<h2 class="font-montserrat text-center text-2xl font-black mt-3 mb-2">Baca Guidebook</h2>
+<!-- <h1 class="font-montserrat italic text-center text-5xl text-gray-700">HOW TO JOIN</h1> -->
+<h2 class="font-montserrat font-black text-gray-700 italic text-center text-4xl font-black mt-3 mb-2">GUIDEBOOK</h2>
 <div class="flex flex-row justify-center space-x-4">
 	<a
 		target="_blank"
@@ -15,7 +15,7 @@
 	</a>
 </div>
 
-<h2 class="font-montserrat text-center text-2xl font-black mt-6">
+<!-- <h2 class="font-montserrat text-center text-2xl font-black mt-6">
 	Bayar Rp&nbsp;125.000 per tim
 	
 </h2>
@@ -34,37 +34,37 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<h2 class="font-montserrat text-center text-2xl mt-6">Isi form pendaftaran</h2>
+<!-- <h2 class="font-montserrat text-center text-2xl mt-6">Isi form pendaftaran</h2>
 <div class="flex flex-row justify-center mt-2">
 	<a target="_blank" href="/register" class="btn w-64"> Kerjakan Form </a>
-</div>
+</div> -->
 
-<h2 class="font-montserrat text-center text-2xl mt-6 mb-2">Kerjakan Soal</h2>
-<div class="flex flex-row justify-center space-x-4">
+<h2 class="font-montserrat font-black text-gray-700 italic text-center text-2xl font-black mt-3 mb-2 pt-10">Powerpoint Technical Meeting</h2>
+<!-- <div class="flex flex-row justify-center space-x-4">
 	<a target="_blank" href="/soal-mat" class="btn w-40"> Soal MAT </a>
 	<a target="_blank" href="/soal-ipa" class="btn w-40"> Soal IPA </a>
-</div>
+</div> -->
 <div class="flex flex-row justify-center space-x-4 mt-2">
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://drive.google.com/file/d/1xNjNc4sgMWXRk_T5rOeZbeWb5pGAxUqg/view"
+		href="https://drive.google.com/file/d/1Z_0yDagjBghn5a636X9RMoDAKqVdHGA5/view?usp=sharing"
 		class="btn w-40"
 	>
-		LJ MAT
+		PPT MAT
 	</a>
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://drive.google.com/file/d/1BlLUZS4869F_KjgzGHHUODjyXuLQJKi3/view"
+		href="https://drive.google.com/file/d/1DAD6nT87tvce2crIiS8M_U2EBbOW1DTe/view?usp=sharing"
 		class="btn w-40"
 	>
-		LJ IPA
+		PPT IPA
 	</a>
 </div>
-<h2 class="font-montserrat text-center text-2xl mt-6">Kumpulkan Jawaban Sebelum 1 September</h2>
+<!-- <h2 class="font-montserrat text-center text-2xl mt-6">Kumpulkan Jawaban Sebelum 1 September</h2>
 <div class="flex flex-row justify-center mt-2">
 	<a
 		target="_blank"
@@ -74,12 +74,12 @@
 	>
 		Kumpulkan
 	</a>
-</div>
-<h2 class="font-montserrat text-center text-2xl mt-6">Tunggu Pengumuman Tanggal 3 September</h2>
+</div> -->
+<!-- <h2 class="font-montserrat text-center text-2xl mt-6">Tunggu Pengumuman Tanggal 3 September</h2>
 <div class="max-w-3xl mx-auto mt-2">
 	80% dari peserta dan sebanyak-banyak nya 50 tim dari setiap bidang akan lolos maju ke tahap
 	selanjutnya
-</div>
+</div> -->
 
 <style lang="postcss">
 	.btn {

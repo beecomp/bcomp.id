@@ -12,7 +12,7 @@ const schedule = [
     icon: faBullhorn,
   },
   {
-    event: "Technical Meeting",
+    event: "Technical Meeting\u00a0",
     date: new Date("2021-09-04T23:59+07:00"),
     icon: faBullhorn,
   },
