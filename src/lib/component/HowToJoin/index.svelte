@@ -2,8 +2,8 @@
 	import bca from "./bca.svg";
 </script>
 
-<!-- <h1 class="font-montserrat italic text-center text-5xl text-gray-700">HOW TO JOIN</h1> -->
-<h2 class="font-montserrat font-black text-gray-700 italic text-center text-4xl font-black mt-3 mb-2">GUIDEBOOK</h2>
+<h1 class="font-montserrat italic text-center text-5xl text-gray-700">RULES</h1>
+<h2 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">Guidebook</h2>
 <div class="flex flex-row justify-center space-x-4">
 	<a
 		target="_blank"
@@ -41,7 +41,7 @@
 	<a target="_blank" href="/register" class="btn w-64"> Kerjakan Form </a>
 </div> -->
 
-<h2 class="font-montserrat font-black text-gray-700 italic text-center text-2xl font-black mt-3 mb-2 pt-10">Powerpoint Technical Meeting</h2>
+<h1 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">Powerpoint Technical Meeting</h1>
 <!-- <div class="flex flex-row justify-center space-x-4">
 	<a target="_blank" href="/soal-mat" class="btn w-40"> Soal MAT </a>
 	<a target="_blank" href="/soal-ipa" class="btn w-40"> Soal IPA </a>
