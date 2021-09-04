@@ -392,14 +392,14 @@
 		</div>
 
 		<div class="-mt-16 pt-16" use:scrollRef={"announcement"}>
-			<h1 class="font-montserrat text-gray-700 italic text-center text-5xl font-black md:mb-0">
+			<h1 class="font-montserrat text-gray-700 italic text-center text-4xl font-black md:mb-0">
 				ANNOUNCEMENT
 			</h1>
 			<h1 class="font-montserrat text-gray-700 italic text-center text-3xl font-black md:mb-0 pt-8">
 				Pengumuman Penyisihan 1
 			</h1>
 			<div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
-				<p class="font-montserrat font-bold text-lg text-3xl text-gray-700">Matematika</p>
+				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
 				{#if showDetailedMat}
 					<div class="py-4" transition:slide={{ duration: 2000 }}>
 						<table class="table-auto w-full">
@@ -433,7 +433,7 @@
 			</div>
 			<div class=" max-w-4xl shadow rounded bg-white px-4 pb-4 m-4 mx-auto">
 				<div class="flex flex-row mb-3" />
-				<p class="font-montserrat font-bold text-lg text-3xl text-gray-700">IPA</p>
+				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">IPA</p>
 				{#if showDetailedSci}
 					<div class="py-4" transition:slide={{ duration: 2000 }}>
 						<table class="table-auto w-full">
