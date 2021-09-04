@@ -1,4 +1,13 @@
 const schedule = [
+  {
+    date: "Sabtu, 4 Sept 2021",
+    events: [
+      {
+        time: "15:00",
+        event: "Technical Meeting",
+      },
+    ],
+  },
 	{
 		date: "Senin, 6 Sept 2021",
 		events: [

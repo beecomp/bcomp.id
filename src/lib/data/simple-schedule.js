@@ -12,6 +12,11 @@ const schedule = [
     icon: faBullhorn,
   },
   {
+    event: "Technical Meeting",
+    date: new Date("2021-09-04T23:59+07:00"),
+    icon: faBullhorn,
+  },
+  {
     event: "Penyisihan 2",
     date: new Date("2021-09-06T23:59+07:00"),
     icon: faPencilAlt,
@@ -22,9 +27,9 @@ const schedule = [
     icon: faPencilAlt,
   },
   {
-    icon: faPencilAlt,
     date: new Date("2021-09-10T23:59+07:00"),
     event: "Final",
+    icon: faPencilAlt,
   },
 ];
 
