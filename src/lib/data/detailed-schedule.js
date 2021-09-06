@@ -4,7 +4,7 @@ const schedule = [
     events: [
       {
         time: "15:00",
-        event: "Technical Meeting",
+        event: "Tech Meet Penyisihan 2",
       },
     ],
   },
