@@ -32,16 +32,6 @@
 			school: "SMP Xaverius 1 Bandarlampung",
 		},
 		{
-			code: "M003",
-			names: ["Kenneth Lie", "Damian Ma"],
-			school: "SMPK 6 PENABUR",
-		},
-		{
-			code: "M004",
-			names: ["Holly Natasha Sutantio", "Kathryne Ashley Sentosa"],
-			school: "Mawar Sharon Christian School",
-		},
-		{
 			code: "M005",
 			names: ["Nathanael Richlie Kurniawan"],
 			school: "SMPK PENABUR Gading Serpong",
@@ -60,16 +50,6 @@
 			code: "M009",
 			names: ["Darren Tan", "Felipe Nathanael Corinthians Sitorus"],
 			school: "SMP Kristen 2 Penabur",
-		},
-		{
-			code: "M010",
-			names: ["Valencia Hardjadinata", "Alexandrene Tanri"],
-			school: "SMPK 7 PENABUR Jakarta",
-		},
-		{
-			code: "M011",
-			names: ["Karin Bunadi", "Daniel Timothy Taruna"],
-			school: "SMPK 7 PENABUR JAKARTA",
 		},
 		{
 			code: "M012",
@@ -97,16 +77,6 @@
 			school: "SMPK 2 PENABUR",
 		},
 		{
-			code: "M019",
-			names: ["Najwa Lathiifah Saepudin", "Khairunnisa Athifah"],
-			school: "SMP IT INSAN HARAPAN",
-		},
-		{
-			code: "M022",
-			names: ["Darren Joeve Tanujaya", "Elvin Rosadi"],
-			school: "SMPK BPK PENABUR Bandar Lampung",
-		},
-		{
 			code: "M023",
 			names: ["Kevin Adi Senjaya"],
 			school: "SMP Cahaya Bangsa Metro",
@@ -115,31 +85,6 @@
 			code: "M024",
 			names: ["Evan Syatia To", "Jason Jomono"],
 			school: "SMPK 4 Penabur",
-		},
-		{
-			code: "M025",
-			names: ["Theo Manuel Santoso", "Gwen Tiffany Haryanto"],
-			school: "SMP IPEKA Puri",
-		},
-		{
-			code: "M026",
-			names: ["Metta Niyamacitta Exeliem"],
-			school: "SMPK PENABUR KOTA MODERN",
-		},
-		{
-			code: "M027",
-			names: ["Luffy Lionheart Liduwan", "Willard Ricxie Phangara"],
-			school: "SMPK 6 Penabur",
-		},
-		{
-			code: "M028",
-			names: ["Caroline Evangelina", "Helen Maurelle Wijayanti"],
-			school: "SMPK Kolese Santo Yusup 2 Malang",
-		},
-		{
-			code: "M029",
-			names: ["Clarissa Olivia Purwanto", "Kevin Kumala"],
-			school: "SMPK Kolese Santo Yusup 2 Malang",
 		},
 		{
 			code: "M030",
@@ -157,64 +102,9 @@
 			school: "SMP DARMA YUDHA",
 		},
 		{
-			code: "M033",
-			names: ["Noell Raymon Putra Simamora", "Derrick Devs Chayrich"],
-			school: "Darma Yudha",
-		},
-		{
 			code: "M034",
 			names: ["Neilson Huang", "Elia Siringoringo"],
 			school: "SMP Darma Yudha",
-		},
-		{
-			code: "M035",
-			names: ["Gilbert Titus Calvin Marganti Hutapea"],
-			school: "SMPN 92 JAKARTA ",
-		},
-		{
-			code: "M038",
-			names: ["Esther Gloria Abigail Mamesah", "Nadhif Aydin Adinandra"],
-			school: "SMPN 2 Depok",
-		},
-		{
-			code: "M040",
-			names: ["Ayra Kenanthi Putri S.", "Prita Salsabila"],
-			school: "SMP Global Prestasi",
-		},
-		{
-			code: "M042",
-			names: ["Rico Firmansyah", "Essenza Qurani Permata"],
-			school: "SMP BUSTANUL MAKMUR GENTENG",
-		},
-		{
-			code: "M043",
-			names: ["Firdasari Kusuma", "Mazaya Allessya Kusuma"],
-			school: "SMPN 2 DEPOK",
-		},
-		{
-			code: "M044",
-			names: ["Joshua Willson", "Cedric Kartawidjaja"],
-			school: "SMPK Penabur Gading Serpong",
-		},
-		{
-			code: "M046",
-			names: ["Keiana Sethyaningrum", "Davin Sukandar"],
-			school: "SMP Athalia",
-		},
-		{
-			code: "M047",
-			names: ["Kelsey Daveney Dicky", "Hanzel Clement Alpeso"],
-			school: "SMP Athalia",
-		},
-		{
-			code: "M048",
-			names: ["Joleen Chelsea"],
-			school: "Raffles School Kelapa Gading",
-		},
-		{
-			code: "M049",
-			names: ["Caroline Gracia Lendrian"],
-			school: "Penabur International Kelapa Gading",
 		},
 	];
 
@@ -226,29 +116,9 @@
       school: "SMP Cahaya Rancamaya",
     },
     {
-      code: "S003",
-      names: ["Satya Virya Atmadja"],
-      school: "SMPK Penabur Serang",
-    },
-    {
-      code: "S004",
-      names: ["Felicia Putri Gondokusumo, Herbert Karsten Juwono"],
-      school: "SMP Kristen Petra 3 Surabaya",
-    },
-    {
       code: "S005",
       names: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
       school: "SMP Kharisma Bangsa",
-    },
-    {
-      code: "S006",
-      names: ["Abdullah Karim, Pradipto Pandu Maheswara"],
-      school: "SMP Kharisma Bangsa",
-    },
-    {
-      code: "S009",
-      names: ["Richard Huang"],
-      school: "SMPK Penabur Gading Serpong",
     },
     {
       code: "S010",
@@ -271,29 +141,9 @@
       school: "SMPK Penabur Kota Modern",
     },
     {
-      code: "S014",
-      names: ["Welfrydus Winnersdy Rante, Tiara Siddhi Fonso"],
-      school: "SMP Katolik Rajawali Makassar",
-    },
-    {
       code: "S015",
       names: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
       school: "SMP Marsudirini Bogor",
-    },
-    {
-      code: "S016",
-      names: ["Kenneth Nicander Wijaya, Stefani Angela"],
-      school: "SMPK 6 Penabur",
-    },
-    {
-      code: "S017",
-      names: ["Vanessa Natalie Karlina, Katharine Lauren Tie"],
-      school: "SMP Santo Aloysius 2",
-    },
-    {
-      code: "S018",
-      names: ["Abigail Venus Rashando, Calysta Bernice Prasasti"],
-      school: "SMP Santo Aloysius 2",
     },
     {
       code: "S019",
@@ -316,11 +166,6 @@
       school: "SMPK Penabur Kota Modern",
     },
     {
-      code: "S025",
-      names: ["Sammuel Lim, Anthony Christian"],
-      school: "SMP Kristen IPEKA Puri",
-    },
-    {
       code: "S027",
       names: ["Jack Howard Wijaya, Juan Howard Wijaya"],
       school: "SMP Darma Yudha Pekanbaru",
@@ -341,21 +186,6 @@
       school: "SMP Global Prestasi",
     },
     {
-      code: "S031",
-      names: ["Tsabitah Abiyyu, Joanna Stevia C."],
-      school: "SMP Global Prestasi",
-    },
-    {
-      code: "S032",
-      names: ["Clara Christovia Sahetapy, Sevonarola Haryo Lumenta"],
-      school: "SMP Athalia",
-    },
-    {
-      code: "S033",
-      names: ["Feliska Adenia Lubitha, Cornelius Jabez Lim"],
-      school: "SMP Athalia",
-    },
-    {
       code: "S034",
       names: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
       school: "SMPK Penabur Gading Serpong",
@@ -364,11 +194,6 @@
       code: "S035",
       names: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
       school: "SMPK Kelapa Gading",
-    },
-    {
-      code: "S036",
-      names: ["Fiorine Audiera Han"],
-      school: "SMPK PENABUR Kota Modern",
     },
 	];
 </script>
@@ -396,7 +221,7 @@
 				ANNOUNCEMENT
 			</h1>
 			<h1 class="font-montserrat text-gray-700 text-center text-3xl font-black md:mb-0 pt-8">
-				Pengumuman Penyisihan 1
+				Pengumuman Penyisihan 2
 			</h1>
 			<div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
