@@ -59,7 +59,7 @@ const schedule = [
 		date: "Jumat, 10 Sept 2021",
 		events: [
 			{
-				time: "07:30–sampai selesai",
+				time: "07:30-Selesai",
 				event: "Final",
 			},
 		],
