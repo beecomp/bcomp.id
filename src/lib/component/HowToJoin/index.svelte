@@ -53,7 +53,7 @@
 		href="https://drive.google.com/file/d/1Z_0yDagjBghn5a636X9RMoDAKqVdHGA5/view?usp=sharing"
 		class="btn w-40"
 	>
-		PPT MAT
+		Tech meet P1 MAT
 	</a>
 	<a
 		target="_blank"
@@ -61,7 +61,25 @@
 		href="https://drive.google.com/file/d/1DAD6nT87tvce2crIiS8M_U2EBbOW1DTe/view?usp=sharing"
 		class="btn w-40"
 	>
-		PPT IPA
+		Tech meet P1 IPA
+	</a>
+</div>
+<div class="flex flex-row justify-center space-x-4 mt-2">
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://drive.google.com/file/d/1B_iPjScT7I462pZcHtMEpK1ZNM4Hx_-q/view?usp=sharing"
+		class="btn w-40"
+	>
+		Tech meet P1 MAT
+	</a>
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://drive.google.com/file/d/1HevRWP5mpdFI7q70Nhcxm1YvlyxNW89X/view?usp=sharing"
+		class="btn w-40"
+	>
+		Tech meet P2 IPA
 	</a>
 </div>
 <!-- <h2 class="font-montserrat text-center text-2xl mt-6">Kumpulkan Jawaban Sebelum 1 September</h2>
