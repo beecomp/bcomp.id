@@ -71,7 +71,7 @@
 		href="https://drive.google.com/file/d/1B_iPjScT7I462pZcHtMEpK1ZNM4Hx_-q/view?usp=sharing"
 		class="btn w-40"
 	>
-		Tech meet P1 MAT
+		Tech meet P2 MAT
 	</a>
 	<a
 		target="_blank"
