@@ -7,11 +7,6 @@ const schedule = [
     icon: faInbox,
   },
   {
-    event: "Hasil Penyisihan\u00A01",
-    date: new Date("2021-09-03T23:59+07:00"),
-    icon: faBullhorn,
-  },
-  {
     event: "Penyisihan 2",
     date: new Date("2021-09-06T23:59+07:00"),
     icon: faPencilAlt,
