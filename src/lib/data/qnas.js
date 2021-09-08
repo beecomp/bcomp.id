@@ -26,7 +26,7 @@ const s = [
 	},
 	{
 		q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
-		a: "Tidak ada, materi Brilliant Competition tahun ini berkisar materi OSN SMP",
+		a: "Tidak ada, materi Brilliant Competition tahun ini berkisar materi OSN SMP.",
 	},
 ];
 
