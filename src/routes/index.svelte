@@ -26,41 +26,41 @@
 			names: ["Franklin Filbert"],
 			school: "SMP Witama",
 		},
-		{
-			code: "M002",
-			names: ["Adeline Fedora Cahyadi"],
-			school: "SMP Xaverius 1 Bandarlampung",
-		},
-		{
-			code: "M005",
-			names: ["Nathanael Richlie Kurniawan"],
-			school: "SMPK PENABUR Gading Serpong",
-		},
-		{
-			code: "M006",
-			names: ["Jasper Rexx Putra Cakra", "Fakhri Musyaffa Ariyanto"],
-			school: "Kharisma Bangsa",
-		},
-		{
-			code: "M007",
-			names: ["M. Rafi Qsan Baskoro", "Naufal Fadhlurrahman"],
-			school: "SMP Kharisma Bangsa",
-		},
-		{
-			code: "M009",
-			names: ["Darren Tan", "Felipe Nathanael Corinthians Sitorus"],
-			school: "SMP Kristen 2 Penabur",
-		},
-		{
-			code: "M012",
-			names: ["Ailin Liangga Putri", "Tristan Alexander Wong"],
-			school: "SMP Cita Hati Christian School ",
-		},
-		{
-			code: "M013",
-			names: ["Imam Rasyid Rabbani", "Heydar Ali Akbar"],
-			school: "SMPN 255 Jakarta",
-		},
+		// {
+		// 	code: "M002",
+		// 	names: ["Adeline Fedora Cahyadi"],
+		// 	school: "SMP Xaverius 1 Bandarlampung",
+		// },
+		// {
+		// 	code: "M005",
+		// 	names: ["Nathanael Richlie Kurniawan"],
+		// 	school: "SMPK PENABUR Gading Serpong",
+		// },
+		// {
+		// 	code: "M006",
+		// 	names: ["Jasper Rexx Putra Cakra", "Fakhri Musyaffa Ariyanto"],
+		// 	school: "Kharisma Bangsa",
+		// },
+		// {
+		// 	code: "M007",
+		// 	names: ["M. Rafi Qsan Baskoro", "Naufal Fadhlurrahman"],
+		// 	school: "SMP Kharisma Bangsa",
+		// },
+		// {
+		// 	code: "M009",
+		// 	names: ["Darren Tan", "Felipe Nathanael Corinthians Sitorus"],
+		// 	school: "SMP Kristen 2 Penabur",
+		// },
+		// {
+		// 	code: "M012",
+		// 	names: ["Ailin Liangga Putri", "Tristan Alexander Wong"],
+		// 	school: "SMP Cita Hati Christian School ",
+		// },
+		// {
+		// 	code: "M013",
+		// 	names: ["Imam Rasyid Rabbani", "Heydar Ali Akbar"],
+		// 	school: "SMPN 255 Jakarta",
+		// },
 		{
 			code: "M014",
 			names: ["Michael Cenreng", "Grace Lucretia"],
@@ -71,41 +71,41 @@
 			names: ["Ben Robinson", "Ethan Anderson"],
 			school: "SMP PETRA 1",
 		},
-		{
-			code: "M016",
-			names: ["Louis Wilson Gunawan", "Ethan Christopher Huang"],
-			school: "SMPK 2 PENABUR",
-		},
+		// {
+		// 	code: "M016",
+		// 	names: ["Louis Wilson Gunawan", "Ethan Christopher Huang"],
+		// 	school: "SMPK 2 PENABUR",
+		// },
 		{
 			code: "M023",
 			names: ["Kevin Adi Senjaya"],
 			school: "SMP Cahaya Bangsa Metro",
 		},
-		{
-			code: "M024",
-			names: ["Evan Syatia To", "Jason Jomono"],
-			school: "SMPK 4 Penabur",
-		},
-		{
-			code: "M030",
-			names: ["Neisha Calya Mahardhika", "Zidan Akrom Putra"],
-			school: "SMP Pribadi Depok",
-		},
+		// {
+		// 	code: "M024",
+		// 	names: ["Evan Syatia To", "Jason Jomono"],
+		// 	school: "SMPK 4 Penabur",
+		// },
+		// {
+		// 	code: "M030",
+		// 	names: ["Neisha Calya Mahardhika", "Zidan Akrom Putra"],
+		// 	school: "SMP Pribadi Depok",
+		// },
 		{
 			code: "M031",
 			names: ["Leonardo Valerian", "Yvonnie Natasha"],
 			school: "SMP Darma Yudha",
 		},
-		{
-			code: "M032",
-			names: ["Grace Christinalie", "Gilberto Lim"],
-			school: "SMP DARMA YUDHA",
-		},
-		{
-			code: "M034",
-			names: ["Neilson Huang", "Elia Siringoringo"],
-			school: "SMP Darma Yudha",
-		},
+		// {
+		// 	code: "M032",
+		// 	names: ["Grace Christinalie", "Gilberto Lim"],
+		// 	school: "SMP DARMA YUDHA",
+		// },
+		// {
+		// 	code: "M034",
+		// 	names: ["Neilson Huang", "Elia Siringoringo"],
+		// 	school: "SMP Darma Yudha",
+		// },
 	];
 
 	let showDetailedSci = false;
@@ -115,86 +115,86 @@
       names: ["Baruna Adi Sanjaya, Narendra Aditya Tanoto"],
       school: "SMP Cahaya Rancamaya",
     },
-    {
-      code: "S005",
-      names: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
-      school: "SMP Kharisma Bangsa",
-    },
-    {
-      code: "S010",
-      names: ["Justin, Edward Eugene Surya"],
-      school: "SMPK 2 Penabur",
-    },
+    // {
+    //   code: "S005",
+    //   names: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
+    //   school: "SMP Kharisma Bangsa",
+    // },
+    // {
+    //   code: "S010",
+    //   names: ["Justin, Edward Eugene Surya"],
+    //   school: "SMPK 2 Penabur",
+    // },
     {
       code: "S011",
       names: ["Stevenson Christopher Hudiono, Cheerish Natalia Rifel"],
       school: "SMPK 2 Penabur",
     },
-    {
-      code: "S012",
-      names: ["Adriel Nathanael Winfryd, Krislyn W Riyadi"],
-      school: "SMPK 7 Penabur",
-    },
-    {
-      code: "S013",
-      names: ["Cynthia Nikita Wibowo, Jeremee Rafael Wynn"],
-      school: "SMPK Penabur Kota Modern",
-    },
-    {
-      code: "S015",
-      names: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
-      school: "SMP Marsudirini Bogor",
-    },
-    {
-      code: "S019",
-      names: ["Joshua Emmanuel Wahyu, Vania Feby Wijaya"],
-      school: "SMPK 2 PENABUR",
-    },
+    // {
+    //   code: "S012",
+    //   names: ["Adriel Nathanael Winfryd, Krislyn W Riyadi"],
+    //   school: "SMPK 7 Penabur",
+    // },
+    // {
+    //   code: "S013",
+    //   names: ["Cynthia Nikita Wibowo, Jeremee Rafael Wynn"],
+    //   school: "SMPK Penabur Kota Modern",
+    // },
+    // {
+    //   code: "S015",
+    //   names: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
+    //   school: "SMP Marsudirini Bogor",
+    // },
+    // {
+    //   code: "S019",
+    //   names: ["Joshua Emmanuel Wahyu, Vania Feby Wijaya"],
+    //   school: "SMPK 2 PENABUR",
+    // },
     {
       code: "S020",
       names: ["Felix Halley Thamin, Gratia Plena Kusdevina"],
       school: "SMPK 4 Penabur",
     },
-    {
-      code: "S022",
-      names: ["Abraham Brandon Purnama"],
-      school: "SMP Kristen Ketapang 1 Jakarta",
-    },
-    {
-      code: "S023",
-      names: ["Ethan Samuel Benaya Khu"],
-      school: "SMPK Penabur Kota Modern",
-    },
+    // {
+    //   code: "S022",
+    //   names: ["Abraham Brandon Purnama"],
+    //   school: "SMP Kristen Ketapang 1 Jakarta",
+    // },
+    // {
+    //   code: "S023",
+    //   names: ["Ethan Samuel Benaya Khu"],
+    //   school: "SMPK Penabur Kota Modern",
+    // },
     {
       code: "S027",
       names: ["Jack Howard Wijaya, Juan Howard Wijaya"],
       school: "SMP Darma Yudha Pekanbaru",
     },
-    {
-      code: "S028",
-      names: ["Bagasmora Andreo Sibarani, Mikhael Faith Benaiah L. Saragih"],
-      school: "SMP Darma Yudha Pekanbaru",
-    },
-    {
-      code: "S029",
-      names: ["Khansky Khonery, Melvin Raphael Gandaatmaja"],
-      school: "Santa Laurensia Junior High School",
-    },
+    // {
+    //   code: "S028",
+    //   names: ["Bagasmora Andreo Sibarani, Mikhael Faith Benaiah L. Saragih"],
+    //   school: "SMP Darma Yudha Pekanbaru",
+    // },
+    // {
+    //   code: "S029",
+    //   names: ["Khansky Khonery, Melvin Raphael Gandaatmaja"],
+    //   school: "Santa Laurensia Junior High School",
+    // },
     {
       code: "S030",
       names: ["Nathan Raphael Martua N., William Tengganu"],
       school: "SMP Global Prestasi",
     },
-    {
-      code: "S034",
-      names: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
-      school: "SMPK Penabur Gading Serpong",
-    },
-    {
-      code: "S035",
-      names: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
-      school: "SMPK Kelapa Gading",
-    },
+    // {
+    //   code: "S034",
+    //   names: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
+    //   school: "SMPK Penabur Gading Serpong",
+    // },
+    // {
+    //   code: "S035",
+    //   names: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
+    //   school: "SMPK Kelapa Gading",
+    // },
 	];
 </script>
 
@@ -221,12 +221,12 @@
 				ANNOUNCEMENT
 			</h1>
 			<h1 class="font-montserrat text-gray-700 text-center text-3xl font-black md:mb-0 pt-8">
-				Pengumuman Penyisihan 2
+				Pengumuman Semifinal
 			</h1>
 			<div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
-				{#if showDetailedMat}
-					<div class="py-4" transition:slide={{ duration: 2000 }}>
+				<!-- {#if showDetailedMat}
+					<div class="py-4" transition:slide={{ duration: 0 }}> -->
 						<table class="table-auto w-full">
 							<tr class="border-b-2 border-gray-600">
 								<th>Kode Tim</th>
@@ -241,10 +241,10 @@
 								</tr>
 							{/each}
 						</table>
-					</div>
-				{/if}
+					<!-- </div>
+				{/if} -->
 
-				<div class="flex justify-center">
+				<!-- <div class="flex justify-center">
 					<button
 						type="button"
 						class="btn mt-3 w-full max-w-md"
@@ -254,13 +254,13 @@
 						{showDetailedMat ? "Sembunyikan" : "Selengkapnya"}
 						<Icon icon={showDetailedMat ? faChevronUp : faChevronDown} class="mx-4 text-white" />
 					</button>
-				</div>
+				</div> -->
 			</div>
 			<div class=" max-w-4xl shadow rounded bg-white px-4 pb-4 m-4 mx-auto">
 				<div class="flex flex-row mb-3" />
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">IPA</p>
-				{#if showDetailedSci}
-					<div class="py-4" transition:slide={{ duration: 2000 }}>
+				<!-- {#if showDetailedSci}
+					<div class="py-4" transition:slide={{ duration: 0 }}> -->
 						<table class="table-auto w-full">
 							<tr class="border-b-2 border-gray-600">
 								<th>Kode Tim</th>
@@ -275,10 +275,10 @@
 								</tr>
 							{/each}
 						</table>
-					</div>
-				{/if}
+					<!-- </div>
+				{/if} -->
 
-				<div class="flex justify-center">
+				<!-- <div class="flex justify-center">
 					<button
 						type="button"
 						class="btn mt-3 w-full max-w-md"
@@ -288,7 +288,7 @@
 						{showDetailedSci ? "Sembunyikan" : "Selengkapnya"}
 						<Icon icon={showDetailedSci ? faChevronUp : faChevronDown} class="mx-4 text-white" />
 					</button>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
