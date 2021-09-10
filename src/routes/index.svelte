@@ -21,180 +21,60 @@
 
 	let showDetailedMat = false;
 	const elimParticipantsMat = [
+    {
+      code: "M015",
+      names: ["Ben Robinson", "Ethan Anderson"],
+      school: "SMP PETRA 1",
+    },
 		{
-			code: "M001",
-			names: ["Franklin Filbert"],
-			school: "SMP Witama",
-		},
-		// {
-		// 	code: "M002",
-		// 	names: ["Adeline Fedora Cahyadi"],
-		// 	school: "SMP Xaverius 1 Bandarlampung",
-		// },
-		// {
-		// 	code: "M005",
-		// 	names: ["Nathanael Richlie Kurniawan"],
-		// 	school: "SMPK PENABUR Gading Serpong",
-		// },
-		// {
-		// 	code: "M006",
-		// 	names: ["Jasper Rexx Putra Cakra", "Fakhri Musyaffa Ariyanto"],
-		// 	school: "Kharisma Bangsa",
-		// },
-		// {
-		// 	code: "M007",
-		// 	names: ["M. Rafi Qsan Baskoro", "Naufal Fadhlurrahman"],
-		// 	school: "SMP Kharisma Bangsa",
-		// },
-		// {
-		// 	code: "M009",
-		// 	names: ["Darren Tan", "Felipe Nathanael Corinthians Sitorus"],
-		// 	school: "SMP Kristen 2 Penabur",
-		// },
-		// {
-		// 	code: "M012",
-		// 	names: ["Ailin Liangga Putri", "Tristan Alexander Wong"],
-		// 	school: "SMP Cita Hati Christian School ",
-		// },
-		// {
-		// 	code: "M013",
-		// 	names: ["Imam Rasyid Rabbani", "Heydar Ali Akbar"],
-		// 	school: "SMPN 255 Jakarta",
-		// },
-		{
-			code: "M014",
-			names: ["Michael Cenreng", "Grace Lucretia"],
-			school: "SMP Katolik Rajawali",
-		},
-		{
-			code: "M015",
-			names: ["Ben Robinson", "Ethan Anderson"],
-			school: "SMP PETRA 1",
-		},
-		// {
-		// 	code: "M016",
-		// 	names: ["Louis Wilson Gunawan", "Ethan Christopher Huang"],
-		// 	school: "SMPK 2 PENABUR",
-		// },
-		{
-			code: "M023",
+      code: "M023",
 			names: ["Kevin Adi Senjaya"],
 			school: "SMP Cahaya Bangsa Metro",
 		},
-		// {
-		// 	code: "M024",
-		// 	names: ["Evan Syatia To", "Jason Jomono"],
-		// 	school: "SMPK 4 Penabur",
-		// },
-		// {
-		// 	code: "M030",
-		// 	names: ["Neisha Calya Mahardhika", "Zidan Akrom Putra"],
-		// 	school: "SMP Pribadi Depok",
-		// },
 		{
-			code: "M031",
+      code: "M031",
 			names: ["Leonardo Valerian", "Yvonnie Natasha"],
 			school: "SMP Darma Yudha",
 		},
-		// {
-		// 	code: "M032",
-		// 	names: ["Grace Christinalie", "Gilberto Lim"],
-		// 	school: "SMP DARMA YUDHA",
-		// },
-		// {
-		// 	code: "M034",
-		// 	names: ["Neilson Huang", "Elia Siringoringo"],
-		// 	school: "SMP Darma Yudha",
-		// },
+    {
+      code: "M014",
+      names: ["Michael Cenreng", "Grace Lucretia"],
+      school: "SMP Katolik Rajawali",
+    },
+    {
+      code: "M001",
+      names: ["Franklin Filbert"],
+      school: "SMP Witama",
+    },
 	];
 
 	let showDetailedSci = false;
 	const elimParticipantsSci = [
     {
-      code: "S001",
-      names: ["Baruna Adi Sanjaya, Narendra Aditya Tanoto"],
-      school: "SMP Cahaya Rancamaya",
-    },
-    // {
-    //   code: "S005",
-    //   names: ["Fariz Rayyan Firdaus, Dzakwan Alvaro Putra"],
-    //   school: "SMP Kharisma Bangsa",
-    // },
-    // {
-    //   code: "S010",
-    //   names: ["Justin, Edward Eugene Surya"],
-    //   school: "SMPK 2 Penabur",
-    // },
-    {
-      code: "S011",
-      names: ["Stevenson Christopher Hudiono, Cheerish Natalia Rifel"],
-      school: "SMPK 2 Penabur",
-    },
-    // {
-    //   code: "S012",
-    //   names: ["Adriel Nathanael Winfryd, Krislyn W Riyadi"],
-    //   school: "SMPK 7 Penabur",
-    // },
-    // {
-    //   code: "S013",
-    //   names: ["Cynthia Nikita Wibowo, Jeremee Rafael Wynn"],
-    //   school: "SMPK Penabur Kota Modern",
-    // },
-    // {
-    //   code: "S015",
-    //   names: ["Justin Benaya Tirtadjaja, Fellyta Aquila Chiandra"],
-    //   school: "SMP Marsudirini Bogor",
-    // },
-    // {
-    //   code: "S019",
-    //   names: ["Joshua Emmanuel Wahyu, Vania Feby Wijaya"],
-    //   school: "SMPK 2 PENABUR",
-    // },
-    {
-      code: "S020",
-      names: ["Felix Halley Thamin, Gratia Plena Kusdevina"],
-      school: "SMPK 4 Penabur",
-    },
-    // {
-    //   code: "S022",
-    //   names: ["Abraham Brandon Purnama"],
-    //   school: "SMP Kristen Ketapang 1 Jakarta",
-    // },
-    // {
-    //   code: "S023",
-    //   names: ["Ethan Samuel Benaya Khu"],
-    //   school: "SMPK Penabur Kota Modern",
-    // },
-    {
       code: "S027",
-      names: ["Jack Howard Wijaya, Juan Howard Wijaya"],
+      names: ["Jack Howard Wijaya", "Juan Howard Wijaya"],
       school: "SMP Darma Yudha Pekanbaru",
     },
-    // {
-    //   code: "S028",
-    //   names: ["Bagasmora Andreo Sibarani, Mikhael Faith Benaiah L. Saragih"],
-    //   school: "SMP Darma Yudha Pekanbaru",
-    // },
-    // {
-    //   code: "S029",
-    //   names: ["Khansky Khonery, Melvin Raphael Gandaatmaja"],
-    //   school: "Santa Laurensia Junior High School",
-    // },
+    {
+      code: "S011",
+      names: ["Stevenson Christopher Hudiono", "Cheerish Natalia Rifel"],
+      school: "SMPK 2 Penabur",
+    },
+    {
+      code: "S001",
+      names: ["Baruna Adi Sanjaya", "Narendra Aditya Tanoto"],
+      school: "SMP Cahaya Rancamaya",
+    },
     {
       code: "S030",
-      names: ["Nathan Raphael Martua N., William Tengganu"],
+      names: ["Nathan Raphael Martua N.", "William Tengganu"],
       school: "SMP Global Prestasi",
     },
-    // {
-    //   code: "S034",
-    //   names: ["Matthew Christopher H, Kaitlyn Illian Toniman"],
-    //   school: "SMPK Penabur Gading Serpong",
-    // },
-    // {
-    //   code: "S035",
-    //   names: ["Gabriella Anna Santoso, Kayla Theodora Wibisana"],
-    //   school: "SMPK Kelapa Gading",
-    // },
+    {
+      code: "S020",
+      names: ["Felix Halley Thamin", "Gratia Plena Kusdevina"],
+      school: "SMPK 4 Penabur",
+    },
 	];
 </script>
 
@@ -221,7 +101,7 @@
 				ANNOUNCEMENT
 			</h1>
 			<h1 class="font-montserrat text-gray-700 text-center text-3xl font-black md:mb-0 pt-8">
-				Pengumuman Semifinal
+				Pengumuman Final
 			</h1>
 			<div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
@@ -229,13 +109,15 @@
 					<div class="py-4" transition:slide={{ duration: 0 }}> -->
 						<table class="table-auto w-full">
 							<tr class="border-b-2 border-gray-600">
+                <th>Rank</th>
 								<th>Kode Tim</th>
 								<th>Nama Peserta</th>
 								<th>Sekolah</th>
 							</tr>
 							{#each elimParticipantsMat as { code, names, school }, i}
 								<tr class="border-b-2 border-gray-400">
-									<td class="px-2 text-center">{code}</td>
+									<td class="px-2 text-center">{i + 1}</td>
+                  <td class="px-2 text-center">{code}</td>
 									<td class="px-2 text">{names.join(", ")}</td>
 									<td class="px-2 text">{school}</td>
 								</tr>
@@ -256,19 +138,21 @@
 					</button>
 				</div> -->
 			</div>
-			<div class=" max-w-4xl shadow rounded bg-white px-4 pb-4 m-4 mx-auto">
+			<div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
 				<div class="flex flex-row mb-3" />
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">IPA</p>
 				<!-- {#if showDetailedSci}
 					<div class="py-4" transition:slide={{ duration: 0 }}> -->
 						<table class="table-auto w-full">
 							<tr class="border-b-2 border-gray-600">
+                <th>Rank</th>
 								<th>Kode Tim</th>
 								<th>Nama Peserta</th>
 								<th>Sekolah</th>
 							</tr>
 							{#each elimParticipantsSci as { code, names, school }, i}
 								<tr class="border-b-2 border-gray-400">
+                  <td class="px-2 text-center">{i + 1}</td>
 									<td class="px-2 text-center">{code}</td>
 									<td class="px-2 text">{names.join(", ")}</td>
 									<td class="px-2 text">{school}</td>
