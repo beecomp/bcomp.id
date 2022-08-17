@@ -3,12 +3,14 @@
 </script>
 
 <h1 class="font-montserrat italic text-center text-5xl text-gray-700">RULES</h1>
-<h2 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">Guidebook</h2>
+<h2 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">
+	Guidebook
+</h2>
 <div class="flex flex-row justify-center space-x-4">
 	<a
 		target="_blank"
 		rel="noreferrer"
-    href="https://drive.google.com/file/d/1MgHI-7kz8hdmGo9FOsbfLUaeE1vja5Vv/view?usp=sharing"
+		href="https://drive.google.com/file/d/1MgHI-7kz8hdmGo9FOsbfLUaeE1vja5Vv/view?usp=sharing"
 		class="btn w-64"
 	>
 		Guidebook
@@ -41,7 +43,9 @@
 	<a target="_blank" href="/register" class="btn w-64"> Kerjakan Form </a>
 </div> -->
 
-<h1 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">Powerpoint Technical Meeting</h1>
+<h1 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">
+	Powerpoint Technical Meeting
+</h1>
 <!-- <div class="flex flex-row justify-center space-x-4">
 	<a target="_blank" href="/soal-mat" class="btn w-40"> Soal MAT </a>
 	<a target="_blank" href="/soal-ipa" class="btn w-40"> Soal IPA </a>
@@ -93,12 +97,12 @@
 		Kumpulkan
 	</a>
 </div> -->
+
 <!-- <h2 class="font-montserrat text-center text-2xl mt-6">Tunggu Pengumuman Tanggal 3 September</h2>
 <div class="max-w-3xl mx-auto mt-2">
 	80% dari peserta dan sebanyak-banyak nya 50 tim dari setiap bidang akan lolos maju ke tahap
 	selanjutnya
 </div> -->
-
 <style lang="postcss">
 	.btn {
 		@apply font-barlow font-medium py-2 px-4 bg-coral hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-yellow-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded;

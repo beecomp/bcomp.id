@@ -1,22 +1,22 @@
 const schedule = [
-  {
-    date: "Jumat, 3 Sept 2021",
-    events: [
-      {
-        time: "15:00",
-        event: "Pengumuman Penyisihan\u00a01",
-      },
-    ],
-  },
-  {
-    date: "Sabtu, 4 Sept 2021",
-    events: [
-      {
-        time: "15:00",
-        event: "Tech Meet Penyisihan 2",
-      },
-    ],
-  },
+	{
+		date: "Jumat, 3 Sept 2021",
+		events: [
+			{
+				time: "15:00",
+				event: "Pengumuman Penyisihan\u00a01",
+			},
+		],
+	},
+	{
+		date: "Sabtu, 4 Sept 2021",
+		events: [
+			{
+				time: "15:00",
+				event: "Tech Meet Penyisihan 2",
+			},
+		],
+	},
 	{
 		date: "Senin, 6 Sept 2021",
 		events: [
@@ -58,10 +58,10 @@ const schedule = [
 	{
 		date: "Kamis, 9 Sept 2021",
 		events: [
-      {
-        time: "15:00",
-        event: "Pengumuman Semifinal",
-      },
+			{
+				time: "15:00",
+				event: "Pengumuman Semifinal",
+			},
 			{
 				time: "17:00",
 				event: "Tech Meet Final",

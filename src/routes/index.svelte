@@ -21,60 +21,60 @@
 
 	let showDetailedMat = false;
 	const elimParticipantsMat = [
-    {
-      code: "M015",
-      names: ["Ben Robinson", "Ethan Anderson"],
-      school: "SMP PETRA 1",
-    },
 		{
-      code: "M023",
+			code: "M015",
+			names: ["Ben Robinson", "Ethan Anderson"],
+			school: "SMP PETRA 1",
+		},
+		{
+			code: "M023",
 			names: ["Kevin Adi Senjaya"],
 			school: "SMP Cahaya Bangsa Metro",
 		},
 		{
-      code: "M031",
+			code: "M031",
 			names: ["Leonardo Valerian", "Yvonnie Natasha"],
 			school: "SMP Darma Yudha",
 		},
-    {
-      code: "M014",
-      names: ["Michael Cenreng", "Grace Lucretia"],
-      school: "SMP Katolik Rajawali",
-    },
-    {
-      code: "M001",
-      names: ["Franklin Filbert"],
-      school: "SMP Witama",
-    },
+		{
+			code: "M014",
+			names: ["Michael Cenreng", "Grace Lucretia"],
+			school: "SMP Katolik Rajawali",
+		},
+		{
+			code: "M001",
+			names: ["Franklin Filbert"],
+			school: "SMP Witama",
+		},
 	];
 
 	let showDetailedSci = false;
 	const elimParticipantsSci = [
-    {
-      code: "S027",
-      names: ["Jack Howard Wijaya", "Juan Howard Wijaya"],
-      school: "SMP Darma Yudha Pekanbaru",
-    },
-    {
-      code: "S011",
-      names: ["Stevenson Christopher Hudiono", "Cheerish Natalia Rifel"],
-      school: "SMPK 2 Penabur",
-    },
-    {
-      code: "S001",
-      names: ["Baruna Adi Sanjaya", "Narendra Aditya Tanoto"],
-      school: "SMP Cahaya Rancamaya",
-    },
-    {
-      code: "S030",
-      names: ["Nathan Raphael Martua N.", "William Tengganu"],
-      school: "SMP Global Prestasi",
-    },
-    {
-      code: "S020",
-      names: ["Felix Halley Thamin", "Gratia Plena Kusdevina"],
-      school: "SMPK 4 Penabur",
-    },
+		{
+			code: "S027",
+			names: ["Jack Howard Wijaya", "Juan Howard Wijaya"],
+			school: "SMP Darma Yudha Pekanbaru",
+		},
+		{
+			code: "S011",
+			names: ["Stevenson Christopher Hudiono", "Cheerish Natalia Rifel"],
+			school: "SMPK 2 Penabur",
+		},
+		{
+			code: "S001",
+			names: ["Baruna Adi Sanjaya", "Narendra Aditya Tanoto"],
+			school: "SMP Cahaya Rancamaya",
+		},
+		{
+			code: "S030",
+			names: ["Nathan Raphael Martua N.", "William Tengganu"],
+			school: "SMP Global Prestasi",
+		},
+		{
+			code: "S020",
+			names: ["Felix Halley Thamin", "Gratia Plena Kusdevina"],
+			school: "SMPK 4 Penabur",
+		},
 	];
 </script>
 
@@ -107,23 +107,23 @@
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
 				<!-- {#if showDetailedMat}
 					<div class="py-4" transition:slide={{ duration: 0 }}> -->
-						<table class="table-auto w-full">
-							<tr class="border-b-2 border-gray-600">
-                <th>Rank</th>
-								<th>Kode Tim</th>
-								<th>Nama Peserta</th>
-								<th>Sekolah</th>
-							</tr>
-							{#each elimParticipantsMat as { code, names, school }, i}
-								<tr class="border-b-2 border-gray-400">
-									<td class="px-2 text-center">{i + 1}</td>
-                  <td class="px-2 text-center">{code}</td>
-									<td class="px-2 text">{names.join(", ")}</td>
-									<td class="px-2 text">{school}</td>
-								</tr>
-							{/each}
-						</table>
-					<!-- </div>
+				<table class="table-auto w-full">
+					<tr class="border-b-2 border-gray-600">
+						<th>Rank</th>
+						<th>Kode Tim</th>
+						<th>Nama Peserta</th>
+						<th>Sekolah</th>
+					</tr>
+					{#each elimParticipantsMat as { code, names, school }, i}
+						<tr class="border-b-2 border-gray-400">
+							<td class="px-2 text-center">{i + 1}</td>
+							<td class="px-2 text-center">{code}</td>
+							<td class="px-2 text">{names.join(", ")}</td>
+							<td class="px-2 text">{school}</td>
+						</tr>
+					{/each}
+				</table>
+				<!-- </div>
 				{/if} -->
 
 				<!-- <div class="flex justify-center">
@@ -143,23 +143,23 @@
 				<p class="font-montserrat font-bold text-lg text-2xl text-gray-700">IPA</p>
 				<!-- {#if showDetailedSci}
 					<div class="py-4" transition:slide={{ duration: 0 }}> -->
-						<table class="table-auto w-full">
-							<tr class="border-b-2 border-gray-600">
-                <th>Rank</th>
-								<th>Kode Tim</th>
-								<th>Nama Peserta</th>
-								<th>Sekolah</th>
-							</tr>
-							{#each elimParticipantsSci as { code, names, school }, i}
-								<tr class="border-b-2 border-gray-400">
-                  <td class="px-2 text-center">{i + 1}</td>
-									<td class="px-2 text-center">{code}</td>
-									<td class="px-2 text">{names.join(", ")}</td>
-									<td class="px-2 text">{school}</td>
-								</tr>
-							{/each}
-						</table>
-					<!-- </div>
+				<table class="table-auto w-full">
+					<tr class="border-b-2 border-gray-600">
+						<th>Rank</th>
+						<th>Kode Tim</th>
+						<th>Nama Peserta</th>
+						<th>Sekolah</th>
+					</tr>
+					{#each elimParticipantsSci as { code, names, school }, i}
+						<tr class="border-b-2 border-gray-400">
+							<td class="px-2 text-center">{i + 1}</td>
+							<td class="px-2 text-center">{code}</td>
+							<td class="px-2 text">{names.join(", ")}</td>
+							<td class="px-2 text">{school}</td>
+						</tr>
+					{/each}
+				</table>
+				<!-- </div>
 				{/if} -->
 
 				<!-- <div class="flex justify-center">
