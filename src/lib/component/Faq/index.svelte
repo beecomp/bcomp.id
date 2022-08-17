@@ -11,6 +11,7 @@
 	<span class="font-bold text-center">
 		Tidak bisa menemukan pertanyaanmu?
 		<br />
-		Tanya langsung lewat widget di kanan bawah layar (jangan lupa memasukkan alamat email) atau kontak yang tersedia.
+		Tanya langsung lewat widget di kanan bawah layar (jangan lupa memasukkan alamat email) atau kontak
+		yang tersedia.
 	</span>
 </div>
