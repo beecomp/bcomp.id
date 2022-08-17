@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"license": "MIT",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"preview": "svelte-kit preview",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
@@ -26,8 +26,9 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.49.0",
 		"svelte-preprocess": "^4.7.4",
+		"svelte-scrolling": "^1.2.2",
 		"tailwindcss": "^2.2.4",
-		"svelte-scrolling": "^1.0.7"
+		"vite": "^3.0.8"
 	},
 	"type": "module",
 	"dependencies": {
