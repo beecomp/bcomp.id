@@ -16,28 +16,9 @@
 <div class="pt-4 lg:pt-48 pb-0 lg:pb-48 w-full max-w-5xl mx-auto">
 	<svg viewBox="-100 -15 200 75">
 		<text
-			x="0"
-			y="0"
-			class="text-2xl font-alfa italic tracking-wide fill-current text-lavender"
-			dominant-baseline="central"
-			text-anchor="middle"
-		>
-			BRILLIANT
-		</text>
-		<text
-			x="1"
-			y="0.5"
-			class="text-2xl font-alfa italic tracking-wide fill-current text-lavender opacity-40"
-			dominant-baseline="central"
-			text-anchor="middle"
-		>
-			BRILLIANT
-		</text>
-
-		<text
 			x="4"
 			y="2"
-			class="text-2xl font-alfa italic tracking-wide stroke-current text-lavender stroke-1"
+			class="text-2xl font-alfa italic tracking-wide stroke-current text-orangeishyellow stroke-1"
 			dominant-baseline="central"
 			fill="transparent"
 			text-anchor="middle"
@@ -48,25 +29,12 @@
 		<text
 			x="0"
 			y="25"
-			class="text-2xl font-barlow-semi italic tracking-wide fill-current text-coral"
+			class="text-2xl font-barlow-semi italic tracking-wide fill-current text-WhiteL"
 			dominant-baseline="central"
 			text-anchor="middle"
 		>
 			COMPETITION
 		</text>
-		<text
-			x="0"
-			y="28"
-			class="font-barlow-semi italic tracking-wide stroke-current text-coral"
-			dominant-baseline="central"
-			fill="transparent"
-			text-anchor="middle"
-			font-size="1.45rem"
-			stroke-width="0.5"
-		>
-			COMPETITION
-		</text>
-
 		<text
 			x="0"
 			y="50.5"

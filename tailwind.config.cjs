@@ -11,6 +11,9 @@ const config = {
 			colors: {
 				lavender: "#b6c4e1",
 				coral: "#ff9e5e",
+				orangeishyellow: "#fbbf24",
+				WhiteL: "#a8a29e",
+				BlackX: "#171717",
 				"coral-light": "#fdb98d",
 			},
 		},
