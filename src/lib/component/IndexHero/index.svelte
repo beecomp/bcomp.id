@@ -75,7 +75,7 @@
 			text-anchor="middle"
 			font-size="0.625rem"
 		>
-			UNLOCKING YOUR BRILLIANCE
+			A NEW AGE OF BRILLIANCE
 		</text>
 	</svg>
 </div>
