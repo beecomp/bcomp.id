@@ -22,6 +22,6 @@
 		sehingga siswa memiliki kesempatan untuk mendapat pendidikan lanjutan di perguruan tinggi
 		terbaik di dunia. Dan agar kelak mereka mampu mengabdikan diri dalam membangun bangsa dan negara
 		melalui ilmu pengetahuan yang mereka miliki. Jadi, tunggu apa lagi? Segera daftarkan dirimu
-		dalam Brilliant Competition XIII dan teruslah berjuang untuk meraih prestasi yang terbaik!
+		dalam Brilliant Competition XIV dan teruslah berjuang untuk meraih prestasi yang terbaik!
 	</p>
 </div>
