@@ -14,13 +14,13 @@
 	let showDetailed = false;
 </script>
 
-<h1 class="font-montserrat font-black text-gray-700 italic text-center text-5xl">SCHEDULE</h1>
+<h1 class="font-montserrat font-black text-WhiteL italic text-center text-5xl">SCHEDULE</h1>
 <div
 	class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0 mt-3"
 >
 	{#each simple as { icon, event, date }}
 		<div
-			class="bg-coral rounded p-2 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2"
+			class="bg-orangeishyellow rounded p-2 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2"
 			class:opacity-50={date - Date.now() < 0}
 		>
 			<div class="flex flex-row md:flex-col items-center">
@@ -44,14 +44,14 @@
 				{#each detailed as { date, events }}
 					<tr>
 						<th
-							class="font-barlow italic font-bold text-lg pt-3 border-b-2 border-gray-500"
+							class="font-barlow italic font-bold text-white pt-3 border-b-2 border-gray-500"
 							colspan="2">{date}</th
 						>
 					</tr>
 					{#each events as { time, event }}
 						<tr class>
-							<td class="font-barlow text-right font-bold">{time}</td>
-							<td class="font-barlow px-2">{event}</td>
+							<td class="font-barlow text-white text-right font-bold">{time}</td>
+							<td class="font-barlow px-2 text-white">{event}</td>
 						</tr>
 					{/each}
 				{/each}
@@ -71,6 +71,6 @@
 
 <style lang="postcss">
 	.btn {
-		@apply font-barlow font-medium py-2 px-4 bg-coral hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-yellow-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded;
+		@apply font-barlow font-medium py-2 px-4 bg-orangeishyellow hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-yellow-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded;
 	}
 </style>
