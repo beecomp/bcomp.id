@@ -7,13 +7,8 @@ const schedule = [
 		icon: faInbox,
 	},
 	{
-		event: "Penyisihan 2",
+		event: "Penyisihan 2 & Semifinal",
 		date: new Date("2022-09-21T23:59+07:00"),
-		icon: faPencilAlt,
-	},
-	{
-		event: "Semifinal",
-		date: new Date("2021-09-07T23:59+07:00"),
 		icon: faPencilAlt,
 	},
 	{

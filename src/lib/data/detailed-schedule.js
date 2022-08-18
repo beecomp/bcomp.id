@@ -4,7 +4,7 @@ const schedule = [
     events: [
       {
         time: "12:00",
-        event: "Pembukaan Akses Soal Penyisihan\u00a01",
+        event: "Pembukaan Akses Soal Penyisihan 1",
       },
     ],
   },
@@ -13,7 +13,7 @@ const schedule = [
     events: [
       {
         time: "23:59",
-        event: "Pengumpulan Lembar Jawaban Penyisihan/u00a01",
+        event: "Pengumpulan Lembar Jawaban Penyisihan 1",
       },
     ],
   },
@@ -31,7 +31,7 @@ const schedule = [
     events: [
       {
         time: "17:00",
-        event: "Pengumuman Penyisihan/u00a01",
+        event: "Pengumuman Penyisihan 1",
       },
     ],
   },

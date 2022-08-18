@@ -33,7 +33,7 @@
 			<p class="font-barlow text-lg text-justify">
 				Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade untuk bidang Matematika
 				dan IPA tingkat SMP berskala nasional yang akan diselenggarakan untuk ketiga belas kalinya
-				di SMAK PENABUR Gading Serpong. Brilliant Competition XII sebelumnya diikuti oleh ratusan
+				di SMAK PENABUR Gading Serpong. Brilliant Competition XIII sebelumnya diikuti oleh ratusan
 				peserta dari sembilan provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia.
 			</p>
 		</div>
