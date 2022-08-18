@@ -8,7 +8,7 @@ const schedule = [
 	},
 	{
 		event: "Penyisihan 2 & Semifinal",
-		date: new Date("2022-09-21T23:59+07:00"),
+		date: new Date("2022-09-23T23:59+07:00"),
 		icon: faPencilAlt,
 	},
 	{
