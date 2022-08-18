@@ -3,8 +3,8 @@
 </script>
 
 <h1 class="font-montserrat italic text-center text-5xl text-WhiteL">RULES</h1>
-<h2 class="font-montserrat font-black text-WhiteL text-center text-2xl font-black mt-3 mb-2 pt-2">
-	Guidebook
+<h2 class="font-montserrat font-black text-WhiteL text-center text-2x1 font-black mt-3 mb-2 pt-2">
+	Guide Lomba & Pendaftaran
 </h2>
 <div class="flex flex-row justify-center space-x-4 ">
 	<a
