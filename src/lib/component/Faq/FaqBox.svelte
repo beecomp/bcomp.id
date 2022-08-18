@@ -8,10 +8,10 @@
 	let show = false;
 </script>
 
-<div on:click={() => (show = !show)} class="shadow-md rounded-md bg-white dark:bg-gray-800 p-3">
+<div on:click={() => (show = !show)} class="shadow-md rounded-md bg-white p-3">
 	<div class="flex-row gap-4 flex justify-center items-start">
 		<div class=" flex flex-col flex-grow">
-			<span class="text-gray-800 dark:text-white text-sm font-bold">{q}</span>
+			<span class="text-gray-800 text-sm font-bold">{q}</span>
 			{#if show}
 				<div transition:slide={{ duration: 200 }}>
 					<p class="mt-1 text-sm">{a}</p>
