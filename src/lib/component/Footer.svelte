@@ -11,29 +11,29 @@
 		<ul class="mt-1 space-y-1 font-barlow">
 			<li>
 				<a
-					href="https://wa.me/6281333047778?text=Hi Elva! Saya ingin bertanya tentang Brilliant Competition XIII"
+					href="https://wa.me/6283829128451?text=Hi Thian! Saya ingin bertanya tentang Brilliant Competition XIV"
 					class="text-lg sm:text-base"
 				>
 					<Icon icon={faWhatsapp} class="text-2xl" />
-					+62 813 3304 7778 (Elva)
+					+62 838 2912 8451 (Thian)
 				</a>
 			</li>
 			<li>
 				<a
-					href="https://wa.me/6287786717147?text=Hi Rachel! Saya ingin bertanya tentang Brilliant Competition XIII"
+					href="https://wa.me/62895377506699?text=Hi Jessica! Saya ingin bertanya tentang Brilliant Competition XIV"
 					class="text-lg sm:text-base"
 				>
 					<Icon icon={faWhatsapp} class="text-2xl" />
-					+62 877 8671 7147 (Rachel)
+					+62 895 3775 06699 (Jessica)
 				</a>
 			</li>
 			<li>
 				<a
-					href="https://wa.me/6288809999128?text=Hi Juan! Saya ingin bertanya tentang Brilliant Competition XIII"
+					href="https://wa.me/6281953500409?text=Hi Catherine! Saya ingin bertanya tentang Brilliant Competition XIV"
 					class="text-lg sm:text-base"
 				>
 					<Icon icon={faWhatsapp} class="text-2xl" />
-					+62 888 0999 9128 (Juan)
+					+62 819 5350 0409 (Catherine)
 				</a>
 			</li>
 			<li>
