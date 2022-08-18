@@ -3,12 +3,12 @@ import { faInbox, faBullhorn, faPencilAlt } from "@fortawesome/free-solid-svg-ic
 const schedule = [
 	{
 		event: "Deadline Penyisihan\u00a01",
-		date: new Date("2021-09-01T23:59+07:00"),
+		date: new Date("2022-09-17T23:59+07:00"),
 		icon: faInbox,
 	},
 	{
 		event: "Penyisihan 2",
-		date: new Date("2021-09-06T23:59+07:00"),
+		date: new Date("2022-09-21T23:59+07:00"),
 		icon: faPencilAlt,
 	},
 	{
@@ -18,7 +18,7 @@ const schedule = [
 	},
 	{
 		event: "Final",
-		date: new Date("2021-09-10T23:59+07:00"),
+		date: new Date("2022-09-24T23:59+07:00"),
 		icon: faPencilAlt,
 	},
 ];
