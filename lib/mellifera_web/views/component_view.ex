@@ -1,4 +1,4 @@
-defmodule MelliferaWeb.PageView do
+defmodule MelliferaWeb.ComponentView do
   use MelliferaWeb, :view
 
   alias MelliferaWeb.Components
