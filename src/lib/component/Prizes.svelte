@@ -19,7 +19,7 @@
 			<div class="flex flex-col items-center">
 				<Icon icon={faAward} class="text-7xl mt-3 text-white" />
 				<div class="font-barlow-semi text-white font-bold text-xl mt-2">JUARA 2</div>
-				<div class="font-barlow-semi text-white font-bold text-xl pt-6">Rp 2.000.000</div>
+				<div class="font-barlow-semi text-white font-bold text-xl pt-6">Rp 2.250.000</div>
 			</div>
 		</div>
 	</div>
@@ -27,11 +27,11 @@
 		<div class="rounded shadow-2xl py-4 bg-coral md:mt-10 px-10 ">
 			<div class="flex flex-col items-center">
 				<Icon icon={faTrophy} class="text-9xl mt-4 text-white" />
-				<div class="font-barlow-semi text-white font-bold text-2xl mt-3">CHAMPION</div>
+				<div class="font-barlow-semi text-white font-bold text-2xl mt-3">JUARA 1</div>
 				<div
 					class="font-barlow-semi text-white font-bold text-4xl sm:text-2xl sm:pt-12 lg:text-3xl"
 				>
-					Rp 3.000.000
+					Rp 3.500.000
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 			<Icon icon={faAward} class="text-4xl mt-1 text-white" />
 			<div class="flex flex-col items-center">
 				<div class="text-white font-bold">Juara 2</div>
-				<div class="text-white font-bold text-xl">Rp 2.000.000</div>
+				<div class="text-white font-bold text-xl">Rp 2.250.000</div>
 			</div>
 		</div>
 	</div>
