@@ -18,7 +18,10 @@
         <Components.prizes />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="schedule">
-        <Components.schedule simple_schedule={@simple_schedule} detailed_schedule={@detailed_schedule} />
+        <Components.schedule
+          simple_schedule={@simple_schedule}
+          detailed_schedule={@detailed_schedule}
+        />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="howto">
         <Components.how_to_join />
