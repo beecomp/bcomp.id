@@ -1,7 +1,7 @@
-<h1 class="font-montserrat italic text-center text-5xl text-gray-700">ABOUT US</h1>
-<div class="mt-3 max-w-4xl mx-auto shadow-lg rounded-xl bg-white px-8 py-4">
-	<h4 class="font-barlow font-bold text-xl">Brilliant Competition</h4>
-	<p class="text-justify mt-1">
+<h1 class="font-montserrat italic text-center text-5xl text-WhiteL">ABOUT US</h1>
+<div class="mt-3 max-w-4xl mx-auto shadow-lg rounded-xl bg-orangeishyellow px-8 py-4">
+	<h4 class="font-barlow font-bold text-white">Brilliant Competition</h4>
+	<p class="text-white mt-1">
 		Brilliant Competition XIV adalah kegiatan kompetisi olimpiade untuk bidang matematika dan sains
 		tingkat SMP berskala nasional yang akan diselenggarakan untuk ketiga belas kalinya secara online
 		di SMAK PENABUR Gading Serpong. Brilliant Competition XIII sebelumnya diikuti oleh ratusan
@@ -15,8 +15,8 @@
 		mereka, khususnya dalam bidang matematika dan sains.
 	</p>
 
-	<h4 class="font-barlow font-bold text-xl mt-4">Brilliant Class</h4>
-	<p class="text-justify mt-1">
+	<h4 class="font-barlow font-bold text-white mt-4">Brilliant Class</h4>
+	<p class="text-white mt-1">
 		Brilliant Class adalah sebuah program pendidikan khusus di SMAK Penabur Gading Serpong untuk
 		siswa “berbakat intelektual tinggi”. Tujuannya adalah mengembangkan potensi siswa secara optimal
 		sehingga siswa memiliki kesempatan untuk mendapat pendidikan lanjutan di perguruan tinggi

@@ -2,8 +2,8 @@
 	import bca from "./bca.svg";
 </script>
 
-<h1 class="font-montserrat italic text-center text-5xl text-gray-700">RULES</h1>
-<h2 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">
+<h1 class="font-montserrat italic text-center text-5xl text-WhiteL">RULES</h1>
+<h2 class="font-montserrat font-black text-WhiteL text-center text-2xl font-black mt-3 mb-2 pt-2">
 	Guidebook
 </h2>
 <div class="flex flex-row justify-center space-x-4">
@@ -43,7 +43,7 @@
 	<a target="_blank" href="/register" class="btn w-64"> Kerjakan Form </a>
 </div> -->
 
-<h1 class="font-montserrat font-black text-gray-700 text-center text-2xl font-black mt-3 mb-2 pt-2">
+<h1 class="font-montserrat font-black text-WhiteL text-center text-2xl font-black mt-3 mb-2 pt-2">
 	Powerpoint Technical Meeting
 </h1>
 <!-- <div class="flex flex-row justify-center space-x-4">

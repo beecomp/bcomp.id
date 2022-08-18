@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>Brilliant Competition XIII</title>
+	<title>Brilliant Competition XIV</title>
 </svelte:head>
 
 <div class="pt-16" use:scrollRef={"top-index"}>
@@ -29,8 +29,8 @@
 </div>
 <div class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto space-y-0">
-		<div class=" max-w-4xl shadow-md rounded-xl bg-white p-4 m-4 mx-auto">
-			<p class="font-barlow text-lg text-justify">
+		<div class=" max-w-4xl shadow-md rounded-xl bg-orangeishyellow p-4 m-4 mx-auto">
+			<p class="font-barlow text-lg text-white">
 				Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade untuk bidang Matematika
 				dan IPA tingkat SMP berskala nasional yang akan diselenggarakan untuk ketiga belas kalinya
 				di SMAK PENABUR Gading Serpong. Brilliant Competition XIII sebelumnya diikuti oleh ratusan
