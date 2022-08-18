@@ -6,7 +6,7 @@
 <h2 class="font-montserrat font-black text-WhiteL text-center text-2xl font-black mt-3 mb-2 pt-2">
 	Guidebook
 </h2>
-<div class="flex flex-row justify-center space-x-4">
+<div class="flex flex-row justify-center space-x-4 ">
 	<a
 		target="_blank"
 		rel="noreferrer"
