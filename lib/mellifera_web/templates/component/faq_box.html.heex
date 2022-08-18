@@ -1,0 +1,18 @@
+<div
+  x-data="{ expanded: false }"
+  @click="expanded = !expanded"
+  class="shadow-md rounded-md bg-white p-3 cursor-pointer"
+>
+  <div class="flex-row gap-4 flex justify-center items-start">
+    <div class="flex flex-col flex-grow">
+      <span class="text-gray-800 text-sm font-bold"><%= @q %></span>
+      <div x-show="expanded" x-collapse>
+        <p class="mt-1 text-sm"><%= @a %></p>
+      </div>
+    </div>
+    <div class="flex-shrink-0">
+      <i x-show="!expanded" class="fa-solid fa-chevron-down mx-4 text-sm text-black" />
+      <i x-show="expanded" class="fa-solid fa-chevron-up mx-4 text-sm text-black" />
+    </div>
+  </div>
+</div>

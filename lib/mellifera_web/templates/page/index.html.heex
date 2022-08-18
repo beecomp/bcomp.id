@@ -1,5 +1,5 @@
 <Components.header />
-<div class="bg-[url('/images/bg-geometric.svg')] bg-[length:30rem]">
+<div class="bg-[url('/images/bg-geometric.svg')] bg-[length:30rem] bg-[#f9fafb]">
   <div class="pt-16" use:scrollRef="top-index">
     <Components.index_hero />
   </div>
@@ -14,70 +14,22 @@
         </p>
       </div>
 
-      <div class="-mt-16 pt-16" use:scrollRef="announcement">
-        <h1 class="font-montserrat text-gray-700 italic text-center text-4xl font-black md:mb-0">
-          ANNOUNCEMENT
-        </h1>
-        <h1 class="font-montserrat text-gray-700 text-center text-3xl font-black md:mb-0 pt-8">
-          Pengumuman Final
-        </h1>
-        <div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
-          <p class="font-montserrat font-bold text-lg text-2xl text-gray-700">Matematika</p>
-          <table class="table-auto w-full">
-            <tr class="border-b-2 border-gray-600">
-              <th>Rank</th>
-              <th>Kode Tim</th>
-              <th>Nama Peserta</th>
-              <th>Sekolah</th>
-            </tr>
-            {#each elimParticipantsMat as { code, names, school }, i}
-            <tr class="border-b-2 border-gray-400">
-              <td class="px-2 text-center">{i + 1}</td>
-              <td class="px-2 text-center">{code}</td>
-              <td class="px-2 text">{names.join(", ")}</td>
-              <td class="px-2 text">{school}</td>
-            </tr>
-            {/each}
-          </table>
-        </div>
-        <div class=" max-w-4xl shadow rounded bg-white p-4 md:p-8 m-4 mx-auto">
-          <div class="flex flex-row mb-3" />
-          <p class="font-montserrat font-bold text-lg text-2xl text-gray-700">IPA</p>
-          <table class="table-auto w-full">
-            <tr class="border-b-2 border-gray-600">
-              <th>Rank</th>
-              <th>Kode Tim</th>
-              <th>Nama Peserta</th>
-              <th>Sekolah</th>
-            </tr>
-            {#each elimParticipantsSci as { code, names, school }, i}
-            <tr class="border-b-2 border-gray-400">
-              <td class="px-2 text-center">{i + 1}</td>
-              <td class="px-2 text-center">{code}</td>
-              <td class="px-2 text">{names.join(", ")}</td>
-              <td class="px-2 text">{school}</td>
-            </tr>
-            {/each}
-          </table>
-        </div>
-      </div>
-
       <div class="-mt-16 pt-16" use:scrollRef="prizes">
-        <!-- <Prizes /> -->
+        <Components.prizes />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="schedule">
-        <!-- <Schedule simple={simpleSchedule} detailed={detailedSchedule} /> -->
+        <Components.schedule simple_schedule={@simple_schedule} detailed_schedule={@detailed_schedule} />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="howto">
-        <!-- <HowToJoin /> -->
+        <Components.how_to_join />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="faq">
-        <!-- <Faq {qnas} /> -->
+        <Components.faq qnas={@qnas} />
       </div>
       <div class="-mt-16 pt-16" use:scrollRef="about-us">
-        <!-- <AboutUs /> -->
+        <Components.about_us />
       </div>
     </div>
   </div>
-  <!-- <Footer /> -->
+  <Components.footer />
 </div>
