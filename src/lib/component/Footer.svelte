@@ -39,7 +39,7 @@
 			<li>
 				<a href="https://line.me/ti/p/07hb3R21yq" class="text-white sm:text-base">
 					<Icon icon={faLine} class="text-2xl" />
-					jas_mint5</a
+					Rachel</a
 				>
 			</li>
 			<li>
