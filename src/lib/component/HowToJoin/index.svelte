@@ -30,8 +30,8 @@
 	</a>
 </div>
 
-<!-- <h2 class="font-montserrat text-center text-2xl font-black mt-6">
-	Bayar Rp&nbsp;125.000 per tim
+<h2 class="font-montserrat text-center text-2xl text-WhiteL font-black mt-6">
+	Pembayaran Lomba (Rp 125.000,00/tim)
 	
 </h2>
 <div class="flex flex-row justify-center mt-2">
