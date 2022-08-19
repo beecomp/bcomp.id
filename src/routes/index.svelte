@@ -18,6 +18,24 @@
 	import qnas from "$lib/data/qnas";
 	import Icon from "fa-svelte";
 	import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
+	let showDetailedMat = false;
+	const elimParticipantsMat = [
+		{
+			code: "",
+			names: [""],
+			school: "",
+		},
+	];
+
+	let showDetailedSci = false;
+	const elimParticipantsSci = [
+		{
+			code: "",
+			names: [""],
+			school: "",
+		},
+	];
 </script>
 
 <svelte:head>
@@ -27,6 +45,7 @@
 <div class="pt-16" use:scrollRef={"top-index"}>
 	<IndexHero />
 </div>
+
 <div class="container mx-auto">
 	<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto space-y-0">
 		<div class=" max-w-4xl shadow-md rounded-xl bg-orangeishyellow p-4 m-4 mx-auto">
@@ -37,6 +56,73 @@
 				peserta dari sembilan provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia.
 			</p>
 		</div>
+
+		<div class="-mt-16 pt-16" use:scrollRef={"announcement"}>
+			<h1 class="font-montserrat text-WhiteL italic text-center text-4xl font-black md:mb-0">
+				ANNOUNCEMENT
+			</h1>
+			<h1 class="font-montserrat text-WhiteL text-center text-3xl font-black md:mb-0 pt-8">
+				Pengumuman Semi Final
+			</h1>
+			<div class=" max-w-4xl shadow rounded bg-orangeishyellow p-4 md:p-8 m-4 mx-auto">
+				<p class="font-montserrat font-bold text-lg text-2xl text-white">Matematika</p>
+				<!-- {#if showDetailedMat}
+					<div class="py-4" transition:slide={{ duration: 0 }}> -->
+				<table class="table-auto w-full">
+					<tr class="text-white border-b-2 border-white">
+						<th>No</th>
+						<th>Kode Tim</th>
+						<th>Nama Peserta</th>
+						<th>Sekolah</th>
+					</tr>
+					{#each elimParticipantsMat as { code, names, school }, i}
+						<tr class="border-b-2 border-white text-white">
+							<td class="px-2 text-center">{i + 1}</td>
+							<td class="px-2 text-center">{code}</td>
+							<td class="px-2 text">{names.join(", ")}</td>
+							<td class="px-2 text">{school}</td>
+						</tr>
+					{/each}
+				</table>
+			</div>
+			<div class=" max-w-4xl shadow rounded bg-orangeishyellow p-4 md:p-8 m-4 mx-auto">
+				<div class="flex flex-row mb-3" />
+				<p class="font-montserrat font-bold text-lg text-2xl text-white">IPA</p>
+				<!-- {#if showDetailedSci}
+					<div class="py-4" transition:slide={{ duration: 0 }}> -->
+				<table class="table-auto w-full">
+					<tr class="border-b-2 border-white text-white">
+						<th>No</th>
+						<th>Kode Tim</th>
+						<th>Nama Peserta</th>
+						<th>Sekolah</th>
+					</tr>
+					{#each elimParticipantsSci as { code, names, school }, i}
+						<tr class="border-b-2 border-white text-white">
+							<td class="px-2 text-center">{i + 1}</td>
+							<td class="px-2 text-center">{code}</td>
+							<td class="px-2 text">{names.join(", ")}</td>
+							<td class="px-2 text">{school}</td>
+						</tr>
+					{/each}
+				</table>
+				<!-- </div>
+				{/if} -->
+
+				<!-- <div class="flex justify-center">
+					<button
+						type="button"
+						class="btn mt-3 w-full max-w-md"
+						on:click={() => (showDetailedSci = !showDetailedSci)}
+					>
+						<Icon icon={showDetailedSci ? faChevronUp : faChevronDown} class="mx-4 text-white" />
+						{showDetailedSci ? "Sembunyikan" : "Selengkapnya"}
+						<Icon icon={showDetailedSci ? faChevronUp : faChevronDown} class="mx-4 text-white" />
+					</button>
+				</div> -->
+			</div>
+		</div>
+
 		<div class="-mt-16 pt-16" use:scrollRef={"prizes"}>
 			<Prizes />
 		</div>
