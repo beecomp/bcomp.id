@@ -4,7 +4,7 @@
 
 <h1 class="font-montserrat italic text-center text-5xl text-WhiteL">RULES</h1>
 <h2 class="font-montserrat font-black text-WhiteL text-center text-2x1 font-black mt-3 mb-2 pt-2">
-	Guide Lomba & Pendaftaran
+	Guide Pendaftaran & Lomba
 </h2>
 <div class="flex flex-row justify-center space-x-4 ">
 	<a
@@ -13,7 +13,20 @@
 		href="https://docs.google.com/document/d/1hig8Eb5qXMzuPEpoMFcfBYWxSZGGsZo8/edit"
 		class="btn w-64"
 	>
-		Guidebook
+		Guide Pendaftaran & Lomba
+	</a>
+</div>	
+<h2 class="font-montserrat font-black text-WhiteL text-center text-2x1 font-black mt-3 mb-2 pt-2">
+	Guide Lomba Matematika
+</h2>
+<div class="flex flex-row justify-center space-x-4 ">
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://drive.google.com/file/d/145P0DP4IEL-i4UprTp11uDBrIUJbE_l5/view?usp=sharing"
+		class="btn w-64"
+	>
+		Guide Lomba Matematika
 	</a>
 </div>
 

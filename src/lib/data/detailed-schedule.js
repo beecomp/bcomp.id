@@ -99,6 +99,10 @@ const schedule = [
         time: "16:30-18:00",
         event: "Semifinal Math Sesi 2",
       },
+      {
+        time: "23:59",
+        event: "Pengumuman Semifinal (Ada di website)"
+      },
     ],
   },
   {
