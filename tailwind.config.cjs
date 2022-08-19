@@ -16,6 +16,7 @@ const config = {
 				BlackX: "#171717",
 				GrayX: "#334155",
 				GrayWhite: "#e4e4e7",
+				GrayLight: "#0f172a",
 				DarkYellow: "#f59e0b",
 				"coral-light": "#fdb98d",
 			},
