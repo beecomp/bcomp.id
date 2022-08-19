@@ -17,11 +17,11 @@ const s = [
 	},
 	{
 		q: "Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?",
-		a: "16 tim",
+		a: "15 tim",
 	},
 	{
 		q: "Berapa banyak tim yang akan lolos dari semifinal ke final?",
-		a: "5 tim",
+		a: "6 tim",
 	},
 	{
 		q: "Apa format Brilliant Competition tahun ini?",
@@ -30,7 +30,7 @@ const s = [
 	},
 	{
 		q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
-		a: "Tidak ada, materi Brilliant Competition tahun ini berkisar materi OSN SMP.",
+		a: "Ada untuk lomba matematika. Untuk materi IPA tidak ada, materi IPA Bcomp tahun ini berkisar materi OSN SMP",
 	},
 ];
 
