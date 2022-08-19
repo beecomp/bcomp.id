@@ -49,7 +49,7 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <!-- <h2 class="font-montserrat text-center text-2xl mt-6">Isi form pendaftaran</h2>
 <div class="flex flex-row justify-center mt-2">
