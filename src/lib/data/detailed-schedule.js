@@ -101,7 +101,7 @@ const schedule = [
       },
       {
         time: "23:59",
-        event: "Pengumuman Semifinal (Ada di website)"
+        event: "Pengumuman Semifinal"
       },
     ],
   },

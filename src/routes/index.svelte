@@ -62,7 +62,7 @@
 				ANNOUNCEMENT
 			</h1>
 			<h1 class="font-montserrat text-WhiteL text-center text-3xl font-black md:mb-0 pt-8">
-				Pengumuman Penyisihan 1
+				Pengumuman Lolos Penyisihan 1
 			</h1>
 			<div class=" max-w-4xl shadow rounded bg-orangeishyellow p-4 md:p-8 m-4 mx-auto">
 				<p class="font-montserrat font-bold text-lg text-2xl text-white">Matematika</p>
