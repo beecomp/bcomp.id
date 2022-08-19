@@ -1,4 +1,4 @@
-import { faInbox, faBullhorn, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+import { faInbox, faBullhorn, faPencilAlt, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const schedule = [
 	{
@@ -8,8 +8,8 @@ const schedule = [
 	},
 	{
 		event: "Live Class Brilliant Competition",
-		date: new Date("2022-09-22T23:59+07:00"),
-		icon: faInbox,
+		date: new Date("2022-09-18T23:59+07:00"),
+		icon: faGraduationCap,
 	},
 	{
 		event: "Penyisihan 2 & Semifinal",

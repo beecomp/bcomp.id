@@ -30,7 +30,7 @@ const schedule = [
     date: "Selasa, 20 Sept 2022",
     events: [
       {
-        time: "17:00",
+        time: "15:00",
         event: "Pengumuman Penyisihan 1",
       },
     ],
@@ -39,7 +39,7 @@ const schedule = [
     date: "Rabu, 21 Sept 2022",
     events: [
       {
-        time: "16:00-17:00",
+        time: "16:00-Selesai",
         event: "Technical Meeting Penyisihan 2",
       },
     ],
