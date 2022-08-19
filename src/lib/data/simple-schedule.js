@@ -7,6 +7,11 @@ const schedule = [
 		icon: faInbox,
 	},
 	{
+		event: "Live Class Brilliant Competition",
+		date: new Date("2022-09-22T23:59+07:00"),
+		icon: faInbox,
+	},
+	{
 		event: "Penyisihan 2 & Semifinal",
 		date: new Date("2022-09-23T23:59+07:00"),
 		icon: faPencilAlt,
