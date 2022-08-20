@@ -11,11 +11,11 @@
 		<ul class="mt-1 space-y-1 font-barlow">
 			<li>
 				<a
-					href="https://wa.me/6283829128451?text=Hi Thian! Saya ingin bertanya tentang Brilliant Competition XIV"
+					href="https://wa.me/6283829128451?text=Hi Celine! Saya ingin bertanya tentang Brilliant Competition XIV"
 					class="text-white sm:text-base"
 				>
 					<Icon icon={faWhatsapp} class="text-2xl" />
-					+62 838 2912 8451 (Thian)
+					+62 838 2912 8451 (Celine)
 				</a>
 			</li>
 			<li>
