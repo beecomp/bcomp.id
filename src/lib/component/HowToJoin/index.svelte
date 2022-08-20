@@ -19,7 +19,7 @@
 <h2 class="font-montserrat font-black text-gray-200 text-center text-2x1 font-black mt-3 mb-2 pt-2">
 	Guide Lomba Matematika
 </h2>
-<div class="flex flex-row justify-center space-x-4 ">
+<div class="flex flex-row justify-center space-x-4 space y-4 ">
 	<a
 		target="_blank"
 		rel="noreferrer"
@@ -28,8 +28,6 @@
 	>
 		Guide Lomba Matematika
 	</a>
-</div>
-<div class="flex flex-row justify-center space-x-4 ">
 	<a
 		target="_blank"
 		rel="noreferrer"
@@ -39,7 +37,6 @@
 		Silabus Lomba Matematika
 	</a>
 </div>
-
 
 <h2 class="font-montserrat text-center text-2xl text-gray-200 font-black mt-6">
 	Pembayaran Lomba (Rp 125.000,00/tim)
