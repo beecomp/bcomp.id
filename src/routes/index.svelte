@@ -20,7 +20,7 @@
 	<title>Brilliant Competition XIV</title>
 </svelte:head>
 
-<div class="bg-gradient-to-b from-stone-800 to-stone-700">
+<div class="bg-gradient-to-b from-stone-700 to-stone-800">
 	<div class="pt-16" use:scrollRef={"top-index"}>
 		<IndexHero />
 	</div>
