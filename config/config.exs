@@ -14,6 +14,7 @@ config :mellifera,
 # Configures the endpoint
 config :mellifera, MelliferaWeb.Endpoint,
   url: [host: "localhost"],
+  static_url: [path: "/static"],
   render_errors: [view: MelliferaWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Mellifera.PubSub,
   live_view: [signing_salt: "IjhXx/CZ"]
@@ -26,6 +27,13 @@ config :mellifera, MelliferaWeb.Endpoint,
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
 config :mellifera, Mellifera.Mailer, adapter: Swoosh.Adapters.Local
+
+# Configures the admin
+config :kaffy,
+  otp_app: :mellifera,
+  static_url: [path: "/static"],
+  ecto_repo: Mellifera.Repo,
+  router: MelliferaWeb.Router
 
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false

@@ -1,5 +1,6 @@
 defmodule MelliferaWeb.Router do
   use MelliferaWeb, :router
+  use Kaffy.Routes, scope: "/admin"
 
   import MelliferaWeb.UserAuth
 
