@@ -29,6 +29,17 @@
 		Guide Lomba Matematika
 	</a>
 </div>
+<div class="flex flex-row justify-center space-x-4 ">
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://drive.google.com/file/d/16YT4OXMwKDfj_5RhfS4AGLkAj672Vx-G/view"
+		class="btn w-64"
+	>
+		Silabus Lomba Matematika
+	</a>
+</div>
+
 
 <h2 class="font-montserrat text-center text-2xl text-gray-200 font-black mt-6">
 	Pembayaran Lomba (Rp 125.000,00/tim)
