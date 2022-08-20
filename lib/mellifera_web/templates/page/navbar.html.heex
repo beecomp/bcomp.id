@@ -1,0 +1,38 @@
+<div class="flex items-center w-full space-x-12 justify-between">
+  <div>
+    <a href="/">
+      <img
+        class="h-12"
+        alt="bcomp"
+        src={Routes.static_path(@conn, "/images/wide-logo-small.png")}
+      />
+    </a>
+  </div>
+
+  <div class="hidden md:flex space-x-4">
+    <%= if @current_user do %>
+      <%= link("Settings",
+        to: Routes.user_settings_path(@conn, :edit),
+        class:
+          "cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+      ) %>
+      <%= link("Logout",
+        to: Routes.user_session_path(@conn, :delete),
+        method: :delete,
+        class:
+          "cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+      ) %>
+    <% else %>
+      <%= link("Register",
+        to: Routes.user_registration_path(@conn, :new),
+        class:
+          "cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+      ) %>
+      <%= link("Login",
+        to: Routes.user_session_path(@conn, :new),
+        class:
+          "cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-600 hover:text-white"
+      ) %>
+    <% end %>
+  </div>
+</div>

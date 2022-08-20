@@ -11,10 +11,6 @@ defmodule MelliferaWeb.Components do
     render("header.html", assigns)
   end
 
-  def navbar(assigns) do
-    render("navbar.html", assigns)
-  end
-
   def mobile_navbar(assigns) do
     render("mobile_navbar.html", assigns)
   end

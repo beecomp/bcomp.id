@@ -48,10 +48,7 @@ defmodule Mellifera.Account.User do
   defp validate_password(changeset, opts) do
     changeset
     |> validate_required([:password])
-    |> validate_length(:password, min: 12, max: 72)
-    # |> validate_format(:password, ~r/[a-z]/, message: "at least one lower case character")
-    # |> validate_format(:password, ~r/[A-Z]/, message: "at least one upper case character")
-    # |> validate_format(:password, ~r/[!?@#$%^&*_0-9]/, message: "at least one digit or punctuation character")
+    |> validate_length(:password, min: 8, max: 72)
     |> maybe_hash_password(opts)
   end
 
@@ -86,7 +83,7 @@ defmodule Mellifera.Account.User do
   @doc """
   A user changeset for changing the password.
 
-  ## Options
+  01  ## Options
 
     * `:hash_password` - Hashes the password so it can be stored securely
       in the database and ensures the password field is cleared to prevent

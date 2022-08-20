@@ -60,7 +60,7 @@ defmodule MelliferaWeb.Router do
 
   ## Authentication routes
 
-  scope "/auth", MelliferaWeb do
+  scope "/auth/identity", MelliferaWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]
 
     get "/register", UserRegistrationController, :new
@@ -72,16 +72,23 @@ defmodule MelliferaWeb.Router do
     post "/reset_password", UserResetPasswordController, :create
     get "/reset_password/:token", UserResetPasswordController, :edit
     put "/reset_password/:token", UserResetPasswordController, :update
+
+    get "/confirm_email/:token", UserSettingsController, :confirm_email
+  end
+
+  scope "/auth/identity", MelliferaWeb do
+    pipe_through [:browser]
+
+    get "/confirm", UserConfirmationController, :new
+    post "/confirm", UserConfirmationController, :create
+    get "/confirm/:token", UserConfirmationController, :edit
+    post "/confirm/:token", UserConfirmationController, :update
   end
 
   scope "/auth", MelliferaWeb do
     pipe_through [:browser]
 
     delete "/logout", UserSessionController, :delete
-    get "/confirm", UserConfirmationController, :new
-    post "/confirm", UserConfirmationController, :create
-    get "/confirm/:token", UserConfirmationController, :edit
-    post "/confirm/:token", UserConfirmationController, :update
   end
 
   scope "/settings", MelliferaWeb do
@@ -89,6 +96,5 @@ defmodule MelliferaWeb.Router do
 
     get "/account", UserSettingsController, :edit
     put "/account", UserSettingsController, :update
-    get "/account/confirm_email/:token", UserSettingsController, :confirm_email
   end
 end
