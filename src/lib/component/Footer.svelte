@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="filter drop-shadow-2xl flex flex-col justify-around sm:flex-row bg-orangeishyellow rounded-t-3xl p-4 mt-8 space-y-4 sm:space-y-0"
+	class="filter shadow-2xl flex flex-col justify-around sm:flex-row bg-stone-600 p-4 mt-8 space-y-4 sm:space-y-0"
 >
 	<div>
 		<span class="font-montserrat text-white italic">CONTACT</span>

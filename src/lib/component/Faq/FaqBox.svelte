@@ -8,7 +8,7 @@
 	let show = false;
 </script>
 
-<div on:click={() => (show = !show)} class="shadow-md rounded-md bg-orangeishyellow p-3">
+<div on:click={() => (show = !show)} class="drop-shadow-lg rounded-md bg-stone-600 p-3">
 	<div class="flex-row gap-4 flex justify-center items-start">
 		<div class=" flex flex-col text-white flex-grow">
 			<span class="text-white text-sm font-bold">{q}</span>
