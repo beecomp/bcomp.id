@@ -1,5 +1,4 @@
 const config = {
-	mode: "jit",
 	purge: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
 		extend: {
@@ -12,6 +11,8 @@ const config = {
 			colors: {
 				lavender: "#b6c4e1",
 				coral: "#ff9e5e",
+				saffron: "#fbbf24",
+				WhiteL: "#d4d4d8",
 				"coral-light": "#fdb98d",
 			},
 		},

@@ -1,26 +1,26 @@
-import { faInbox, faBullhorn, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+import { faInbox, faBullhorn, faPencilAlt, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const schedule = [
-	{
-		event: "Deadline Penyisihan\u00a01",
-		date: new Date("2021-09-01T23:59+07:00"),
-		icon: faInbox,
-	},
-	{
-		event: "Penyisihan 2",
-		date: new Date("2021-09-06T23:59+07:00"),
-		icon: faPencilAlt,
-	},
-	{
-		event: "Semifinal",
-		date: new Date("2021-09-07T23:59+07:00"),
-		icon: faPencilAlt,
-	},
-	{
-		event: "Final",
-		date: new Date("2021-09-10T23:59+07:00"),
-		icon: faPencilAlt,
-	},
+  {
+    event: "Deadline Penyisihan\u00a01",
+    date: new Date("2022-09-17T23:59+07:00"),
+    icon: faInbox,
+  },
+  {
+    event: "Live Class",
+    date: new Date("2022-09-18T23:59+07:00"),
+    icon: faGraduationCap,
+  },
+  {
+    event: "Penyisihan 2 & Semifinal",
+    date: new Date("2022-09-23T23:59+07:00"),
+    icon: faPencilAlt,
+  },
+  {
+    event: "Final",
+    date: new Date("2022-09-24T23:59+07:00"),
+    icon: faPencilAlt,
+  },
 ];
 
 export default schedule;

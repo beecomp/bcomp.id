@@ -8,7 +8,7 @@
 </script>
 
 <nav>
-	<div class="fixed bg-gray-700 w-full z-40 filter drop-shadow-xl">
+	<div class="fixed bg-stone-900 w-full z-40 filter drop-shadow-2xl">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between h-16">
 				<Navbar path={$page.url.pathname} />
