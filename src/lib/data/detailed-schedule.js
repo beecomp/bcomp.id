@@ -3,7 +3,7 @@ const schedule = [
     date: "Kamis, 1 Sept 2022",
     events: [
       {
-        time: "12:00",
+        time: "",
         event: "Pembukaan Akses Soal Penyisihan 1",
       },
     ],

@@ -30,7 +30,7 @@ const s = [
 	},
 	{
 		q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
-		a: "Ada untuk lomba matematika. Untuk materi IPA tidak ada, materi IPA Bcomp tahun ini berkisar materi OSN SMP",
+		a: "Silabus Bcomp tahun ini berkisar materi OSN SMP",
 	},
 ];
 
