@@ -37,7 +37,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://line.me/ti/p/07hb3R21yq" class="text-white sm:text-base">
+				<a href="https://line.me/ti/p/ooaPNdepAR" class="text-white sm:text-base">
 					<Icon icon={faLine} class="text-2xl" />
 					Rachel</a
 				>
