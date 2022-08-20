@@ -35,17 +35,17 @@
 	
 </h2>
 <div class="flex flex-row justify-center mt-2">
-	<div class="w-72 shadow-lg rounded bg-white dark:bg-gray-800 p-4">
-		<div class="flex-row gap-4 flex justify-center items-center">
+	<div class="w-72 shadow-lg rounded bg-orangeishyellow dark:bg-gray-800 p-4">
+		<div class="bg-orangeishyellow flex-row gap-4 flex justify-center items-center">
 			<div class="flex-shrink-0">
 				<img alt="BCA" src={bca} class="mx-auto object-cover rounded-full h-16 w-16 " />
 			</div>
 			<div class=" flex flex-col">
-				<span class="font-barlow font-semibold text-gray-800 dark:text-white text-lg"
+				<span class="font-barlow font-semibold text-white dark:text-white text-lg"
 					>6050 5757 97</span
 				>
-				<span class="font-barlow text-gray-700 text-xs"> Lucia Helda Sofyananigrum </span>
-				<span class="font-barlow text-gray-700 text-xs"> Dimas Ambrosius Kridhananda </span>
+				<span class="font-barlow text-white text-xs"> Lucia Helda Sofyananigrum </span>
+				<span class="font-barlow text-white text-xs"> Dimas Ambrosius Kridhananda </span>
 			</div>
 		</div>
 	</div>
