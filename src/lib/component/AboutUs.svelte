@@ -1,5 +1,5 @@
-<h1 class="font-montserrat italic text-center text-5xl text-WhiteL">ABOUT US</h1>
-<div class="mt-3 max-w-4xl mx-auto shadow-lg rounded-xl bg-orangeishyellow px-8 py-4">
+<h1 class="font-montserrat italic text-center text-5xl text-gray-200">ABOUT US</h1>
+<div class="mt-3 max-w-4xl mx-auto shadow-lg rounded bg-stone-600 px-8 py-4">
 	<h4 class="font-barlow font-bold text-white">Brilliant Competition</h4>
 	<p class="text-white mt-1">
 		Brilliant Competition XIV adalah kegiatan kompetisi olimpiade untuk bidang matematika dan sains
