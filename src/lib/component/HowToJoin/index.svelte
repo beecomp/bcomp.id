@@ -2,20 +2,19 @@
 	import bca from "./bca.svg";
 </script>
 
-<h1 class="font-montserrat italic text-center text-5xl text-gray-200">RULES</h1>
-<h2 class="font-montserrat font-black text-gray-200 text-center text-2x1 font-black mt-3 mb-2 pt-2">
-	Proposal Umum
-</h2>
-<div class="flex flex-row justify-center space-x-4 ">
+<h1 class="font-montserrat italic text-center text-5xl text-gray-200" >PROPOSAL</h1>
+<div class="flex flex-row justify-center space-x-4 mt-3 mb-2 pt-2">
 	<a
 		target="_blank"
 		rel="noreferrer"
 		href="https://docs.google.com/document/d/1zIElCNcgqk56xdQGr7fOu9MEIRRjk-vz/edit"
 		class="btn w-64"
 	>
-		Proposal Umum
+		Proposal Brilliant Competition
 	</a>
 </div>
+
+<h1 class="font-montserrat italic text-center text-5xl mt-3 mb-2 pt-2 text-gray-200">RULES</h1>
 <h2 class="font-montserrat font-black text-gray-200 text-center text-2x1 font-black mt-3 mb-2 pt-2">
 	Guide Pendaftaran & Lomba
 </h2>
