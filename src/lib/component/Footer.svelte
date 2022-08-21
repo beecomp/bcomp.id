@@ -48,6 +48,12 @@
 					@brilliantcompetition
 				</a>
 			</li>
+			<li>
+				<a href="https://www.instagram.com/debrilliantclass" class="text-white sm:text-base">
+					<Icon icon={faInstagram} class="text-2xl" />
+					@debrilliantclass
+				</a>
+			</li>
 		</ul>
 	</div>
 	<div class="max-w-xs font-barlow">
