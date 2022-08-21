@@ -7,7 +7,7 @@
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://docs.google.com/document/d/1zIElCNcgqk56xdQGr7fOu9MEIRRjk-vz/edit"
+		href="https://drive.google.com/file/d/14Hoe_hfFS4zJeyGet2nCzS8XF53hR1Kc/view?usp=sharing"
 		class="btn w-64"
 	>
 		Proposal Brilliant Competition
