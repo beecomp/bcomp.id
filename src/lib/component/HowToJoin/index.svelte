@@ -35,7 +35,7 @@
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://drive.google.com/file/d/145P0DP4IEL-i4UprTp11uDBrIUJbE_l5/view?usp=sharing"
+		href="https://drive.google.com/file/d/1ho2LYAVRWMBoXWD38QuS_DCWuPY8lVoE/view?usp=sharing"
 		class="btn w-64"
 	>
 		Guide Lomba Matematika
