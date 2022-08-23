@@ -1,7 +1,7 @@
 const s = [
   {
     q: "Kapan hari terakhir pendaftaran?",
-    a: "Rabu, 17 September 2022",
+    a: "Sabtu, 17 September 2022",
   },
   {
     q: "Bolehkan satu tim untuk seorang saja?",
@@ -30,7 +30,7 @@ const s = [
   },
   {
     q: "Apakah ada silabus untuk Brilliant Competition tahun ini?",
-    a: "Silabus Bcomp Matematika tahun ini terdapat dibawah Guide Lomba Matematika, untuk IPA berkisar materi OSN SMP dan OSK SMA",
+    a: "Silabus Bcomp Matematika tahun ini terdapat dibawah Guide Lomba Matematika, untuk IPA berkisar materi OSN SMP",
   },
 ];
 
