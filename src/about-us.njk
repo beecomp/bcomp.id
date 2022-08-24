@@ -27,7 +27,7 @@ path: about-us
             {% if peeps.people %}
                 {% for p in peeps.people %}
                     <div class="{{p.bg}} bg-cover aspect-square">
-                        <div class="transition w-full h-full hover:bg-yellow-700/40 opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-white font-barlow font-bold">
+                        <div class="transition w-full h-full hover:bg-amber-500/50 opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-white font-barlow font-bold">
                             <div class="pt-16 text-xl">
                                 {{p.name}}
                             </div>
@@ -38,7 +38,7 @@ path: about-us
                     </div>
                 {% endfor %}
             {% endif %}
-            <div class="bg-gradient-to-br from-yellow-500/80 to-orange-500/80 aspect-square">
+            <div class="bg-gradient-to-br from-yellow-500 to-amber-500 aspect-square">
                 <div class="w-full h-full flex flex-col items-center justify-center text-white font-barlow font-bold">
                     <div class="text-xl text-center align-middle">
                         Join Us!
