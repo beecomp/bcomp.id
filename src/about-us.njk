@@ -1,0 +1,50 @@
+---
+layout: default
+path: about-us
+---
+
+<div class="bg-stone-200">
+    <div class="container mx-auto pt-24 px-4 max-w-3xl text-justify">
+        <h1 class="text-center text-4xl font-barlow font-bold">Brilliant Competition</h1>
+        <div class="mt-4 font-barlow">
+            Brilliant Competition XIV adalah kegiatan kompetisi olimpiade untuk bidang
+            matematika dan sains tingkat SMP berskala nasional yang akan diselenggarakan
+            untuk ketiga belas kalinya secara online di SMAK PENABUR Gading Serpong.
+            Brilliant Competition XIII sebelumnya diikuti oleh ratusan peserta dari sembilan
+            provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia. Brilliant
+            Competition dirancang dan dilaksanakan oleh seluruh siswa Brilliant Class di
+            SMAK Penabur Gading Serpong beserta dengan guru-guru terpilih dari Brilliant
+            Class. Tema Brilliant Competition XIV tahun ini adalah “A New Age of
+            Brilliance”. Pada Brilliant Competition XIV, kami mengajak siswa-siswi yang
+            berpotensi dan unggul untuk membuka pikiran mereka dan menunjukkan potensi
+            kecerdasan mereka masing-masing. Melalui kompetisi ini, kami berharap agar siswa
+            dapat mengembangkan kecerdasan dalam berpikir dan menemukan potensi yang
+            tersembunyi dalam diri mereka, khususnya dalam bidang matematika dan sains.
+        </div>
+    </div>
+    <div class="mt-12">
+        <div class="grid grid-cols-6">
+            {% if peeps.people %}
+                {% for p in peeps.people %}
+                    <div class="{{p.bg}} bg-cover aspect-square">
+                        <div class="transition w-full h-full hover:bg-yellow-700/40 opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-white font-barlow font-bold">
+                            <div class="pt-16 text-xl">
+                                {{p.name}}
+                            </div>
+                            <div class="-mt-1 text-sm">
+                                {{p.specialization}} {{p.year}}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div class="bg-gradient-to-br from-yellow-500/80 to-orange-500/80 aspect-square">
+                <div class="w-full h-full flex flex-col items-center justify-center text-white font-barlow font-bold">
+                    <div class="text-xl text-center align-middle">
+                        Join Us!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

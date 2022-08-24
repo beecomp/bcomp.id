@@ -1,0 +1,271 @@
+---
+layout: default
+path: home
+---
+
+<div class="bg-cover bg-fixed bg-[url('/static/img/landing-cover.jpg')] min-h-screen w-full">
+    <div class="bg-gradient-to-b lg:bg-gradient-to-br from-black/50 h-full">
+        <div class="container mx-auto h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between px-4 py-16">
+            <div class="mt-8">
+                <div class="text-6xl md:text-[6rem] xl:text-[8rem] font-barlow-semi italic font-black text-white/95 leading-none">
+                    BRILLIANT<br />COMPETITION
+                </div>
+                <div class="text-2xl md:text-5xl font-barlow-semi italic font-black text-white/95 md:mt-4">
+                    UNLOCKING YOUR BRILLIANCE
+                </div>
+            </div>
+            <div class="mt-16 lg:mt-0 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
+                <div class="text-white font-bold text-3xl text-center font-barlow">
+                    Pendaftaran Tutup Dalam
+                </div>
+                <div class="flex mt-4 space-x-6 font-barlow justify-center">
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center font-barlow mt-1">00</div>
+                        <div class="text-xl text-center mt-2">Hari</div>
+                    </div>
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center font-barlow mt-1">00</div>
+                        <div class="text-xl text-center mt-2">Jam</div>
+                    </div>
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center font-barlow mt-1">00</div>
+                        <div class="text-xl text-center mt-2">Menit</div>
+                    </div>
+                </div>
+                <div class="mt-16 space-y-3">
+                    <div class="flex space-x-3">
+                        <a class="grow cursor-pointer font-barlow block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 ring-stone-700 rounded drop-shadow text-center text-white font-bold">
+                            Soal Mat
+                        </a>
+                        <a class="grow cursor-pointer font-barlow block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold">
+                            Soal IPA
+                        </a>
+                    </div>
+                    <a class="cursor-pointer font-barlow block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold">
+                        Unduh Rulebook
+                    </a>
+                    <a class="cursor-pointer font-barlow block p-3 transition bg-yellow-400/70 hover:bg-yellow-500/80 rounded drop-shadow text-center text-white font-bold">
+                        Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-900">
+    <div class="container mx-auto px-4 py-12">
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 px-4 mx-auto font-barlow">
+            {% if quicklinks.links %}
+                {% for item in quicklinks.links %}
+                    <a href="{{item.url}}" target="_blank" class="p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
+                        <h3>{{item.title}}
+                            →</h3>
+                        <p>{{item.desc}}</p>
+                    </a>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class="bg-stone-200">
+    <div class="container mx-auto max-w-3xl px-4 py-4 font-barlow text-center font-bold">
+        Mari ikut lomba matematika dan IPA tingkat nasional!
+    </div>
+</div>
+<div class="bg-stone-100">
+    <h1 class="text-center text-5xl font-barlow-semi italic font-black py-12">PRIZES</h1>
+    <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500/80 to-orange-400/80 text-white font-barlow-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 1</div>
+            <div class="text-3xl text-center">3.500 K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500/80 to-orange-400/80 text-white font-barlow-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 2</div>
+            <div class="text-3xl text-center">2.250 K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500/80 to-orange-400/80 text-white font-barlow-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 3</div>
+            <div class="text-3xl text-center">1.000 K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500/80 to-orange-400/80 text-white font-barlow-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 4</div>
+            <div class="text-3xl text-center">750 K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500/80 to-orange-400/80 text-white font-barlow-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 5</div>
+            <div class="text-3xl text-center">500 K</div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-200 py-12">
+    <h1 class="text-center text-5xl font-barlow-semi italic font-black">TIMELINE</h1>
+    <div class="container mx-auto px-4 pt-12 grid grid-cols-5">
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-barlow font-bold">
+                1 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-barlow font-bold">
+                Start Q1
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-barlow font-bold">
+                17 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-barlow font-bold">
+                Deadline Q1
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-barlow font-bold">
+                18 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-barlow font-bold">
+                Live Class
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-barlow font-bold">
+                23 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-barlow font-bold">
+                Q2 & Semifinal
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-barlow font-bold">
+                24 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-barlow font-bold">
+                Final
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto mt-4">
+        <h2 class="text-center text-2xl font-barlow font-bold">23 Sept 2022</h2>
+        <div class="flex flex-col items-center">
+            <table class="font-barlow">
+                <tr>
+                    <td class="px-2 font-barlow font-bold">07:00-08:00</td>
+                    <td class="px-2">Pembukaan</td>
+                </tr>
+                <tr>
+                    <td class="px-2 font-barlow font-bold">08:00-09:00</td>
+                    <td class="px-2">Persiapan Penyisihan 2</td>
+                </tr>
+                <tr>
+                    <td class="px-2 font-barlow font-bold">09:00-10:30</td>
+                    <td class="px-2">Penyisihan 2</td>
+                </tr>
+                <tr>
+                    <td class="px-2 font-barlow font-bold">10:30-12:00</td>
+                    <td class="px-2">Workshop Kimia</td>
+                </tr>
+                <tr>
+                    <td class="px-2 font-barlow font-bold">12:00-13:15</td>
+                    <td class="px-2">Ishoma</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-100">
+    <div class="container mx-auto max-w-2xl px-4 py-12">
+        <div class="w-full mx-auto font-barlow h-72 bg-[url('/static/img/r-kinantan.png')] bg-right bg-contain bg-no-repeat rounded-md shadow">
+            <div class="relative w-full h-full bg-gradient-to-br from-yellow-500 to-orange-600/70 rounded-md text-white/90 text-xl font-barlow p-8 pr-48 text-justify">
+                <p class="text-justify">
+                    From setting up the company to preparing for Y-Combinator,
+                    Stripe Atlas has been helpful to Buy Me A Coffee every step of
+                    the way.
+                </p>
+                <p class="absolute text-right right-24 bottom-8 font-bold">
+                    Kinantan Arya Bagaspati
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-200">
+    <h1 class="text-center text-5xl font-barlow-semi italic font-black py-12">FAQ</h1>
+    <div class="container mx-auto max-w-3xl px-4 pb-12 space-y-2">
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Kapan hari terakhir pendaftaran?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Sabtu, 17 September 2022
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Kapan hari terakhir pendaftaran?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Sabtu, 17 September 2022
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Kapan hari terakhir pendaftaran?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Sabtu, 17 September 2022
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Kapan hari terakhir pendaftaran?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Sabtu, 17 September 2022
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Kapan hari terakhir pendaftaran?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Sabtu, 17 September 2022
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-600">
+    <div class="container mx-auto px-4 py-12">
+        <div class="w-full grid grid-cols-1 gap-4 px-4 mx-auto font-barlow">
+            <a href="/about-us" class="p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
+                <h3>Learn more about us →</h3>
+            </a>
+        </div>
+    </div>
+</div>
