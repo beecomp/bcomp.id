@@ -77,23 +77,23 @@ path: home
     <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 1</div>
-            <div class="text-3xl text-center">3.500 K</div>
+            <div class="text-3xl text-center">3.500.000</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 2</div>
-            <div class="text-3xl text-center">2.250 K</div>
+            <div class="text-3xl text-center">2.250.000</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 3</div>
-            <div class="text-3xl text-center">1.000 K</div>
+            <div class="text-3xl text-center">1.000.000</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 4</div>
-            <div class="text-3xl text-center">750 K</div>
+            <div class="text-3xl text-center">750.000</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 5</div>
-            <div class="text-3xl text-center">500 K</div>
+            <div class="text-3xl text-center">500.000</div>
         </div>
     </div>
 </div>
@@ -227,38 +227,65 @@ path: home
         </div>
         <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
             <div @click="disclosed = !disclosed" class="p-3">
-                <h3>Kapan hari terakhir pendaftaran?</h3>
+                <h3>Bolehkah satu tim untuk seorang aja?</h3>
             </div>
             <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
                 <hr class="pt-4 border-stone-500 border-1"/>
-                Sabtu, 17 September 2022
+                Boleh dong!
             </div>
         </div>
         <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
             <div @click="disclosed = !disclosed" class="p-3">
-                <h3>Kapan hari terakhir pendaftaran?</h3>
+                <h3>Berapa biaya pendaftaran?</h3>
             </div>
             <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
                 <hr class="pt-4 border-stone-500 border-1"/>
-                Sabtu, 17 September 2022
+                Early (20 Agustus - 31 Agustus 2022) : Rp 125.000,00 - per tim, Regular (1 September - 17 September 2022) : Rp 150.000,00 - per tim
             </div>
         </div>
         <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
             <div @click="disclosed = !disclosed" class="p-3">
-                <h3>Kapan hari terakhir pendaftaran?</h3>
+                <h3>Dimana bisa akses soal P1?</h3>
             </div>
             <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
                 <hr class="pt-4 border-stone-500 border-1"/>
-                Sabtu, 17 September 2022
+                Daftar dan bayar dulu lalu submit ke google form. Baru email yang berisi file soal (untuk bidang IPA) atau link google form soal (untuk bidang mat) akan dikirimkan ke email peserta yang didaftarkan
             </div>
         </div>
         <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
             <div @click="disclosed = !disclosed" class="p-3">
-                <h3>Kapan hari terakhir pendaftaran?</h3>
+                <h3>Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?</h3>
             </div>
             <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
                 <hr class="pt-4 border-stone-500 border-1"/>
-                Sabtu, 17 September 2022
+                Hanya 15 tim.
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Berapa banyak tim yang akan lolos dari semifinal ke final?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Hanya 6 tim.
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Apa format Brilliant Competition tahun ini?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Brilliant Competition akan mengadakan 2 perlombaan tim, yaitu lomba matematika dan lomba IPA, dengan tiap tim terdiri dari sebanyak 2 orang
+            </div>
+        </div>
+        <div class="bg-stone-300 rounded shadow font-barlow" x-data="{ disclosed: false }">
+            <div @click="disclosed = !disclosed" class="p-3">
+                <h3>Apakah ada silabus untuk Brilliant Competition tahun ini?</h3>
+            </div>
+            <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                <hr class="pt-4 border-stone-500 border-1"/>
+                Silabus Bcomp terdapat diatas, untuk IPA berkisar materi OSN SMP
             </div>
         </div>
     </div>
