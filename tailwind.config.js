@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./**/*.njk", "./**/*.yaml"],
+  content: ["./**/*.{html,njk,yml,yaml}"],
   theme: {
     extend: {
       fontFamily: {
