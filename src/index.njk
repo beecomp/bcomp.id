@@ -59,8 +59,7 @@ title: Home · bcomp.id
             {% if quicklinks.links %}
                 {% for item in quicklinks.links %}
                     <a href="{{item.url}}" target="_blank" class="p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
-                        <h3>{{item.title}}
-                            →</h3>
+                        <h3>{{item.title}} →</h3>
                         <p>{{item.desc}}</p>
                     </a>
                 {% endfor %}
@@ -78,29 +77,108 @@ title: Home · bcomp.id
     <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 1</div>
-            <div class="text-3xl text-center">3.500.000</div>
+            <div class="text-3xl text-center">3.500K</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 2</div>
-            <div class="text-3xl text-center">2.250.000</div>
+            <div class="text-3xl text-center">2.250K</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 3</div>
-            <div class="text-3xl text-center">1.000.000</div>
+            <div class="text-3xl text-center">1.000K</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 4</div>
-            <div class="text-3xl text-center">750.000</div>
+            <div class="text-3xl text-center">750K</div>
         </div>
         <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-barlow-semi italic drop-shadow">
             <div class="text-3xl text-center">Juara 5</div>
-            <div class="text-3xl text-center">500.000</div>
+            <div class="text-3xl text-center">500K</div>
         </div>
     </div>
 </div>
 <div class="bg-stone-200 py-12">
     <h1 class="text-center text-5xl font-barlow-semi italic font-black">TIMELINE</h1>
-    <div class="container mx-auto px-4 pt-12 grid grid-cols-5">
+    <div class="container mx-auto px-4 pt-12 flex flex-col md:hidden">
+        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
+            <div class="flex flex-col items-center">
+                <div class="h-6 w-1 bg-black/60"></div>
+                <div class="w-4 h-8 rounded-full bg-gray-400 border-4 border-black/60"></div>
+                <div class="grow w-1 bg-black/60"></div>
+            </div>
+            <div class="flex flex-col font-barlow font-bold py-4">
+                1 Sept 2022<br/>Start Q1
+            </div>
+        </div>
+        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
+            <div class="flex flex-col items-center">
+                <div class="h-6 w-1 bg-black/60"></div>
+                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow w-1 bg-black/60"></div>
+            </div>
+            <div class="flex flex-col font-barlow font-bold py-4">
+                17 Sept 2022<br/>Deadline Q1
+            </div>
+        </div>
+        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
+            <div class="flex flex-col items-center">
+                <div class="h-6 w-1 bg-black/60"></div>
+                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow w-1 bg-black/60"></div>
+            </div>
+            <div class="flex flex-col font-barlow font-bold py-4">
+                18 Sept 2022<br/>Live Class
+            </div>
+        </div>
+        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
+            <div class="flex flex-col items-center">
+                <div class="h-6 w-1 bg-black/60"></div>
+                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow w-1 bg-black/60"></div>
+            </div>
+            <div class="flex flex-col font-barlow font-bold py-4 w-full" x-data="{ disclosed: false }">
+                <div @click="disclosed=!disclosed">
+                    23 Sept 2022<br/>Q2 & Semifinal
+                </div>
+                <div class="flex flex-col pt-4" x-show="disclosed" x-collapse>
+                    <table class="font-barlow">
+                        <tr>
+                            <td class="px-2 font-bold text-right">07:00-08:00</td>
+                            <td class="px-2">Pembukaan</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 font-bold text-right">08:00-09:00</td>
+                            <td class="px-2">Persiapan Penyisihan 2</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 font-bold text-right">09:00-10:30</td>
+                            <td class="px-2">Penyisihan 2</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 font-bold text-right">10:30-12:00</td>
+                            <td class="px-2">Workshop Kimia</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 font-bold text-right">12:00-13:15</td>
+                            <td class="px-2">Ishoma</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
+            <div class="flex flex-col items-center">
+                <div class="h-6 w-1 bg-black/60"></div>
+                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow w-1 bg-black/60"></div>
+            </div>
+            <div class="flex flex-col font-barlow font-bold py-4">
+                24 Sept 2022<br/>Final
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 pt-12 hidden md:grid grid-cols-5">
         <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
             <div class="text-center font-barlow font-bold">
                 1 Sept 2022
