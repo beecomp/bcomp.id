@@ -28,5 +28,5 @@ npm run build
 ### 5\. Run Eleventy
 
 ```
-npm run start
+npm run dev
 ```
