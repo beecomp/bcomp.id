@@ -1,16 +1,17 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+const sansFonts = defaultTheme.fontFamily.sans;
 module.exports = {
-  content: ["./**/*.{html,njk,yml,yaml}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        alfa: ["Alfa Slab One", "cursive"],
-        "barlow-semi": ["Barlow Semi Condensed", "sans-serif"],
-        barlow: ["Barlow", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-      },
-      colors: {},
+    content: ["./**/*.{html,njk,yml,yaml}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ["Barlow", ...sansFonts],
+                semi: ["Barlow Semi Condensed", sansFonts],
+            },
+            colors: {},
+        },
     },
-  },
-  variants: {},
-  plugins: [require("@tailwindcss/typography")],
+    variants: {},
+    plugins: [require("@tailwindcss/typography")],
 };
