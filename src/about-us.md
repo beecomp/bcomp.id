@@ -3,6 +3,9 @@ layout: about-us
 title: About Us · bcomp.id
 path: about-us
 ---
+# Brilliant Class
+
+Brilliant Class adalah sebuah program pendidikan khusus di SMAK Penabur Gading Serpong untuk siswa “berbakat intelektual tinggi”. Tujuannya adalah mengembangkan potensi siswa secara optimal sehingga siswa memiliki kesempatan untuk mendapat pendidikan lanjutan di perguruan tinggi terbaik di dunia. Dan agar kelak mereka mampu mengabdikan diri dalam membangun bangsa dan negara melalui ilmu pengetahuan yang mereka miliki.
 
 # Brilliant Competition
 
