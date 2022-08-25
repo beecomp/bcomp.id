@@ -12,6 +12,13 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+    - label: "About Us"
+      name: "about_us"
+      files: "src/about-us.md"
+      fields:
+        - { label: "Body", name: "body", widget: "markdown" }
+      editor:
+          preview: false
     - label: "Blog"
       name: "blog"
       folder: "src/posts"
