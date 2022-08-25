@@ -1,10 +1,6 @@
 backend:
-    # Use netlify identity as backend
     name: git-gateway
     branch: staging
-    ### enable below lines for github integration ###
-    # name: github
-    # repo: surjithctly/neat-starter
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -15,11 +11,11 @@ collections:
     - label: "Pages"
       name: "pages"
       files:
-        - label: "About Us"
-          name: "about_us"
-          file: "src/about-us.md"
-          fields:
-            - { label: "Body", name: "body", widget: "markdown" }
+          - label: "About Us"
+            name: "about_us"
+            file: "src/about-us.md"
+            fields:
+                - { label: "Body", name: "body", widget: "markdown" }
       editor:
           preview: false
     - label: "Blog"
@@ -39,7 +35,7 @@ collections:
             name: "tags"
             multiple: true
             create: true
-            options: ["Tags", "created", "from", "config.yml"]
+            options: ["bcomp", "mat", "ipa"]
     - label: "Settings"
       name: "settings"
       editor:
