@@ -19,19 +19,7 @@ module.exports = function (eleventyConfig) {
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(EleventyVitePlugin, {
-    // Defaults are shown:
-    viteOptions: {
-      clearScreen: false,
-      server: {
-        mode: "development",
-        middlewareMode: true,
-      },
-      build: {
-        mode: "production",
-      }
-    }
-  });
+  eleventyConfig.addPlugin(EleventyVitePlugin);
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
@@ -48,11 +36,12 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
-  eleventyConfig.addPassthroughCopy("./src/static/css");
+  // eleventyConfig.addPassthroughCopy("./src/static/css");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.svg");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy({ bebong: "/" });
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
