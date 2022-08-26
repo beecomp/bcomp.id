@@ -19,17 +19,19 @@ title: Home · bcomp.id
                 <div class="text-white font-bold text-3xl text-center font-sans">
                     Pendaftaran Tutup Dalam
                 </div>
-                <div class="flex mt-4 space-x-6 justify-center">
+                <div class="flex mt-4 space-x-6 justify-center"
+                     x-data="{ countdown: new Date({{ event.deadline / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.deadline / 1 }}) - new Date()) / 1000) }"
+                     x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
-                        <div class="text-5xl text-center mt-1">00</div>
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 86400) % 60).toString().padStart(2, '0')"></div>
                         <div class="text-xl text-center mt-2">Hari</div>
                     </div>
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
-                        <div class="text-5xl text-center mt-1">00</div>
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 60).toString().padStart(2, '0')"></div>
                         <div class="text-xl text-center mt-2">Jam</div>
                     </div>
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
-                        <div class="text-5xl text-center mt-1">00</div>
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
                         <div class="text-xl text-center mt-2">Menit</div>
                     </div>
                 </div>
@@ -113,83 +115,58 @@ title: Home · bcomp.id
 </div>
 <div class="bg-stone-200 py-12">
     <h1 class="text-center text-5xl font-semi italic font-black">TIMELINE</h1>
-    <div class="container mx-auto px-4 pt-12 flex flex-col md:hidden">
-        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
-            <div class="flex flex-col items-center">
-                <div class="h-6 w-1 bg-black/60"></div>
-                <div class="w-4 h-8 rounded-full bg-gray-400 border-4 border-black/60"></div>
-                <div class="grow w-1 bg-black/60"></div>
-            </div>
-            <div class="flex flex-col font-bold py-4">
-                1 Sept 2022<br/>
-                Start Q1
-            </div>
-        </div>
-        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
-            <div class="flex flex-col items-center">
-                <div class="h-6 w-1 bg-black/60"></div>
-                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
-                <div class="grow w-1 bg-black/60"></div>
-            </div>
-            <div class="flex flex-col font-bold py-4">
-                17 Sept 2022<br/>Deadline Q1
-            </div>
-        </div>
-        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
-            <div class="flex flex-col items-center">
-                <div class="h-6 w-1 bg-black/60"></div>
-                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
-                <div class="grow w-1 bg-black/60"></div>
-            </div>
-            <div class="flex flex-col font-bold py-4">
-                18 Sept 2022<br/>Live Class
-            </div>
-        </div>
-        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
-            <div class="flex flex-col items-center">
-                <div class="h-6 w-1 bg-black/60"></div>
-                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
-                <div class="grow w-1 bg-black/60"></div>
-            </div>
-            <div class="flex flex-col font-bold py-4 w-full" x-data="{ disclosed: false }">
-                <div @click="disclosed=!disclosed">
-                    23 Sept 2022<br/>Q2 & Semifinal
+    <div class="flex justify-center items-center container mx-auto px-4 pt-12">
+        <div class="flex flex-col md:hidden">
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
                 </div>
-                <div class="flex flex-col pt-4" x-show="disclosed" x-collapse>
-                    <table>
-                        <tr>
-                            <td class="px-2 font-bold text-right">07:00-08:00</td>
-                            <td class="px-2">Pembukaan</td>
-                        </tr>
-                        <tr>
-                            <td class="px-2 font-bold text-right">08:00-09:00</td>
-                            <td class="px-2">Persiapan Penyisihan 2</td>
-                        </tr>
-                        <tr>
-                            <td class="px-2 font-bold text-right">09:00-10:30</td>
-                            <td class="px-2">Penyisihan 2</td>
-                        </tr>
-                        <tr>
-                            <td class="px-2 font-bold text-right">10:30-12:00</td>
-                            <td class="px-2">Workshop Kimia</td>
-                        </tr>
-                        <tr>
-                            <td class="px-2 font-bold text-right">12:00-13:15</td>
-                            <td class="px-2">Ishoma</td>
-                        </tr>
-                    </table>
+                <div class="flex flex-col font-bold py-4">
+                    1 Sept 2022<br/>
+                    Start P1
                 </div>
-
             </div>
-        </div>
-        <div class="flex flex-row space-x-4 pl-12 items-stretch rounded hover:bg-black/20">
-            <div class="flex flex-col items-center">
-                <div class="h-6 w-1 bg-black/60"></div>
-                <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
-                <div class="grow w-1 bg-black/60"></div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    17 Sept 2022<br/>Deadline P1
+                </div>
             </div>
-            <div class="flex flex-col font-bold py-4">
-                24 Sept 2022<br/>Final
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    18 Sept 2022<br/>Live Class
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4 w-full" x-data="{ disclosed: false }">
+                    23 Sept 2022<br/>P2 & Semifinal
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    24 Sept 2022<br/>Final
+                </div>
             </div>
         </div>
     </div>
@@ -200,7 +177,7 @@ title: Home · bcomp.id
             </div>
             <div class="flex items-center">
                 <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-gray-400 border-4 border-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
                 <div class="grow h-1 bg-black/60"></div>
             </div>
             <div class="text-center font-bold">
@@ -260,40 +237,10 @@ title: Home · bcomp.id
             </div>
         </div>
     </div>
-    <div class="container mx-auto mt-4">
-        <h2 class="text-center text-2xl font-bold">Kamis, 1 Sept 2022</h2>
-        <div class="flex flex-col items-center">
-            <table class="">
-                <tr>
-                    <td class="px-2">Pembukaan Akses Soal P1 </td>
-                </tr>
-            </table>
-        </div>
-        <h2 class="text-center text-2xl font-bold">23 Sept 2022</h2>
-        <div class="flex flex-col items-center">
-            <table class="">
-                <tr>
-                    <td class="px-2 font-bold">07:00-08:00</td>
-                    <td class="px-2">Pembukaan</td>
-                </tr>
-                <tr>
-                    <td class="px-2 font-bold">08:00-09:00</td>
-                    <td class="px-2">Persiapan Penyisihan 2</td>
-                </tr>
-                <tr>
-                    <td class="px-2 font-bold">09:00-10:30</td>
-                    <td class="px-2">Penyisihan 2</td>
-                </tr>
-                <tr>
-                    <td class="px-2 font-bold">10:30-12:00</td>
-                    <td class="px-2">Workshop Kimia</td>
-                </tr>
-                <tr>
-                    <td class="px-2 font-bold">12:00-13:15</td>
-                    <td class="px-2">Ishoma</td>
-                </tr>
-            </table>
-        </div>
+    <div class="flex justify-center mt-6">
+        <a class="px-6 py-2 border-yellow-500 border-4  bg-stone-100 rounded-lg shadow">
+            Selengkapnya
+        </a>
     </div>
 </div>
 <div class="bg-stone-100">
@@ -313,19 +260,19 @@ title: Home · bcomp.id
     <h1 class="text-center text-5xl font-semi italic font-black py-12">FAQ</h1>
     <div class="container mx-auto max-w-3xl px-4 pb-12">
         <div class="space-y-2">
-            {% if index_data.faq %}
-                {% for qna in index_data.faq %}
-                    <div class="bg-stone-300 rounded shadow" x-data="{ disclosed: false }">
-                        <div @click="disclosed = !disclosed" class="p-3">
-                            {{qna.q}}
-                        </div>
-                        <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
-                            <hr class="pt-4 border-stone-500 border-1"/>
-                            {{qna.a}}
-                        </div>
+            {#% if event.faq %#}
+            {% for qna in event.faq %}
+                <div class="bg-stone-300 rounded shadow" x-data="{ disclosed: false }">
+                    <div @click="disclosed = !disclosed" class="p-3">
+                        {{qna.q}}
                     </div>
-                {% endfor %}
-            {% endif %}
+                    <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                        <hr class="pt-4 border-stone-500 border-1"/>
+                        {{qna.a}}
+                    </div>
+                </div>
+            {% endfor %}
+            {#% endif %#}
         </div>
 
         <div class="flex justify-center">
@@ -333,25 +280,25 @@ title: Home · bcomp.id
                 <h2 class="text-center text-2xl font-bold pb-4">Ada pertanyaan lain?</h2>
                 <div class="space-y-2">
                     <a class="flex items-center"
-                        href="https://wa.me/6283829128451?text=Hi Celine! Saya ingin bertanya tentang Brilliant Competition XIV"
+                       href="https://wa.me/6283829128451?text=Hi Celine! Saya ingin bertanya tentang Brilliant Competition XIV"
                     >
                         <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
                         +62 838 2912 8451 (Celine)
                     </a>
                     <a class="flex items-center"
-                        href="https://wa.me/62895377506699?text=Hi Jessica! Saya ingin bertanya tentang Brilliant Competition XIV"
+                       href="https://wa.me/62895377506699?text=Hi Jessica! Saya ingin bertanya tentang Brilliant Competition XIV"
                     >
                         <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
                         +62 895 3775 06699 (Jessica)
                     </a>
                     <a class="flex items-center"
-                        href="https://wa.me/6281953500409?text=Hi Catherine! Saya ingin bertanya tentang Brilliant Competition XIV"
+                       href="https://wa.me/6281953500409?text=Hi Catherine! Saya ingin bertanya tentang Brilliant Competition XIV"
                     >
                         <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
                         +62 819 5350 0409 (Catherine)
                     </a>
                     <a class="flex items-center"
-                        href="https://instagram.com/brilliantcompetition"
+                       href="https://instagram.com/brilliantcompetition"
                     >
                         <ion-icon class="text-2xl mr-2" name="logo-instagram"></ion-icon>
                         @brilliantcompetition
