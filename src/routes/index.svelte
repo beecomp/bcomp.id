@@ -21,7 +21,7 @@
 </svelte:head>
 
 <div class="bg-gradient-to-b from-stone-700 to-stone-800">
-	<div class="bg-no-repeat bg-[left_top_217rem] bg-[length:20rem]" style="background-image: url('/pat-hex-a.png');">
+	<div class="bg-no-repeat bg-[left_top_217rem] bg-[length:21rem]" style="background-image: url('/pat-hex-a.png');">
 		<div class="bg-no-repeat bg-[right_top_182rem] bg-[length:20rem]" style="background-image: url('/pat-hex-a.png');">
 			<div class="bg-no-repeat bg-[length:20rem]" style="background-image: url('/pat-hex-a.png'); background-position: 0px 2280px;">
 				<div class="bg-no-repeat bg-[length:20rem]" style="background-image: url('/pat-hex-b.png'); background-position: 1050px 1800px;">
