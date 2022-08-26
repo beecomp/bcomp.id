@@ -35,14 +35,6 @@
 	<a
 		target="_blank"
 		rel="noreferrer"
-		href="https://drive.google.com/file/d/1ho2LYAVRWMBoXWD38QuS_DCWuPY8lVoE/view?usp=sharing"
-		class="btn w-64"
-	>
-		Guide Lomba Matematika
-	</a>
-	<a
-		target="_blank"
-		rel="noreferrer"
 		href="https://drive.google.com/file/d/16YT4OXMwKDfj_5RhfS4AGLkAj672Vx-G/view"
 		class="btn w-64"
 	>
