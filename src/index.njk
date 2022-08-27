@@ -23,11 +23,11 @@ title: Home · bcomp.id
                      x-data="{ countdown: new Date({{ event.deadline / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.deadline / 1 }}) - new Date()) / 1000) }"
                      x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
-                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 86400) % 60).toString().padStart(2, '0')"></div>
+                        <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
                         <div class="text-xl text-center mt-2">Hari</div>
                     </div>
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
-                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 60).toString().padStart(2, '0')"></div>
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
                         <div class="text-xl text-center mt-2">Jam</div>
                     </div>
                     <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
