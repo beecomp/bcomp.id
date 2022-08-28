@@ -35,7 +35,7 @@
 								<div class="container mx-auto">
 									<div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto space-y-0">
 										<div class=" max-w-4xl drop-shadow-lg rounded-md bg-stone-700 p-4 m-4 mx-auto">
-											<p class="font-barlow text-lg text-white text-justify">
+											<p class="font-barlow text-xl text-white text-justify">
 												Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade untuk bidang
 												Matematika dan IPA tingkat SMP berskala nasional yang akan diselenggarakan untuk keempat
 												belas kalinya di SMAK PENABUR Gading Serpong. Brilliant Competition sebelumnya diikuti

@@ -44,14 +44,14 @@
 				{#each detailed as { date, events }}
 					<tr>
 						<th
-							class="font-barlow italic font-bold text-white pt-3 border-b-2 border-gray-500"
+							class="font-barlow italic font-bold text-xl text-white pt-3 border-b-2 border-gray-500"
 							colspan="2">{date}</th
 						>
 					</tr>
 					{#each events as { time, event }}
 						<tr class>
-							<td class="font-barlow text-white text-right font-bold">{time}</td>
-							<td class="font-barlow px-2 text-white">{event}</td>
+							<td class="font-barlow text-white text-lg text-center font-bold">{time}</td>
+							<td class="font-barlow px-2 text-lg text-white">{event}</td>
 						</tr>
 					{/each}
 				{/each}
