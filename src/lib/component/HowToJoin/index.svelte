@@ -14,6 +14,26 @@
 	</a>
 </div>
 
+<h1 class="font-montserrat italic text-center text-5xl mt-3 mb-2 pt-2 text-gray-200" >REGISTRATION</h1>
+<div class="flex flex-row justify-center space-x-4 mt-3 mb-2 pt-2">
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://docs.google.com/forms/d/e/1FAIpQLScjQWL97eO2vd2DTF9sPtJMnrfH10iEFn9lssuPBfz92l_4LA/viewform?usp=sf_link"
+		class="btn w-64"
+	>
+		Matematika
+	</a>
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://docs.google.com/forms/d/e/1FAIpQLSfcimOGERpe6m9h0JVO1IoXS-U6tfP-5ebBZc2jaQfCF29Ocw/viewform?usp=sf_link"
+		class="btn w-64"
+	>
+		IPA
+	</a>
+</div>
+
 <h1 class="font-montserrat italic text-center text-5xl mt-3 mb-2 pt-2 text-gray-200">RULES</h1>
 <h2 class="font-montserrat font-black text-gray-200 text-center text-2x1 font-black mt-3 mb-2 pt-2">
 	Guide Pendaftaran & Lomba
@@ -32,6 +52,14 @@
 	Guide Lomba Matematika
 </h2>
 <div class="flex flex-row justify-center space-x-4 space y-4 ">
+	<a
+		target="_blank"
+		rel="noreferrer"
+		href="https://drive.google.com/file/d/17vsRjui3ERaSy1SGA7Y8Nd9YdzhO9HMa/view?usp=sharing"
+		class="btn w-64"
+	>
+		Guide Lomba Matematika
+	</a>
 	<a
 		target="_blank"
 		rel="noreferrer"
