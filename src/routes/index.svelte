@@ -44,6 +44,9 @@
 											</p>
 										</div>
 
+										<div class="-mt-16 pt-16" use:scrollRef={"about-us"}>
+											<AboutUs />
+										</div>
 										<div class="-mt-16 pt-16" use:scrollRef={"prizes"}>
 											<Prizes />
 										</div>
@@ -55,9 +58,6 @@
 										</div>
 										<div class="-mt-16 pt-16" use:scrollRef={"faq"}>
 											<Faq {qnas} />
-										</div>
-										<div class="-mt-16 pt-16" use:scrollRef={"about-us"}>
-											<AboutUs />
 										</div>
 									</div>
 								</div>

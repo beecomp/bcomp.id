@@ -21,6 +21,13 @@
 			</a>
 			<a
 				sveltekit:prefetch
+				use:scrollTo={"about-us"}
+				class="cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
+			>
+				About Us
+			</a>
+			<a
+				sveltekit:prefetch
 				use:scrollTo={"prizes"}
 				class="cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
 			>
@@ -46,13 +53,6 @@
 				class="cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
 			>
 				FAQ
-			</a>
-			<a
-				sveltekit:prefetch
-				use:scrollTo={"about-us"}
-				class="cursor-pointer px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;"
-			>
-				About Us
 			</a>
 		</div>
 	</div>
