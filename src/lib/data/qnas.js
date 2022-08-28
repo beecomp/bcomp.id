@@ -5,7 +5,7 @@ const s = [
   },
   {
     q: "Bolehkan satu tim untuk seorang saja?",
-    a: "Boleh",
+    a: "Boleh dong!",
   },
   {
     q: "Berapa biaya pendaftaran?",
