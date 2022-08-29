@@ -1,0 +1,317 @@
+---
+layout: default
+path: home
+title: Home · bcomp.id
+---
+
+<div class="bg-cover bg-fixed bg-[url('/static/img/landing-cover.jpg')] min-h-screen w-full">
+    <div class="bg-gradient-to-b lg:bg-gradient-to-br from-black/50 h-full">
+        <div class="container mx-auto h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between px-4 py-16">
+            <div class="mt-8">
+                <div class="text-6xl md:text-[6rem] xl:text-[8rem] font-semi italic font-black text-white/95 leading-none">
+                    BRILLIANT<br />COMPETITION
+                </div>
+                <div class="text-2xl md:text-5xl font-semi italic font-black text-white/95 md:mt-4">
+                    A NEW AGE OF BRILLIANCE
+                </div>
+            </div>
+            <div class="mt-16 lg:mt-0 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
+                <div class="text-white font-bold text-3xl text-center font-sans">
+                    Pendaftaran Tutup Dalam
+                </div>
+                <div class="flex mt-4 space-x-6 justify-center"
+                     x-data="{ countdown: new Date({{ event.deadline / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.deadline / 1 }}) - new Date()) / 1000) }"
+                     x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
+                        <div class="text-xl text-center mt-2">Hari</div>
+                    </div>
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
+                        <div class="text-xl text-center mt-2">Jam</div>
+                    </div>
+                    <div class="px-4 py-3 bg-stone-700/80 rounded text-white font-bold">
+                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
+                        <div class="text-xl text-center mt-2">Menit</div>
+                    </div>
+                </div>
+                <div class="mt-16 space-y-3">
+                    <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                       target="_blank"
+                       href="https://docs.google.com/document/d/1hig8Eb5qXMzuPEpoMFcfBYWxSZGGsZo8/edit"
+                    >
+                        Guide Pendaftaran & Lomba
+                    </a>
+                    <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                       target="_blank"
+                       href="https://drive.google.com/file/d/14Hoe_hfFS4zJeyGet2nCzS8XF53hR1Kc/view"
+                    >
+                        Proposal Umum
+                    </a>
+                    <div class="flex space-x-3">
+                        <a class="grow cursor-pointer block p-3 transition bg-yellow-400/70 hover:bg-yellow-500/80 ring-stone-700 rounded drop-shadow text-center text-white font-bold"
+                           target="_blank"
+                           href="https://docs.google.com/forms/d/e/1FAIpQLScjQWL97eO2vd2DTF9sPtJMnrfH10iEFn9lssuPBfz92l_4LA/viewform?usp=sf_link"
+                        >
+                            Daftar MAT!
+                        </a>
+                        <a class="grow cursor-pointer block p-3 transition bg-yellow-400/70 hover:bg-yellow-500/80 rounded drop-shadow text-center text-white font-bold"
+                           target="_blank"
+                           href="https://docs.google.com/forms/d/e/1FAIpQLSfcimOGERpe6m9h0JVO1IoXS-U6tfP-5ebBZc2jaQfCF29Ocw/viewform?usp=sf_link"
+                        >
+                            Daftar IPA!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% if quicklinks.links.length %}
+    <div class="bg-stone-900">
+        <div class="container mx-auto px-4 py-12">
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 px-4 mx-auto">
+                {% for item in quicklinks.links %}
+                    <a href="{{item.url}}" target="_blank" class="transition p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
+                        <span class="text-xl font-bold">
+                            {{item.title}}
+                        </span>
+                        <p>{{item.desc}}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<div class="bg-stone-200">
+    <div class="container mx-auto max-w-3xl px-4 py-4 text-center font-bold">
+        Mari ikut lomba matematika dan IPA tingkat nasional di Brilliant Competition!
+    </div>
+</div>
+<div class="bg-stone-100">
+    <h1 class="text-center text-5xl font-semi italic font-black py-12">PRIZES</h1>
+    <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 1</div>
+            <div class="text-3xl text-center">3.500K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 2</div>
+            <div class="text-3xl text-center">2.250K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 3</div>
+            <div class="text-3xl text-center">1.000K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 4</div>
+            <div class="text-3xl text-center">750K</div>
+        </div>
+        <div class="p-5 rounded bg-gradient-to-br from-yellow-500 to-amber-500 text-white font-semi italic drop-shadow">
+            <div class="text-3xl text-center">Juara 5</div>
+            <div class="text-3xl text-center">500K</div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-200 py-12">
+    <h1 class="text-center text-5xl font-semi italic font-black">TIMELINE</h1>
+    <div class="flex justify-center items-center container mx-auto px-4 pt-12">
+        <div class="flex flex-col md:hidden">
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    1 Sept 2022<br/>
+                    Start P1
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    17 Sept 2022<br/>Deadline P1
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    18 Sept 2022<br/>Live Class
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4 w-full" x-data="{ disclosed: false }">
+                    23 Sept 2022<br/>P2 & Semifinal
+                </div>
+            </div>
+            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-6 w-1 bg-black/60"></div>
+                    <div class="w-4 h-8 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                    <div class="grow w-1 bg-black/60"></div>
+                </div>
+                <div class="flex flex-col font-bold py-4">
+                    24 Sept 2022<br/>Final
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 pt-12 hidden md:grid grid-cols-5">
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-bold">
+                1 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-bold">
+                Start P1
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-bold">
+                17 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-bold">
+                Deadline P1
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-bold">
+                18 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-bold font-sans">
+                Live Class Brilliant Competition
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-bold">
+                23 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-bold">
+                P2 & Semifinal
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+            <div class="text-center font-bold">
+                24 Sept 2022
+            </div>
+            <div class="flex items-center">
+                <div class="grow h-1 bg-black/60"></div>
+                <div class="w-8 h-4 rounded-full bg-yellow-500 border-4 border-black/60"></div>
+                <div class="grow h-1 bg-black/60"></div>
+            </div>
+            <div class="text-center font-bold">
+                Final
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-6">
+        <a href="/posts/schedule-bcomp-xiv/" class="px-6 py-2 border-yellow-500 border-4  bg-stone-100 rounded-lg shadow">
+            Selengkapnya
+        </a>
+    </div>
+</div>
+<div class="bg-stone-100">
+    <div class="container mx-auto max-w-3xl px-4 py-12">
+        <div class="w-full mx-auto rounded-md shadow">
+            <div class="w-full h-full bg-gradient-to-br from-yellow-500 to-amber-500 rounded-md text-white text-xl p-8 text-justify">
+                <p class="text-justify">
+                    {{event.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-200">
+    <h1 class="text-center text-5xl font-semi italic font-black py-12">FAQ</h1>
+    <div class="container mx-auto max-w-3xl px-4 pb-12">
+        <div class="space-y-2">
+            {#% if event.faq %#}
+            {% for qna in event.faq %}
+                <div class="bg-stone-300 rounded shadow" x-data="{ disclosed: false }">
+                    <div @click="disclosed = !disclosed" class="p-3">
+                        {{qna.q}}
+                    </div>
+                    <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                        <hr class="pt-4 border-stone-500 border-1"/>
+                        {{qna.a}}
+                    </div>
+                </div>
+            {% endfor %}
+            {#% endif %#}
+        </div>
+
+        <div class="flex justify-center">
+            <div class="bg-stone-300 rounded shadow p-8 mt-8 inline-block">
+                <h2 class="text-center text-2xl font-bold pb-4">Ada pertanyaan lain?</h2>
+                <div class="space-y-2">
+                    <a class="flex items-center"
+                       href="https://wa.me/6283829128451?text=Hi Celine! Saya ingin bertanya tentang Brilliant Competition XIV"
+                    >
+                        <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
+                        +62 838 2912 8451 (Celine)
+                    </a>
+                    <a class="flex items-center"
+                       href="https://wa.me/62895377506699?text=Hi Jessica! Saya ingin bertanya tentang Brilliant Competition XIV"
+                    >
+                        <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
+                        +62 895 3775 06699 (Jessica)
+                    </a>
+                    <a class="flex items-center"
+                       href="https://wa.me/6281953500409?text=Hi Catherine! Saya ingin bertanya tentang Brilliant Competition XIV"
+                    >
+                        <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
+                        +62 819 5350 0409 (Catherine)
+                    </a>
+                    <a class="flex items-center"
+                       href="https://instagram.com/brilliantcompetition"
+                    >
+                        <ion-icon class="text-2xl mr-2" name="logo-instagram"></ion-icon>
+                        @brilliantcompetition
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-stone-600">
+    <div class="container mx-auto px-4 py-12">
+        <div class="w-full grid grid-cols-1 gap-4 px-4 mx-auto ">
+            <a href="/about-us" class="p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
+                <h3>Learn more about us →</h3>
+            </a>
+        </div>
+    </div>
+</div>
