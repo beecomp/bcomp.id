@@ -1,0 +1,70 @@
+---
+people:
+    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
+      name: Andrew
+      specialization: computing
+      year: 2021
+    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
+      name: William
+      specialization: math
+      year: 2017
+    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
+      name: Christian
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/blie.png')]"
+      name: Berlin
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
+      name: Andrew
+      specialization: computing
+      year: 2021
+    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
+      name: William
+      specialization: math
+      year: 2017
+    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
+      name: Christian
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/vthe.png')]"
+      name: Vincent
+      specialization: computing
+      year: 2013
+    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
+      name: Andrew
+      specialization: computing
+      year: 2021
+    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
+      name: Christian
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/blie.png')]"
+      name: Berlin
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/vthe.png')]"
+      name: Vincent
+      specialization: computing
+      year: 2013
+    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
+      name: Andrew
+      specialization: computing
+      year: 2021
+    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
+      name: William
+      specialization: math
+      year: 2017
+    - bg: "bg-[url('/static/img/people/vthe.png')]"
+      name: Vincent
+      specialization: computing
+      year: 2013
+    - bg: "bg-[url('/static/img/people/blie.png')]"
+      name: Berlin
+      specialization: physics
+      year: 2017
+    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
+      name: William
+      specialization: math
+      year: 2017
