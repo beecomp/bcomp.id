@@ -23,31 +23,31 @@
 <div class="bg-gradient-to-b from-stone-700 to-stone-800">
 	<div
 		class="bg-no-repeat bg-[left_top_217rem] bg-[length:20rem]"
-		style="background-image: url('/pat-hex-a.png');visible sm:invisible md:visible lg:visible xl:visible"
+		style="background-image: url('/pat-hex-a.png');"
 	>
 		<div
 			class="bg-no-repeat bg-[right_top_182rem] bg-[length:20rem]"
-			style="background-image: url('/pat-hex-a.png');visible sm:invisible md:visible lg:visible xl:visible"
+			style="background-image: url('/pat-hex-a.png');"
 		>
 			<div
 				class="bg-no-repeat bg-[length:20rem]"
-				style="background-image: url('/pat-hex-a.png'); background-position: 0px 2280px;visible sm:invisible md:visible lg:visible xl:visible"
+				style="background-image: url('/pat-hex-a.png'); background-position: 0px 2280px;"
 			>
 				<div
 					class="bg-no-repeat bg-[length:20rem]"
-					style="background-image: url('/pat-hex-b.png'); background-position: 1050px 1800px;visible sm:invisible md:visible lg:visible xl:visible"
+					style="background-image: url('/pat-hex-b.png'); background-position: 1050px 1800px;"
 				>
 					<div
 						class="bg-no-repeat bg-[left_top_88rem] bg-[length:20rem]"
-						style="background-image: url('/pat-hex-b.png');visible sm:invisible md:visible lg:visible xl:visible"
+						style="background-image: url('/pat-hex-b.png');"
 					>
 						<div
 							class="bg-no-repeat bg-[right_top_60rem] bg-[length:20rem]"
-							style="background-image: url('/pat-hex-a.png');visible sm:invisible md:visible lg:visible xl:visible"
+							style="background-image: url('/pat-hex-a.png');"
 						>
 							<div
 								class="bg-no-repeat bg-[left_top_37rem] bg-[length:20rem]"
-								style="background-image: url('/pat-hex-a.png');visible sm:invisible md:visible lg:visible xl:visible"
+								style="background-image: url('/pat-hex-a.png');"
 							>
 								<div class="pt-16" use:scrollRef={"top-index"}>
 									<IndexHero />
