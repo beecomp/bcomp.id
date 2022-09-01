@@ -1,0 +1,35 @@
+<h1>Show User</h1>
+
+<%= if @live_action in [:edit] do %>
+  <.modal return_to={Routes.user_show_path(@socket, :show)}>
+    <.live_component
+      module={MelliferaWeb.UserLive.FormComponent}
+      id={@current_user.id}
+      title={@page_title}
+      action={@live_action}
+      user={@current_user}
+      return_to={Routes.user_show_path(@socket, :show)}
+    />
+  </.modal>
+<% end %>
+
+<ul>
+  <li>
+    <strong>Username:</strong>
+    <%= @current_user.username %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @current_user.email %>
+  </li>
+
+  <li>
+    <strong>Roles:</strong>
+    <%= @current_user.roles %>
+  </li>
+</ul>
+
+<span>
+  <%= live_patch("Edit", to: Routes.user_show_path(@socket, :edit), class: "button") %>
+</span>
