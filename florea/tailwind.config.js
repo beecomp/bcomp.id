@@ -7,7 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Barlow", ...sansFonts],
-                semi: ["Barlow Semi Condensed", sansFonts],
+                semi: ["Barlow Semi Condensed", ...sansFonts],
                 alfa: ["Alfa Slab One", "cursive"],
             },
             colors: {},
