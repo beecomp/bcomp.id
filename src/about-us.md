@@ -12,7 +12,7 @@ Brilliant Class adalah sebuah program pendidikan khusus di SMAK Penabur Gading S
 
 Brilliant Competition XIV adalah kegiatan kompetisi olimpiade untuk bidang
 matematika dan sains tingkat SMP berskala nasional yang akan diselenggarakan
-untuk ketiga belas kalinya secara online di SMAK PENABUR Gading Serpong.
+untuk keempat belas kalinya secara online di SMAK PENABUR Gading Serpong.
 Brilliant Competition XIII sebelumnya diikuti oleh ratusan peserta dari sembilan
 provinsi dan lebih dari 60 sekolah yang tersebar di Indonesia. Brilliant
 Competition dirancang dan dilaksanakan oleh seluruh siswa Brilliant Class di
