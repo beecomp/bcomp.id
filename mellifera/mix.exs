@@ -36,6 +36,7 @@ defmodule Mellifera.MixProject do
       {:ecto_psql_extras, "~> 0.7"},
       {:ecto_sql, "~> 3.6"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
+      {:finch, "~> 0.13.0"},
       {:floki, ">= 0.30.0", only: :test},
       {:gettext, "~> 0.18"},
       {:guardian, "~> 2.2"},

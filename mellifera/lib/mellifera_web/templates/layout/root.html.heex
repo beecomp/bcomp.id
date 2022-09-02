@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content={csrf_token_value()} />
-    <%= live_title_tag(assigns[:page_title] || "Mellifera", suffix: " · Phoenix Framework") %>
+    <%= live_title_tag(assigns[:page_title] || "Mellifera", suffix: " · bcomp.id") %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")} />
     <script
       defer
@@ -14,29 +14,51 @@
       src={Routes.static_path(@conn, "/assets/app.js")}
     >
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Semi+Condensed:ital,wght@0,700;0,900;1,700;1,900&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/7b435104e0.js" crossorigin="anonymous">
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N696SKHWZ4">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N696SKHWZ4');
+    </script>
   </head>
   <body>
     <header>
-      <section class="container">
-        <nav>
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-            <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
-              <li><%= link("LiveDashboard", to: Routes.live_dashboard_path(@conn, :home)) %></li>
-            <% end %>
-            <%= if @current_user do %>
-              <li>
-                <%= link(@current_user.username, to: Routes.user_show_path(@conn, :show)) %>
+      <section class="fixed w-full bg-stone-900 z-10 shadow-xl">
+        <nav class="flex items-center justify-center lg:justify-between flex-wrap p-2 lg:px-0 container mx-auto">
+          <div class="flex items-center">
+            <a href="/">
+              <img
+                src={Routes.static_path(@conn, "/images/header-logo.png")}
+                alt="logo"
+                class="h-12 w-36 object-cover"
+              />
+            </a>
+          </div>
+          <div class="w-full flex-grow flex items-center w-auto text-center shadow-3xl">
+            <ul class="pt-0 list-reset flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="text-ml inline-block text-white no-underline hover:text-indigo-500 py-2 px-4"
+                  href="/blog"
+                >
+                  Blog
+                </a>
               </li>
-            <% end %>
-          </ul>
+            </ul>
+          </div>
         </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img
-            src={Routes.static_path(@conn, "/images/phoenix.png")}
-            alt="Phoenix Framework Logo"
-          />
-        </a>
       </section>
     </header>
     <%= @inner_content %>

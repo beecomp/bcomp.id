@@ -15,9 +15,10 @@ defmodule Mellifera.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Mellifera.PubSub},
       # Start the Endpoint (http/https)
-      MelliferaWeb.Endpoint
+      MelliferaWeb.Endpoint,
       # Start a worker by calling: Mellifera.Worker.start_link(arg)
       # {Mellifera.Worker, arg}
+      {Finch, name: Mellifera.Finch}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

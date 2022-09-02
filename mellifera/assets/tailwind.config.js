@@ -1,12 +1,18 @@
 // See the Tailwind configuration guide for advanced usage
 // https://tailwindcss.com/docs/configuration
 
-let plugin = require("tailwindcss/plugin");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
     content: ["./js/**/*.js", "../lib/*_web.ex", "../lib/*_web/**/*.*ex"],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Barlow", "sans-serif"],
+                semi: ["Barlow Semi Condensed", "sans-serif"],
+                alfa: ["Alfa Slab One", "cursive"],
+            },
+        },
     },
     plugins: [
         require("@tailwindcss/forms"),
