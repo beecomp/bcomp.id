@@ -26,7 +26,8 @@ config :mellifera, MelliferaWeb.Endpoint,
   secret_key_base: "4YDSjqcGQsfya6AGPSXGHMvVB2jOiHRJd82T+jEhrdSJGDqv9yvlFsvBepBgTbYr",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 config :ueberauth, Ueberauth.Strategy.Auth0.OAuth,
