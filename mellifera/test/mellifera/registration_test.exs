@@ -126,4 +126,66 @@ defmodule Mellifera.RegistrationTest do
       assert %Ecto.Changeset{} = Registration.change_org(org)
     end
   end
+
+  describe "teams" do
+    alias Mellifera.Registration.Team
+
+    import Mellifera.RegistrationFixtures
+
+    @invalid_attrs %{code: nil, event: nil, name: nil, status: nil, status_msg: nil}
+
+    test "list_teams/0 returns all teams" do
+      team = team_fixture()
+      assert Registration.list_teams() == [team]
+    end
+
+    test "get_team!/1 returns the team with given id" do
+      team = team_fixture()
+      assert Registration.get_team!(team.id) == team
+    end
+
+    test "create_team/1 with valid data creates a team" do
+      valid_attrs = %{code: "some code", event: :mat, name: "some name", status: :pending, status_msg: "some status_msg"}
+
+      assert {:ok, %Team{} = team} = Registration.create_team(valid_attrs)
+      assert team.code == "some code"
+      assert team.event == :mat
+      assert team.name == "some name"
+      assert team.status == :pending
+      assert team.status_msg == "some status_msg"
+    end
+
+    test "create_team/1 with invalid data returns error changeset" do
+      assert {:error, %Ecto.Changeset{}} = Registration.create_team(@invalid_attrs)
+    end
+
+    test "update_team/2 with valid data updates the team" do
+      team = team_fixture()
+      update_attrs = %{code: "some updated code", event: :ipa, name: "some updated name", status: :rejected, status_msg: "some updated status_msg"}
+
+      assert {:ok, %Team{} = team} = Registration.update_team(team, update_attrs)
+      assert team.code == "some updated code"
+      assert team.event == :ipa
+      assert team.name == "some updated name"
+      assert team.status == :rejected
+      assert team.status_msg == "some updated status_msg"
+    end
+
+    test "update_team/2 with invalid data returns error changeset" do
+      team = team_fixture()
+      assert {:error, %Ecto.Changeset{}} = Registration.update_team(team, @invalid_attrs)
+      assert team == Registration.get_team!(team.id)
+    end
+
+    test "delete_team/1 deletes the team" do
+      team = team_fixture()
+      assert {:ok, %Team{}} = Registration.delete_team(team)
+      assert_raise Ecto.NoResultsError, fn -> Registration.get_team!(team.id) end
+    end
+
+    test "change_team/1 returns a team changeset" do
+      team = team_fixture()
+      assert %Ecto.Changeset{} = Registration.change_team(team)
+    end
+  end
 end

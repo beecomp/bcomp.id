@@ -1,0 +1,47 @@
+<h1>Listing Teams</h1>
+
+<%= if @live_action in [:new, :edit] do %>
+  <.modal return_to={Routes.team_index_path(@socket, :index)}>
+    <.live_component
+      module={MelliferaWeb.TeamLive.FormComponent}
+      id={@team.id || :new}
+      title={@page_title}
+      action={@live_action}
+      team={@team}
+      return_to={Routes.team_index_path(@socket, :index)}
+    />
+  </.modal>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Status</th>
+      <th>Status msg</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="teams">
+    <%= for team <- @teams do %>
+      <tr id={"team-#{team.id}"}>
+        <td><%= team.event %></td>
+        <td><%= team.name %></td>
+        <td><%= team.code %></td>
+        <td><%= team.status %></td>
+        <td><%= team.status_msg %></td>
+
+        <td>
+          <span><%= live_redirect "Show", to: Routes.team_show_path(@socket, :show, team) %></span>
+          <span><%= live_patch "Edit", to: Routes.team_index_path(@socket, :edit, team) %></span>
+          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: team.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New Team", to: Routes.team_index_path(@socket, :new) %></span>

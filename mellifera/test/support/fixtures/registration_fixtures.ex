@@ -39,4 +39,22 @@ defmodule Mellifera.RegistrationFixtures do
 
     org
   end
+
+  @doc """
+  Generate a team.
+  """
+  def team_fixture(attrs \\ %{}) do
+    {:ok, team} =
+      attrs
+      |> Enum.into(%{
+        code: "some code",
+        event: :mat,
+        name: "some name",
+        status: :pending,
+        status_msg: "some status_msg"
+      })
+      |> Mellifera.Registration.create_team()
+
+    team
+  end
 end
