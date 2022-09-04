@@ -1,4 +1,0 @@
-[build]
-  base = "florea"
-  publish = "_site"
-  command = "npm run build"

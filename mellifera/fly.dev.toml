@@ -9,7 +9,7 @@ processes = []
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "old-firefly-4883.fly.dev"
+  PHX_HOST = "dev.bcomp.id"
   PORT = "8080"
 
 [experimental]
