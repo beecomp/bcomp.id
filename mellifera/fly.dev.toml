@@ -1,6 +1,6 @@
-# fly.toml file generated for summer-fire-9024 on 2022-09-04T04:09:59Z
+# fly.toml file generated for winter-water-9024 on 2022-09-04T04:09:59Z
 
-app = "summer-fire-9024"
+app = "winter-water-9024"
 kill_signal = "SIGTERM"
 kill_timeout = 5
 processes = []
@@ -9,7 +9,7 @@ processes = []
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "summer-fire-9024.fly.dev"
+  PHX_HOST = "winter-water-9024.fly.dev"
   PORT = "8080"
 
 [experimental]

@@ -1,12 +1,9 @@
 name: Fly Deploy
 on:
   push:
-    branches:
-      - master
-      - dev
+    branches: [master, dev]
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-  FLY_CONF: ${{ secrets.FLY_CONF }}
 jobs:
   deploy:
     name: Deploy app
