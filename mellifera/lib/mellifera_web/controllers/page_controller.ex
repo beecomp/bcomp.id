@@ -74,8 +74,6 @@ defmodule MelliferaWeb.PageController do
   end
 
   def post(conn, %{"id" => handle}) do
-    IO.inspect(["handle", handle])
-
     query = ~G"""
     query ($handle: String!) {
       post: posts(filter: { handle: { _eq: $handle } }) {
