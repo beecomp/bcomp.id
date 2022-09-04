@@ -7,30 +7,34 @@
     id="team-form"
     phx-target={@myself}
     phx-change="validate"
-    phx-submit="save">
-  
-    <%= label f, :event %>
-    <%= select f, :event, Ecto.Enum.values(Mellifera.Registration.Team, :event), prompt: "Choose a value" %>
-    <%= error_tag f, :event %>
-  
-    <%= label f, :name %>
-    <%= text_input f, :name %>
-    <%= error_tag f, :name %>
-  
-    <%= label f, :code %>
-    <%= text_input f, :code %>
-    <%= error_tag f, :code %>
-  
-    <%= label f, :status %>
-    <%= select f, :status, Ecto.Enum.values(Mellifera.Registration.Team, :status), prompt: "Choose a value" %>
-    <%= error_tag f, :status %>
-  
-    <%= label f, :status_msg %>
-    <%= text_input f, :status_msg %>
-    <%= error_tag f, :status_msg %>
-  
+    phx-submit="save"
+  >
+    <%= label(f, :event) %>
+    <%= select(f, :event, Ecto.Enum.values(Mellifera.Registration.Team, :event),
+      prompt: "Choose a value"
+    ) %>
+    <%= error_tag(f, :event) %>
+
+    <%= label(f, :name) %>
+    <%= text_input(f, :name) %>
+    <%= error_tag(f, :name) %>
+
+    <%= label(f, :code) %>
+    <%= text_input(f, :code) %>
+    <%= error_tag(f, :code) %>
+
+    <%= label(f, :status) %>
+    <%= select(f, :status, Ecto.Enum.values(Mellifera.Registration.Team, :status),
+      prompt: "Choose a value"
+    ) %>
+    <%= error_tag(f, :status) %>
+
+    <%= label(f, :status_msg) %>
+    <%= text_input(f, :status_msg) %>
+    <%= error_tag(f, :status_msg) %>
+
     <div>
-      <%= submit "Save", phx_disable_with: "Saving..." %>
+      <%= submit("Save", phx_disable_with: "Saving...") %>
     </div>
   </.form>
 </div>

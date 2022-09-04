@@ -35,13 +35,22 @@
         <td><%= team.status_msg %></td>
 
         <td>
-          <span><%= live_redirect "Show", to: Routes.team_show_path(@socket, :show, team) %></span>
-          <span><%= live_patch "Edit", to: Routes.team_index_path(@socket, :edit, team) %></span>
-          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: team.id, data: [confirm: "Are you sure?"] %></span>
+          <span>
+            <%= live_redirect("Show", to: Routes.team_show_path(@socket, :show, team)) %>
+          </span>
+          <span><%= live_patch("Edit", to: Routes.team_index_path(@socket, :edit, team)) %></span>
+          <span>
+            <%= link("Delete",
+              to: "#",
+              phx_click: "delete",
+              phx_value_id: team.id,
+              data: [confirm: "Are you sure?"]
+            ) %>
+          </span>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<span><%= live_patch "New Team", to: Routes.team_index_path(@socket, :new) %></span>
+<span><%= live_patch("New Team", to: Routes.team_index_path(@socket, :new)) %></span>

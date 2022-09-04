@@ -4,8 +4,20 @@ defmodule MelliferaWeb.TeamLiveTest do
   import Phoenix.LiveViewTest
   import Mellifera.RegistrationFixtures
 
-  @create_attrs %{code: "some code", event: :mat, name: "some name", status: :pending, status_msg: "some status_msg"}
-  @update_attrs %{code: "some updated code", event: :ipa, name: "some updated name", status: :rejected, status_msg: "some updated status_msg"}
+  @create_attrs %{
+    code: "some code",
+    event: :mat,
+    name: "some name",
+    status: :pending,
+    status_msg: "some status_msg"
+  }
+  @update_attrs %{
+    code: "some updated code",
+    event: :ipa,
+    name: "some updated name",
+    status: :rejected,
+    status_msg: "some updated status_msg"
+  }
   @invalid_attrs %{code: nil, event: nil, name: nil, status: nil, status_msg: nil}
 
   defp create_team(_) do

@@ -21,7 +21,13 @@ defmodule Mellifera.RegistrationTest do
     end
 
     test "create_participant/1 with valid data creates a participant" do
-      valid_attrs = %{birth_date: ~D[2022-09-03], email: "some email", grad_year: 42, name: "some name", phone: "some phone"}
+      valid_attrs = %{
+        birth_date: ~D[2022-09-03],
+        email: "some email",
+        grad_year: 42,
+        name: "some name",
+        phone: "some phone"
+      }
 
       assert {:ok, %Participant{} = participant} = Registration.create_participant(valid_attrs)
       assert participant.birth_date == ~D[2022-09-03]
@@ -37,9 +43,18 @@ defmodule Mellifera.RegistrationTest do
 
     test "update_participant/2 with valid data updates the participant" do
       participant = participant_fixture()
-      update_attrs = %{birth_date: ~D[2022-09-04], email: "some updated email", grad_year: 43, name: "some updated name", phone: "some updated phone"}
 
-      assert {:ok, %Participant{} = participant} = Registration.update_participant(participant, update_attrs)
+      update_attrs = %{
+        birth_date: ~D[2022-09-04],
+        email: "some updated email",
+        grad_year: 43,
+        name: "some updated name",
+        phone: "some updated phone"
+      }
+
+      assert {:ok, %Participant{} = participant} =
+               Registration.update_participant(participant, update_attrs)
+
       assert participant.birth_date == ~D[2022-09-04]
       assert participant.email == "some updated email"
       assert participant.grad_year == 43
@@ -49,7 +64,10 @@ defmodule Mellifera.RegistrationTest do
 
     test "update_participant/2 with invalid data returns error changeset" do
       participant = participant_fixture()
-      assert {:error, %Ecto.Changeset{}} = Registration.update_participant(participant, @invalid_attrs)
+
+      assert {:error, %Ecto.Changeset{}} =
+               Registration.update_participant(participant, @invalid_attrs)
+
       assert participant == Registration.get_participant!(participant.id)
     end
 
@@ -99,7 +117,14 @@ defmodule Mellifera.RegistrationTest do
 
     test "update_org/2 with valid data updates the org" do
       org = org_fixture()
-      update_attrs = %{address: [], contacts: %{}, email: [], name: "some updated name", phone: []}
+
+      update_attrs = %{
+        address: [],
+        contacts: %{},
+        email: [],
+        name: "some updated name",
+        phone: []
+      }
 
       assert {:ok, %Org{} = org} = Registration.update_org(org, update_attrs)
       assert org.address == []
@@ -145,7 +170,13 @@ defmodule Mellifera.RegistrationTest do
     end
 
     test "create_team/1 with valid data creates a team" do
-      valid_attrs = %{code: "some code", event: :mat, name: "some name", status: :pending, status_msg: "some status_msg"}
+      valid_attrs = %{
+        code: "some code",
+        event: :mat,
+        name: "some name",
+        status: :pending,
+        status_msg: "some status_msg"
+      }
 
       assert {:ok, %Team{} = team} = Registration.create_team(valid_attrs)
       assert team.code == "some code"
@@ -161,7 +192,14 @@ defmodule Mellifera.RegistrationTest do
 
     test "update_team/2 with valid data updates the team" do
       team = team_fixture()
-      update_attrs = %{code: "some updated code", event: :ipa, name: "some updated name", status: :rejected, status_msg: "some updated status_msg"}
+
+      update_attrs = %{
+        code: "some updated code",
+        event: :ipa,
+        name: "some updated name",
+        status: :rejected,
+        status_msg: "some updated status_msg"
+      }
 
       assert {:ok, %Team{} = team} = Registration.update_team(team, update_attrs)
       assert team.code == "some updated code"
@@ -186,6 +224,62 @@ defmodule Mellifera.RegistrationTest do
     test "change_team/1 returns a team changeset" do
       team = team_fixture()
       assert %Ecto.Changeset{} = Registration.change_team(team)
+    end
+  end
+
+  describe "teams_members" do
+    alias Mellifera.Registration.TeamMember
+
+    import Mellifera.RegistrationFixtures
+
+    @invalid_attrs %{}
+
+    test "list_teams_members/0 returns all teams_members" do
+      team_member = team_member_fixture()
+      assert Registration.list_teams_members() == [team_member]
+    end
+
+    test "get_team_member!/1 returns the team_member with given id" do
+      team_member = team_member_fixture()
+      assert Registration.get_team_member!(team_member.id) == team_member
+    end
+
+    test "create_team_member/1 with valid data creates a team_member" do
+      valid_attrs = %{}
+
+      assert {:ok, %TeamMember{} = team_member} = Registration.create_team_member(valid_attrs)
+    end
+
+    test "create_team_member/1 with invalid data returns error changeset" do
+      assert {:error, %Ecto.Changeset{}} = Registration.create_team_member(@invalid_attrs)
+    end
+
+    test "update_team_member/2 with valid data updates the team_member" do
+      team_member = team_member_fixture()
+      update_attrs = %{}
+
+      assert {:ok, %TeamMember{} = team_member} =
+               Registration.update_team_member(team_member, update_attrs)
+    end
+
+    test "update_team_member/2 with invalid data returns error changeset" do
+      team_member = team_member_fixture()
+
+      assert {:error, %Ecto.Changeset{}} =
+               Registration.update_team_member(team_member, @invalid_attrs)
+
+      assert team_member == Registration.get_team_member!(team_member.id)
+    end
+
+    test "delete_team_member/1 deletes the team_member" do
+      team_member = team_member_fixture()
+      assert {:ok, %TeamMember{}} = Registration.delete_team_member(team_member)
+      assert_raise Ecto.NoResultsError, fn -> Registration.get_team_member!(team_member.id) end
+    end
+
+    test "change_team_member/1 returns a team_member changeset" do
+      team_member = team_member_fixture()
+      assert %Ecto.Changeset{} = Registration.change_team_member(team_member)
     end
   end
 end

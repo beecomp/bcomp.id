@@ -56,6 +56,13 @@ defmodule MelliferaWeb.Router do
 
       live("/teams/:id", TeamLive.Show, :show)
       live("/teams/:id/show/edit", TeamLive.Show, :edit)
+
+      live("/teams_members", TeamMemberLive.Index, :index)
+      live("/teams_members/new", TeamMemberLive.Index, :new)
+      live("/teams_members/:id/edit", TeamMemberLive.Index, :edit)
+
+      live("/teams_members/:id", TeamMemberLive.Show, :show)
+      live("/teams_members/:id/show/edit", TeamMemberLive.Show, :edit)
     end
   end
 

@@ -35,13 +35,28 @@
         <td><%= participant.grad_year %></td>
 
         <td>
-          <span><%= live_redirect "Show", to: Routes.participant_show_path(@socket, :show, participant) %></span>
-          <span><%= live_patch "Edit", to: Routes.participant_index_path(@socket, :edit, participant) %></span>
-          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: participant.id, data: [confirm: "Are you sure?"] %></span>
+          <span>
+            <%= live_redirect("Show",
+              to: Routes.participant_show_path(@socket, :show, participant)
+            ) %>
+          </span>
+          <span>
+            <%= live_patch("Edit", to: Routes.participant_index_path(@socket, :edit, participant)) %>
+          </span>
+          <span>
+            <%= link("Delete",
+              to: "#",
+              phx_click: "delete",
+              phx_value_id: participant.id,
+              data: [confirm: "Are you sure?"]
+            ) %>
+          </span>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<span><%= live_patch "New Participant", to: Routes.participant_index_path(@socket, :new) %></span>
+<span>
+  <%= live_patch("New Participant", to: Routes.participant_index_path(@socket, :new)) %>
+</span>

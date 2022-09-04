@@ -14,7 +14,6 @@
 <% end %>
 
 <ul>
-
   <li>
     <strong>Name:</strong>
     <%= @participant.name %>
@@ -39,8 +38,13 @@
     <strong>Grad year:</strong>
     <%= @participant.grad_year %>
   </li>
-
 </ul>
 
-<span><%= live_patch "Edit", to: Routes.participant_show_path(@socket, :edit, @participant), class: "button" %></span> |
-<span><%= live_redirect "Back", to: Routes.participant_index_path(@socket, :index) %></span>
+<span>
+  <%= live_patch("Edit",
+    to: Routes.participant_show_path(@socket, :edit, @participant),
+    class: "button"
+  ) %>
+</span>
+|
+<span><%= live_redirect("Back", to: Routes.participant_index_path(@socket, :index)) %></span>

@@ -14,7 +14,6 @@
 <% end %>
 
 <ul>
-
   <li>
     <strong>Event:</strong>
     <%= @team.event %>
@@ -39,8 +38,10 @@
     <strong>Status msg:</strong>
     <%= @team.status_msg %>
   </li>
-
 </ul>
 
-<span><%= live_patch "Edit", to: Routes.team_show_path(@socket, :edit, @team), class: "button" %></span> |
-<span><%= live_redirect "Back", to: Routes.team_index_path(@socket, :index) %></span>
+<span>
+  <%= live_patch("Edit", to: Routes.team_show_path(@socket, :edit, @team), class: "button") %>
+</span>
+|
+<span><%= live_redirect("Back", to: Routes.team_index_path(@socket, :index)) %></span>

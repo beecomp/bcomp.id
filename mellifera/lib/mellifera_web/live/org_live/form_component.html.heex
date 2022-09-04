@@ -7,30 +7,30 @@
     id="org-form"
     phx-target={@myself}
     phx-change="validate"
-    phx-submit="save">
-  
-    <%= label f, :name %>
-    <%= text_input f, :name %>
-    <%= error_tag f, :name %>
-  
-    <%= label f, :address %>
-    <%= multiple_select f, :address, ["Option 1": "option1", "Option 2": "option2"] %>
-    <%= error_tag f, :address %>
-  
-    <%= label f, :email %>
-    <%= multiple_select f, :email, ["Option 1": "option1", "Option 2": "option2"] %>
-    <%= error_tag f, :email %>
-  
-    <%= label f, :phone %>
-    <%= multiple_select f, :phone, ["Option 1": "option1", "Option 2": "option2"] %>
-    <%= error_tag f, :phone %>
-  
-    <%= label f, :contacts %>
-    <%= text_input f, :contacts %>
-    <%= error_tag f, :contacts %>
-  
+    phx-submit="save"
+  >
+    <%= label(f, :name) %>
+    <%= text_input(f, :name) %>
+    <%= error_tag(f, :name) %>
+
+    <%= label(f, :address) %>
+    <%= multiple_select(f, :address, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :address) %>
+
+    <%= label(f, :email) %>
+    <%= multiple_select(f, :email, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :email) %>
+
+    <%= label(f, :phone) %>
+    <%= multiple_select(f, :phone, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :phone) %>
+
+    <%= label(f, :contacts) %>
+    <%= text_input(f, :contacts) %>
+    <%= error_tag(f, :contacts) %>
+
     <div>
-      <%= submit "Save", phx_disable_with: "Saving..." %>
+      <%= submit("Save", phx_disable_with: "Saving...") %>
     </div>
   </.form>
 </div>

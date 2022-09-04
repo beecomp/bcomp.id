@@ -1,0 +1,25 @@
+<h1>Show Team member</h1>
+
+<%= if @live_action in [:edit] do %>
+  <.modal return_to={Routes.team_member_show_path(@socket, :show, @team_member)}>
+    <.live_component
+      module={MelliferaWeb.TeamMemberLive.FormComponent}
+      id={@team_member.id}
+      title={@page_title}
+      action={@live_action}
+      team_member={@team_member}
+      return_to={Routes.team_member_show_path(@socket, :show, @team_member)}
+    />
+  </.modal>
+<% end %>
+
+<ul></ul>
+
+<span>
+  <%= live_patch("Edit",
+    to: Routes.team_member_show_path(@socket, :edit, @team_member),
+    class: "button"
+  ) %>
+</span>
+|
+<span><%= live_redirect("Back", to: Routes.team_member_index_path(@socket, :index)) %></span>

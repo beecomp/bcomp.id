@@ -4,9 +4,27 @@ defmodule MelliferaWeb.ParticipantLiveTest do
   import Phoenix.LiveViewTest
   import Mellifera.RegistrationFixtures
 
-  @create_attrs %{birth_date: %{day: 3, month: 9, year: 2022}, email: "some email", grad_year: 42, name: "some name", phone: "some phone"}
-  @update_attrs %{birth_date: %{day: 4, month: 9, year: 2022}, email: "some updated email", grad_year: 43, name: "some updated name", phone: "some updated phone"}
-  @invalid_attrs %{birth_date: %{day: 30, month: 2, year: 2022}, email: nil, grad_year: nil, name: nil, phone: nil}
+  @create_attrs %{
+    birth_date: %{day: 3, month: 9, year: 2022},
+    email: "some email",
+    grad_year: 42,
+    name: "some name",
+    phone: "some phone"
+  }
+  @update_attrs %{
+    birth_date: %{day: 4, month: 9, year: 2022},
+    email: "some updated email",
+    grad_year: 43,
+    name: "some updated name",
+    phone: "some updated phone"
+  }
+  @invalid_attrs %{
+    birth_date: %{day: 30, month: 2, year: 2022},
+    email: nil,
+    grad_year: nil,
+    name: nil,
+    phone: nil
+  }
 
   defp create_participant(_) do
     participant = participant_fixture()
