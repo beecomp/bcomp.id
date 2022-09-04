@@ -1,0 +1,47 @@
+<h1>Listing Orgs</h1>
+
+<%= if @live_action in [:new, :edit] do %>
+  <.modal return_to={Routes.org_index_path(@socket, :index)}>
+    <.live_component
+      module={MelliferaWeb.OrgLive.FormComponent}
+      id={@org.id || :new}
+      title={@page_title}
+      action={@live_action}
+      org={@org}
+      return_to={Routes.org_index_path(@socket, :index)}
+    />
+  </.modal>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Contacts</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="orgs">
+    <%= for org <- @orgs do %>
+      <tr id={"org-#{org.id}"}>
+        <td><%= org.name %></td>
+        <td><%= org.address %></td>
+        <td><%= org.email %></td>
+        <td><%= org.phone %></td>
+        <td><%= org.contacts %></td>
+
+        <td>
+          <span><%= live_redirect "Show", to: Routes.org_show_path(@socket, :show, org) %></span>
+          <span><%= live_patch "Edit", to: Routes.org_index_path(@socket, :edit, org) %></span>
+          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: org.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New Org", to: Routes.org_index_path(@socket, :new) %></span>

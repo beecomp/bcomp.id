@@ -35,6 +35,20 @@ defmodule MelliferaWeb.Router do
     live_session :default, on_mount: Mellifera.Account.AuthLive do
       live("/settings/user", UserLive.Show, :show)
       live("/settings/user/edit", UserLive.Show, :edit)
+
+      live("/participants", ParticipantLive.Index, :index)
+      live("/participants/new", ParticipantLive.Index, :new)
+      live("/participants/:id/edit", ParticipantLive.Index, :edit)
+
+      live("/participants/:id", ParticipantLive.Show, :show)
+      live("/participants/:id/show/edit", ParticipantLive.Show, :edit)
+
+      live("/orgs", OrgLive.Index, :index)
+      live("/orgs/new", OrgLive.Index, :new)
+      live("/orgs/:id/edit", OrgLive.Index, :edit)
+
+      live("/orgs/:id", OrgLive.Show, :show)
+      live("/orgs/:id/show/edit", OrgLive.Show, :edit)
     end
   end
 
