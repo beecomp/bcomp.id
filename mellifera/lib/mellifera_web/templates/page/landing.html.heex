@@ -91,16 +91,11 @@
     </svg>
   </div>
 
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4">
     <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto space-y-0">
       <div class=" max-w-4xl drop-shadow-lg rounded-md bg-stone-700 p-4 m-4 mx-auto">
         <p class=" text-xl text-white text-justify">
-          Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade
-          untuk bidang Matematika dan IPA tingkat SMP berskala nasional yang
-          akan diselenggarakan untuk keempat belas kalinya di SMAK PENABUR
-          Gading Serpong. Brilliant Competition sebelumnya diikuti oleh ratusan
-          peserta dari delapan provinsi dan lebih dari 50 sekolah yang tersebar
-          di Indonesia.
+          <%= @description %>
         </p>
       </div>
 
@@ -252,63 +247,21 @@
           SCHEDULE
         </h1>
         <div class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0 mt-3">
-          <%= for day_schedule <- @event.schedule.simple do %>
+          <%= for day <- @simple_schedule do %>
             <div class="bg-stone-600 rounded p-2 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2">
               <div class="flex flex-row md:flex-col items-center">
-                <i class={"fa-solid #{day_schedule.icon} text-5xl mx-8 md:mt-2 text-white"}></i>
+                <i class={"fa-solid fa-#{day.icon} text-5xl mx-8 md:mt-2 text-white"}></i>
                 <div class="flex flex-col md:items-center md:mt-2">
                   <div class="font-semi text-white font-bold mt-1 md:text-center">
-                    <%= Calendar.strftime(day_schedule.date, "%-d %B %Y") %>
+                    <%= Calendar.strftime(day.time, "%-d %b %Y") %>
                   </div>
                   <div class="font-semi text-white font-bold text-xl md:text-center">
-                    <%= day_schedule.event %>
+                    <%= day.highlight %>
                   </div>
                 </div>
               </div>
             </div>
           <% end %>
-        </div>
-
-        <div class="flex flex-col items-center mt-1" x-show="disclosed" x-collapse x-cloak>
-          <div>
-            <table>
-              {% for des in event.schedule.detailed %}
-              <tr>
-                <th
-                  class="font-barlow italic font-bold text-xl text-white pt-3 border-b-2 border-gray-500"
-                  colspan="2"
-                >
-                  {{des.date}}
-                </th>
-              </tr>
-              {% for te in des.events %}
-              <tr class>
-                <td class="font-barlow text-white text-lg text-center font-bold">
-                  {{te.time}}
-                </td>
-                <td class="font-barlow px-2 text-lg text-white">{{te.event}}</td>
-              </tr>
-              {% endfor %}
-              {% endfor %}
-            </table>
-          </div>
-        </div>
-        <div class="flex justify-center">
-          <button
-            type="button"
-            class="font-barlow font-medium py-2 px-4 bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-600 focus:ring-offset-yellow-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded mt-3 w-full max-w-md"
-            @click="disclosed = !disclosed"
-          >
-            <div x-show="disclosed">
-              <i class="fa-solid fa-chevron-up mx-4 text-white"></i>Sembunyikan<i class="fa-solid fa-chevron-up mx-4 text-white"></i>
-            </div>
-            <div x-show="!disclosed" x-cloak>
-              <i class="fa-solid fa-chevron-down mx-4 text-white"></i>Selengkapnya<i
-                class="fa-solid fa-chevron-down mx-4 text-white"
-                x-show="!disclosed"
-              ></i>
-            </div>
-          </button>
         </div>
       </div>
       <div class="-mt-16 pt-16">
@@ -417,25 +370,25 @@
       <div class="-mt-16 pt-16">
         <h1 class="font-bold italic text-center text-5xl text-gray-200">FAQ</h1>
         <div class="flex flex-col space-y-2 max-w-4xl mt-3 mx-auto">
-          {% for qna in event.faq %}
-          <div
-            x-data="{ disclosed: false }"
-            @click="disclosed = !disclosed"
-            class="drop-shadow-lg rounded-md bg-stone-600 p-3"
-          >
-            <div class="flex-row gap-4 flex justify-center items-start">
-              <div class=" flex flex-col text-white flex-grow">
-                <span class="text-white text-sm">{{qna.q}}</span>
-                <div x-show="disclosed" x-collapse x-cloak>
-                  <p class="mt-1 text-sm">{{qna.a}}</p>
+          <%= for qna <- @faq do %>
+            <div
+              x-data="{ disclosed: false }"
+              @click="disclosed = !disclosed"
+              class="drop-shadow-lg rounded-md bg-stone-600 p-3"
+            >
+              <div class="flex-row gap-4 flex justify-center items-start">
+                <div class=" flex flex-col text-white flex-grow">
+                  <span class="text-white text-sm"><%= qna.question %></span>
+                  <div x-show="disclosed" x-collapse x-cloak>
+                    <p class="mt-1 text-sm"><%= qna.answer %></p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-chevron-down mx-4 text-sm text-black"></i>
                 </div>
               </div>
-              <div class="flex-shrink-0">
-                <i class="fa-solid fa-chevron-down mx-4 text-sm text-black"></i>
-              </div>
             </div>
-          </div>
-          {% endfor %}
+          <% end %>
           <span class="font-bold text-gray-200 text-center">
             Tidak bisa menemukan pertanyaanmu? <br />
             Tanya langsung contacts kita yang ada dibawah website.

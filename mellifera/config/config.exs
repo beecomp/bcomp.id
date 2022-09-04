@@ -19,6 +19,8 @@ config :mellifera, MelliferaWeb.Endpoint,
   pubsub_server: Mellifera.PubSub,
   live_view: [signing_salt: "K+D5FEgY"]
 
+config :mellifera, Mellifera.CMS, endpoint: "https://0td7lqt2.directus.app/graphql/"
+
 # Configures kaffy
 config :kaffy,
   otp_app: :mellifera,

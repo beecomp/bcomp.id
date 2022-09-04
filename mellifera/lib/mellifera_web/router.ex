@@ -29,41 +29,23 @@ defmodule MelliferaWeb.Router do
     pipe_through(:browser)
 
     get("/", PageController, :index)
-    get("/landing", PageController, :landing)
+    get("/blog", PageController, :blog)
+    get("/blog/:id", PageController, :post)
 
     live_session :default, on_mount: Mellifera.Account.AuthLive do
       live("/settings/user", UserLive.Show, :show)
       live("/settings/user/edit", UserLive.Show, :edit)
-
-      live("/logins", LoginLive.Index, :index)
-      live("/logins/new", LoginLive.Index, :new)
-      live("/logins/:id/edit", LoginLive.Index, :edit)
-
-      live("/logins/:id", LoginLive.Show, :show)
-      live("/logins/:id/show/edit", LoginLive.Show, :edit)
     end
   end
 
-  # Enables LiveDashboard only for development
-  if Mix.env() in [:dev, :test] do
+  if Mix.env() == :dev do
     import Phoenix.LiveDashboard.Router
 
-    scope "/" do
-      pipe_through(:browser)
-
-      live_dashboard("/dashboard", metrics: MelliferaWeb.Telemetry)
-    end
-  end
-
-  # Enables the Swoosh mailbox preview in development.
-  #
-  # Note that preview only shows emails that were sent by the same
-  # node running the Phoenix server.
-  if Mix.env() == :dev do
     scope "/dev" do
       pipe_through(:browser)
 
       forward("/mailbox", Plug.Swoosh.MailboxPreview)
+      live_dashboard("/dashboard", metrics: MelliferaWeb.Telemetry)
     end
   end
 

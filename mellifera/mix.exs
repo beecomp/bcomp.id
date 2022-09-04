@@ -33,6 +33,8 @@ defmodule Mellifera.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:absinthe, "~> 1.7"},
+      {:earmark, "~> 1.4"},
       {:ecto_psql_extras, "~> 0.7"},
       {:ecto_sql, "~> 3.6"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},

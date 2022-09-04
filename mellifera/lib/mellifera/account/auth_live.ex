@@ -14,4 +14,8 @@ defmodule Mellifera.Account.AuthLive do
 
     {:cont, socket}
   end
+
+  def on_mount(_, _params, _session, socket) do
+    {:cont, socket |> assign_new(:current_user, fn -> nil end)}
+  end
 end
