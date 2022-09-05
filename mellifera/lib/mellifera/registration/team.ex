@@ -5,13 +5,19 @@ defmodule Mellifera.Registration.Team do
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
   schema "teams" do
-    field :code, :string
     field :event, Ecto.Enum, values: [:mat, :ipa]
     field :name, :string
-    field :status, Ecto.Enum, values: [:pending, :rejected, :approved]
+    field :code, :string
+    field :status, Ecto.Enum, values: [:draft, :pending, :rejected, :approved]
     field :status_msg, :string
     field :org, :binary_id
     field :owner, :binary_id
+
+    many_to_many(
+      :members,
+      Mellifera.Registration.Participant,
+      join_through: Mellifera.Registration.TeamMember
+    )
 
     timestamps()
   end

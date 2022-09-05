@@ -5,11 +5,11 @@ defmodule Mellifera.Registration.Org do
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
   schema "orgs" do
-    field(:address, {:array, :string})
-    field(:contacts, {:array, :map})
-    field(:email, {:array, :string})
-    field(:name, :string)
-    field(:phone, {:array, :string})
+    field :address, {:array, :string}
+    field :contacts, {:array, :map}
+    field :email, {:array, :string}
+    field :name, :string
+    field :phone, {:array, :string}
 
     timestamps()
   end

@@ -12,7 +12,7 @@ defmodule MelliferaWeb.PageController do
         description
         simple_schedule
         faq
-      }
+            }
     }
     """
 
@@ -24,9 +24,9 @@ defmodule MelliferaWeb.PageController do
       |> Conn.assign(
         :simple_schedule,
         res.landing.simple_schedule
-        |> Enum.map(fn %{time: time, icon: icon, highlight: highlight} ->
+        |> Enum.map(fn %{time: time} = m ->
           {:ok, time, _} = DateTime.from_iso8601(time)
-          %{time: time, icon: icon, highlight: highlight}
+          %{m | time: time}
         end)
       )
       |> Conn.assign(:faq, res.landing.faq),
