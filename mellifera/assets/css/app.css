@@ -2,6 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+button[type="submit"] {
+    @apply py-2 px-3 bg-black text-white border border-white;
+}
+
+button[type="reset"] {
+    @apply py-2 px-3 border border-gray-500;
+}
+
 /* Alerts and form errors used by phx.new */
 .alert {
     padding: 15px;

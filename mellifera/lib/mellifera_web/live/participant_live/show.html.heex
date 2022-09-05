@@ -1,0 +1,50 @@
+<h1>Show Participant</h1>
+
+<%= if @live_action in [:edit] do %>
+  <.modal return_to={Routes.participant_show_path(@socket, :show, @participant)}>
+    <.live_component
+      module={MelliferaWeb.ParticipantLive.FormComponent}
+      id={@participant.id}
+      title={@page_title}
+      action={@live_action}
+      participant={@participant}
+      return_to={Routes.participant_show_path(@socket, :show, @participant)}
+    />
+  </.modal>
+<% end %>
+
+<ul>
+  <li>
+    <strong>Name:</strong>
+    <%= @participant.name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @participant.email %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @participant.phone %>
+  </li>
+
+  <li>
+    <strong>Birth date:</strong>
+    <%= @participant.birth_date %>
+  </li>
+
+  <li>
+    <strong>Grad year:</strong>
+    <%= @participant.grad_year %>
+  </li>
+</ul>
+
+<span>
+  <%= live_patch("Edit",
+    to: Routes.participant_show_path(@socket, :edit, @participant),
+    class: "button"
+  ) %>
+</span>
+|
+<span><%= live_redirect("Back", to: Routes.participant_index_path(@socket, :index)) %></span>

@@ -1,0 +1,47 @@
+<h1>Show Org</h1>
+
+<%= if @live_action in [:edit] do %>
+  <.modal return_to={Routes.org_show_path(@socket, :show, @org)}>
+    <.live_component
+      module={MelliferaWeb.OrgLive.FormComponent}
+      id={@org.id}
+      title={@page_title}
+      action={@live_action}
+      org={@org}
+      return_to={Routes.org_show_path(@socket, :show, @org)}
+    />
+  </.modal>
+<% end %>
+
+<ul>
+  <li>
+    <strong>Name:</strong>
+    <%= @org.name %>
+  </li>
+
+  <li>
+    <strong>Addresses:</strong>
+    <%= @org.addresses %>
+  </li>
+
+  <li>
+    <strong>Emails:</strong>
+    <%= @org.emails %>
+  </li>
+
+  <li>
+    <strong>Phones:</strong>
+    <%= @org.phones %>
+  </li>
+
+  <li>
+    <strong>Contacts:</strong>
+    <%= @org.contacts %>
+  </li>
+</ul>
+
+<span>
+  <%= live_patch("Edit", to: Routes.org_show_path(@socket, :edit, @org), class: "button") %>
+</span>
+|
+<span><%= live_redirect("Back", to: Routes.org_index_path(@socket, :index)) %></span>

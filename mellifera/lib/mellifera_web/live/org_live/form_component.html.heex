@@ -1,0 +1,36 @@
+<div>
+  <h2><%= @title %></h2>
+
+  <.form
+    let={f}
+    for={@changeset}
+    id="org-form"
+    phx-target={@myself}
+    phx-change="validate"
+    phx-submit="save"
+  >
+    <%= label(f, :name) %>
+    <%= text_input(f, :name) %>
+    <%= error_tag(f, :name) %>
+
+    <%= label(f, :addresses) %>
+    <%= multiple_select(f, :addresses, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :addresses) %>
+
+    <%= label(f, :emails) %>
+    <%= multiple_select(f, :emails, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :emails) %>
+
+    <%= label(f, :phones) %>
+    <%= multiple_select(f, :phones, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :phones) %>
+
+    <%= label(f, :contacts) %>
+    <%= multiple_select(f, :contacts, "Option 1": "option1", "Option 2": "option2") %>
+    <%= error_tag(f, :contacts) %>
+
+    <div>
+      <%= submit("Save", phx_disable_with: "Saving...") %>
+    </div>
+  </.form>
+</div>
