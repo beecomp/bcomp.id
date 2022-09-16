@@ -10,7 +10,9 @@ module.exports = {
                 semi: ["Barlow Semi Condensed", sansFonts],
                 alfa: ["Alfa Slab One", "cursive"],
             },
-            colors: {},
+            colors: {
+                something : "#d4d4d8",
+            },
         },
     },
     variants: {},
