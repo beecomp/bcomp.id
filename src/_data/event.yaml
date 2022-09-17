@@ -90,7 +90,7 @@ schedule:
           event: "Istirahat Semifinal Math"
         - time: "16:30-18:00"
           event: "Semifinal Math Sesi 2"
-        - time: "23:59"
+        - time: "21:30"
           event: "Pengumuman Semifinal"
     - date: "Sabtu, 24 Sept 2022"
       events:
