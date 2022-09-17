@@ -1,70 +1,66 @@
 ---
 people:
-    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
-      name: Andrew
-      specialization: computing
-      year: 2021
-    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
-      name: William
-      specialization: math
-      year: 2017
-    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
-      name: Christian
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/blie.png')]"
-      name: Berlin
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
-      name: Andrew
-      specialization: computing
-      year: 2021
-    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
-      name: William
-      specialization: math
-      year: 2017
-    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
-      name: Christian
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/vthe.png')]"
-      name: Vincent
-      specialization: computing
-      year: 2013
-    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
-      name: Andrew
-      specialization: computing
-      year: 2021
-    - bg: "bg-[url('/static/img/people/cleonardi.png')]"
-      name: Christian
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/blie.png')]"
-      name: Berlin
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/vthe.png')]"
-      name: Vincent
-      specialization: computing
-      year: 2013
-    - bg: "bg-[url('/static/img/people/ajeremy.png')]"
-      name: Andrew
-      specialization: computing
-      year: 2021
-    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
-      name: William
-      specialization: math
-      year: 2017
-    - bg: "bg-[url('/static/img/people/vthe.png')]"
-      name: Vincent
-      specialization: computing
-      year: 2013
-    - bg: "bg-[url('/static/img/people/blie.png')]"
-      name: Berlin
-      specialization: physics
-      year: 2017
-    - bg: "bg-[url('/static/img/people/wsumendap.png')]"
-      name: William
-      specialization: math
-      year: 2017
+  - bg: "bg-[url('/static/img/face-dwidjaja.png')]"
+    name: Andrew
+    specialization: computing
+    year: 2021
+  - bg: "bg-[url('/static/img/face-stionanda.png')]"
+    name: William
+    specialization: math
+    year: 2017
+  - bg: "bg-[url('/static/img/face-ldorothy.png')]"
+    name: Christian
+    specialization: physics
+    year: 2017
+  - bg: "bg-[url('/static/img/face-blie.png')]"
+    name: Berlin
+    specialization: physics
+    year: 2017
+  - bg: "bg-[url('/static/img/face-crompas.png')]"
+    name: Andrew
+    specialization: computing
+    year: 2021
+  - bg: "bg-[url('/static/img/face-ljantoni.png')]"
+    name: William
+    specialization: math
+    year: 2017
+  - bg: "bg-[url('/static/img/face-bhario.png')]"
+    name: Christian
+    specialization: physics
+    year: 2017
+  - bg: "bg-[url('/static/img/face-adatui.png')]"
+    name: Vincent
+    specialization: computing
+    year: 2013
+  - bg: "bg-[url('/static/img/face-mtjoa.png')]"
+    name: Andrew
+    specialization: computing
+    year: 2021
+  - bg: "bg-[url('/static/img/face-jezralemuel.png')]"
+    name: Christian
+    specialization: physics
+    year: 2017
+  - bg: "bg-[url('/static/img/face-vmettasari.png')]"
+    name: Berlin
+    specialization: physics
+    year: 2017
+  - bg: "bg-[url('/static/img/face-vtandya.png')]"
+    name: Vincent
+    specialization: computing
+    year: 2013
+  - bg: "bg-[url('/static/img/face-bwidjaja.png')]"
+    name: Andrew
+    specialization: computing
+    year: 2021
+  - bg: "bg-[url('/static/img/face-wsumendap.png')]"
+    name: William
+    specialization: math
+    year: 2017
+  - bg: "bg-[url('/static/img/face-ibougenville.png')]"
+    name: Vincent
+    specialization: computing
+    year: 2013
+  - bg: "bg-[url('/static/img/face-dkumari.png')]"
+    name: Berlin
+    specialization: physics
+    year: 2017

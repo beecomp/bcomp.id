@@ -75,3 +75,17 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+      - label: "Peeps"
+        name: "peeps"
+        file: "src/_data/peeps.yaml"
+        fields:
+          - label: People
+            name: people
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - { label: Background, name: bg, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Specialization, name: specialization, widget: string }
+              - { label: Year, name: year, widget: string }
