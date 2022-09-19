@@ -1,10 +1,14 @@
-participantsMAT: 
-  - No:
-    Code: 
-    Names:
-    School: 
-participantsIPA:
-  - No:
-    Code:
-    Names:
-    School:
+Titles:
+  - Nomor : Rank
+    Kode : Kode Tim
+    Nama : Nama Peserta
+    Sekolah : Sekolah
+    participantsMat: 
+      - Rank : 1
+        Code : M001
+        Names : Steven
+        School : SMPK PENABUR GADING SERPONG 
+      - Rank : 2
+        Code : M002
+        Names : Riel
+        School : SMPK TARKI GADING SERPONG

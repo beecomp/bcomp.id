@@ -216,24 +216,28 @@ title: Home · bcomp.id
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="-mt-16 pt-16" x-data="{ disclosed: false }">
-                                            <h1 class="font-bold text-gray-200 italic text-center text-5xl">ANNOUCEMENT</h1>
+                                        <div class="flex flex-col space-y-4 -mt-16 pt-16">
+                                            <h1 class="font-bold text-gray-200 italic text-center text-5xl">ANNOUNCEMENT</h1>
 
-                                            <div class="flex flex-col items-center mt-1">
+                                            <h1 class="font-bold text-gray-200 italic text-center text-5xl">MATEMATIKA</h1>
+                                             <div class="flex flex-col items-center mt-1">
                                                 <div>
                                                     <table>
-                                                        {% for des in event.schedule.detailed %}
+                                                        {% for ti in annoucement.Titles %}
                                                             <tr>
                                                                 <th
                                                                     class="font-barlow italic font-bold text-xl text-white pt-3 border-b-2 border-gray-500"
-                                                                    colspan="2">
-                                                                    {{des.date}}
+                                                                    colspan="10">
+                                                                    {{ti.Nomor}}
+                                                                    {{ti.Kode}}
+                                                                    {{ti.Nama}}
+                                                                    {{ti.Sekolah    }}
                                                                 </th>
                                                             </tr>
-                                                            {% for te in des.events %}
+                                                            {% for pes in ti.participantsMat %}
                                                                 <tr class>
-                                                                    <td class="font-barlow text-white text-lg text-center font-bold">{{te.time}}</td>
-                                                                    <td class="font-barlow px-2 text-lg text-white">{{te.event}}</td>
+                                                                    <td class="font-barlow text-white text-lg text-center font-bold">{{pes.Rank}}</td>
+                                                                    <td class="font-barlow px-2 text-lg text-white">{{pes.Code}}</td>
                                                                 </tr>
                                                             {% endfor %}
                                                         {% endfor %}
