@@ -91,7 +91,7 @@ schedule:
         - time: "14:30-16:00"
           event: "Sesi 1 Semifinal Math"
         - time: "16:00-16:30"
-          event: "Istirahat"
+          event: "Istirahat" (Math)
         - time: "16:30-18:00"
           event: "Sesi 2 Semifinal Math"
         - time: "21:30"
