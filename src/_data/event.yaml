@@ -64,8 +64,12 @@ schedule:
           event: "Technical Meeting Penyisihan 2"
     - date: "Jumat, 23 Sept 2022"
       events:
-        - time: "07:00"
+        - time: "06:30"
           event: "Link Zoom Dibuka"
+        - time: "07:00-07:30"
+          event: "Acara Pembukaan Edufair"
+        - time: "07:30-08:00"
+          event: "Acara Pembukaan Bcomp"
         - time: "07:30-08:00"
           event: "Acara Pembukaan Bcomp"
         - time: "Penyisihan 2"
