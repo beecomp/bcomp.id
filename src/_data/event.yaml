@@ -30,95 +30,66 @@ faq:
 schedule:
   simple:
     - event: "Deadline Penyisihan\u00a01"
-      date: 2022-09-17T16:59:00.000Z
+      date: 2023-11-03T16:59:00.000Z
       icon: fa-inbox
     - event: Live Class
-      date: 2022-09-18T16:59:00.000Z
+      date: 2023-11-04T16:59:00.000Z
       icon: fa-graduation-cap
-    - event: Penyisihan 2 & Semifinal
-      date: 2022-09-23T16:59:00.000Z
+    - event: Penyisihan 2
+      date: 2023-11-09T16:59:00.000Z
       icon: fa-pencil-alt
+    - event: Penyisihan 2
+      date: 2023-11-16T16:59:00.000Z
+      icon: fa-plane
     - event: Final
-      date: 2022-09-24T16:59:00.000Z
+      date: 2023-11-17T16:59:00.000Z
       icon: fa-pencil-alt
   detailed:
-    - date: "Kamis, 1 Sept 2022"
+    - date: "Senin, 16 Oktober 2023"
       events:
         - time: ""
           event: "Pembukaan Akses Soal Penyisihan 1"
-    - date: "Sabtu, 17 Sept 2022"
+    - date: "Jumat, 3 November 2023"
       events:
         - time: "23:59"
           event: "Pengumpulan Lembar Jawaban Penyisihan 1"
-    - date: "Minggu, 18 Sept 2022"
+    - date: "Sabtu, 4 November 2022"
       events:
-        - time: "16:00–18:00"
-          event: "Live class Brilliant Competition XIV"
-    - date: "Selasa, 20 Sept 2022"
+        - time: "08:00–10:30"
+          event: "Live class Brilliant Competition XV"
+    - date: "Senin, 6 November 2023"
       events:
-        - time: "15:00"
+        - time: "14:00"
           event: "Pengumuman Penyisihan 1"
-    - date: "Rabu, 21 Sept 2022"
+    - date: "Selasa, 7 November 2022"
       events:
-        - time: "16:00-Selesai"
+        - time: "16:30-19:00"
           event: "Technical Meeting Penyisihan 2"
-    - date: "Jumat, 23 Sept 2022"
+    - date: "Kamis, 9 November 2023"
       events:
-        - time: "06:30"
+        - time: "07:30-08:00"
           event: "Link Zoom Dibuka"
-        - time: "07:00-07:30"
-          event: "Acara Pembukaan Edufair"
-        - time: "07:30-08:00"
-          event: "Acara Pembukaan Bcomp"
-        - time: "07:30-08:00"
-          event: "Acara Pembukaan Bcomp"
-        - time: "Penyisihan 2"
-          event: "-------------------------------------------------------------"
         - time: "08:00-09:00"
-          event: "Persiapan P2"
-        - time: "09:00-10:30"
-          event: "P2 Math & IPA"
-        - time: "10:45-11:45"
-          event: "Workshop"
-        - time: "11:45-13:15"
-          event: "Ishoma"
-        - time: "13:15-13:30"
-          event: "Pengumuman P2"
-        - time: "Semifinal"
-          event: "-------------------------------------------------------------"
-        - time: "13:30-14:00"
-          event: "Technical Meeting Semifinal"
-        - time: "14:00-14:30"
-          event: "Persiapan Semifinal"
-        - time: "14:30-17:00"
-          event: "Semifinal IPA"
-        - time: "14:30-16:00"
-          event: "Sesi 1 Semifinal Math"
-        - time: "16:00-16:30"
-          event: "Istirahat (Math)"
-        - time: "16:30-18:00"
-          event: "Sesi 2 Semifinal Math"
-        - time: "21:30"
-          event: "Pengumuman Hasil Semifinal Melewati Website"
-    - date: "Sabtu, 24 Sept 2022"
+          event: "Acara Pembukaan"
+        - time: "09:00-10:00"
+          event: "Persiapan Penyisihan 2"
+        - time: "10:00-11:30"
+          event: "Penyisihan 2"
+        - time: "21:00"
+          event: "Pengumuman Penyisihan 2"
+    - date: "Jumat, 10 November 2023"
       events:
         - time: "06:30-07:00"
           event: "Link Zoom Dibuka"
-        - time: "Final"
-          event: "-------------------------------------------------------------"
-        - time: "07:00-07:30"
-          event: "Technical Meeting Final"
-        - time: "07:30-08:00"
-          event: "Persiapan Final"
-        - time: "08:00-11:30"
-          event: "Final IPA"
-        - time: "08:00-12:00:"
-          event: "Sesi 1 Final Math"
-        - time: "12:00-13:00"
-          event: "Ishoma"
-        - time: "13:00-15:30"
-          event: "Sesi 2 Final Math Minesweeper"
-        - time: "15:30-17:00"
-          event: "Istirahat"
-        - time: "17:00-Selesai"
-          event: "Pengumuman Final dan Acara Penutup"
+        - time: "07:00-07:15"
+          event: "Pembukaan"
+        - time: "07:15-07:45"
+          event: "Technical Meeting Semifinal"
+        - time: "07:45-08:30"
+          event: "Persiapan Semifinal"
+        - time: "08:30-11:00:"
+          event: "Semifinal"
+        - time: "11:00-11:15"
+          event: "Penutupan Semifinal"
+        - time: "21:00"
+          event: "Pengumuman Semifinal"

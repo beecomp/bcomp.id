@@ -12,6 +12,9 @@ module.exports = {
             },
             colors: {
                 something : "#d4d4d8",
+                grey_1 : "847163",
+                grey_2 : "bca699",
+                grey_3 : "745a4b",
             },
         },
     },
