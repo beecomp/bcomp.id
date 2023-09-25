@@ -6,13 +6,13 @@ description: Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade
 deadline: 2022-09-17T17:00:30.000Z
 faq:
   - q: Kapan hari terakhir pendaftaran?
-    a: Sabtu, 17 September 2022
+    a: Jumat, 3 November 2023
   - q: Bolehkah satu tim untuk seorang saja?
-    a: Boleh dong!
+    a: Tentu saja boleh dong!
   - q: Berapa biaya pendaftaran?
     a:
-      "Early (20 Agustus - 31 Agustus 2022) : Rp 125.000,00 - per tim, Regular (1
-      September - 17 September 2022) : Rp 150.000,00 - per tim"
+      "Early (25 September - 15 Oktober 2023) : Rp 125.000,00 - per tim, Regular (16
+      Oktober - 3 November 2023) : Rp 150.000,00 - per tim"
   - q: Dimana bisa akses soal P1?
     a:
       Daftar dan bayar dulu lalu submit ke google form. Baru email yang berisi file
@@ -21,12 +21,12 @@ faq:
   - q: Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?
     a: Hanya 15 tim.
   - q: Berapa banyak tim yang akan lolos dari semifinal ke final?
-    a: Hanya 6 tim.
+    a: Hanya 5 tim.
   - q: Apa format Brilliant Competition tahun ini?
     a: Brilliant Competition akan mengadakan 2 perlombaan tim, yaitu lomba
       matematika dan lomba IPA, dengan tiap tim terdiri dari sebanyak 2 orang
   - q: Apakah ada silabus untuk Brilliant Competition tahun ini?
-    a: Silabus Bcomp terdapat diatas, untuk IPA berkisar materi OSN SMP
+    a: Silabus Bcomp terdapat dibagian "Guide & Syllabus"
 schedule:
   simple:
     - event: "Deadline Penyisihan\u00a01"
@@ -38,7 +38,10 @@ schedule:
     - event: Penyisihan 2
       date: 2023-11-09T16:59:00.000Z
       icon: fa-pencil-alt
-    - event: Penyisihan 2
+    - event: Semifinal
+      date: 2023-11-10T16:59:00.000Z
+      icon: fa-pencil-alt
+    - event: Kedatangan PLC
       date: 2023-11-16T16:59:00.000Z
       icon: fa-plane
     - event: Final
@@ -93,3 +96,31 @@ schedule:
           event: "Penutupan Semifinal"
         - time: "21:00"
           event: "Pengumuman Semifinal"
+    - date: "Kamis, 16 November 2023"
+      events:
+        - time: "15:00-17:00"
+          event: "Batas Akhir Kedatangan ke PLC"
+        - time: "18:00-19:00"
+          event: "Makan Malam Bersama"
+        - time: "19:00-20:00"
+          event: "Technical Meeting Final"
+        - time: "20:00"
+          event: "Istirahat"
+    - date: "Jumat, 17 November 2023"
+      events:
+        - time: "06:00-07:00"
+          event: "Sarapan dan Persiapan"
+        - time: "07:00-07:30"
+          event: "Persiapan Final"
+        - time: "07:30-11:15"
+          event: "Final"
+        - time: "11:15-11:30"
+          event: "Istirahat"
+        - time: "11:30-13:30"
+          event: "Ishoma"
+        - time: "13:30-16:00"
+          event: "Workshop"
+        - time: "16:00-17:00"
+          event: "Persiapan keluar dari PLC"
+        - time: "17:00-18:00"
+          event: "Penutupan dan Penganugerahan Brilliant Competition XV"
