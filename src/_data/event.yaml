@@ -11,7 +11,7 @@ faq:
     a: Tentu saja boleh dong!
   - q: Berapa biaya pendaftaran?
     a:
-      "Early (25 September - 15 Oktober 2023) : Rp 125.000,00 - per tim, Regular (16
+      "Early (2 Oktober - 15 Oktober 2023) : Rp 125.000,00 - per tim, Regular (16
       Oktober - 3 November 2023) : Rp 150.000,00 - per tim"
   - q: Dimana bisa akses soal P1?
     a:
@@ -78,6 +78,8 @@ schedule:
           event: "Persiapan Penyisihan 2"
         - time: "10:00-11:30"
           event: "Penyisihan 2"
+        - time: "11:30-12:00"
+          event: "Penutupan Penyisihan 2"
         - time: "21:00"
           event: "Pengumuman Penyisihan 2"
     - date: "Jumat, 10 November 2023"
@@ -100,11 +102,9 @@ schedule:
       events:
         - time: "15:00-17:00"
           event: "Batas Akhir Kedatangan ke PLC"
-        - time: "18:00-19:00"
-          event: "Makan Malam Bersama"
-        - time: "19:00-20:00"
+        - time: "17:30-18:30"
           event: "Technical Meeting Final"
-        - time: "20:00"
+        - time: ""
           event: "Istirahat"
     - date: "Jumat, 17 November 2023"
       events:
