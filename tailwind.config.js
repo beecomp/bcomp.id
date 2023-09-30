@@ -11,7 +11,7 @@ module.exports = {
                 alfa: ["Alfa Slab One", "cursive"],
             },
             colors: {
-                
+                'grey-woo' : '#e9eaeb',
             },
         },
     },
