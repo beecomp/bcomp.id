@@ -12,6 +12,7 @@ module.exports = {
             },
             colors: {
                 'grey-woo' : '#e9eaeb',
+                'yellow-woo' : '#ffde00',
             },
         },
     },
