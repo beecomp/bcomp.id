@@ -1,11 +1,11 @@
 winnersmat:
-  bidang :
-    - ree: "MATHEMATHICS"
+  bidang:
+    - field: "MATHEMATHICS"
   math:
     - rank: "1"
       code: "M053"
       name: "Jayden Jurianto"
-      school : "IPEKA Tomang"
+      school: "IPEKA Tomang"
     - rank: "2"
       code: "M045"
       name: "Neilson Huang & Grace Christinalie"
@@ -23,13 +23,13 @@ winnersmat:
       name: "Gabriella Natalia"
       school: "SMP PL Bintang Laut Surakarta"
 winnersipa:
-  bidang :
+  bidang:
     - ree: "SCIENCE/IPA"
   ipa:
     - rank: "1"
       code: "S027"
       name: "Bagasmora Andreo Sibarani & Mikhael Faith Benaiah Liveroy Saragih"
-      school : "SMP Darma Yudha"
+      school: "SMP Darma Yudha"
     - rank: "2"
       code: "S050"
       name: "Elliana Gracia Davina Harwinanto & Daniel Surya Chandra"
