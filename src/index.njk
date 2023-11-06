@@ -95,8 +95,8 @@ title: Home · bcomp.id
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <!-- Announcement <div class="-mt-16 pt-16">
-                                                            <h1 class="font-bold text-black italic text-center text-5xl">PENGUMUMAN FINAL</h1>
+                                                        <div class="-mt-16 pt-32">
+                                                            <h1 class="font-bold text-black italic text-center text-5xl">PENGUMUMAN LOLOS P2</h1>
                                                             <div class="flex flex-col items-center mt-1">
                                                                 <div class="mt-3 max-w-6xl mx-auto shadow-lg rounded bg- px-8 py-4">
                                                                     <table class="table-auto w-full">
@@ -107,7 +107,7 @@ title: Home · bcomp.id
                                                                                 </th>
                                                                             </tr>
                                                                             <tr class="border-b-2 px-2 text-black border-gray-200">
-                                                                                <th class="text-center px-2">Juara</th>
+                                                                                <th class="text-center px-2">Nomor</th>
                                                                                 <th class="text-left px-8">Kode Tim</th>
                                                                                 <th class="text-left px-2">Nama Peserta</th>
                                                                                 <th class="text-left px-8">Sekolah</th>
@@ -123,31 +123,31 @@ title: Home · bcomp.id
                                                                         {% endfor %}
                                                                     </table>
                                                                     <table class="table-auto w-full">
-                                                                        {% for ye in yeeyee.winnersipa.bidang %}
+                                                                        {% for bidang in yeeyee.winnersipa.bidang %}
                                                                             <tr>
                                                                                 <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
-                                                                                    {{ ye.ree }}
+                                                                                    {{ bidang.ree }}
                                                                                 </th>
                                                                             </tr>
                                                                             <tr class="border-b-2 px-2 text-black border-gray-200">
-                                                                                <th class="text-center px-2">Juara</th>
+                                                                                <th class="text-center px-2">Nomor</th>
                                                                                 <th class="text-center">Kode Tim</th>
                                                                                 <th class="text-left px-2">Nama Peserta</th>
                                                                                 <th class="text-left px-8">Sekolah</th>
                                                                             </tr>
-                                                                            {% for woop in yeeyee.winnersipa.ipa %}
+                                                                            {% for element in yeeyee.winnersipa.ipa %}
                                                                                 <tr class="border-b-2 border-gray-200">
-                                                                                    <td class="font-barlow text-black text-lg text-center font-bold">{{ woop.rank }}</td>
-                                                                                    <td class="font-barlow px-10 text-lg text-black">{{ woop.code }}</td>
-                                                                                    <td class="font-barlow px-2 text-lg text-black">{{ woop.name }}</td>
-                                                                                    <td class="font-barlow px-8 text-lg text-left text-black">{{ woop.school }}</td>
+                                                                                    <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                                                                                    <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
+                                                                                    <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
+                                                                                    <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
                                                                                 </tr>
                                                                             {% endfor %}
                                                                         {% endfor %}
                                                                     </table>
                                                                 </div>
                                                             </div>
-                                                        </div> -->
+                                                        </div>
                                                         <div class="-mt-4 pt-16">
                                                             <h1 class="italic text-center text-5xl text-black font-bold md:mb-0">PRIZES</h1>
                                                             <div class="flex flex-col items-center sm:items-start sm:flex-row justify-center mt-3">
