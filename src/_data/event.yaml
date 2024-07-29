@@ -6,13 +6,13 @@ description: Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade
 deadline: 2022-09-17T17:00:30.000Z
 faq:
   - q: Kapan hari terakhir pendaftaran?
-    a: Jumat, 3 November 2023
+    a: Jumat, 8 September 2024
   - q: Bolehkah satu tim untuk seorang saja?
     a: Tentu saja boleh dong!
   - q: Berapa biaya pendaftaran?
     a:
-      "Early (2 Oktober - 15 Oktober 2023) : Rp 125.000,00 - per tim, Regular (16
-      Oktober - 3 November 2023) : Rp 150.000,00 - per tim"
+      "Early (7 Agustus - 21 Agustus 2024) : Rp 125.000,00 - per tim, Regular (22
+      Agustus - 8 September 2024) : Rp 150.000,00 - per tim"
   - q: Dimana bisa akses soal P1?
     a:
       Daftar dan bayar dulu lalu submit ke google form. Baru email yang berisi file
@@ -30,29 +30,29 @@ faq:
 schedule:
   simple:
     - event: "Deadline Penyisihan\u00a01"
-      date: 2023-11-03T16:59:00.000Z
+      date: 2024-09-08T16:59:00.000Z
       icon: fa-inbox
     - event: Live Class
-      date: 2023-11-04T16:59:00.000Z
+      date: 2024-09-14T16:59:00.000Z
       icon: fa-graduation-cap
-    - event: Penyisihan 2
-      date: 2023-11-09T16:59:00.000Z
-      icon: fa-pencil-alt
-    - event: Semifinal
-      date: 2023-11-10T16:59:00.000Z
-      icon: fa-pencil-alt
+#    - event: Penyisihan 2
+#      date: 2023-11-09T16:59:00.000Z
+#      icon: fa-pencil-alt
+#    - event: Semifinal
+#      date: 2023-11-10T16:59:00.000Z
+#      icon: fa-pencil-alt
     - event: Kedatangan PLC
-      date: 2023-11-16T16:59:00.000Z
+      date: 2024-09-20T16:59:00.000Z
       icon: fa-plane
     - event: Final
-      date: 2023-11-17T16:59:00.000Z
+      date: 2024-09-21T16:59:00.000Z
       icon: fa-pencil-alt
   detailed:
-    - date: "Senin, 16 Oktober 2023"
+    - date: "Senin, 2 September 2024"
       events:
         - time: ""
           event: "Pembukaan Akses Soal Penyisihan 1"
-    - date: "Jumat, 3 November 2023"
+    - date: "Minggu, 8 September 2024"
       events:
         - time: "23:59"
           event: "Pengumpulan Lembar Jawaban Penyisihan 1"
