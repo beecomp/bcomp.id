@@ -35,15 +35,15 @@ schedule:
     - event: Live Class
       date: 2024-09-14T16:59:00.000Z
       icon: fa-graduation-cap
-#    - event: Penyisihan 2
-#      date: 2023-11-09T16:59:00.000Z
-#      icon: fa-pencil-alt
-#    - event: Semifinal
-#      date: 2023-11-10T16:59:00.000Z
-#      icon: fa-pencil-alt
     - event: Kedatangan PLC
-      date: 2024-09-20T16:59:00.000Z
+      date: 2024-09-19T16:59:00.000Z
       icon: fa-plane
+    - event: Penyisihan 2
+      date: 2024-09-20T16:59:00.000Z
+      icon: fa-pencil-alt
+    - event: Semifinal
+      date: 2024-09-20T16:59:00.000Z
+      icon: fa-pencil-alt
     - event: Final
       date: 2024-09-21T16:59:00.000Z
       icon: fa-pencil-alt
@@ -56,10 +56,10 @@ schedule:
       events:
         - time: "23:59"
           event: "Pengumpulan Lembar Jawaban Penyisihan 1"
-    - date: "Sabtu, 4 November 2022"
+    - date: "Sabtu, 14 September 2024"
       events:
         - time: "08:00–10:30"
-          event: "Live class Brilliant Competition XV"
+          event: "Live Class Brilliant Competition XV"
     - date: "Senin, 6 November 2023"
       events:
         - time: "14:00"
