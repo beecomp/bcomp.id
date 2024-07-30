@@ -40,6 +40,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.svg");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
+  // Copy countdown to /_site
+  eleventyConfig.addPassthroughCopy("./src/countdown.js");
+
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
