@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/static/widgets");
 
   // Copy color css to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/colors.css");
+  eleventyConfig.addPassthroughCopy("./src/static/color");
   
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
