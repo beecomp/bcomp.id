@@ -40,8 +40,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.svg");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
-  // Copy widgets to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/widgets");
+  // Copy scripts to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/scripts");
 
   // Copy color css to /_site
   eleventyConfig.addPassthroughCopy("./src/static/color");
