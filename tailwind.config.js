@@ -8,7 +8,7 @@ module.exports = {
             fontFamily: {
                 sans: ["Barlow", ...sansFonts],
                 semi: ["Barlow Semi Condensed", sansFonts],
-                alfa: ["Alfa Slab One", "cursive"],
+                //alfa: ["Alfa Slab One", "cursive"],
             },
             colors: {
                 'grey-woo' : '#e9eaeb',
