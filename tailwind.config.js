@@ -14,7 +14,7 @@ module.exports = {
                 'grey-woo' : '#e9eaeb',
                 'yellow-woo' : '#ffde00',
                 'pink-2024' : '#f7ae9f',
-                'blue-2024' : '#76cabd'
+                'blue-2024' : '#76cabd',
             },
         },
     },
