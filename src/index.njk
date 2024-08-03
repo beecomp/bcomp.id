@@ -45,7 +45,7 @@ title: Home · bcomp.id
                                                             <text
                                                                 x="4"
                                                                 y="2"
-                                                                class="text-xl font-alfa italic tracking-wide text-pink-2024 fill-current"
+                                                                class="text-xl font-alfa italic tracking-wide text-black fill-current"
                                                                 dominant-baseline="central"
                                                                 text-anchor="middle">
                                                                 BRILLIANT
@@ -53,7 +53,7 @@ title: Home · bcomp.id
                                                             <text
                                                                 x="0"
                                                                 y="22"
-                                                                class="text-xl font-semi font-black italic tracking-wide fill-current text-black"
+                                                                class="text-xl font-semi font-black italic tracking-wide fill-current text-pink-2024"
                                                                 dominant-baseline="central"
                                                                 text-anchor="middle">
                                                                 COMPETITION
@@ -67,14 +67,6 @@ title: Home · bcomp.id
                                                                 font-size="0.625rem">
                                                                 Ignite Your Brilliant Potential
                                                             </text>
-                                                            <text 
-                                                                x="0"
-                                                                y="50"
-                                                                id="demo"
-                                                                class="font-Montserrat Classic tracking-wider fill-current text-black"
-                                                                dominant-baseline="central"
-                                                                text-anchor="middle"
-                                                                font-size="0.625rem">
                                                             </p>
                                                         </svg>
                                                     </div>
@@ -82,10 +74,16 @@ title: Home · bcomp.id
                                                 <div class="container mx-auto">
                                                     <div class="max-w-7x1 px-4 sm:px-6 lg:px-8 mx-auto">
                                                         <div class="space-y-4-mt-16 pt-16">
+                                                            <h1 class="font-bold italic text-center text-5xl text-black">WAKTU SISA PENDAFTARAN</h1>
+                                                            <div class="mt-4 max-w-4xl mx-auto shadow-lg rounded pink-2024 px-8 py-4">
+                                                                <h1 id="demo" class="font-alfa text-black text-lg mt-1"></h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="space-y-4-mt-16 pt-16">
                                                             <h1 class="font-bold italic text-center text-5xl text-black">ABOUT US</h1>
                                                             <div class="mt-4 max-w-4xl mx-auto shadow-lg rounded pink-2024 px-8 py-4">
                                                                 <h4 class=" text-xl font-bold text-black">Brilliant Competition</h4>
-                                                                <p class="text-black text-lg mt-1">
+                                                                <p class="text-black text-lg mt-1 italic">
                                                                     Brilliant Competition XVI adalah kegiatan kompetisi olimpiade untuk bidang matematika dan sains tingkat SMP berskala
                                                                     nasional yang akan diselenggarakan untuk keempat belas kalinya secara online di SMAK PENABUR Gading Serpong. Brilliant
                                                                     Competition XV sebelumnya diikuti oleh ratusan peserta dari sebelas provinsi dan lebih dari 50 sekolah yang tersebar
@@ -303,7 +301,7 @@ title: Home · bcomp.id
                                                             <h1 class="font-bold italic text-center text-5xl text-black">FAQ</h1>
                                                             <div class="flex flex-col space-y-2 max-w-4xl mt-3 mx-auto">
                                                                 {% for qna in event.faq %}
-                                                                    <div x-data="{ disclosed: false }" @click="disclosed = !disclosed" class="drop-shadow-lg rounded-md bg-stone-300 p-3">
+                                                                    <div x-data="{ disclosed: false }" @click="disclosed = !disclosed" class="drop-shadow-lg rounded-md pink-2024 p-3">
                                                                         <div class="flex-row gap-4 flex justify-center items-start">
                                                                             <div class=" flex flex-col text-black flex-grow">
                                                                                 <span class="text-black text-sm">{{ qna.q }}</span>
