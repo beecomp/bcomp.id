@@ -42,9 +42,6 @@ module.exports = function (eleventyConfig) {
 
   // Copy widgets to /_site
   eleventyConfig.addPassthroughCopy("./src/static/widgets");
-
-  // Copy CSS to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/css");
   
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
