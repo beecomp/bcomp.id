@@ -10,13 +10,13 @@ var x = setInterval(function() {
   let hours = String(nhours);
   let minutes = String(nminutes);
   let seconds = String(nseconds);
-  if (hours.length == 0) {
+  if (hours.length == 1) {
     hours = "0" + hours;
   }
-  if (minutes.length == 0) {
+  if (minutes.length == 1) {
     minutes = "0" + minutes;
   }
-  if (seconds.length == 0) {
+  if (seconds.length == 1) {
     seconds = "0" + seconds;
   }
   document.getElementById("demo").innerHTML = days + " : " + hours + " : "
