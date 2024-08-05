@@ -13,6 +13,7 @@ module.exports = {
                 'pink-2024' : '#f7ae9f',
                 'blue-2024' : '#76cabd',
                 'shadeblue-2024' : '#5ea197',
+                'shadeblue2-2024' : '#528d84',
                 'darkblue-2024' : '#028080',
                 'silver' : '#c0c0c0',
                 'bronze' : '#cf7f32',
