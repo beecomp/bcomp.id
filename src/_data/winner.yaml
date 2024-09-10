@@ -1,0 +1,18 @@
+winnersmat:
+  bidang:
+    - field: "MATHEMATICS"
+  math:
+    - rank: "1"
+      code: "M404"
+      name: "Mr. Placeholder"
+      school: "SMP laceholder"
+      
+
+winnersipa:
+  bidang:
+    - ree: "SCIENCE"
+  ipa:
+    - rank: "1"
+      code: "S404"
+      name: "Ms. Placeholder"
+      school: "SMP laceholder"
