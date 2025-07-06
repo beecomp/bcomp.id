@@ -29,13 +29,15 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
     "./node_modules/@alpinejs/collapse/dist/cdn.min.js": "./static/js/@alpine/collapse.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
+    "./node_modules/prismjs/themes/prism-tomorrow.css": "./static/css/prism-tomorrow.css",
   });
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
 
+  // copy css folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/css");
+  
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.svg");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
@@ -60,6 +62,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
+      includes: "_includes",
     },
     htmlTemplateEngine: "njk",
   };
