@@ -8,7 +8,7 @@ module.exports = {
             fontFamily: {
                 sans: ["Barlow", ...sansFonts],
                 semi: ["Barlow Semi Condensed", sansFonts],
-                bangers: ['Bangers', 'cursive'],
+                bangers: ['Bangers', sansFonts],
             },
             colors: {
                 'honey-400' : '#ffb435',
