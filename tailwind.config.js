@@ -9,6 +9,7 @@ module.exports = {
                 sans: ["Barlow", ...sansFonts],
                 semi: ["Barlow Semi Condensed", sansFonts],
                 bangers: ['Bangers'],
+                lora: ['Lora'],
             },
             colors: {
                 'honey-400' : '#ffb435',
