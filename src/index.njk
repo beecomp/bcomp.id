@@ -20,7 +20,7 @@ title: Home · bcomp.id
                     Pendaftaran Segera Dibuka
                 </div>
 
-                <div class="flex mt-4 space-x-6 justify-center items-center border"
+                <div class="flex mt-4 space-x-6 justify-center items-center leading-none"
                      x-data="{ countdown: new Date({{ event.opening / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.opening / 1 }}) - new Date()) / 1000) }"
                      x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                     <div class="px-4 py-3 text-white">
