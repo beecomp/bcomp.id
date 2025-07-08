@@ -20,6 +20,8 @@ module.exports = {
                 'silver' : '#c0c0c0',
                 'bronze' : '#cf7f32',
                 'gold' : '#ffde40',
+                'light-brown' : '#d2b996',
+                'dark-brown' : '#2e130b',
             },
         },
     },
