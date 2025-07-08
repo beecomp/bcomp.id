@@ -20,19 +20,19 @@ title: Home · bcomp.id
                     Pendaftaran Segera Dibuka
                 </div>
 
-                <div class="flex mt-4 space-x-6 justify-center"
+                <div class="flex mt-4 space-x-6 justify-center items-center border"
                      x-data="{ countdown: new Date({{ event.opening / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.opening / 1 }}) - new Date()) / 1000) }"
                      x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
                         <div class="text-2xl text-center mt-2">Hari</div>
                     </div>
-                    <div class="text-center text-4xl"> : </div>
+                    <div class="text-center text-5xl font-medium text-white"> : </div>
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
                         <div class="text-2xl text-center mt-2">Jam</div>
                     </div>
-                    <div class="text-center text-4xl"> : </div>
+                    <div class="text-center text-5xl font-medium text-white"> : </div>
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
                         <div class="text-2xl text-center mt-2">Menit</div>
