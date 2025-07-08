@@ -25,15 +25,17 @@ title: Home · bcomp.id
                      x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
-                        <div class="text-xl text-center mt-2">Hari</div>
+                        <div class="text-2xl text-center mt-2">Hari</div>
                     </div>
+                    <div class="text-center text-4xl"> : </div>
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
-                        <div class="text-xl text-center mt-2">Jam</div>
+                        <div class="text-2xl text-center mt-2">Jam</div>
                     </div>
+                    <div class="text-center text-4xl"> : </div>
                     <div class="px-4 py-3 text-white">
                         <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
-                        <div class="text-xl text-center mt-2">Menit</div>
+                        <div class="text-2xl text-center mt-2">Menit</div>
                     </div>
                 </div>
 
