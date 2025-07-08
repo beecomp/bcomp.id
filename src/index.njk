@@ -5,62 +5,60 @@ title: Home · bcomp.id
 ---
 <!-- Testing revert -->
 <div class="bg-cover bg-fixed bg-[url('/static/img/2025-landing-cover.png')] min-h-screen w-full">
-    <div class="bg-gradient-to-b lg:bg-gradient-to-br from-black/50 h-full">
-        <div class="container mx-auto h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between px-4 py-16">
-            <div class="mt-8">
-                <div class="text-6xl md:text-[6rem] xl:text-[8rem] font-bangers font-extrabold text-white/95 leading-none tracking-wider">
-                    BRILLIANT<br />COMPETITION
-                </div>
-                <div class="text-2xl md:text-5xl font-lora italic font-semibold text-white/95 md:mt-4">
-                    Venturing Into Brilliance
-                </div>
+    <div class="container mx-auto h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between px-4 py-16">
+        <div class="mt-8">
+            <div class="text-6xl md:text-[6rem] xl:text-[8rem] font-bangers font-extrabold text-white/95 leading-none tracking-wider">
+                BRILLIANT<br />COMPETITION
             </div>
-            <div class="mt-16 lg:mt-10 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
-                <div class="text-white font-bold text-3xl text-center font-sans">
-                    Pendaftaran Segera Dibuka
-                </div>
+            <div class="text-2xl md:text-5xl font-lora italic font-semibold text-white/95 md:mt-4">
+                Venturing Into Brilliance
+            </div>
+        </div>
+        <div class="mt-16 lg:mt-10 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
+            <div class="text-white font-bold text-3xl text-center font-sans">
+                Pendaftaran Segera Dibuka
+            </div>
 
-                <div class="flex mt-4 space-x-6 justify-evenly"
-                     x-data="{ countdown: new Date({{ event.opening / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.opening / 1 }}) - new Date()) / 1000) }"
-                     x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
-                    <div class="px-4 py-3 text-white">
-                        <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
-                        <div class="text-2xl text-center mt-2">Hari</div>
-                    </div>
-                    <div class="text-center text-5xl text-white pt-3">:</div>
-                    <div class="px-4 py-3 text-white">
-                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
-                        <div class="text-2xl text-center mt-2">Jam</div>
-                    </div>
-                    <div class="text-center text-5xl text-white pt-3">:</div>
-                    <div class="px-4 py-3 text-white">
-                        <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
-                        <div class="text-2xl text-center mt-2">Menit</div>
-                    </div>
+            <div class="flex mt-4 space-x-6 justify-evenly"
+                 x-data="{ countdown: new Date({{ event.opening / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.opening / 1 }}) - new Date()) / 1000) }"
+                 x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Hari</div>
                 </div>
-<!--
-                <div class="mt-4 space-y-3">
-                    <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
-                       target="_blank"
-                       href="#"
-                    >
-                        Guidebook Lomba
-                    </a>
-                    <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
-                       target="_blank"
-                       href="#"
-                    >
-                        Silabus
-                    </a>
-                    <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
-                       target="_blank"
-                       href="#"
-                    >
-                        Proposal
-                    </a>
+                <div class="text-center text-5xl text-white pt-3">:</div>
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Jam</div>
                 </div>
--->
+                <div class="text-center text-5xl text-white pt-3">:</div>
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Menit</div>
+                </div>
             </div>
+<!--
+            <div class="mt-4 space-y-3">
+                <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                   target="_blank"
+                   href="#"
+                >
+                    Guidebook Lomba
+                </a>
+                <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                   target="_blank"
+                   href="#"
+                >
+                    Silabus
+                </a>
+                <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                   target="_blank"
+                   href="#"
+                >
+                    Proposal
+                </a>
+            </div>
+-->
         </div>
     </div>
 </div>
