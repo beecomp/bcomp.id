@@ -1,5 +1,5 @@
 <div class="fixed w-full flex-wrap justify-between h-13 bg-stone-900 z-40 shadow-xl pb-0">
-    <nav class="flex items-center justify-center lg:justify-between flex-wrap p-2 lg:px-0 container mx-auto">
+    <nav class="flex items-center justify-between lg:justify-between flex-wrap p-2 lg:px-0 container mx-auto">
         <!--Logo etc-->
         <div class="flex items-center">
             <a href="/">
@@ -11,5 +11,15 @@
         <button @click="open = !open" class="block lg:hidden focus:outline-none">
             <img src="/static/img/wheel.png" alt="menu" class="h-8 w-8"/>
         </button>
+
+        <!-- LG Menu -->
+        <ul class="hidden lg:flex space-x-6 text-white font-semibold">
+            <li><a href="#competition" class="hover:text-indigo-400">Competition</a></li>
+            <li><a href="#announcement" class="hover:text-indigo-400">Announcement</a></li>
+            <li><a href="#awards" class="hover:text-indigo-400">Awards</a></li>
+            <li><a href="#schedule" class="hover:text-indigo-400">Schedule</a></li>
+            <li><a href="#faq" class="hover:text-indigo-400">FAQ</a></li>
+            <li><a href="/about-us" class="hover:text-indigo-400">About Us</a></li>
+        </ul>
     </nav>
 </div>
