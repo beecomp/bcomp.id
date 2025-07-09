@@ -63,26 +63,6 @@ title: Home · bcomp.id
     </div>
 </div>
 
-<!--
-{% if quicklinks.links.length %}
-    <div class="bg-stone-900">
-        <div class="container mx-auto px-4 py-12">
-            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 px-4 mx-auto">
-                {% for item in quicklinks.links %}
-                    <a href="{{item.url}}" target="_blank" class="transition p-5 border rounded border-gray-200 hover:bg-white/10 text-white">
-                        <span class="text-xl font-bold">
-                            {{item.title}}
-                        </span>
-                        <p>{{item.desc}}</p>
-                    </a>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-{% endif %}
--->
-
-
 <div id="announcement" class="bg-gradient-to-b from-light-brown to-dark-brown w-full h-full">
     <div>
         <h1 class="text-center text-5xl font-semi italic font-black py-12">JUARA BRILLIANT COMPETITION XVI</h1>
@@ -137,6 +117,7 @@ title: Home · bcomp.id
             </div>
         </div>
     </div>
+
     <div id="awards">
         <h1 class="text-center text-5xl font-semi italic font-black py-12">PRIZES</h1>
         <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
@@ -162,6 +143,7 @@ title: Home · bcomp.id
             </div>
         </div>
     </div>
+
     <div id="schedule" class="py-12">
         <h1 class="text-center text-5xl font-semi italic font-black">TIMELINE</h1>
         <div class="flex justify-center items-center container mx-auto px-4 pt-12">
@@ -292,7 +274,8 @@ title: Home · bcomp.id
             </a>
         </div>-->
     </div>
-    <div id="faq">
+
+    <div>
         <div class="container mx-auto max-w-3xl px-4 py-12">
             <div class="w-full mx-auto rounded-md shadow">
                 <div class="w-full h-full bg-honey-400 rounded-md text-xl p-8 text-justify">
@@ -303,13 +286,15 @@ title: Home · bcomp.id
             </div>
         </div>
     </div>
+
     <div>
         <h1 class="text-center text-5xl font-semi italic font-black py-12">SPONSORS</h1>
         <div class="container mx-auto max-w-3xl px-4 pb-12 flex justify-center items-center">
             <img src="/static/img/sponsor-pukat-nusantara.jpg" class="object-center"/>
         </div>
     </div>
-    <div>
+
+    <div id="faq">
         <h1 class="text-center text-5xl font-semi italic font-black py-12">FAQ</h1>
         <div class="container mx-auto max-w-3xl px-4 pb-12">
             <div class="space-y-2">
