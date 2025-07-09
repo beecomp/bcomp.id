@@ -9,7 +9,7 @@
 
         <!-- The Wheel -->
         <button @click="open = !open" class="block lg:hidden focus:outline-none">
-            <img src="/static/img/wheel.png" alt="menu" class="h-8 w-8"/>
+            <img src="/static/img/wheel.png" alt="menu" class="h-8 w-8 transition-transform duration-300" :class="{ 'rotate-180': open }"/>
         </button>
 
         <!-- LG Menu -->
@@ -24,7 +24,7 @@
     </nav>
 
     <div x-show="open" class="lg:hidden px-4 pb-4 bg-stone-900 text-white">
-        <ul class="space-y-2 font-semibold">
+        <ul class="space-y-2 font-semibold ml-auto">
             <li><a href="#competition" class="hover:text-indigo-400">Competition</a></li>
             <li><a href="#announcement" class="hover:text-indigo-400">Announcement</a></li>
             <li><a href="#awards" class="hover:text-indigo-400">Awards</a></li>
