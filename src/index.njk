@@ -84,10 +84,10 @@ title: Home · bcomp.id
                         </tr>
                         {% for element in winner.winnersmat.math %}
                             <tr class="border-b-2 border-white
-                                {% if element.rank == 1 %} hover:bg-gold
-                                {% elif element.rank == 2 %} hover:bg-silver
-                                {% elif element.rank == 3 %} hover:bg-bronze
-                                {% else %} hover:bg-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-110
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
+                                {% else %} hover:bg-white hover:scale-110
                                 {% endif %}
                             ">
                                 <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
@@ -115,10 +115,10 @@ title: Home · bcomp.id
                         </tr>
                         {% for element in winner.winnersipa.ipa %}
                             <tr class="hover:bg-white border-b-2 border-white
-                                {% if element.rank == 1 %} hover:bg-gold
-                                {% elif element.rank == 2 %} hover:bg-silver
-                                {% elif element.rank == 3 %} hover:bg-bronze
-                                {% else %} hover:bg-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-110
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
+                                {% else %} hover:bg-white hover:scale-110
                                 {% endif %}
                             ">
                                 <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
