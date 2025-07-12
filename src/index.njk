@@ -63,75 +63,77 @@ title: Home · bcomp.id
     </div>
 </div>
 
-<!-- #f4e1d2 -->
-<div id="announcement">
-    <h1 class="text-center text-5xl font-semi italic font-black pt-12">ANNOUNCEMENT</h1>
-    <h2 class="text-center text-4xl font-barlow italic font-black py-6">Juara Brilliant Competition XVI</h2>
-    <div class="container mx-auto flex flex-col justify-center pb-12">
-        <div class="w-full max-w-6xl mx-auto shadow-2xl rounded bg- px-8 py-4 bg-transparent">
-            <table class="table-auto w-full">
-                {% for bidang in winner.winnersmat.bidang %}
-                    <tr>
-                        <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
-                            {{ bidang.field }}
-                        </th>
-                    </tr>
-                    <tr class="border-b-2 px-2 text-black border-white">
-                        <th class="text-center px-2">Rank</th>
-                        <th class="text-left px-8">Kode Tim</th>
-                        <th class="text-left px-2">Nama Peserta</th>
-                        <th class="text-left px-8">Sekolah</th>
-                    </tr>
-                    {% for element in winner.winnersmat.math %}
-                        <tr class="border-b-2 border-white
-                            {% if element.rank == 1 %} hover:bg-gold hover:scale-110
-                            {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
-                            {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
-                            {% else %} hover:bg-white hover:scale-110
-                            {% endif %}
-                        ">
-                            <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
-                            <td class="font-barlow px-10 text-left text-lg text-black">{{ element.code }}</td>
-                            <td class="font-barlow px-2 text-left text-lg text-black">{{ element.name }}</td>
-                            <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+<section class="bg-announcement">
+    <div id="announcement">
+        <h1 class="text-center text-5xl font-semi italic font-black pt-12">ANNOUNCEMENT</h1>
+        <h2 class="text-center text-4xl font-barlow italic font-black py-6">Juara Brilliant Competition XVI</h2>
+        <div class="container mx-auto flex flex-col justify-center pb-12">
+            <div class="w-full max-w-6xl mx-auto shadow-2xl rounded bg- px-8 py-4 bg-transparent">
+                <table class="table-auto w-full">
+                    {% for bidang in winner.winnersmat.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.field }}
+                            </th>
                         </tr>
-                    {% endfor %}
-                {% endfor %}
-            </table>
-        </div>
-        <div class="w-full max-w-6xl mx-auto shadow-2xl rounded bg- px-8 py-4 mt-3 bg-transparent items-stretch">
-            <table class="table-auto w-full">
-                {% for bidang in winner.winnersipa.bidang %}
-                    <tr>
-                        <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
-                            {{ bidang.ree }}
-                        </th>
-                    </tr>
-                    <tr class="border-b-2 px-2 text-black border-white">
-                        <th class="text-center px-2">Rank</th>
-                        <th class="text-center">Kode Tim</th>
-                        <th class="text-left px-2">Nama Peserta</th>
-                        <th class="text-left px-8">Sekolah</th>
-                    </tr>
-                    {% for element in winner.winnersipa.ipa %}
-                        <tr class="border-b-2 border-white
-                            {% if element.rank == 1 %} hover:bg-gold hover:scale-110
-                            {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
-                            {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
-                            {% else %} hover:bg-white hover:scale-110
-                            {% endif %}
-                        ">
-                            <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
-                            <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
-                            <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
-                            <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-center px-2">Rank</th>
+                            <th class="text-left px-8">Kode Tim</th>
+                            <th class="text-left px-2">Nama Peserta</th>
+                            <th class="text-left px-8">Sekolah</th>
                         </tr>
+                        {% for element in winner.winnersmat.math %}
+                            <tr class="border-b-2 border-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-110
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
+                                {% else %} hover:bg-white hover:scale-110
+                                {% endif %}
+                            ">
+                                <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                                <td class="font-barlow px-10 text-left text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-left text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
-            </table>
+                </table>
+            </div>
+            <div class="w-full max-w-6xl mx-auto shadow-2xl rounded bg- px-8 py-4 mt-3 bg-transparent items-stretch">
+                <table class="table-auto w-full">
+                    {% for bidang in winner.winnersipa.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.ree }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-center px-2">Rank</th>
+                            <th class="text-center">Kode Tim</th>
+                            <th class="text-left px-2">Nama Peserta</th>
+                            <th class="text-left px-8">Sekolah</th>
+                        </tr>
+                        {% for element in winner.winnersipa.ipa %}
+                            <tr class="border-b-2 border-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-110
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-110
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-110
+                                {% else %} hover:bg-white hover:scale-110
+                                {% endif %}
+                            ">
+                                <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                                <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
         </div>
     </div>
-</div>
+    <img src="/static/svg/announcement.svg" alt="" class="w-full h-auto" />
+</section>
 
 <!-- #dda15e -->
 <div id="awards">
@@ -335,7 +337,10 @@ title: Home · bcomp.id
             {% endfor %}
             {#% endif %#}
         </div>
+</div>
 
+<!-- #6d3914 -->
+<div id="contact">
         <div class="flex justify-center">
             <div class="bg-tosca-600 rounded shadow p-8 mt-8 inline-block">
                 <h2 class="text-center text-2xl font-bold pb-4">Ada pertanyaan lain?</h2>
@@ -368,17 +373,6 @@ title: Home · bcomp.id
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- #6d3914 -->
-<div class="bg-stone-600">
-    <div class="container mx-auto px-4 py-12">
-        <div class="w-full grid grid-cols-1 gap-4 px-4 mx-auto ">
-            <a href="/about-us" class="p-5 border rounded border-gray-200 hover:bg-white/10 text-white font-bold text-center">
-                <h3>Learn more about us →</h3>
-            </a>
         </div>
     </div>
 </div>
