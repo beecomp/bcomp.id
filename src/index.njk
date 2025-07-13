@@ -139,7 +139,7 @@ title: Home · bcomp.id
 <section class="bg-awards">
     <div id="awards">
         <h1 class="text-center text-5xl font-semi italic font-black pb-12">AWARDS</h1>
-        <div class="container mx-auto px-4 pb-12 grid grid-cols-1 md:grid-cols-5 gap-2">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-2">
             <div class="p-5 rounded bg-gold text-white font-semi italic drop-shadow hover:scale-105">
                 <div class="text-3xl text-center">Juara 1</div>
                 <div class="text-3xl text-center">IDR 5.000.000</div>
@@ -166,151 +166,154 @@ title: Home · bcomp.id
 </section>
 
 <!-- #d2691e -->
-<div id="schedule" class="py-12">
-    <h1 class="text-center text-5xl font-semi italic font-black">SCHEDULE</h1>
-<!--
-    <div class="flex justify-center items-center container mx-auto px-4 pt-12">
-        <div class="flex flex-col md:hidden">
-            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-6 w-1 bg-black/60"></div>
-                    <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                    <div class="grow w-1 bg-black/60"></div>
+<section class="bg-schedule">
+    <div id="schedule" class="pb-12">
+        <h1 class="text-center text-5xl font-semi italic font-black">SCHEDULE</h1>
+    <!--
+        <div class="flex justify-center items-center container mx-auto px-4 pt-12">
+            <div class="flex flex-col md:hidden">
+                <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="h-6 w-1 bg-black/60"></div>
+                        <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                        <div class="grow w-1 bg-black/60"></div>
+                    </div>
+                    <div class="flex flex-col font-bold py-4">
+                        2 Sept 2024<br/>
+                        Start P1
+                    </div>
                 </div>
-                <div class="flex flex-col font-bold py-4">
-                    2 Sept 2024<br/>
-                    Start P1
+                <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="h-6 w-1 bg-black/60"></div>
+                        <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                        <div class="grow w-1 bg-black/60"></div>
+                    </div>
+                    <div class="flex flex-col font-bold py-4">
+                        8 Sept 2024<br/>Deadline P1
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-6 w-1 bg-black/60"></div>
-                    <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                    <div class="grow w-1 bg-black/60"></div>
+                <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="h-6 w-1 bg-black/60"></div>
+                        <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                        <div class="grow w-1 bg-black/60"></div>
+                    </div>
+                    <div class="flex flex-col font-bold py-4">
+                        13 Sept 2024<br/>Live Class
+                    </div>
                 </div>
-                <div class="flex flex-col font-bold py-4">
-                    8 Sept 2024<br/>Deadline P1
+                <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="h-6 w-1 bg-black/60"></div>
+                        <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                        <div class="grow w-1 bg-black/60"></div>
+                    </div>
+                    <div class="flex flex-col font-bold py-4 w-full" x-data="{ disclosed: false }">
+                        20 Sept 2024<br/>P2 & Semifinal
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-6 w-1 bg-black/60"></div>
-                    <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                    <div class="grow w-1 bg-black/60"></div>
-                </div>
-                <div class="flex flex-col font-bold py-4">
-                    13 Sept 2024<br/>Live Class
-                </div>
-            </div>
-            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-6 w-1 bg-black/60"></div>
-                    <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                    <div class="grow w-1 bg-black/60"></div>
-                </div>
-                <div class="flex flex-col font-bold py-4 w-full" x-data="{ disclosed: false }">
-                    20 Sept 2024<br/>P2 & Semifinal
-                </div>
-            </div>
-            <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-6 w-1 bg-black/60"></div>
-                    <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                    <div class="grow w-1 bg-black/60"></div>
-                </div>
-                <div class="flex flex-col font-bold py-4">
-                    21 Sept 2024<br/>Final
+                <div class="flex flex-row space-x-4 items-stretch rounded hover:bg-black/20 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="h-6 w-1 bg-black/60"></div>
+                        <div class="w-4 h-8 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                        <div class="grow w-1 bg-black/60"></div>
+                    </div>
+                    <div class="flex flex-col font-bold py-4">
+                        21 Sept 2024<br/>Final
+                    </div>
                 </div>
             </div>
         </div>
+    -->
+        <div class="container mx-auto px-4 pt-12 hidden md:grid grid-cols-5">
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    9 Agustus - 21 Agustus 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold">
+                    Early Registration
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    22 Agustus - 3 September 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold">
+                   Regular Registration
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    16 Agustus - 22 Agustus 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold font-sans">
+                    Penyisihan 1
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    28 Agustus 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold">
+                    Technical Meeting &<br/>Live Class
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    3 September 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold">
+                    Penyisihan 2 &<br/>Semifinal
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
+                <div class="text-center font-bold">
+                    4 September 2025
+                </div>
+                <div class="flex items-center">
+                    <div class="grow h-1 bg-black/60"></div>
+                    <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
+                    <div class="grow h-1 bg-black/60"></div>
+                </div>
+                <div class="text-center font-bold">
+                    Final
+                </div>
+            </div>
+        </div>
+        <!--<div class="flex justify-center mt-6">
+            <a href="/posts/schedule-bcomp-xiv/" class="px-6 py-2 border-honey-500 border-4  bg-honey-400 rounded-lg shadow">
+                Selengkapnya
+            </a>
+        </div>-->
     </div>
--->
-    <div class="container mx-auto px-4 pt-12 hidden md:grid grid-cols-5">
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                9 Agustus - 21 Agustus 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold">
-                Early Registration
-            </div>
-        </div>
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                22 Agustus - 3 September 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold">
-               Regular Registration
-            </div>
-        </div>
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                16 Agustus - 22 Agustus 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold font-sans">
-                Penyisihan 1
-            </div>
-        </div>
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                28 Agustus 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold">
-                Technical Meeting &<br/>Live Class
-            </div>
-        </div>
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                3 September 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold">
-                Penyisihan 2 &<br/>Semifinal
-            </div>
-        </div>
-        <div class="flex flex-col space-y-4 rounded hover:bg-black/20 py-4">
-            <div class="text-center font-bold">
-                4 September 2025
-            </div>
-            <div class="flex items-center">
-                <div class="grow h-1 bg-black/60"></div>
-                <div class="w-8 h-4 rounded-full bg-honey-400 border-4 border-black/60"></div>
-                <div class="grow h-1 bg-black/60"></div>
-            </div>
-            <div class="text-center font-bold">
-                Final
-            </div>
-        </div>
-    </div>
-    <!--<div class="flex justify-center mt-6">
-        <a href="/posts/schedule-bcomp-xiv/" class="px-6 py-2 border-honey-500 border-4  bg-honey-400 rounded-lg shadow">
-            Selengkapnya
-        </a>
-    </div>-->
-</div>
+    <img src="/static/img/divider/schedule.png" alt="" class="w-full h-auto" />
+</section>
 
 <!--
 <div>
@@ -322,8 +325,8 @@ title: Home · bcomp.id
 -->
 
 <!-- #ab7843 -->
-<div id="faq">
-    <h1 class="text-center text-5xl font-semi italic font-black py-12">FAQ</h1>
+<div id="faq" class="bg-faq">
+    <h1 class="text-center text-5xl font-semi italic font-black pb-12">FAQ</h1>
     <div class="container mx-auto max-w-3xl px-4 pb-12">
         <div class="space-y-2">
             {#% if event.faq %#}
