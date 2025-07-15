@@ -352,7 +352,7 @@ title: Home · bcomp.id
             <div class="space-y-2">
                 {#% if event.faq %#}
                 {% for qna in event.faq %}
-                    <div class="bg-tosca-600 rounded shadow" x-data="{ disclosed: false }">
+                    <div class="bg-[#b8957f] rounded shadow" x-data="{ disclosed: false }">
                         <div @click="disclosed = !disclosed" class="p-3">
                             {{qna.q}}
                         </div>
