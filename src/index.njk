@@ -349,7 +349,7 @@ title: Home · bcomp.id
     <div id="faq">
         <h1 class="text-center text-5xl font-semi italic font-black pb-12 pt-14">FAQ</h1>
         <div class="container mx-auto max-w-3xl px-4">
-            <div class="space-y-2">
+            <div>
                 {#% if event.faq %#}
                 {% for qna in event.faq %}
                     <div class="bg-[#b8957f] rounded shadow" x-data="{ disclosed: false }">
@@ -357,7 +357,7 @@ title: Home · bcomp.id
                             {{qna.q}}
                         </div>
                         <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
-                            <hr class="pt-4 border-stone-500 border-1"/>
+                            <hr class="pt-4"/>
                             {{qna.a}}
                         </div>
                     </div>
