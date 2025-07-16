@@ -352,11 +352,11 @@ title: Home · bcomp.id
             <div>
                 {#% if event.faq %#}
                 {% for qna in event.faq %}
-                    <div class="bg-[#b8957f] rounded shadow" x-data="{ disclosed: false }">
+                    <div class="bg-[#b8957f] shadow" x-data="{ disclosed: false }">
                         <div @click="disclosed = !disclosed" class="p-3">
                             {{qna.q}}
                         </div>
-                        <div  class="px-4 pb-4" x-show="disclosed" x-collapse>
+                        <div class="px-4 pb-4" x-show="disclosed" x-collapse>
                             <hr class="pt-4"/>
                             {{qna.a}}
                         </div>
