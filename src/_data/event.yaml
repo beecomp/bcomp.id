@@ -7,19 +7,23 @@ opening: 2025-08-09T00:00:00.000Z
 early: 2025-08-21T23:59:59.000Z
 regular: 2025-09-03T23:59:59.000z
 faq:
-  - q: Kapan pendaftaran ditutup?
-    a: Early registration ditutup pada tanggal ... and regular registtration ditutup pada tanggal ...
-  - q: Berapakah biaya pendaftaran?
-    a: "Early : Rp 175.000,00 - per tim, Regular : Rp 200.000,00 - per tim."
-  - q: Bolehkah dalam suatu tim hanya terdiri dari seorang saja?
+  - q: Kapan hari terakhir pendaftaran?
+    a: Jumat, 8 September 2024
+  - q: Bolehkah satu tim untuk seorang saja?
     a: Boleh dong!
-  - q: Bagaimana cara mengakses soal penyisihan 1 (P1)?
-    a: Segera selesaikan pendaftaran dan pembayaran melalui google form yang bisa diakses di link youtube. Soal kemudian akan dikirimkan ke email peserta yang didaftarkan di dalam google form.
+  - q: Berapa biaya pendaftaran?
+    a: "Early (7 Agustus - 21 Agustus 2024) : Rp 175.000,00 - per tim, Regular (22
+        Agustus - 8 September 2024) : Rp 200.000,00 - per tim"
+  - q: Dimana bisa akses soal P1?
+    a: Daftar dan bayar dulu lalu submit ke google form. Baru email yang berisi file
+      soal (untuk bidang IPA) atau link google form soal (untuk bidang mat) akan
+      dikirimkan ke email peserta yang didaftarkan
   - q: Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?
-    a: 15 tim.
+    a: Hanya 15 tim.
   - q: Berapa banyak tim yang akan lolos dari semifinal ke final?
-    a: 5 tim.
-  - q: Bagaimana bentuk Brilliant Competition tahun ini?
-    a: Brilliant Competition XVII akan mengadakan 2 perlombaan tim, yaitu lomba matematika dan lomba IPA, dengan setiap tim terdiri dari maksimal 2 orang.
+    a: Hanya 5 tim.
+  - q: Apa format Brilliant Competition tahun ini?
+    a: Brilliant Competition akan mengadakan 2 perlombaan tim, yaitu lomba
+      matematika dan lomba IPA, dengan tiap tim terdiri dari sebanyak 2 orang
   - q: Apakah ada silabus untuk Brilliant Competition tahun ini?
-    a: Silabus Brilliant Competition untuk masing masing bidang lomba dapat diakses di dalam guidebook lomba.
+    a: Silabus Bcomp terdapat diatas dalam "Guide Pendaftaran & Lomba".
