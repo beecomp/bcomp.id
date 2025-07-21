@@ -352,7 +352,7 @@ title: Home · bcomp.id
             <div>
                 {#% if event.faq %#}
                 {% for qna in event.faq %}
-                    <div class="bg-light-coffee shadow border-y-2 border-['#b8957f']" x-data="{ disclosed: false }">
+                    <div class="bg-light-coffee shadow border-y-2 border-y-['#b8957f']" x-data="{ disclosed: false }">
                         <div @click="disclosed = !disclosed" class="p-4 flex justify-between items-center cursor-pointer">
                             {{qna.q}}
                             <img src="/static/img/down-arrow.png" alt="" class="h-6 w-6 transition-transform duration-300" :class="{ 'scale-y-[-1]': disclosed }">
