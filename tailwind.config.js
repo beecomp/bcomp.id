@@ -22,6 +22,7 @@ module.exports = {
                 'gold' : '#ffde40',
                 'light-coffee' : '#fff2da',
                 'coffee' : '#ddb892',
+                'faq-b' : '#b8957f',
             },
         },
     },
