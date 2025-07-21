@@ -352,13 +352,12 @@ title: Home · bcomp.id
             <div>
                 {#% if event.faq %#}
                 {% for qna in event.faq %}
-                    <div class="bg-light-coffee shadow" x-data="{ disclosed: false }">
-                        <div @click="disclosed = !disclosed" class="p-4 flex justify-between items-center cursor-pointer hover:bg-['#b8957f']">
+                    <div class="bg-light-coffee shadow border-y-['#b8957f']" x-data="{ disclosed: false }">
+                        <div @click="disclosed = !disclosed" class="p-4 flex justify-between items-center cursor-pointer">
                             {{qna.q}}
                             <img src="/static/img/down-arrow.png" alt="" class="h-6 w-6 transition-transform duration-300" :class="{ 'scale-y-[-1]': disclosed }">
                         </div>
                         <div class="px-4 pb-4" x-show="disclosed" x-collapse>
-                            <hr class="pt-4"/>
                             <div x-show="disclosed" x-transition:enter="transition-opacity duration-700 delay-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
                                 {{qna.a}}
                             </div>
