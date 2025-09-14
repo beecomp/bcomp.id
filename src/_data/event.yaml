@@ -3,25 +3,23 @@ description: Brilliant Competition (BComp) adalah kegiatan kompetisi olimpiade
   diselenggarakan untuk keenam belas kalinya di SMAK PENABUR Gading Serpong.
   Brilliant Competition sebelumnya diikuti oleh ratusan peserta dari sebelas
   provinsi dan lebih dari 50 sekolah yang tersebar di Indonesia.
-deadline: 2024-09-08T12:00:00.000Z
+opening: 2025-09-15T00:00:00.000Z
+early: 2025-10-02T16:59:59.000Z
+regular: 2025-10-23T17:59:59.000z
 faq:
-  - q: Kapan hari terakhir pendaftaran?
-    a: Jumat, 8 September 2024
-  - q: Bolehkah satu tim untuk seorang saja?
+  - q: Kapan pendaftaran ditutup?
+    a: Early registration berakhir pada tanggal 2 Oktober 2025 dan regular registration ditutup pada tanggal 23 Oktober 2025
+  - q: Berapakah biaya pendaftaran?
+    a: "Early : Rp 175.000,00 - per tim, Regular : Rp 200.000,00 - per tim"
+  - q: Bolehkah dalam suatu tim hanya terdiri dari seorang saja?
     a: Boleh dong!
-  - q: Berapa biaya pendaftaran?
-    a: "Early (7 Agustus - 21 Agustus 2024) : Rp 175.000,00 - per tim, Regular (22
-        Agustus - 8 September 2024) : Rp 200.000,00 - per tim"
-  - q: Dimana bisa akses soal P1?
-    a: Daftar dan bayar dulu lalu submit ke google form. Baru email yang berisi file
-      soal (untuk bidang IPA) atau link google form soal (untuk bidang mat) akan
-      dikirimkan ke email peserta yang didaftarkan
+  - q: Bagaimana cara mengakses soal penyisihan 1?
+    a: Setelah menyelesaikan pendaftaran beserta pembayaran, soal akan dikirimkan ke email peserta yang didaftarkan di dalam google form
+  - q: Berapa banyak tim yang akan lolos dari penyisihan 1 ke penyisihan 2?
+    a: 30 tim
   - q: Berapa banyak tim yang akan lolos dari penyisihan 2 ke semifinal?
-    a: Hanya 15 tim.
+    a: 15 tim
   - q: Berapa banyak tim yang akan lolos dari semifinal ke final?
-    a: Hanya 5 tim.
-  - q: Apa format Brilliant Competition tahun ini?
-    a: Brilliant Competition akan mengadakan 2 perlombaan tim, yaitu lomba
-      matematika dan lomba IPA, dengan tiap tim terdiri dari sebanyak 2 orang
-  - q: Apakah ada silabus untuk Brilliant Competition tahun ini?
-    a: Silabus Bcomp terdapat diatas dalam "Guide Pendaftaran & Lomba".
+    a: 5 tim
+  - q: Bagaimana bentuk Brilliant Competition tahun ini?
+    a: Brilliant Competition XVII akan mengadakan 2 perlombaan tim, yaitu lomba matematika dan lomba IPA, dengan setiap tim terdiri dari maksimal 2 orang
