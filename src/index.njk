@@ -16,11 +16,11 @@ title: Home · bcomp.id
         </div>
         <div class="mt-16 lg:mt-10 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
             <div class="text-white font-bold text-3xl text-center font-sans">
-                Pendaftaran segera dibuka!
+                Early registration sudah dibuka!
             </div>
 
             <div class="flex mt-4 space-x-6 justify-evenly"
-                 x-data="{ countdown: new Date({{ event.opening / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.opening / 1 }}) - new Date()) / 1000) }"
+                 x-data="{ countdown: new Date({{ event.early / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.early / 1 }}) - new Date()) / 1000) }"
                  x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
                 <div class="px-4 py-3 text-white">
                     <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
