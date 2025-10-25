@@ -141,12 +141,12 @@ title: Home · bcomp.id
         </div>
 -->
         <h2 class="text-center text-4xl font-barlow italic font-black pt-14">Pengumuman Hasil Babak Penyisihan 1</h2>
-        <div class="container mx-auto flex flex-col justify-center pb-8 mt-2">
+        <div class="container mx-auto flex flex-col justify-center pb-8 mt-4">
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
                 <table class="table-auto w-full">
                     {% for bidang in P1.p1m.bidang %}
                         <tr>
-                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                            <th class="font-barlow italic font-bold text-3xl text-black pt-3" colspan="10">
                                 {{ bidang.field }}
                             </th>
                         </tr>
@@ -169,7 +169,7 @@ title: Home · bcomp.id
                 <table class="table-auto w-full">
                     {% for bidang in P1.p1i.bidang %}
                         <tr>
-                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                            <th class="font-barlow italic font-bold text-3xl text-black pt-3" colspan="10">
                                 {{ bidang.ree }}
                             </th>
                         </tr>
