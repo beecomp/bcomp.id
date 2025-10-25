@@ -146,20 +146,20 @@ title: Home · bcomp.id
                 <table class="table-auto w-full">
                     {% for bidang in P1.p1m.bidang %}
                         <tr>
-                            <th class="font-barlow italic font-bold text-3xl text-black pt-3" colspan="10">
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.field }}
                             </th>
                         </tr>
                         <tr class="border-b-2 px-2 text-black border-white">
-                            <th class="text-left px-8">Kode Tim</th>
-                            <th class="text-left px-2">Nama Peserta</th>
-                            <th class="text-left px-8">Sekolah</th>
+                            <th class="text-left text-lg px-8">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
                         </tr>
                         {% for element in P1.p1m.math %}
                             <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
-                                <td class="font-barlow px-10 text-left text-lg text-black">{{ element.code }}</td>
-                                <td class="font-barlow px-2 text-left text-lg text-black">{{ element.name }}</td>
-                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                                <td class="font-barlow px-10 text-left text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-left text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-left text-black">{{ element.school }}</td>
                             </tr>
                         {% endfor %}
                     {% endfor %}
@@ -169,20 +169,20 @@ title: Home · bcomp.id
                 <table class="table-auto w-full">
                     {% for bidang in P1.p1i.bidang %}
                         <tr>
-                            <th class="font-barlow italic font-bold text-3xl text-black pt-3" colspan="10">
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.ree }}
                             </th>
                         </tr>
                         <tr class="border-b-2 px-2 text-black border-white">
-                            <th class="text-center">Kode Tim</th>
-                            <th class="text-left px-2">Nama Peserta</th>
-                            <th class="text-left px-8">Sekolah</th>
+                            <th class="text-left text-lg">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
                         </tr>
                         {% for element in P1.p1i.ipa %}
                             <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
-                                <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
-                                <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
-                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                                <td class="font-barlow px-10 text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-left text-black">{{ element.school }}</td>
                             </tr>
                         {% endfor %}
                     {% endfor %}
