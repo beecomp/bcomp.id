@@ -147,9 +147,9 @@ title: Home · bcomp.id
             </div>
             
             <script type="module">
-                import * as pdfjsLib from "/js/pdf.mjs";
-                pdfjsLib.GlobalWorkerOptions.workerSrc = "/js/pdf.worker.mjs";
-                const url = "/pdf/tes_logika.pdf";
+                import * as pdfjsLib from "/static/js/pdf.mjs";
+                pdfjsLib.GlobalWorkerOptions.workerSrc = "/static/js/pdf.worker.mjs";
+                const url = "/static/pdf/tes_logika.pdf";
                 
                 const loadingTask = pdfjsLib.getDocument(url);
                 loadingTask.promise.then((pdf) => {
