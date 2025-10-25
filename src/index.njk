@@ -144,27 +144,19 @@ title: Home · bcomp.id
         <div class="container mx-auto flex flex-col justify-center py-8">
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded bg- p-4 bg-transparent">
                 <table class="table-auto w-full">
-                    {% for bidang in winner.winnersmat.bidang %}
+                    {% for bidang in P1.p1m.bidang %}
                         <tr>
                             <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.field }}
                             </th>
                         </tr>
                         <tr class="border-b-2 px-2 text-black border-white">
-                            <th class="text-center px-2">Rank</th>
                             <th class="text-left px-8">Kode Tim</th>
                             <th class="text-left px-2">Nama Peserta</th>
                             <th class="text-left px-8">Sekolah</th>
                         </tr>
-                        {% for element in winner.winnersmat.math %}
-                            <tr class="border-b-2 border-white
-                                {% if element.rank == 1 %} hover:bg-gold hover:scale-105
-                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
-                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-105
-                                {% else %} hover:bg-white hover:scale-105
-                                {% endif %}
-                            ">
-                                <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                        {% for element in P1.p1m.math %}
+                            <tr class="border-b-2 border-white hover:bg-white hover:scale-105">
                                 <td class="font-barlow px-10 text-left text-lg text-black">{{ element.code }}</td>
                                 <td class="font-barlow px-2 text-left text-lg text-black">{{ element.name }}</td>
                                 <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
@@ -175,27 +167,19 @@ title: Home · bcomp.id
             </div>
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded bg- p-4 mt-6 bg-transparent items-stretch">
                 <table class="table-auto w-full">
-                    {% for bidang in winner.winnersipa.bidang %}
+                    {% for bidang in P1.p1i.bidang %}
                         <tr>
                             <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.ree }}
                             </th>
                         </tr>
                         <tr class="border-b-2 px-2 text-black border-white">
-                            <th class="text-center px-2">Rank</th>
                             <th class="text-center">Kode Tim</th>
                             <th class="text-left px-2">Nama Peserta</th>
                             <th class="text-left px-8">Sekolah</th>
                         </tr>
-                        {% for element in winner.winnersipa.ipa %}
-                            <tr class="border-b-2 border-white
-                                {% if element.rank == 1 %} hover:bg-gold hover:scale-105
-                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
-                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-105
-                                {% else %} hover:bg-white hover:scale-105
-                                {% endif %}
-                            ">
-                                <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                        {% for element in P1.p1i.ipa %}
+                            <tr class="border-b-2 border-white hover:bg-white hover:scale-105">
                                 <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
                                 <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
                                 <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
