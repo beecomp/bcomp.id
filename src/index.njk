@@ -141,7 +141,7 @@ title: Home · bcomp.id
         </div>
 -->
         <h2 class="text-center text-4xl font-barlow italic font-black py-6">Pengumuman Hasil Babak Penyisihan 1</h2>
-        <div class="container mx-auto flex flex-col justify-center py-8">
+        <div class="container mx-auto flex">
             <div class="w-full h-[80vh] overflow-auto border border-gray-400 rounded-lg" id="pdf-container">
                 <canvas id="pdf-canvas" class="block mx-auto"></canvas>
             </div>
@@ -149,7 +149,7 @@ title: Home · bcomp.id
             <script type="module">
                 import * as pdfjsLib from "/static/js/pdf.mjs";
                 pdfjsLib.GlobalWorkerOptions.workerSrc = "/static/js/pdf.worker.mjs";
-                const url = "/static/pdf/tes_logika.pdf";
+                const url = "/static/docs/tes_logika.pdf";
                 
                 const loadingTask = pdfjsLib.getDocument(url);
                 loadingTask.promise.then((pdf) => {
