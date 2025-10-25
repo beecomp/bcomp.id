@@ -73,9 +73,10 @@ title: Home · bcomp.id
 <section class="bg-light-coffee">
     <div id="announcement">
         <h1 class="text-center text-5xl font-semi italic font-black pt-14">ANNOUNCEMENT</h1>
+<!--
         <h2 class="text-center text-4xl font-barlow italic font-black py-6">Juara Brilliant Competition XVI</h2>
         <div class="container mx-auto flex flex-col justify-center py-8">
-            <div class="w-full max-w-6xl mx-auto shadow-xl rounded bg- p-4 bg-transparent">
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
                 <table class="table-auto w-full">
                     {% for bidang in winner.winnersmat.bidang %}
                         <tr>
@@ -106,7 +107,7 @@ title: Home · bcomp.id
                     {% endfor %}
                 </table>
             </div>
-            <div class="w-full max-w-6xl mx-auto shadow-xl rounded bg- p-4 mt-6 bg-transparent items-stretch">
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 mt-6 bg-transparent items-stretch">
                 <table class="table-auto w-full">
                     {% for bidang in winner.winnersipa.bidang %}
                         <tr>
@@ -129,6 +130,56 @@ title: Home · bcomp.id
                                 {% endif %}
                             ">
                                 <td class="font-barlow text-black text-lg text-center font-bold">{{ element.rank }}</td>
+                                <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+-->
+        <h2 class="text-center text-4xl font-barlow italic font-black pt-14">Pengumuman Hasil Babak Penyisihan 1</h2>
+        <div class="container mx-auto flex flex-col justify-center pb-8 mt-4">
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
+                <table class="table-auto w-full">
+                    {% for bidang in P1.p1m.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.field }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-left text-lg px-8">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
+                        </tr>
+                        {% for element in P1.p1m.math %}
+                            <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
+                                <td class="font-barlow px-10 text-lg text-left text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-lg text-left text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 mt-12 bg-transparent items-stretch">
+                <table class="table-auto w-full">
+                    {% for bidang in P1.p1i.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.ree }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-left text-lg">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
+                        </tr>
+                        {% for element in P1.p1i.ipa %}
+                            <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
                                 <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
                                 <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
                                 <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
