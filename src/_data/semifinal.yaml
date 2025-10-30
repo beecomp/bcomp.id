@@ -1,4 +1,4 @@
-p1m:
+semim:
   bidang:
     - field: "Bidang Matematika"
   math:
@@ -19,7 +19,7 @@ p1m:
       school: "SMP KOLESE KANISIUS"
 
   
-p1i:
+semii:
   bidang:
     - ree: "Bidang IPA"
   ipa:
