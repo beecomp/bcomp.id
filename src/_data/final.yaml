@@ -1,4 +1,4 @@
-semim:
+finalm:
   bidang:
     - field: "Bidang Matematika"
   math:
@@ -24,7 +24,7 @@ semim:
       school: "SMP JAC JAKARTA"
 
   
-semii:
+finali:
   bidang:
     - ree: "Bidang IPA"
   ipa:
