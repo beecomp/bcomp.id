@@ -15,8 +15,8 @@ title: Home · bcomp.id
             </div>
         </div>
         <div class="mt-16 lg:mt-10 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
-            <div class="text-white font-bold text-3xl text-center font-sans">
-                Pendaftaran sudah ditutup
+            <div class="text-white font-bold text-2xl lg:text-3xl text-center font-sans">
+                Kompetisi Telah Berakhir<br />Sampai Jumpa di<br />Brilliant Competition XVIII
             </div>
 <!--
             <div class="flex mt-4 space-x-6 justify-evenly"
@@ -73,12 +73,11 @@ title: Home · bcomp.id
 <section class="bg-light-coffee">
     <div id="announcement">
         <h1 class="text-center text-5xl font-semi italic font-black pt-14">ANNOUNCEMENT</h1>
-<!--
-        <h2 class="text-center text-4xl font-barlow italic font-black py-6">Juara Brilliant Competition XVI</h2>
+        <h2 class="text-center text-4xl font-barlow italic font-black py-6">Hasil Babak Final Brilliant Competition XVII</h2>
         <div class="container mx-auto flex flex-col justify-center py-8">
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
                 <table class="table-auto w-full">
-                    {% for bidang in winner.winnersmat.bidang %}
+                    {% for bidang in final.finalm.bidang %}
                         <tr>
                             <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.field }}
@@ -90,7 +89,7 @@ title: Home · bcomp.id
                             <th class="text-left px-2">Nama Peserta</th>
                             <th class="text-left px-8">Sekolah</th>
                         </tr>
-                        {% for element in winner.winnersmat.math %}
+                        {% for element in final.finalm.math %}
                             <tr class="border-b-2 border-white
                                 {% if element.rank == 1 %} hover:bg-gold hover:scale-105
                                 {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
@@ -109,7 +108,7 @@ title: Home · bcomp.id
             </div>
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 mt-6 bg-transparent items-stretch">
                 <table class="table-auto w-full">
-                    {% for bidang in winner.winnersipa.bidang %}
+                    {% for bidang in final.finali.bidang %}
                         <tr>
                             <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
                                 {{ bidang.ree }}
@@ -121,7 +120,7 @@ title: Home · bcomp.id
                             <th class="text-left px-2">Nama Peserta</th>
                             <th class="text-left px-8">Sekolah</th>
                         </tr>
-                        {% for element in winner.winnersipa.ipa %}
+                        {% for element in final.finali.ipa %}
                             <tr class="border-b-2 border-white
                                 {% if element.rank == 1 %} hover:bg-gold hover:scale-105
                                 {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
@@ -139,7 +138,7 @@ title: Home · bcomp.id
                 </table>
             </div>
         </div>
--->
+<!--
         <h2 class="text-center text-4xl font-barlow italic font-black pt-14">Pengumuman Hasil Babak Semifinal</h2>
         <div class="container mx-auto flex flex-col justify-center pb-8 mt-4">
             <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
@@ -189,6 +188,7 @@ title: Home · bcomp.id
                 </table>
             </div>
         </div>
+-->
     </div>
 </section>
 
