@@ -1,5 +1,46 @@
-<footer class="bg-stone-900 text-center w-full p-4">
-    <small class="text-white">Copyright © bcomp 2022-2024. Made with 🍯 by
-        <a href="https://github.com/orgs/beecomp/people" target="_blank" class="underline text-white hover:text-indigo-400">Worker Bees</a>
-    </small>
+<div class="footer-wave">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,60 C240,10 480,90 720,50 C960,10 1200,90 1440,50 L1440,100 L0,100 Z" fill="#0E1F2B"/>
+  </svg>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="img/mascot.png" alt="">
+    <p class="footer-desc">Brilliant Competition XVIII — Olimpiade Matematika &amp; IPA tingkat SMP berskala nasional</p>
+    <p class="footer-loc">SMAK PENABUR Gading Serpong · 22 Agustus – 16 Oktober 2026</p>
+  </div>
+  {% if footerGrid %}
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Event</h4>
+      <a href="competition.html">Competition</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="venue.html">Venue &amp; Accommodation</a>
+      <a href="participants.html">Participating Schools</a>
+    </div>
+    <div class="footer-col">
+      <h4>Registration</h4>
+      <a href="https://forms.gle/QxY4En8yPist7PaF7" target="_blank" rel="noopener">Daftar Matematika</a>
+      <a href="https://forms.gle/c5nooGFX2N2WPkDY6" target="_blank" rel="noopener">Daftar IPA</a>
+      <a href="docs/Proposal_BComp_XVIII.pdf" target="_blank" rel="noopener">Proposal (PDF)</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="edition-xvii.html">BCOMP XVII</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="https://wa.me/6282173780110">0821 7378 011 — Keeva</a>
+      <a href="https://instagram.com/brilliantcompetition" target="_blank" rel="noopener">@brilliantcompetition</a>
+      <a href="contact.html">Semua kontak →</a>
+    </div>
+  </div>
+  {% endif %}
+  <div class="footer-bottom">
+    <p>Copyright &copy; bcomp 2022-2024. Made with 🍯 by <a href="https://github.com/orgs/beecomp/people" target="_blank" rel="noopener">Worker Bees</a></p>
+    <p class="footer-host">Host: Brilliant Class · SMAK PENABUR Gading Serpong</p>
+  </div>
 </footer>

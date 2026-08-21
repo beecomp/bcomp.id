@@ -8,16 +8,14 @@
 npm install
 ```
 
-### 2\. Build the project to generate the first CSS
-
-This step is only required the very first time.
-
-```
-npm run build
-```
-
-### 5\. Run Eleventy
+### 2\. Run Eleventy in dev mode (with live reload)
 
 ```
 npm run dev
+```
+
+### 3\. Build for production
+
+```
+npm run build
 ```

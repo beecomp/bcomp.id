@@ -1,6 +1,3 @@
-const yaml = require("js-yaml");
-const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
@@ -10,46 +7,15 @@ module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
-  // human readable date
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
-  });
-
-  // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
-
-  // To Support .yaml Extension in _data
-  // You may remove this if you can use JSON
-  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
-
-  // Copy Static Files to /_Site
-  eleventyConfig.addPassthroughCopy({
-    "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    "./node_modules/@alpinejs/collapse/dist/cdn.min.js": "./static/js/@alpine/collapse.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
-  });
-
-  // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
-
-  // Copy docs folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/docs");
-
-  // Copy js folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/js");
-
-  // Copy favicon to route of /_site
-  eleventyConfig.addPassthroughCopy("./src/favicon.svg");
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  // Copy static assets (css, js, images) straight to the site root
+  eleventyConfig.addPassthroughCopy("./src/style.css");
+  eleventyConfig.addPassthroughCopy("./src/script.js");
+  eleventyConfig.addPassthroughCopy("./src/img");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if (outputPath.endsWith(".html")) {
+    if (outputPath && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
