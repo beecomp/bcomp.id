@@ -1,0 +1,407 @@
+---
+layout: default
+path: home
+title: Home · bcomp.id
+---
+
+<div class="bg-cover bg-fixed bg-[url('/static/img/2025-landing-cover.png')] min-h-screen w-full">
+    <div class="container mx-auto h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between px-6 py-16">
+        <div class="mt-8">
+            <div class="text-6xl md:text-[6rem] xl:text-[8rem] font-bangers font-extrabold text-white/95 leading-none tracking-wider">
+                BRILLIANT<br />COMPETITION
+            </div>
+            <div class="text-2xl md:text-5xl font-lora italic font-semibold text-white/95 md:mt-4">
+                Venturing Into Brilliance
+            </div>
+        </div>
+        <div class="mt-16 lg:mt-10 bg-black/40 rounded shadow-lg p-6 backdrop-blur">
+            <div class="text-white font-bold text-2xl lg:text-3xl text-center font-sans">
+                Kompetisi Telah Berakhir<br />Sampai Jumpa di<br />Brilliant Competition XVIII
+            </div>
+<!--
+            <div class="flex mt-4 space-x-6 justify-evenly"
+                 x-data="{ countdown: new Date({{ event.early / 1 }}) <= new Date() ? 0 : Math.floor((new Date({{ event.early / 1 }}) - new Date()) / 1000) }"
+                 x-init="window.setInterval(() => countdown -= countdown > 0, 1000)">
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="Math.floor(countdown / 86400).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Hari</div>
+                </div>
+                <div class="text-center text-5xl text-white pt-3">:</div>
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 3600) % 24).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Jam</div>
+                </div>
+                <div class="text-center text-5xl text-white pt-3">:</div>
+                <div class="px-4 py-3 text-white">
+                    <div class="text-5xl text-center mt-1" x-text="(Math.floor(countdown / 60) % 60).toString().padStart(2, '0')"></div>
+                    <div class="text-2xl text-center mt-2">Menit</div>
+                </div>
+            </div>
+-->
+            <div class="mt-4 space-y-3">
+                <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                   target="_blank"
+                   href="https://drive.google.com/file/d/11HgeW9_zSOhMXeHEMa1n_nNa1uZU1ccZ/view?usp=sharing"
+                >
+                    Guidebook Lomba
+                </a>
+                <a class="cursor-pointer block p-3 transition bg-stone-700/80 hover:bg-stone-800/80 rounded drop-shadow text-center text-white font-bold"
+                   target="_blank"
+                   href="https://drive.google.com/file/d/1bIC7o6O_YTwvUuErstIcggIIsIKT2lHY/view?usp=sharing"
+                >
+                    Proposal
+                </a>
+                <div class="flex space-x-3 lg:space-x-5">
+                    <a class="grow cursor-pointer block py-3 transition bg-stone-700/80 hover:bg-stone-800/80 ring-stone-700 rounded drop-shadow text-center text-white font-bold"
+                        target="_blank"
+                        href="https://drive.google.com/file/d/1TkDDlRfPWjiEI8xLkNXztx2YMZP9B1_X/view?usp=sharing"
+                    >
+                        Silabus<br/>Matematika
+                    </a>
+                    <a class="grow cursor-pointer block py-3 transition bg-stone-700/80 hover:bg-stone-800/80 ring-stone-700 rounded drop-shadow text-center text-white font-bold"
+                        target="_blank"
+                        href="https://drive.google.com/file/d/1JZeClLGwr7rkvdWIS8ic_qgJbXmDa30w/view?usp=sharing"
+                    >
+                        Silabus<br/>IPA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg-light-coffee">
+    <div id="announcement">
+        <h1 class="text-center text-5xl font-semi italic font-black pt-14">ANNOUNCEMENT</h1>
+        <h2 class="text-center text-4xl font-barlow italic font-black py-6">Hasil Babak Final Brilliant Competition XVII</h2>
+        <div class="container mx-auto flex flex-col justify-center py-8">
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
+                <table class="table-auto w-full">
+                    {% for bidang in final.finalm.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.field }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-center px-2">Rank</th>
+                            <th class="text-left px-8">Kode Tim</th>
+                            <th class="text-left px-2">Nama Peserta</th>
+                            <th class="text-left px-8">Sekolah</th>
+                        </tr>
+                        {% for element in final.finalm.math %}
+                            <tr class="border-b-2 border-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-105
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-105
+                                {% else %} hover:bg-white hover:scale-105
+                                {% endif %}
+                            ">
+                                <td class="font-barlow text-black text-sm lg:text-lg text-center font-bold">{{ element.rank }}</td>
+                                <td class="font-barlow px-10 text-left text-sm lg:text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-left text-sm lg:text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-left text-sm lg:text-lg text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 mt-6 bg-transparent items-stretch">
+                <table class="table-auto w-full">
+                    {% for bidang in final.finali.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.ree }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-center px-2">Rank</th>
+                            <th class="text-center">Kode Tim</th>
+                            <th class="text-left px-2">Nama Peserta</th>
+                            <th class="text-left px-8">Sekolah</th>
+                        </tr>
+                        {% for element in final.finali.ipa %}
+                            <tr class="border-b-2 border-white
+                                {% if element.rank == 1 %} hover:bg-gold hover:scale-105
+                                {% elif element.rank == 2 %} hover:bg-silver hover:scale-105
+                                {% elif element.rank == 3 %} hover:bg-bronze hover:scale-105
+                                {% else %} hover:bg-white hover:scale-105
+                                {% endif %}
+                            ">
+                                <td class="font-barlow text-black text-sm lg:text-lg text-center font-bold">{{ element.rank }}</td>
+                                <td class="font-barlow px-10 text-sm lg:text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-sm lg:text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-sm lg:text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+<!--
+        <h2 class="text-center text-4xl font-barlow italic font-black pt-14">Pengumuman Hasil Babak Semifinal</h2>
+        <div class="container mx-auto flex flex-col justify-center pb-8 mt-4">
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 bg-transparent">
+                <table class="table-auto w-full">
+                    {% for bidang in semifinal.semim.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.field }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-left text-lg px-8">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
+                        </tr>
+                        {% for element in semifinal.semim.math %}
+                            <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
+                                <td class="font-barlow px-10 text-lg text-left text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-lg text-left text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="w-full max-w-6xl mx-auto shadow-xl rounded p-4 mt-12 bg-transparent items-stretch">
+                <table class="table-auto w-full">
+                    {% for bidang in semifinal.semii.bidang %}
+                        <tr>
+                            <th class="font-barlow italic font-bold text-2xl text-black pt-3" colspan="10">
+                                {{ bidang.ree }}
+                            </th>
+                        </tr>
+                        <tr class="border-b-2 px-2 text-black border-white">
+                            <th class="text-left text-lg px-8">Kode Tim</th>
+                            <th class="text-left text-lg px-2">Nama Peserta</th>
+                            <th class="text-left text-lg px-8">Sekolah</th>
+                        </tr>
+                        {% for element in semifinal.semii.ipa %}
+                            <tr class="border-b-2 border-white hover:bg-coffee hover:scale-105">
+                                <td class="font-barlow px-10 text-lg text-black">{{ element.code }}</td>
+                                <td class="font-barlow px-2 text-lg text-black">{{ element.name }}</td>
+                                <td class="font-barlow px-8 text-lg text-left text-black">{{ element.school }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+-->
+    </div>
+</section>
+
+<section class="bg-light-coffee">
+    <div id="awards">
+        <h1 class="text-center text-5xl font-semi italic font-black pb-12 pt-14">AWARDS</h1>
+        <div class="flex flex-col items-center sm:items-start sm:flex-row justify-center my-3">
+            <div class="order-1 sm:order-3 block flex-grow mx-1 max-w-xs mt-10">
+                <div class="rounded drop-shadow-2xl py-4 bg-gold px-10 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <img src="/static/img/trophy.png" class="h-40 w-auto mt-3">
+                        <div class="font-semi text-black font-bold text-2xl mt-3">JUARA 1</div>
+                        <div class="font-semi text-black font-bold text-4xl sm:text-2xl sm:pt-12 lg:text-3xl">Rp 5.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-2 sm:order-2 block flex-grow mx-1 max-w-xs sm:max-w-none">
+                <div class="rounded drop-shadow-2xl sm:drop-shadow-xl py-4 bg-silver mt-8 sm:mt-6 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <img src="/static/img/medal.png" class="h-24 w-auto mt-3">
+                        <div class="font-semi text-black font-bold text-2xl sm:text-xl mt-3 sm:mt-2">JUARA 2</div>
+                        <div class="font-semi text-black font-bold text-4xl sm:text-xl pt-0 sm:pt-6">Rp 3.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-3 sm:order-4 block flex-grow mx-1 max-w-xs sm:max-w-none">
+                <div class="rounded drop-shadow-2xl sm:drop-shadow-xl py-4 bg-bronze mt-8 sm:mt-6 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <img src="/static/img/medal.png" class="h-24 w-auto mt-3">
+                        <div class="font-semi text-black font-bold text-2xl sm:text-xl mt-3 sm:mt-2">JUARA 3</div>
+                        <div class="font-semi text-black font-bold text-4xl sm:text-xl pt-0 sm:pt-6">Rp 2.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-4 sm:order-1 block flex-grow mx-1 max-w-xs sm:max-w-none">
+                <div class="rounded drop-shadow-2xl sm:drop-shadow-lg py-4 bg-stone-600 mt-8 sm:mt-0 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <img src="/static/img/medal.png" class="h-24 sm:h-20 w-auto mt-3">
+                        <div class="font-semi text-black font-bold text-2xl sm:text-base mt-3 sm:mt-1">JUARA 4</div>
+                        <div class="font-semi text-black font-bold text-4xl sm:text-lg sm:mt-2">Rp 1.750.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-5 sm:order-5 block flex-grow mx-1 max-w-xs sm:max-w-none">
+                <div class="rounded drop-shadow-2xl sm:drop-shadow-lg py-4 bg-stone-600 mt-8 sm:mt-0 hover:scale-105">
+                    <div class="flex flex-col items-center">
+                        <img src="/static/img/medal.png" class="h-24 sm:h-20 w-auto mt-3">
+                        <div class="font-semi text-black font-bold text-2xl sm:text-base mt-3 sm:mt-1">JUARA 5</div>
+                        <div class="font-semi text-black font-bold text-4xl sm:text-lg sm:mt-2">Rp 1.250.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="/static/img/divider1.png"/>
+</section>
+
+<section class="bg-coffee">
+    <div id="schedule" class="pb-12 pt-4">
+        <h1 class="text-center text-5xl font-semi italic font-black pb-8">SCHEDULE</h1>
+        <div class="flex flex-col md:flex-row items-center md:items-stretch md:space-x-3 space-y-2 md:space-y-0 mt-3 px-3">
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <img src="/static/img/registration.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            EARLY REGISTRATION
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            15 Sept - 2 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <!-- <i class=" text-5xl mx-8 md:mt-2 text-black"></i> -->
+                    <img src="/static/img/registration.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            REGULAR REGISTRATION
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            3 Okt - 23 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <!-- <i class=" text-5xl mx-8 md:mt-2 text-black"></i> -->
+                    <img src="/static/img/pencil.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            PENYISIHAN 1
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            16 Okt - 23 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <!-- <i class=" text-5xl mx-8 md:mt-2 text-black"></i> -->
+                    <img src="/static/img/meeting.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            TECHNICAL MEETING &<br />LIVE CLASS
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            26 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <!-- <i class=" text-5xl mx-8 md:mt-2 text-black"></i> -->
+                    <img src="/static/img/pencil.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            PENYISIHAN 2 &<br />SEMIFINAL
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            30 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-coffee rounded py-2 px-1 max-w-sm w-full filter shadow-lg ring-yellow-500 ring-offset-2 hover:scale-105">
+                <div class="flex flex-row md:flex-col items-center">
+                    <!-- <i class=" text-5xl mx-8 md:mt-2 text-black"></i> -->
+                    <img src="/static/img/pencil.png" class="h-16 w-auto mx-8 md:mt-2">
+                    <div class="flex flex-col md:items-center md:mt-2">
+                        <div class="font-semi text-black text-sm font-bold mt-1 md:text-center">
+                            FINAL
+                        </div>
+                        <div class="font-semi text-black font-bold md:text-center">
+                            31 Okt 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+<div>
+    <h1 class="text-center text-5xl font-semi italic font-black py-12">SPONSORS</h1>
+    <div class="container mx-auto max-w-3xl px-4 pb-12 flex justify-center items-center">
+        <img src="/static/img/sponsor-pukat-nusantara.jpg" class="object-center"/>
+    </div>
+</div>
+-->
+
+<section class="bg-coffee">
+    <div id="faq">
+        <h1 class="text-center text-5xl font-semi italic font-black pb-12 pt-14">FAQ</h1>
+        <div class="container mx-auto max-w-3xl px-4">
+            <div>
+                {#% if event.faq %#}
+                {% for qna in event.faq %}
+                    <div class="bg-light-coffee shadow border-b-2 border-b-faq-b" x-data="{ disclosed: false }">
+                        <div @click="disclosed = !disclosed" class="p-4 flex justify-between items-center cursor-pointer">
+                            {{qna.q}}
+                            <img src="/static/img/down-arrow.png" alt="" class="h-6 w-6 transition-transform duration-300" :class="{ 'scale-y-[-1]': disclosed }">
+                        </div>
+                        <div class="px-4 pb-4 font-medium" x-show="disclosed" x-collapse>
+                            {{qna.a}}
+                        </div>
+                    </div>
+                {% endfor %}
+                {#% endif %#}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-coffee">
+    <div id="contact">
+        <h1 class="text-center text-5xl font-semi italic font-black pb-6 pt-16">Contact</h1>
+        <div class="flex justify-center">
+            <div class="bg-light-coffee rounded shadow p-8 my-8 inline-block">
+                <h2 class="text-center text-2xl font-bold pb-4">Ada pertanyaan lain?</h2>
+                <div class="space-y-2">
+                    <a class="flex items-center hover:text-indigo-400" href="https://wa.me/6282124623382" target="_blank">
+                        <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
+                        +62 821 2462 3382 (Louise, Official Contact)
+                    </a>
+                    <a class="flex items-center hover:text-indigo-400" href="https://wa.me/6281210873238" target="_blank">
+                        <ion-icon class="text-2xl mr-2" name="logo-whatsapp"></ion-icon>
+                        +62 812 1087 3238 (Naomi)
+                    </a>
+                    <a class="flex items-center hover:text-indigo-400" href="https://line.me" target="_blank">
+                        <ion-icon class="text-2xl mr-2" name="chatbubble-outline"></ion-icon>
+                        jessicag19 (Jessica)
+                    </a>
+                    <a class="flex items-center hover:text-indigo-400" href="https://instagram.com/brilliantcompetition" target="_blank">
+                        <ion-icon class="text-2xl mr-2" name="logo-instagram"></ion-icon>
+                        @brilliantcompetition
+                    </a>
+                    <a class="flex items-center hover:text-indigo-400" href="https://www.instagram.com/debrilliantclass" target="_blank">
+                        <ion-icon class="text-2xl mr-2" name="logo-instagram"></ion-icon>
+                        @debrilliantclass
+                    </a>
+                    <a class="flex items-center hover:text-indigo-400" target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCGDRPWrdrGLkxBRJCvVtRbDQlSdMhpsvhwGklwmJRJtcNVDSKKFFwwFGXbMVFCWRsJpvV">
+                        <ion-icon class="text-2xl mr-2" name="mail-outline"></ion-icon>
+                        brilliantcompetitionxvii@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
