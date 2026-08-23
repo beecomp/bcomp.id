@@ -1,0 +1,180 @@
+---
+layout: default.njk
+permalink: game.html
+title: Bee Ballistics — BCOMP XVIII
+description: "Bee Ballistics — mini game gerak parabola bertema Brilliant Competition XVIII."
+extraCss: game.css
+extraJs: game.js
+footerGrid: false
+---
+<header class="page-head">
+  <span class="page-kicker">Mini Game</span>
+  <h1>Bee Ballistics 🐝</h1>
+  <p>Tembakkan lebah ke kepiting yang mengambang. Kamu hanya boleh mengatur <strong>kecepatan awal</strong> dan <strong>sudut elevasi</strong> — sisanya diurus oleh gravitasi. Karang dan batu menghalangi jalan, jadi hitung dulu sebelum menembak.</p>
+</header>
+
+<section class="fade-in">
+  <div class="panel">
+    <div class="panel-head">
+      <span id="statusLine">Memuat peta…</span>
+    </div>
+    <div class="panel-body game-body">
+
+      <div class="canvas-wrap">
+        <canvas id="field" aria-label="Lapangan tembak dengan sumbu koordinat"></canvas>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl">
+          <label for="vel">Kecepatan awal <b>v₀</b> <span class="unit">m/s</span></label>
+          <div class="ctrl-row">
+            <input type="range" id="velRange" min="10" max="60" step="0.5" value="35">
+            <input type="number" id="vel" min="10" max="60" step="0.5" value="35">
+          </div>
+        </div>
+
+        <div class="ctrl">
+          <label for="ang">Sudut elevasi <b>θ</b> <span class="unit">derajat</span></label>
+          <div class="ctrl-row">
+            <input type="range" id="angRange" min="1" max="89" step="0.5" value="45">
+            <input type="number" id="ang" min="1" max="89" step="0.5" value="45">
+          </div>
+        </div>
+
+        <div class="game-actions">
+          <button id="fireBtn" class="btn game-btn">Tembak 🐝</button>
+          <button id="newBtn" class="btn-line">Peta Baru</button>
+          <button id="hintBtn" class="btn-line">Petunjuk</button>
+          <button id="clearBtn" class="btn-line">Hapus Jejak</button>
+        </div>
+
+        <div class="diff-row">
+          <span class="diff-label">Tingkat kesulitan</span>
+          <div class="diff-btns" id="diffBtns">
+            <button data-diff="1" class="on">Mudah</button>
+            <button data-diff="2">Sedang</button>
+            <button data-diff="3">Sulit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="readout" id="readout"></div>
+
+      <div class="scoreline">
+        <span>Tembakan: <b id="shotCount">0</b></span>
+        <span>Kepiting kena: <b id="hitCount">0</b></span>
+        <span>Rekor (tembakan tersedikit): <b id="bestScore">—</b></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% set formulas = [
+  {
+    title: "Uraikan kecepatan awal",
+    body: "vₓ = v₀ · cos θ &nbsp;&nbsp;&nbsp; v_y0 = v₀ · sin θ",
+    note: "vₓ tidak pernah berubah sepanjang lintasan. Hanya komponen vertikal yang dipengaruhi gravitasi."
+  },
+  {
+    title: "Posisi terhadap waktu",
+    body: "x(t) = vₓ · t &nbsp;&nbsp;&nbsp; y(t) = v_y0 · t − ½ g t²",
+    note: "Titik luncur berada tepat di (0, 0), jadi rumus ini berlaku apa adanya. g = 9,8 m/s²."
+  },
+  {
+    title: "Persamaan lintasan (tanpa t)",
+    body: "y = x · tan θ − g x² / (2 v₀² cos² θ)",
+    note: "Gunakan ini untuk mengecek apakah lintasanmu melewati atas atau bawah sebuah karang pada posisi x tertentu."
+  },
+  {
+    title: "Mencari sudut untuk mengenai (x, y)",
+    body: "tan θ = [ v₀² ± √( v₀⁴ − g(g x² + 2 y v₀²) ) ] / (g x)",
+    note: "Ada dua jawaban: sudut rendah (lintasan datar, cepat) dan sudut tinggi (lintasan melengkung, bagus untuk melewati karang). Jika bagian dalam akar negatif, v₀ terlalu kecil."
+  },
+  {
+    title: "Kecepatan minimum untuk mencapai (x, y)",
+    body: "v_min = √( g · ( y + √( x² + y² ) ) )",
+    note: "Di bawah nilai ini, tidak ada sudut mana pun yang bisa sampai ke kepiting. Naikkan v₀ dulu."
+  },
+  {
+    title: "Jangkauan, titik tertinggi, waktu terbang",
+    body: "R = v₀² sin 2θ / g &nbsp;&nbsp; H = v₀² sin²θ / (2g) &nbsp;&nbsp; T = 2 v₀ sin θ / g",
+    note: "R dan T hanya berlaku bila titik akhir sama tinggi dengan titik luncur (y = 0)."
+  }
+] %}
+
+<section class="fade-in">
+  <h2>Rumus yang Kamu Butuhkan</h2>
+  <div class="panel">
+    <div class="panel-head">Gerak parabola tanpa hambatan udara · g = 9,8 m/s²</div>
+    <div class="panel-body">
+      <div class="formula-grid">
+        {% for f in formulas %}
+        <div class="formula">
+          <span class="formula-num">{{ loop.index }}</span>
+          <h4>{{ f.title }}</h4>
+          <p class="formula-body">{{ f.body | safe }}</p>
+          <p class="formula-note">{{ f.note }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="note">Game ini mengabaikan hambatan udara, angin, dan gaya apung. Di dunia nyata lebah tidak berperilaku seperti proyektil — tetapi fisikanya jauh lebih mudah dihitung begini.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Contoh Perhitungan</h2>
+  <div class="panel">
+    <div class="panel-head">Kepiting di (120 m, 40 m), tidak ada halangan</div>
+    <div class="panel-body">
+      <ol class="worked">
+        <li><strong>Cek dulu apakah terjangkau.</strong> v_min = √(9,8 · (40 + √(120² + 40²))) = √(9,8 · (40 + 126,5)) ≈ <b>40,4 m/s</b>. Jadi pilih v₀ di atas itu — misalnya <b>v₀ = 48 m/s</b>.</li>
+        <li><strong>Hitung diskriminan.</strong> v₀⁴ = 5.308.416. g(gx² + 2yv₀²) = 9,8 · (9,8 · 14400 + 2 · 40 · 2304) = 9,8 · (141.120 + 184.320) = 3.189.312. Selisihnya positif → ada solusi.</li>
+        <li><strong>Akar kuadrat.</strong> √(5.308.416 − 3.189.312) = √2.119.104 ≈ 1455,7.</li>
+        <li><strong>Masukkan ke rumus sudut.</strong> gx = 9,8 · 120 = 1176. <br>Sudut rendah: tan θ = (2304 − 1455,7)/1176 = 0,721 → θ ≈ <b>35,8°</b><br>Sudut tinggi: tan θ = (2304 + 1455,7)/1176 = 3,197 → θ ≈ <b>72,6°</b></li>
+        <li><strong>Pilih salah satu.</strong> Keduanya mengenai kepiting. Kalau ada karang tinggi di tengah jalan, pakai sudut tinggi. Kalau plafonnya yang sempit, pakai sudut rendah.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+{% set facts = [
+  { icon: "➡️", title: "Kecepatan horizontal tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang bekerja arah mendatar. Lebah menempuh jarak mendatar yang sama tiap detik — dari awal sampai menyentuh air." },
+  { icon: "🎯", title: "45° memberi jangkauan terjauh", body: "Tetapi hanya bila titik jatuh sama tinggi dengan titik luncur. Kalau kepiting mengambang lebih tinggi, sudut optimalnya lebih besar dari 45°." },
+  { icon: "🔁", title: "Dua sudut, jangkauan sama", body: "θ dan (90° − θ) menghasilkan jarak yang identik. 30° dan 60° mendarat di titik yang sama — yang 60° hanya butuh waktu lebih lama dan terbang lebih tinggi." },
+  { icon: "⏱️", title: "Waktu terbang tidak peduli seberapa jauh", body: "T hanya bergantung pada komponen vertikal. Tembakan 20° dan 20° dengan v₀ berbeda punya bentuk berbeda, tetapi dua tembakan dengan v_y0 sama akan menyentuh air bersamaan." },
+  { icon: "⛰️", title: "Di puncak, lebah tidak berhenti", body: "Kecepatan vertikalnya nol, tetapi horizontalnya penuh. Itulah sebabnya puncak lintasan berbentuk lengkung mulus, bukan sudut tajam." },
+  { icon: "✖️", title: "Menggandakan kecepatan melipatempatkan jarak", body: "R sebanding dengan v₀², bukan v₀. Menaikkan v₀ dari 20 ke 40 m/s tidak menggandakan jangkauan — melainkan empat kali lipat." },
+  { icon: "🪶", title: "Massa lebah tidak berpengaruh", body: "Percepatan gravitasi sama untuk semua benda. Lebah dan batu yang diluncurkan identik akan mengikuti lintasan yang persis sama — sampai hambatan udara ikut bicara." },
+  { icon: "📐", title: "Lintasannya selalu parabola", body: "Karena x tumbuh linear terhadap t sementara y mengandung t², menghilangkan t selalu menyisakan persamaan kuadrat dalam x." }
+] %}
+
+<section class="fade-in">
+  <h2>Fun Facts</h2>
+  <div class="panel">
+    <div class="panel-head">Delapan hal yang membuat gerak parabola menarik</div>
+    <div class="panel-body">
+      <div class="fact-grid">
+        {% for f in facts %}
+        <div class="fact">
+          <span class="fact-icon">{{ f.icon }}</span>
+          <h4>{{ f.title }}</h4>
+          <p>{{ f.body }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Quick access</h2>
+  <div class="quick-links">
+    <a href="competition.html">Sistem Lomba</a>
+    <a href="https://drive.google.com/file/d/1JZeClLGwr7rkvdWIS8ic_qgJbXmDa30w/view" target="_blank" rel="noopener">Silabus IPA</a>
+    <a href="edition-xvii.html">BCOMP XVII</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</section>

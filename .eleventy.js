@@ -9,8 +9,10 @@ module.exports = function (eleventyConfig) {
 
   // Copy static assets (css, js, images) straight to the site root
   eleventyConfig.addPassthroughCopy("./src/style.css");
+  eleventyConfig.addPassthroughCopy("./src/game.css");
   eleventyConfig.addPassthroughCopy("./src/script.js");
   eleventyConfig.addPassthroughCopy("./src/img");
+  eleventyConfig.addPassthroughCopy("./src/game.js");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

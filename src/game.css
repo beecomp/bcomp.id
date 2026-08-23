@@ -1,0 +1,157 @@
+.game-body{padding:18px}
+
+/* ---------- CANVAS ---------- */
+.canvas-wrap{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#0d4f7d 0%,#0a3d63 55%,#062a47 100%);
+}
+#field{display:block;width:100%;height:auto;touch-action:none}
+
+/* ---------- CONTROLS ---------- */
+.controls{margin-top:18px;display:flex;flex-direction:column;gap:14px}
+
+.ctrl label{
+  display:block;font-size:.78rem;letter-spacing:.6px;text-transform:uppercase;
+  color:var(--foam-dim);margin-bottom:7px;
+}
+.ctrl label b{color:var(--honey);font-size:.92rem;letter-spacing:0;text-transform:none}
+.ctrl label .unit{color:var(--foam-faint);text-transform:none;letter-spacing:0}
+
+.ctrl-row{display:flex;align-items:center;gap:14px}
+
+input[type=range]{
+  flex:1;-webkit-appearance:none;appearance:none;height:6px;border-radius:4px;
+  background:linear-gradient(90deg,var(--honey),var(--coral));
+  outline:none;cursor:pointer;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;
+  background:#fff;border:3px solid var(--honey);cursor:grab;
+  box-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+input[type=range]::-moz-range-thumb{
+  width:16px;height:16px;border-radius:50%;background:#fff;
+  border:3px solid var(--honey);cursor:grab;
+}
+
+input[type=number]{
+  width:92px;padding:9px 11px;font-size:.95rem;font-weight:600;
+  color:var(--honey);background:rgba(255,255,255,.06);
+  border:1px solid var(--line);border-radius:8px;
+  font-family:inherit;
+}
+input[type=number]:focus{outline:none;border-color:var(--honey)}
+
+/* ---------- BUTTONS ---------- */
+.game-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+.game-btn{padding:12px 30px;font-size:.92rem;cursor:pointer;border:none;font-family:inherit}
+.game-btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+
+.btn-line{
+  background:rgba(255,255,255,.05);color:var(--foam);
+  border:1px solid var(--line);border-radius:24px;
+  padding:11px 20px;font-size:.85rem;cursor:pointer;font-family:inherit;
+  transition:color .25s,border-color .25s,background .25s;
+}
+.btn-line:hover{color:var(--honey);border-color:rgba(255,201,60,.55);background:rgba(255,201,60,.1)}
+
+/* ---------- DIFFICULTY ---------- */
+.diff-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.diff-label{font-size:.74rem;letter-spacing:1px;text-transform:uppercase;color:var(--foam-faint)}
+.diff-btns{display:flex;gap:6px}
+.diff-btns button{
+  background:rgba(255,255,255,.04);color:var(--foam-dim);
+  border:1px solid var(--line);border-radius:18px;
+  padding:7px 16px;font-size:.8rem;cursor:pointer;font-family:inherit;
+  transition:all .25s;
+}
+.diff-btns button:hover{color:var(--foam);border-color:rgba(255,201,60,.4)}
+.diff-btns button.on{
+  background:rgba(255,201,60,.15);color:var(--honey);
+  border-color:rgba(255,201,60,.6);font-weight:600;
+}
+
+/* ---------- READOUT ---------- */
+.readout{
+  margin-top:16px;display:grid;gap:9px;
+  grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
+}
+.ro{
+  background:rgba(255,255,255,.04);border:1px solid var(--line-soft);
+  border-radius:9px;padding:11px 13px;
+}
+.ro span{display:block;font-size:.68rem;letter-spacing:.9px;text-transform:uppercase;color:var(--foam-faint);margin-bottom:3px}
+.ro b{font-size:1rem;color:var(--honey);font-weight:700}
+.ro.warn{border-color:rgba(255,122,89,.5);background:rgba(255,122,89,.1)}
+.ro.warn b{color:var(--coral)}
+.ro.ok{border-color:rgba(120,230,160,.4);background:rgba(120,230,160,.08)}
+.ro.ok b{color:#7ce6a0}
+
+/* ---------- SCORE ---------- */
+.scoreline{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft);
+  display:flex;gap:26px;flex-wrap:wrap;font-size:.85rem;color:var(--foam-dim);
+}
+.scoreline b{color:var(--honey)}
+
+/* ---------- STATUS PILL ---------- */
+#statusLine.hit{color:#7ce6a0}
+#statusLine.miss{color:var(--coral)}
+
+/* ---------- FORMULAS ---------- */
+.formula-grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(268px,1fr))}
+.formula{
+  position:relative;background:rgba(255,255,255,.04);
+  border:1px solid var(--line);border-radius:11px;padding:18px 18px 16px;
+}
+.formula-num{
+  position:absolute;top:-9px;left:16px;
+  background:var(--honey);color:#0E1F2B;font-weight:700;font-size:.7rem;
+  width:22px;height:22px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+.formula h4{color:var(--foam);font-size:.86rem;letter-spacing:0;text-transform:none;margin:6px 0 10px}
+.formula-body{
+  font-family:'Cambria Math','Georgia',serif;font-size:1rem;color:var(--honey);
+  background:rgba(0,0,0,.22);border-radius:7px;padding:11px 13px;
+  margin-bottom:9px!important;overflow-x:auto;white-space:nowrap;
+}
+.formula-note{font-size:.8rem;color:var(--foam-dim);margin:0!important}
+
+/* ---------- WORKED EXAMPLE ---------- */
+.worked{margin:0 0 0 18px;color:var(--foam-dim);font-size:.9rem}
+.worked li{margin-bottom:11px;line-height:1.65}
+.worked strong{color:var(--foam)}
+.worked b{color:var(--honey)}
+
+/* ---------- FUN FACTS ---------- */
+.fact-grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
+.fact{
+  background:rgba(255,255,255,.04);border:1px solid var(--line);
+  border-radius:11px;padding:18px;
+  transition:transform .3s,border-color .3s,background .3s;
+}
+.fact:hover{transform:translateY(-4px);border-color:rgba(255,201,60,.45);background:rgba(255,255,255,.07)}
+.fact-icon{font-size:1.5rem;display:block;margin-bottom:9px}
+.fact h4{color:var(--honey);font-size:.84rem;letter-spacing:0;text-transform:none;margin:0 0 8px}
+.fact p{color:var(--foam-dim);font-size:.83rem;margin:0}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:640px){
+  .game-body{padding:13px}
+  .ctrl-row{gap:10px}
+  input[type=number]{width:74px;padding:8px;font-size:.88rem}
+  .game-actions{gap:8px}
+  .game-btn{padding:11px 22px;font-size:.86rem}
+  .btn-line{padding:10px 15px;font-size:.79rem}
+  .scoreline{gap:14px;font-size:.79rem}
+  .formula-body{font-size:.88rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .fact:hover{transform:none}
+}
