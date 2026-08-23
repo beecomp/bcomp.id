@@ -1,8 +1,3 @@
-/* ==========================================================
-   BEE BALLISTICS — mini game styles
-   Depends on the variables declared in style.css
-   ========================================================== */
-
 .game-body{padding:18px}
 
 /* ---------- CANVAS ---------- */
@@ -120,25 +115,18 @@ input[type=number]:focus{outline:none;border-color:var(--honey)}
   display:flex;align-items:center;justify-content:center;
 }
 .formula h4{color:var(--foam);font-size:.86rem;letter-spacing:0;text-transform:none;margin:6px 0 10px}
-
 .formula-body{
-  font-size:clamp(0.95rem, 2.6vw, 1.15rem);
+  font-family:inherit;font-size:1.02rem;color:var(--honey);
   background:rgba(0,0,0,.22);border-radius:7px;padding:14px 12px;
   margin-bottom:9px!important;text-align:center;
 }
-.formula-body .katex{color:var(--honey)}
-.formula-body .katex-display{margin:0!important}
-.formula-body .katex-display > .katex{white-space:normal;max-width:100%}
-
 .formula-note{font-size:.8rem;color:var(--foam-dim);margin:0!important}
 
 /* ---------- WORKED EXAMPLE ---------- */
 .worked{margin:0 0 0 18px;color:var(--foam-dim);font-size:.9rem}
-.worked li{margin-bottom:14px;line-height:1.65}
+.worked li{margin-bottom:11px;line-height:1.65}
 .worked strong{color:var(--foam)}
 .worked b{color:var(--honey)}
-.worked .katex{color:var(--honey)}
-.worked .katex-display{margin:8px 0!important}
 
 /* ---------- FUN FACTS ---------- */
 .fact-grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
@@ -161,8 +149,13 @@ input[type=number]:focus{outline:none;border-color:var(--honey)}
   .game-btn{padding:11px 22px;font-size:.86rem}
   .btn-line{padding:10px 15px;font-size:.79rem}
   .scoreline{gap:14px;font-size:.79rem}
+  .formula-body{font-size:.88rem}
 }
 
 @media(prefers-reduced-motion:reduce){
   .fact:hover{transform:none}
 }
+
+.katex-display{margin:6px 0!important;overflow-x:auto;overflow-y:hidden}
+.formula-body .katex{color:var(--honey)}
+.worked .katex{color:var(--honey)}
