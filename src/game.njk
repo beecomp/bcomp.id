@@ -3,10 +3,11 @@ layout: default.njk
 permalink: game.html
 title: Bee Ballistics — BCOMP XVIII
 description: "Bee Ballistics — mini game gerak parabola bertema Brilliant Competition XVIII."
-extraCss: game.css
-extraJs: game.js
 footerGrid: false
 ---
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
 <header class="page-head">
   <span class="page-kicker">Mini Game</span>
   <h1>Bee Ballistics 🐝</h1>
@@ -70,53 +71,55 @@ footerGrid: false
   </div>
 </section>
 
-{% set formulas = [
-  {
-    title: "Uraikan kecepatan awal",
-    body: "vₓ = v₀ · cos θ &nbsp;&nbsp;&nbsp; v_y0 = v₀ · sin θ",
-    note: "vₓ tidak pernah berubah sepanjang lintasan. Hanya komponen vertikal yang dipengaruhi gravitasi."
-  },
-  {
-    title: "Posisi terhadap waktu",
-    body: "x(t) = vₓ · t &nbsp;&nbsp;&nbsp; y(t) = v_y0 · t − ½ g t²",
-    note: "Titik luncur berada tepat di (0, 0), jadi rumus ini berlaku apa adanya. g = 9,8 m/s²."
-  },
-  {
-    title: "Persamaan lintasan (tanpa t)",
-    body: "y = x · tan θ − g x² / (2 v₀² cos² θ)",
-    note: "Gunakan ini untuk mengecek apakah lintasanmu melewati atas atau bawah sebuah karang pada posisi x tertentu."
-  },
-  {
-    title: "Mencari sudut untuk mengenai (x, y)",
-    body: "tan θ = [ v₀² ± √( v₀⁴ − g(g x² + 2 y v₀²) ) ] / (g x)",
-    note: "Ada dua jawaban: sudut rendah (lintasan datar, cepat) dan sudut tinggi (lintasan melengkung, bagus untuk melewati karang). Jika bagian dalam akar negatif, v₀ terlalu kecil."
-  },
-  {
-    title: "Kecepatan minimum untuk mencapai (x, y)",
-    body: "v_min = √( g · ( y + √( x² + y² ) ) )",
-    note: "Di bawah nilai ini, tidak ada sudut mana pun yang bisa sampai ke kepiting. Naikkan v₀ dulu."
-  },
-  {
-    title: "Jangkauan, titik tertinggi, waktu terbang",
-    body: "R = v₀² sin 2θ / g &nbsp;&nbsp; H = v₀² sin²θ / (2g) &nbsp;&nbsp; T = 2 v₀ sin θ / g",
-    note: "R dan T hanya berlaku bila titik akhir sama tinggi dengan titik luncur (y = 0)."
-  }
-] %}
-
 <section class="fade-in">
   <h2>Rumus yang Kamu Butuhkan</h2>
   <div class="panel">
-    <div class="panel-head">Gerak parabola tanpa hambatan udara · g = 9,8 m/s²</div>
+    <div class="panel-head">Gerak parabola tanpa hambatan udara &middot; $g = 9{,}8\ \text{m/s}^2$</div>
     <div class="panel-body">
       <div class="formula-grid">
-        {% for f in formulas %}
+
         <div class="formula">
-          <span class="formula-num">{{ loop.index }}</span>
-          <h4>{{ f.title }}</h4>
-          <p class="formula-body">{{ f.body | safe }}</p>
-          <p class="formula-note">{{ f.note }}</p>
+          <span class="formula-num">1</span>
+          <h4>Uraikan kecepatan awal</h4>
+          <p class="formula-body">$$v_x = v_0 \cos\theta \qquad v_{y0} = v_0 \sin\theta$$</p>
+          <p class="formula-note">$v_x$ tidak pernah berubah sepanjang lintasan. Hanya komponen vertikal yang dipengaruhi gravitasi.</p>
         </div>
-        {% endfor %}
+
+        <div class="formula">
+          <span class="formula-num">2</span>
+          <h4>Posisi terhadap waktu</h4>
+          <p class="formula-body">$$x(t) = v_x t \qquad y(t) = v_{y0}\,t - \tfrac{1}{2} g t^2$$</p>
+          <p class="formula-note">Titik luncur berada tepat di $(0,0)$, jadi rumus ini berlaku apa adanya.</p>
+        </div>
+
+        <div class="formula">
+          <span class="formula-num">3</span>
+          <h4>Persamaan lintasan (tanpa $t$)</h4>
+          <p class="formula-body">$$y = x\tan\theta - \dfrac{g x^2}{2v_0^2\cos^2\theta}$$</p>
+          <p class="formula-note">Gunakan ini untuk mengecek apakah lintasanmu melewati atas atau bawah sebuah karang pada posisi $x$ tertentu.</p>
+        </div>
+
+        <div class="formula">
+          <span class="formula-num">4</span>
+          <h4>Mencari sudut untuk mengenai $(x,y)$</h4>
+          <p class="formula-body">$$\tan\theta = \dfrac{v_0^2 \pm \sqrt{v_0^4 - g\left(gx^2 + 2yv_0^2\right)}}{gx}$$</p>
+          <p class="formula-note">Ada dua jawaban: sudut rendah (lintasan datar, cepat) dan sudut tinggi (lintasan melengkung, bagus untuk melewati karang). Jika bagian dalam akar negatif, $v_0$ terlalu kecil.</p>
+        </div>
+
+        <div class="formula">
+          <span class="formula-num">5</span>
+          <h4>Kecepatan minimum untuk mencapai $(x,y)$</h4>
+          <p class="formula-body">$$v_{\min} = \sqrt{\,g\left(y + \sqrt{x^2+y^2}\right)}$$</p>
+          <p class="formula-note">Di bawah nilai ini, tidak ada sudut mana pun yang bisa sampai ke kepiting. Naikkan $v_0$ dulu.</p>
+        </div>
+
+        <div class="formula">
+          <span class="formula-num">6</span>
+          <h4>Jangkauan, titik tertinggi, waktu terbang</h4>
+          <p class="formula-body">$$R = \dfrac{v_0^2\sin 2\theta}{g} \qquad H = \dfrac{v_0^2\sin^2\theta}{2g} \qquad T = \dfrac{2v_0\sin\theta}{g}$$</p>
+          <p class="formula-note">$R$ dan $T$ hanya berlaku bila titik akhir sama tinggi dengan titik luncur ($y=0$).</p>
+        </div>
+
       </div>
       <p class="note">Game ini mengabaikan hambatan udara, angin, dan gaya apung. Di dunia nyata lebah tidak berperilaku seperti proyektil — tetapi fisikanya jauh lebih mudah dihitung begini.</p>
     </div>
@@ -126,14 +129,14 @@ footerGrid: false
 <section class="fade-in">
   <h2>Contoh Perhitungan</h2>
   <div class="panel">
-    <div class="panel-head">Kepiting di (120 m, 40 m), tidak ada halangan</div>
+    <div class="panel-head">Kepiting di $(120\ \text{m},\ 40\ \text{m})$, tidak ada halangan</div>
     <div class="panel-body">
       <ol class="worked">
-        <li><strong>Cek dulu apakah terjangkau.</strong> v_min = √(9,8 · (40 + √(120² + 40²))) = √(9,8 · (40 + 126,5)) ≈ <b>40,4 m/s</b>. Jadi pilih v₀ di atas itu — misalnya <b>v₀ = 48 m/s</b>.</li>
-        <li><strong>Hitung diskriminan.</strong> v₀⁴ = 5.308.416. g(gx² + 2yv₀²) = 9,8 · (9,8 · 14400 + 2 · 40 · 2304) = 9,8 · (141.120 + 184.320) = 3.189.312. Selisihnya positif → ada solusi.</li>
-        <li><strong>Akar kuadrat.</strong> √(5.308.416 − 3.189.312) = √2.119.104 ≈ 1455,7.</li>
-        <li><strong>Masukkan ke rumus sudut.</strong> gx = 9,8 · 120 = 1176. <br>Sudut rendah: tan θ = (2304 − 1455,7)/1176 = 0,721 → θ ≈ <b>35,8°</b><br>Sudut tinggi: tan θ = (2304 + 1455,7)/1176 = 3,197 → θ ≈ <b>72,6°</b></li>
-        <li><strong>Pilih salah satu.</strong> Keduanya mengenai kepiting. Kalau ada karang tinggi di tengah jalan, pakai sudut tinggi. Kalau plafonnya yang sempit, pakai sudut rendah.</li>
+        <li><strong>Cek dulu apakah terjangkau.</strong> $$v_{\min} = \sqrt{9{,}8 \left(40 + \sqrt{120^2+40^2}\right)} = \sqrt{9{,}8(40+126{,}5)} \approx 40{,}4\ \text{m/s}$$ Jadi pilih $v_0$ di atas itu — misalnya $v_0 = 48$ m/s.</li>
+        <li><strong>Hitung diskriminan.</strong> $v_0^4 = 5{.}308{.}416$. $g(gx^2+2yv_0^2) = 9{,}8(9{,}8\cdot14400 + 2\cdot40\cdot2304) = 9{,}8(141120+184320) = 3{.}189{.}312$. Selisihnya positif → ada solusi.</li>
+        <li><strong>Akar kuadrat.</strong> $\sqrt{5{.}308{.}416 - 3{.}189{.}312} = \sqrt{2{.}119{.}104} \approx 1455{,}7$.</li>
+        <li><strong>Masukkan ke rumus sudut.</strong> $gx = 9{,}8\cdot120 = 1176$.<br>Sudut rendah: $\tan\theta = \dfrac{2304-1455{,}7}{1176} = 0{,}721 \Rightarrow \theta \approx 35{,}8°$<br>Sudut tinggi: $\tan\theta = \dfrac{2304+1455{,}7}{1176} = 3{,}197 \Rightarrow \theta \approx 72{,}6°$</li>
+        <li><strong>Pilih salah satu.</strong> Keduanya mengenai kepiting. Kalau ada karang tinggi di tengah jalan, pakai sudut tinggi. Kalau plafonnya sempit, pakai sudut rendah.</li>
       </ol>
     </div>
   </div>
@@ -143,10 +146,10 @@ footerGrid: false
   { icon: "➡️", title: "Kecepatan horizontal tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang bekerja arah mendatar. Lebah menempuh jarak mendatar yang sama tiap detik — dari awal sampai menyentuh air." },
   { icon: "🎯", title: "45° memberi jangkauan terjauh", body: "Tetapi hanya bila titik jatuh sama tinggi dengan titik luncur. Kalau kepiting mengambang lebih tinggi, sudut optimalnya lebih besar dari 45°." },
   { icon: "🔁", title: "Dua sudut, jangkauan sama", body: "θ dan (90° − θ) menghasilkan jarak yang identik. 30° dan 60° mendarat di titik yang sama — yang 60° hanya butuh waktu lebih lama dan terbang lebih tinggi." },
-  { icon: "⏱️", title: "Waktu terbang tidak peduli seberapa jauh", body: "T hanya bergantung pada komponen vertikal. Tembakan 20° dan 20° dengan v₀ berbeda punya bentuk berbeda, tetapi dua tembakan dengan v_y0 sama akan menyentuh air bersamaan." },
+  { icon: "⏱️", title: "Waktu terbang tidak peduli seberapa jauh", body: "T hanya bergantung pada komponen vertikal. Dua tembakan dengan v_y0 sama akan menyentuh air bersamaan, walau vₓ-nya berbeda." },
   { icon: "⛰️", title: "Di puncak, lebah tidak berhenti", body: "Kecepatan vertikalnya nol, tetapi horizontalnya penuh. Itulah sebabnya puncak lintasan berbentuk lengkung mulus, bukan sudut tajam." },
   { icon: "✖️", title: "Menggandakan kecepatan melipatempatkan jarak", body: "R sebanding dengan v₀², bukan v₀. Menaikkan v₀ dari 20 ke 40 m/s tidak menggandakan jangkauan — melainkan empat kali lipat." },
-  { icon: "🪶", title: "Massa lebah tidak berpengaruh", body: "Percepatan gravitasi sama untuk semua benda. Lebah dan batu yang diluncurkan identik akan mengikuti lintasan yang persis sama — sampai hambatan udara ikut bicara." },
+  { icon: "🪶", title: "Massa lebah tidak berpengaruh", body: "Percepatan gravitasi sama untuk semua benda. Lebah dan batu yang diluncurkan identik akan mengikuti lintasan yang persis sama." },
   { icon: "📐", title: "Lintasannya selalu parabola", body: "Karena x tumbuh linear terhadap t sementara y mengandung t², menghilangkan t selalu menyisakan persamaan kuadrat dalam x." }
 ] %}
 
@@ -178,3 +181,14 @@ footerGrid: false
     <a href="contact.html">Contact</a>
   </div>
 </section>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });">
+</script>
+<script src="game.js"></script>

@@ -155,3 +155,7 @@ input[type=number]:focus{outline:none;border-color:var(--honey)}
 @media(prefers-reduced-motion:reduce){
   .fact:hover{transform:none}
 }
+
+.katex-display{margin:6px 0!important;overflow-x:auto;overflow-y:hidden}
+.formula-body .katex{color:var(--honey)}
+.worked .katex{color:var(--honey)}
