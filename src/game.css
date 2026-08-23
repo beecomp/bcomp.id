@@ -195,3 +195,16 @@ input[type=number]:focus{outline:none;border-color:var(--honey)}
 @media(prefers-reduced-motion:reduce){
   .fact:hover{transform:none}
 }
+
+.worked .katex-display{
+  overflow: visible;
+  text-align: left;
+}
+.worked .katex-display > .katex{
+  font-size: clamp(0.82rem, 3.6vw, 1rem) !important;
+  white-space: normal;
+  max-width: 100%;
+}
+.worked .katex-display > .katex > .katex-html{
+  white-space: normal;
+}
