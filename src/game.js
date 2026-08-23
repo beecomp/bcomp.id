@@ -1,3 +1,9 @@
+/* ==========================================================
+   BEE BALLISTICS — projectile mini game
+   Launch point is exactly (0, 0) so every standard
+   projectile formula applies without adjustment.
+   ========================================================== */
+
 (function () {
   'use strict';
 
@@ -6,7 +12,7 @@
   const ctx = canvas.getContext('2d');
 
   // ---------- constants ----------
-  const G = 10;                             // m/s²
+  const G = 10;                              // m/s²
   const WORLD = { w: 200, h: 120 };          // playable metres
   const VIEW  = { x0: -12, x1: 208, y0: -9, y1: 124 };  // drawn metres (padding for axes)
 
@@ -186,7 +192,10 @@
 
   function resize() {
     const cssW = canvas.parentElement.clientWidth;
-    const cssH = Math.round(cssW * 0.58);
+    // narrow screens get a taller aspect ratio so the field
+    // isn't squashed into a thin strip
+    const ratio = cssW < 480 ? 0.85 : cssW < 700 ? 0.68 : 0.58;
+    const cssH = Math.round(cssW * ratio);
     const dpr  = window.devicePixelRatio || 1;
 
     canvas.width  = Math.round(cssW * dpr);
@@ -252,7 +261,7 @@
 
       const grad = ctx.createLinearGradient(x, y, x + ww, y + hh);
       grad.addColorStop(0, '#14567f');
-      grad.addColorStop(1, '#0a3busy'.replace('busy', '553'));
+      grad.addColorStop(1, '#0a3553');
       ctx.fillStyle = grad;
       ctx.strokeStyle = 'rgba(150,225,255,.4)';
       ctx.lineWidth = 1.5;
@@ -270,6 +279,7 @@
   function drawCrab() {
     const cx = sx(map.crab.x), cy = sy(map.crab.y);
     const r  = HIT_R * scale();
+    const fontPx = 26 * (scale() / 5.7);
 
     // hit-radius ring so the margin for error is visible
     ctx.strokeStyle = 'rgba(255,201,60,.45)';
@@ -278,7 +288,7 @@
     ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
     ctx.setLineDash([]);
 
-    ctx.font = '26px serif';
+    ctx.font = `${fontPx}px serif`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillText('🦀', cx, cy);
 
@@ -307,12 +317,13 @@
   function drawBee(x, y, vxw, vyw) {
     const px = sx(x), py = sy(y);
     const phi = Math.atan2(-vyw, vxw);   // screen angle (canvas y grows downward)
+    const fontPx = 22 * (scale() / 5.7);
 
     ctx.save();
     ctx.translate(px, py);
     ctx.scale(-1, 1);                    // now the glyph points along +x
     ctx.rotate(-phi);                    // mirrored frame reverses rotation sense
-    ctx.font = '22px serif';
+    ctx.font = `${fontPx}px serif`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillText('🐝', 0, 0);
     ctx.restore();
@@ -510,6 +521,11 @@
   });
 
   window.addEventListener('resize', resize);
+
+  // prevent double-tap-to-zoom on the game buttons specifically
+  [el.fire, el.newMap, el.hint, el.clear].forEach(btn => {
+    btn.addEventListener('touchend', e => e.preventDefault(), { passive: false });
+  });
 
   // roundRect polyfill for older browsers
   if (!ctx.roundRect) {
