@@ -24,33 +24,41 @@ footerGrid: false
       <div class="canvas-wrap">
         <canvas id="field" aria-label="Lapangan tembak dengan sumbu koordinat"></canvas>
       </div>
+      <p class="tap-tip">Ketuk lapangan untuk mengarahkan tembakan, lalu atur kecepatannya.</p>
 
       <div class="controls">
         <div class="ctrl">
-          <label for="vel">Kecepatan awal <b>v₀</b> <span class="unit">m/s</span></label>
-          <div class="ctrl-row">
-            <input type="range" id="velRange" min="10" max="60" step="0.5" value="35">
-            <input type="number" id="vel" min="10" max="60" step="0.5" value="35">
+          <div class="ctrl-head">
+            <label for="vel">Kecepatan awal <b>v₀</b></label>
+            <div class="ctrl-val">
+              <input type="number" id="vel" min="10" max="60" step="0.5" value="35">
+              <span class="unit">m/s</span>
+            </div>
           </div>
+          <input type="range" id="velRange" min="10" max="60" step="0.5" value="35">
         </div>
 
         <div class="ctrl">
-          <label for="ang">Sudut elevasi <b>θ</b> <span class="unit">derajat</span></label>
-          <div class="ctrl-row">
-            <input type="range" id="angRange" min="1" max="89" step="0.5" value="45">
-            <input type="number" id="ang" min="1" max="89" step="0.5" value="45">
+          <div class="ctrl-head">
+            <label for="ang">Sudut elevasi <b>θ</b></label>
+            <div class="ctrl-val">
+              <input type="number" id="ang" min="1" max="89" step="0.5" value="45">
+              <span class="unit">°</span>
+            </div>
           </div>
+          <input type="range" id="angRange" min="1" max="89" step="0.5" value="45">
         </div>
 
+        <button id="fireBtn" class="btn game-btn">Tembak 🐝</button>
+
         <div class="game-actions">
-          <button id="fireBtn" class="btn game-btn">Tembak 🐝</button>
           <button id="newBtn" class="btn-line">Peta Baru</button>
           <button id="hintBtn" class="btn-line">Petunjuk</button>
           <button id="clearBtn" class="btn-line">Hapus Jejak</button>
         </div>
 
         <div class="diff-row">
-          <span class="diff-label">Tingkat kesulitan</span>
+          <span class="diff-label">Kesulitan</span>
           <div class="diff-btns" id="diffBtns">
             <button data-diff="1" class="on">Mudah</button>
             <button data-diff="2">Sedang</button>
@@ -59,12 +67,14 @@ footerGrid: false
         </div>
       </div>
 
-      <div class="readout" id="readout"></div>
+      <div class="readout-wrap">
+        <div class="readout" id="readout"></div>
+      </div>
 
       <div class="scoreline">
-        <span>Tembakan: <b id="shotCount">0</b></span>
-        <span>Kepiting kena: <b id="hitCount">0</b></span>
-        <span>Rekor tembakan tersedikit: <b id="bestScore">—</b></span>
+        <span>Tembakan <b id="shotCount">0</b></span>
+        <span>Kena <b id="hitCount">0</b></span>
+        <span>Rekor <b id="bestScore">—</b></span>
       </div>
 
     </div>
@@ -74,68 +84,68 @@ footerGrid: false
 <section class="fade-in">
   <h2>Rumus yang Kamu Butuhkan</h2>
   <div class="panel">
-    <div class="panel-head">Gerak parabola tanpa hambatan udara, $g = 10\ \text{m/s}^2$</div>
+    <div class="panel-head">Gerak parabola tanpa hambatan udara, g = 10 m/s²</div>
     <div class="panel-body">
       <div class="formula-grid">
 
         <div class="formula">
           <span class="formula-num">1</span>
-          <h4>Kecepatan awal — komponen mendatar</h4>
+          <h4>Kecepatan awal, arah mendatar</h4>
           <p class="formula-body">$$v_x = v_0 \cos\theta$$</p>
-          <p class="formula-note">Ini tetap sama dari awal sampai lebahnya jatuh. Gravitasi tidak menarik ke samping.</p>
+          <p class="formula-note">Nilainya tetap dari awal sampai lebahnya jatuh. Gravitasi tidak menarik ke samping.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">2</span>
-          <h4>Kecepatan awal — komponen tegak</h4>
+          <h4>Kecepatan awal, arah tegak</h4>
           <p class="formula-body">$$v_{y0} = v_0 \sin\theta$$</p>
-          <p class="formula-note">Ini yang terus berkurang karena gravitasi, sampai jadi negatif saat lebah mulai turun.</p>
+          <p class="formula-note">Ini yang terus berkurang karena gravitasi, sampai jadi negatif waktu lebah mulai turun.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">3</span>
-          <h4>Posisi mendatar setiap saat</h4>
-          <p class="formula-body">$$x = v_x\,t$$</p>
-          <p class="formula-note">Titik luncurnya pas di $(0,0)$, jadi rumus ini langsung bisa dipakai tanpa digeser.</p>
+          <h4>Posisi mendatar</h4>
+          <p class="formula-body">$$x = v_x \, t$$</p>
+          <p class="formula-note">Titik luncurnya pas di (0, 0), jadi rumus ini langsung bisa dipakai tanpa digeser.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">4</span>
-          <h4>Posisi tegak setiap saat</h4>
-          <p class="formula-body">$$y = v_{y0}\,t - \tfrac{1}{2}gt^2$$</p>
-          <p class="formula-note">Suku kedua ini yang bikin lintasannya melengkung, bukan garis lurus.</p>
+          <h4>Posisi tegak</h4>
+          <p class="formula-body">$$y = v_{y0} \, t - \tfrac{1}{2} g t^2$$</p>
+          <p class="formula-note">Suku kedua inilah yang bikin lintasannya melengkung, bukan garis lurus.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">5</span>
           <h4>Persamaan lintasan</h4>
-          <p class="formula-body">$$y = x\tan\theta - \dfrac{gx^2}{2v_0^2\cos^2\theta}$$</p>
-          <p class="formula-note">Praktis buat ngecek: pada posisi $x$ tertentu, lintasanmu ada di ketinggian $y$ berapa. Cocok buat mengecek apakah kena karang.</p>
+          <p class="formula-body">$$y = x\tan\theta - \frac{g x^2}{2 v_0^2 \cos^2\theta}$$</p>
+          <p class="formula-note">Paling berguna: pada posisi x tertentu, lintasanmu ada di ketinggian berapa. Dipakai buat ngecek apakah kena karang.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">6</span>
           <h4>Jangkauan</h4>
-          <p class="formula-body">$$R = \dfrac{v_0^2\sin 2\theta}{g}$$</p>
-          <p class="formula-note">Jarak mendatar total, cuma berlaku kalau titik jatuhnya sama tinggi dengan titik luncur.</p>
+          <p class="formula-body">$$R = \frac{v_0^2 \sin 2\theta}{g}$$</p>
+          <p class="formula-note">Jarak mendatar total, berlaku kalau titik jatuhnya sama tinggi dengan titik luncur.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">7</span>
           <h4>Tinggi maksimum</h4>
-          <p class="formula-body">$$H = \dfrac{v_0^2\sin^2\theta}{2g}$$</p>
-          <p class="formula-note">Titik tertinggi lintasan, saat kecepatan tegaknya persis nol.</p>
+          <p class="formula-body">$$H = \frac{v_0^2 \sin^2\theta}{2g}$$</p>
+          <p class="formula-note">Titik tertinggi lintasan, tercapai waktu kecepatan tegaknya persis nol.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">8</span>
           <h4>Waktu di udara</h4>
-          <p class="formula-body">$$T = \dfrac{2v_0\sin\theta}{g}$$</p>
-          <p class="formula-note">Sama seperti $R$, cuma berlaku kalau titik jatuhnya sama tinggi dengan titik luncur. Kalau kepitingnya lebih tinggi atau rendah, pakai rumus 3 dan 4 saja.</p>
+          <p class="formula-body">$$T = \frac{2 v_0 \sin\theta}{g}$$</p>
+          <p class="formula-note">Sama seperti R, cuma berlaku kalau titik jatuhnya sama tinggi. Kalau kepitingnya lebih tinggi, pakai rumus 3 dan 4.</p>
         </div>
 
       </div>
-      <p class="note">Game ini menganggap tidak ada hambatan udara atau angin. Di dunia nyata lebah jelas tidak terbang begini, tapi biar hitungannya bisa dipakai dengan rumus SMP biasa.</p>
+      <p class="note">Game ini menganggap tidak ada hambatan udara atau angin, biar hitungannya cukup pakai rumus SMP biasa.</p>
     </div>
   </div>
 </section>
@@ -143,27 +153,50 @@ footerGrid: false
 <section class="fade-in">
   <h2>Contoh Perhitungan</h2>
   <div class="panel">
-    <div class="panel-head">Kepiting ada di $(90\ \text{m},\ 25\ \text{m})$</div>
+    <div class="panel-head">Kepiting di titik (90, 25), tanpa halangan</div>
     <div class="panel-body">
-      <p class="lede">Cara mainnya sebenarnya coba-coba yang terarah: pilih $v_0$ dan $\theta$, cek pakai rumus 5 apakah lintasannya lewat titik kepiting, lalu sesuaikan.</p>
-      <ol class="worked">
-        <li><strong>Coba tembakan pertama.</strong> $v_0 = 45$ m/s, $\theta = 35°$. Masukkan ke rumus 5 saat $x = 90$: $$y = 90\tan 35° - \dfrac{10(90)^2}{2(45)^2\cos^2 35°} \approx 63{,}0 - 29{,}8 \approx 33{,}2\ \text{m}$$ Di $x=90$, lintasannya masih di ketinggian 33 m, padahal kepitingnya di 25 m. Berarti sudutnya kurang landai.</li>
-        <li><strong>Coba turunkan sudutnya.</strong> $v_0 = 45$ m/s, $\theta = 25°$. $$y = 90\tan 25° - \dfrac{10(90)^2}{2(45)^2\cos^2 25°} \approx 42{,}0 - 24{,}4 \approx 17{,}6\ \text{m}$$ Sekarang malah kelewat rendah.</li>
-        <li><strong>Jawabannya di antara keduanya.</strong> Karena di $\theta=35°$ terlalu tinggi dan di $\theta=25°$ terlalu rendah, coba sekitar $28°$ sampai $30°$ dan sesuaikan pelan-pelan sampai tepat kena.</li>
-      </ol>
+      <p class="lede">Cara mainnya coba-coba yang terarah. Tebak v₀ dan θ, cek pakai rumus 5, lalu sesuaikan.</p>
+
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <p><strong>Tebakan pertama:</strong> v₀ = 45 m/s, θ = 35°. Masukkan x = 90 ke rumus 5.</p>
+          <p class="step-math">$$y = 90\tan 35^\circ - \frac{10 \cdot 90^2}{2 \cdot 45^2 \cos^2 35^\circ}$$</p>
+          <p class="step-math">$$y \approx 63{,}0 - 29{,}8 = 33{,}2\ \text{m}$$</p>
+          <p>Ketinggiannya 33 m, padahal kepitingnya di 25 m. Terlalu tinggi.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <p><strong>Turunkan sudutnya:</strong> v₀ = 45 m/s, θ = 25°.</p>
+          <p class="step-math">$$y = 90\tan 25^\circ - \frac{10 \cdot 90^2}{2 \cdot 45^2 \cos^2 25^\circ}$$</p>
+          <p class="step-math">$$y \approx 42{,}0 - 24{,}4 = 17{,}6\ \text{m}$$</p>
+          <p>Sekarang malah kelewat rendah.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <p><strong>Jawabannya di antara keduanya.</strong> Di 35° terlalu tinggi, di 25° terlalu rendah. Coba sekitar 28° sampai 30°, lalu geser pelan-pelan sampai tepat kena.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 {% set facts = [
-  { icon: "➡️", title: "Kecepatan mendatar tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang menarik lebah ke samping. Jarak mendatar yang ditempuh tiap detik selalu sama, dari awal sampai lebahnya jatuh." },
+  { icon: "➡️", title: "Kecepatan mendatar tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang menarik lebah ke samping. Jarak mendatar tiap detik selalu sama, dari awal sampai jatuh." },
   { icon: "🎯", title: "45° memberi jangkauan terjauh", body: "Tapi cuma kalau titik jatuhnya sama tinggi dengan titik luncur. Kalau kepitingnya lebih tinggi, sudut terbaiknya justru lebih dari 45°." },
-  { icon: "🔁", title: "Dua sudut bisa punya jangkauan sama", body: "θ dan (90° minus θ) mendarat di titik yang sama. 30° dan 60° jaraknya identik, cuma yang 60° terbang lebih tinggi dan lebih lama di udara." },
-  { icon: "⏱️", title: "Waktu di udara cuma soal ketinggian", body: "Dua tembakan dengan v_y0 sama akan jatuh bersamaan, biarpun kecepatan mendatarnya beda jauh." },
-  { icon: "⛰️", title: "Di titik tertinggi, lebahnya tidak berhenti", body: "Kecepatan vertikalnya nol sesaat, tapi kecepatan mendatarnya tetap penuh. Makanya puncak lintasannya melengkung halus, bukan siku-siku." },
+  { icon: "🔁", title: "Dua sudut bisa punya jangkauan sama", body: "θ dan (90° minus θ) mendarat di titik yang sama. 30° dan 60° jaraknya identik, cuma yang 60° terbang lebih tinggi dan lebih lama." },
+  { icon: "⏱️", title: "Waktu di udara cuma soal ketinggian", body: "Dua tembakan dengan kecepatan tegak awal sama akan jatuh bersamaan, biarpun kecepatan mendatarnya beda jauh." },
+  { icon: "⛰️", title: "Di titik tertinggi, lebahnya tidak berhenti", body: "Kecepatan tegaknya nol sesaat, tapi kecepatan mendatarnya tetap penuh. Makanya puncak lintasannya melengkung halus, bukan siku-siku." },
   { icon: "✖️", title: "Kecepatan naik dua kali, jarak naik empat kali", body: "Karena R sebanding dengan v₀ kuadrat. Menaikkan v₀ dari 20 ke 40 m/s bukan menggandakan jarak, tapi mengempatkalikannya." },
-  { icon: "🪶", title: "Berat lebah tidak berpengaruh", body: "Semua benda jatuh dengan percepatan gravitasi yang sama. Lebah dan batu yang ditembakkan dengan cara identik akan mengikuti lintasan yang persis sama." },
-  { icon: "📐", title: "Lintasannya selalu berbentuk parabola", body: "x bertambah lurus terhadap waktu, sedangkan y mengandung t kuadrat. Begitu t dihilangkan dari dua persamaan itu, hasilnya selalu persamaan kuadrat dalam x." }
+  { icon: "🪶", title: "Berat lebah tidak berpengaruh", body: "Semua benda jatuh dengan percepatan gravitasi yang sama. Lebah dan batu yang ditembakkan identik akan mengikuti lintasan yang persis sama." },
+  { icon: "📐", title: "Lintasannya selalu parabola", body: "x bertambah lurus terhadap waktu, sedangkan y mengandung t kuadrat. Begitu t dihilangkan, hasilnya selalu persamaan kuadrat dalam x." }
 ] %}
 
 <section class="fade-in">
@@ -184,13 +217,19 @@ footerGrid: false
   </div>
 </section>
 
+<section class="fade-in">
+  <h2>Quick access</h2>
+  <div class="quick-links">
+    <a href="competition.html">Sistem Lomba</a>
+    <a href="https://drive.google.com/file/d/1JZeClLGwr7rkvdWIS8ic_qgJbXmDa30w/view" target="_blank" rel="noopener">Silabus IPA</a>
+    <a href="edition-xvii.html">BCOMP XVII</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</section>
+
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body, {
-    delimiters: [
-      {left: '$$', right: '$$', display: true},
-      {left: '$', right: '$', display: false}
-    ]
-  });">
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true}]});">
 </script>
 <script src="game.js"></script>
