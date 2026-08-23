@@ -116,9 +116,9 @@ input[type=number]:focus{outline:none;border-color:var(--honey)}
 }
 .formula h4{color:var(--foam);font-size:.86rem;letter-spacing:0;text-transform:none;margin:6px 0 10px}
 .formula-body{
-  font-family:'Cambria Math','Georgia',serif;font-size:1rem;color:var(--honey);
-  background:rgba(0,0,0,.22);border-radius:7px;padding:11px 13px;
-  margin-bottom:9px!important;overflow-x:auto;white-space:nowrap;
+  font-family:inherit;font-size:1.02rem;color:var(--honey);
+  background:rgba(0,0,0,.22);border-radius:7px;padding:14px 12px;
+  margin-bottom:9px!important;text-align:center;
 }
 .formula-note{font-size:.8rem;color:var(--foam-dim);margin:0!important}
 

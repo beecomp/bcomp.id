@@ -6,7 +6,7 @@
   const ctx = canvas.getContext('2d');
 
   // ---------- constants ----------
-  const G = 9.8;                             // m/s²
+  const G = 10;                             // m/s²
   const WORLD = { w: 200, h: 120 };          // playable metres
   const VIEW  = { x0: -12, x1: 208, y0: -9, y1: 124 };  // drawn metres (padding for axes)
 

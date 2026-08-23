@@ -11,7 +11,7 @@ footerGrid: false
 <header class="page-head">
   <span class="page-kicker">Mini Game</span>
   <h1>Bee Ballistics 🐝</h1>
-  <p>Tembakkan lebah ke kepiting yang mengambang. Kamu hanya boleh mengatur <strong>kecepatan awal</strong> dan <strong>sudut elevasi</strong> — sisanya diurus oleh gravitasi. Karang dan batu menghalangi jalan, jadi hitung dulu sebelum menembak.</p>
+  <p>Tembakkan lebah ke kepiting yang mengambang. Kamu cuma bisa atur <strong>kecepatan awal</strong> dan <strong>sudut elevasi</strong>, sisanya urusan gravitasi. Ada karang dan batu di jalan, jadi hitung dulu sebelum menembak.</p>
 </header>
 
 <section class="fade-in">
@@ -64,7 +64,7 @@ footerGrid: false
       <div class="scoreline">
         <span>Tembakan: <b id="shotCount">0</b></span>
         <span>Kepiting kena: <b id="hitCount">0</b></span>
-        <span>Rekor (tembakan tersedikit): <b id="bestScore">—</b></span>
+        <span>Rekor tembakan tersedikit: <b id="bestScore">—</b></span>
       </div>
 
     </div>
@@ -74,54 +74,40 @@ footerGrid: false
 <section class="fade-in">
   <h2>Rumus yang Kamu Butuhkan</h2>
   <div class="panel">
-    <div class="panel-head">Gerak parabola tanpa hambatan udara &middot; $g = 9{,}8\ \text{m/s}^2$</div>
+    <div class="panel-head">Gerak parabola tanpa hambatan udara, $g = 10\ \text{m/s}^2$</div>
     <div class="panel-body">
       <div class="formula-grid">
 
         <div class="formula">
           <span class="formula-num">1</span>
-          <h4>Uraikan kecepatan awal</h4>
+          <h4>Komponen kecepatan awal</h4>
           <p class="formula-body">$$v_x = v_0 \cos\theta \qquad v_{y0} = v_0 \sin\theta$$</p>
-          <p class="formula-note">$v_x$ tidak pernah berubah sepanjang lintasan. Hanya komponen vertikal yang dipengaruhi gravitasi.</p>
+          <p class="formula-note">$v_x$ tetap sama dari awal sampai akhir. Yang berubah cuma komponen vertikalnya, karena gravitasi cuma menarik ke bawah.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">2</span>
-          <h4>Posisi terhadap waktu</h4>
-          <p class="formula-body">$$x(t) = v_x t \qquad y(t) = v_{y0}\,t - \tfrac{1}{2} g t^2$$</p>
-          <p class="formula-note">Titik luncur berada tepat di $(0,0)$, jadi rumus ini berlaku apa adanya.</p>
+          <h4>Posisi dan kecepatan setiap saat</h4>
+          <p class="formula-body">$$x = v_x\,t \qquad y = v_{y0}\,t - \tfrac{1}{2}gt^2$$</p>
+          <p class="formula-note">Titik luncurnya pas di $(0,0)$, jadi rumus ini langsung bisa dipakai tanpa perlu digeser dulu.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">3</span>
-          <h4>Persamaan lintasan (tanpa $t$)</h4>
-          <p class="formula-body">$$y = x\tan\theta - \dfrac{g x^2}{2v_0^2\cos^2\theta}$$</p>
-          <p class="formula-note">Gunakan ini untuk mengecek apakah lintasanmu melewati atas atau bawah sebuah karang pada posisi $x$ tertentu.</p>
+          <h4>Persamaan lintasan</h4>
+          <p class="formula-body">$$y = x\tan\theta - \dfrac{gx^2}{2v_0^2\cos^2\theta}$$</p>
+          <p class="formula-note">Rumus ini praktis buat ngecek: pada posisi $x$ tertentu, lintasanmu ada di ketinggian $y$ berapa. Cocok buat mengecek apakah kena karang atau tidak.</p>
         </div>
 
         <div class="formula">
           <span class="formula-num">4</span>
-          <h4>Mencari sudut untuk mengenai $(x,y)$</h4>
-          <p class="formula-body">$$\tan\theta = \dfrac{v_0^2 \pm \sqrt{v_0^4 - g\left(gx^2 + 2yv_0^2\right)}}{gx}$$</p>
-          <p class="formula-note">Ada dua jawaban: sudut rendah (lintasan datar, cepat) dan sudut tinggi (lintasan melengkung, bagus untuk melewati karang). Jika bagian dalam akar negatif, $v_0$ terlalu kecil.</p>
-        </div>
-
-        <div class="formula">
-          <span class="formula-num">5</span>
-          <h4>Kecepatan minimum untuk mencapai $(x,y)$</h4>
-          <p class="formula-body">$$v_{\min} = \sqrt{\,g\left(y + \sqrt{x^2+y^2}\right)}$$</p>
-          <p class="formula-note">Di bawah nilai ini, tidak ada sudut mana pun yang bisa sampai ke kepiting. Naikkan $v_0$ dulu.</p>
-        </div>
-
-        <div class="formula">
-          <span class="formula-num">6</span>
-          <h4>Jangkauan, titik tertinggi, waktu terbang</h4>
+          <h4>Jangkauan, tinggi maksimum, waktu di udara</h4>
           <p class="formula-body">$$R = \dfrac{v_0^2\sin 2\theta}{g} \qquad H = \dfrac{v_0^2\sin^2\theta}{2g} \qquad T = \dfrac{2v_0\sin\theta}{g}$$</p>
-          <p class="formula-note">$R$ dan $T$ hanya berlaku bila titik akhir sama tinggi dengan titik luncur ($y=0$).</p>
+          <p class="formula-note">$R$ dan $T$ cuma berlaku kalau titik jatuhnya sama tinggi dengan titik luncur ($y=0$). Kalau kepitingnya lebih tinggi atau lebih rendah, pakai rumus 2 dan 3 saja.</p>
         </div>
 
       </div>
-      <p class="note">Game ini mengabaikan hambatan udara, angin, dan gaya apung. Di dunia nyata lebah tidak berperilaku seperti proyektil — tetapi fisikanya jauh lebih mudah dihitung begini.</p>
+      <p class="note">Game ini menganggap tidak ada hambatan udara atau angin. Di dunia nyata lebah jelas tidak terbang begini, tapi biar hitungannya bisa dipakai dengan rumus SMP biasa.</p>
     </div>
   </div>
 </section>
@@ -129,34 +115,33 @@ footerGrid: false
 <section class="fade-in">
   <h2>Contoh Perhitungan</h2>
   <div class="panel">
-    <div class="panel-head">Kepiting di $(120\ \text{m},\ 40\ \text{m})$, tidak ada halangan</div>
+    <div class="panel-head">Kepiting ada di $(90\ \text{m},\ 25\ \text{m})$</div>
     <div class="panel-body">
+      <p class="lede">Cara mainnya sebenarnya coba-coba yang terarah: pilih $v_0$ dan $\theta$, cek pakai rumus 3 apakah lintasannya lewat titik kepiting, lalu sesuaikan.</p>
       <ol class="worked">
-        <li><strong>Cek dulu apakah terjangkau.</strong> $$v_{\min} = \sqrt{9{,}8 \left(40 + \sqrt{120^2+40^2}\right)} = \sqrt{9{,}8(40+126{,}5)} \approx 40{,}4\ \text{m/s}$$ Jadi pilih $v_0$ di atas itu — misalnya $v_0 = 48$ m/s.</li>
-        <li><strong>Hitung diskriminan.</strong> $v_0^4 = 5{.}308{.}416$. $g(gx^2+2yv_0^2) = 9{,}8(9{,}8\cdot14400 + 2\cdot40\cdot2304) = 9{,}8(141120+184320) = 3{.}189{.}312$. Selisihnya positif → ada solusi.</li>
-        <li><strong>Akar kuadrat.</strong> $\sqrt{5{.}308{.}416 - 3{.}189{.}312} = \sqrt{2{.}119{.}104} \approx 1455{,}7$.</li>
-        <li><strong>Masukkan ke rumus sudut.</strong> $gx = 9{,}8\cdot120 = 1176$.<br>Sudut rendah: $\tan\theta = \dfrac{2304-1455{,}7}{1176} = 0{,}721 \Rightarrow \theta \approx 35{,}8°$<br>Sudut tinggi: $\tan\theta = \dfrac{2304+1455{,}7}{1176} = 3{,}197 \Rightarrow \theta \approx 72{,}6°$</li>
-        <li><strong>Pilih salah satu.</strong> Keduanya mengenai kepiting. Kalau ada karang tinggi di tengah jalan, pakai sudut tinggi. Kalau plafonnya sempit, pakai sudut rendah.</li>
+        <li><strong>Coba tembakan pertama.</strong> $v_0 = 45$ m/s, $\theta = 35°$. Masukkan ke rumus 3 saat $x = 90$: $$y = 90\tan 35° - \dfrac{10(90)^2}{2(45)^2\cos^2 35°} \approx 63{,}0 - 29{,}8 \approx 33{,}2\ \text{m}$$ Di $x=90$, lintasannya masih di ketinggian 33 m, padahal kepitingnya di 25 m. Berarti sudutnya kurang landai.</li>
+        <li><strong>Coba turunkan sudutnya.</strong> $v_0 = 45$ m/s, $\theta = 25°$. $$y = 90\tan 25° - \dfrac{10(90)^2}{2(45)^2\cos^2 25°} \approx 42{,}0 - 24{,}4 \approx 17{,}6\ \text{m}$$ Sekarang malah kelewat rendah.</li>
+        <li><strong>Jawabannya di antara keduanya.</strong> Karena di $\theta=35°$ terlalu tinggi dan di $\theta=25°$ terlalu rendah, coba sekitar $28°$ sampai $30°$ dan sesuaikan pelan-pelan sampai tepat kena.</li>
       </ol>
     </div>
   </div>
 </section>
 
 {% set facts = [
-  { icon: "➡️", title: "Kecepatan horizontal tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang bekerja arah mendatar. Lebah menempuh jarak mendatar yang sama tiap detik — dari awal sampai menyentuh air." },
-  { icon: "🎯", title: "45° memberi jangkauan terjauh", body: "Tetapi hanya bila titik jatuh sama tinggi dengan titik luncur. Kalau kepiting mengambang lebih tinggi, sudut optimalnya lebih besar dari 45°." },
-  { icon: "🔁", title: "Dua sudut, jangkauan sama", body: "θ dan (90° − θ) menghasilkan jarak yang identik. 30° dan 60° mendarat di titik yang sama — yang 60° hanya butuh waktu lebih lama dan terbang lebih tinggi." },
-  { icon: "⏱️", title: "Waktu terbang tidak peduli seberapa jauh", body: "T hanya bergantung pada komponen vertikal. Dua tembakan dengan v_y0 sama akan menyentuh air bersamaan, walau vₓ-nya berbeda." },
-  { icon: "⛰️", title: "Di puncak, lebah tidak berhenti", body: "Kecepatan vertikalnya nol, tetapi horizontalnya penuh. Itulah sebabnya puncak lintasan berbentuk lengkung mulus, bukan sudut tajam." },
-  { icon: "✖️", title: "Menggandakan kecepatan melipatempatkan jarak", body: "R sebanding dengan v₀², bukan v₀. Menaikkan v₀ dari 20 ke 40 m/s tidak menggandakan jangkauan — melainkan empat kali lipat." },
-  { icon: "🪶", title: "Massa lebah tidak berpengaruh", body: "Percepatan gravitasi sama untuk semua benda. Lebah dan batu yang diluncurkan identik akan mengikuti lintasan yang persis sama." },
-  { icon: "📐", title: "Lintasannya selalu parabola", body: "Karena x tumbuh linear terhadap t sementara y mengandung t², menghilangkan t selalu menyisakan persamaan kuadrat dalam x." }
+  { icon: "➡️", title: "Kecepatan mendatar tidak pernah berubah", body: "Tanpa hambatan udara, tidak ada gaya yang menarik lebah ke samping. Jarak mendatar yang ditempuh tiap detik selalu sama, dari awal sampai lebahnya jatuh." },
+  { icon: "🎯", title: "45° memberi jangkauan terjauh", body: "Tapi cuma kalau titik jatuhnya sama tinggi dengan titik luncur. Kalau kepitingnya lebih tinggi, sudut terbaiknya justru lebih dari 45°." },
+  { icon: "🔁", title: "Dua sudut bisa punya jangkauan sama", body: "θ dan (90° minus θ) mendarat di titik yang sama. 30° dan 60° jaraknya identik, cuma yang 60° terbang lebih tinggi dan lebih lama di udara." },
+  { icon: "⏱️", title: "Waktu di udara cuma soal ketinggian", body: "Dua tembakan dengan v_y0 sama akan jatuh bersamaan, biarpun kecepatan mendatarnya beda jauh." },
+  { icon: "⛰️", title: "Di titik tertinggi, lebahnya tidak berhenti", body: "Kecepatan vertikalnya nol sesaat, tapi kecepatan mendatarnya tetap penuh. Makanya puncak lintasannya melengkung halus, bukan siku-siku." },
+  { icon: "✖️", title: "Kecepatan naik dua kali, jarak naik empat kali", body: "Karena R sebanding dengan v₀ kuadrat. Menaikkan v₀ dari 20 ke 40 m/s bukan menggandakan jarak, tapi mengempatkalikannya." },
+  { icon: "🪶", title: "Berat lebah tidak berpengaruh", body: "Semua benda jatuh dengan percepatan gravitasi yang sama. Lebah dan batu yang ditembakkan dengan cara identik akan mengikuti lintasan yang persis sama." },
+  { icon: "📐", title: "Lintasannya selalu berbentuk parabola", body: "x bertambah lurus terhadap waktu, sedangkan y mengandung t kuadrat. Begitu t dihilangkan dari dua persamaan itu, hasilnya selalu persamaan kuadrat dalam x." }
 ] %}
 
 <section class="fade-in">
   <h2>Fun Facts</h2>
   <div class="panel">
-    <div class="panel-head">Delapan hal yang membuat gerak parabola menarik</div>
+    <div class="panel-head">Delapan hal menarik soal gerak parabola</div>
     <div class="panel-body">
       <div class="fact-grid">
         {% for f in facts %}
